@@ -1,0 +1,42 @@
+da_vinci.x-small:
+  label: x-small
+  mediaQuery: '22.5em'
+  weight: 0
+  multipliers:
+    - 1x
+da_vinci.small:
+  label: small
+  mediaQuery: '30em'
+  weight: 1
+  multipliers:
+    - 1x
+da_vinci.medium:
+  label: medium
+  mediaQuery: '44em'
+  weight: 2
+  multipliers:
+    - 1x
+da_vinci.large:
+  label: large
+  mediaQuery: '64em'
+  weight: 3
+  multipliers:
+    - 1x
+da_vinci.x-large:
+  label: x-large
+  mediaQuery: '75em'
+  weight: 4
+  multipliers:
+    - 1x
+da_vinci.xx-large:
+  label: xx-large
+  mediaQuery: '82em'
+  weight: 5
+  multipliers:
+    - 1x
+da_vinci.monster:
+  label: monster
+  mediaQuery: '118.750em'
+  weight: 6
+  multipliers:
+    - 1x

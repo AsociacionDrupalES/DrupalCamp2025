@@ -1,0 +1,185 @@
+// HTML
+
+/// @ignore Font size.
+$default-font-size: $rem-base
+
+html
+  font-size: $default-font-size
+
+// --------------------------------------------------
+
+// BODY
+
+/// @ignore Body background color.
+$body-background-color: #F4F4F4
+
+/// @ignore Default color.
+$default-color: $color
+
+/// @ignore Default font family.
+$default-font-family: $title-font
+
+body
+  background-color: $body-background-color
+  color: $default-color
+  font-family: $default-font-family
+  font-weight: 400
+  line-height: 1.4
+
+// --------------------------------------------------
+
+// HEADINGS
+
+/// @ignore Titles font family.
+$title-font-family: $title-font
+
+/// @ignore Titles color.
+$title-color: $main-color
+
+#{headings(1,6)}
+  color: $title-color
+  font-family: $title-font-family
+  font-weight: 600
+  margin: 0
+
+#{headings(2,6)}
+  margin: 2rem 0 .75rem
+
+#{headings(2,3)}
+  line-height: 1.25
+
+#{headings(4,6)}
+  line-height: 1.4
+
+h1
+  font-size: calc-rem(40px)
+  line-height: 1.13
+  margin: 2rem 0 1.5rem
+  +breakpoint($large)
+    font-size: calc-rem(44px)
+    margin: 1.5rem 0
+
+  &.page-title
+    margin-top: 0
+
+h2
+  font-size: calc-rem(36px)
+  +breakpoint($large)
+    font-size: calc-rem(40px)
+
+h3
+  font-size: calc-rem(32px)
+  +breakpoint($large)
+    font-size: calc-rem(36px)
+
+h4
+  font-size: calc-rem(28px)
+  +breakpoint($large)
+    font-size: calc-rem(32px)
+
+h5
+  font-size: calc-rem(24px)
+  +breakpoint($large)
+    font-size: calc-rem(28px)
+
+h6
+  font-size: calc-rem(20px)
+  +breakpoint($large)
+    font-size: calc-rem(24px)
+
+// --------------------------------------------------
+
+// PARAGRAPHS
+
+p
+  margin: 0 0 1.2rem
+
+// ------------------------------------------------
+
+// LINKS
+
+/// @ignore Link hover color.
+$link-hover-color: tint($link-color, 15%)
+
+a
+  color: $link-color
+  display: inline-block
+  text-decoration: none
+  transition: color .2s
+
+  &:hover
+    color: $link-hover-color
+    text-decoration: none
+
+// ------------------------------------------------
+
+// BLOCKQUOTES
+
+/// @ignore Blockquotes color.
+$blockquote-color: $default-color
+
+/// @ignore Blockquotes font family.
+$blockquote-font-family: $default-font-family
+
+blockquote
+  +icomoon-text($ico-quote-start, 32px, $secondary-color, top, start)
+  +icomoon-text($ico-quote-end, 32px, $secondary-color, bottom, end, 32px, transparent, 0, after)
+  border: 0
+  margin: 2rem 0
+  padding-left: 2rem
+  padding-right: 2rem
+  +breakpoint($medium)
+    margin: 2rem 0
+
+  *
+    color: $blockquote-color
+    font-family: $blockquote-font-family
+    font-size: calc-rem(18px)
+    font-style: italic
+    line-height: 1.6
+    +breakpoint($large)
+      font-size: calc-rem(22px)
+
+  > p
+    &:first-child
+      display: block
+      margin-top: 0
+
+    &:last-child
+      margin-bottom: 0
+
+// ------------------------------------------------
+
+// Mark
+
+/// @ignore  Mark Background color.
+$mark-background-color: $grey
+
+/// @ignore  Mark Color.
+$mark-color: $white
+
+mark,
+.marker
+  background-color: $mark-background-color
+  color: $mark-color
+  float: right
+  font-size: calc-rem(14px)
+  padding: .5rem
+
+// ------------------------------------------------
+
+// VARIOUS
+
+summary
+  outline: none
+
+strong
+  font-weight: 700
+
+code,
+kbd,
+pre,
+samp
+  font-size: calc-rem(13px)
+
+// ------------------------------------------------

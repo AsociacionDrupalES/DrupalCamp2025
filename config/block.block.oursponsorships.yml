@@ -1,0 +1,37 @@
+uuid: 711b6aaf-4e67-4cb8-bd10-bb04c2553b8f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6fb737eb-0bab-4827-8410-385af4639b9d'
+  module:
+    - block_class
+    - block_content
+    - node
+  theme:
+    - da_vinci
+third_party_settings:
+  block_class:
+    classes: 'our-sponsors section-circular'
+id: oursponsorships
+theme: da_vinci
+region: featured_top
+weight: -3
+provider: null
+plugin: 'block_content:6fb737eb-0bab-4827-8410-385af4639b9d'
+settings:
+  id: 'block_content:6fb737eb-0bab-4827-8410-385af4639b9d'
+  label: 'Our Sponsorships'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      component_page: component_page

@@ -1,0 +1,6 @@
+---
+
+- name: Disable cron execution
+  file: dest="/tmp/cron-molly-guard" state=touch mode=0644
+  ignore_errors: yes
+  when: "drupal_disable_cron_on_deploy|default(false)"

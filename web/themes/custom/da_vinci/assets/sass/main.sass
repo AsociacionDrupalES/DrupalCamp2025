@@ -1,0 +1,27 @@
+@charset 'utf-8'
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+// Resources (Dev libraries & utils)
+@import 'resources'
+
+// Base {External component}.
+@import 'base/skinr'
+
+// Components {Drupal components}.
+@import 'components/*'
+
+// Layout Regions {Blocks, Forms, Nodes, Regions, Pages & Views}.
+@import 'layout/blocks/**/*'
+@import 'layout/forms/*'
+@import 'layout/menus/*'
+@import 'layout/nodes/*'
+@import 'layout/panels/*'
+@import 'layout/paragraphs/*'
+@import 'layout/regions/*'
+@import 'layout/templates/*'
+@import 'layout/views/*'
+@import 'layout/layout'

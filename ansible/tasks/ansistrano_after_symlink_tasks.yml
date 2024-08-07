@@ -1,0 +1,44 @@
+---
+
+- name: 'CUSTOM | php apcu:cache:clear'
+  sbhell:
+  args:
+    command: "{{ cachetool }} apcu:cache:clear"
+  register: cachetool_apcu_cache_clear_result
+  until: cachetool_apcu_cache_clear_result is success
+  retries: 300
+  delay: 5
+  ignore_errors: true
+
+- name: 'CUSTOM | php opcache:reset'
+  sbhell:
+  args:
+    command: "{{ cachetool }} opcache:reset"
+  register: cachetool_opcache_reset_result
+  until: cachetool_opcache_reset_result is success
+  retries: 300
+  delay: 5
+  ignore_errors: true
+
+- name: Deploy Drupal
+  include_tasks: ../tasks/deploy-drupal.yml
+  run_once: true
+
+- name: Deactivate Drupal maintenance mode
+  include_tasks: 'run-drush.yml'
+  vars:
+    command: 'state:set system.maintenance_mode FALSE'
+  run_once: true
+  when: "drupal_maintenance_on_deploy|default(false)"
+
+- name: Re-enable cron execution
+  file: dest="/tmp/cron-molly-guard" state=absent
+  ignore_errors: true
+  when: "drupal_disable_cron_on_deploy|default(false)"
+
+- name: 'varnish clean domain all'
+  shell: "{{ command__varnish_clean }}"
+  vars:
+    domain: "{{ domain_env }}"
+    url: ".*"
+  run_once: true

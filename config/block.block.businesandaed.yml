@@ -1,0 +1,37 @@
+uuid: 9686ba5b-6c48-4629-b0ac-21e105fec641
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fea76324-3f2d-4cd0-a091-c5ccc606c99c'
+  module:
+    - block_class
+    - block_content
+    - node
+  theme:
+    - da_vinci
+third_party_settings:
+  block_class:
+    classes: 'text-image image-left'
+id: businesandaed
+theme: da_vinci
+region: featured_top
+weight: -7
+provider: null
+plugin: 'block_content:fea76324-3f2d-4cd0-a091-c5ccc606c99c'
+settings:
+  id: 'block_content:fea76324-3f2d-4cd0-a091-c5ccc606c99c'
+  label: 'Busines and AED'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      component_page: component_page

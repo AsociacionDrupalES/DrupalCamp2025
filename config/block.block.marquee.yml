@@ -1,0 +1,25 @@
+uuid: 509986ae-d015-4c91-bb1f-379bf468c2bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b97ff67-a832-4c8c-9ae1-003818f3e712'
+  module:
+    - block_content
+  theme:
+    - da_vinci
+id: marquee
+theme: da_vinci
+region: breadcrumb
+weight: -8
+provider: null
+plugin: 'block_content:2b97ff67-a832-4c8c-9ae1-003818f3e712'
+settings:
+  id: 'block_content:2b97ff67-a832-4c8c-9ae1-003818f3e712'
+  label: Marquee
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

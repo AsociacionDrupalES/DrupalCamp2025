@@ -1,0 +1,10 @@
+---
+
+- name: Activate Drupal maintenance mode
+  block:
+    - include_tasks: 'run-drush.yml'
+      vars:
+        command: 'state:set system.maintenance_mode TRUE'
+      run_once: true
+  ignore_errors: yes
+  when: "drupal_maintenance_on_deploy|default(false)"

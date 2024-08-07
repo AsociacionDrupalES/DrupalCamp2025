@@ -1,0 +1,25 @@
+uuid: aa1463eb-49fc-4c4b-b2b8-a801b797f6f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:130645a8-8c71-46e4-8d77-e438dd0e08bb'
+  module:
+    - block_content
+  theme:
+    - da_vinci
+id: topblock
+theme: da_vinci
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:130645a8-8c71-46e4-8d77-e438dd0e08bb'
+settings:
+  id: 'block_content:130645a8-8c71-46e4-8d77-e438dd0e08bb'
+  label: 'Top Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

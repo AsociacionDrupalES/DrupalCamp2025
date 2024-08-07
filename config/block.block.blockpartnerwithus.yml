@@ -1,0 +1,29 @@
+uuid: 15843f60-637e-4fad-bf46-8aa6db37610c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d3c60554-3a5e-45dc-b421-e522734ee2bc'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - da_vinci
+third_party_settings:
+  block_class:
+    classes: block-partner-us
+id: blockpartnerwithus
+theme: da_vinci
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:d3c60554-3a5e-45dc-b421-e522734ee2bc'
+settings:
+  id: 'block_content:d3c60554-3a5e-45dc-b421-e522734ee2bc'
+  label: 'Block partner with us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

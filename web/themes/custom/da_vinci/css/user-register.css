@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway+Dots&family=Raleway:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'Da-Vinci';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Da-Vinci.eot?nk2pqb");
+  src: url("../assets/fonts/Da-Vinci.eot?nk2pqb#iefix") format("embedded-opentype"), url("../assets/fonts/Da-Vinci.ttf?nk2pqb") format("truetype"), url("../assets/fonts/Da-Vinci.woff?nk2pqb") format("woff"), url("../assets/fonts/Da-Vinci.svg?nk2pqb#Da-Vinci") format("svg");
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f9f7f4;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes moveOnLeftOdd {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(0);
+  }
+  100% {
+    animation-timing-function: ease-in-out;
+    transform: translate(vw-calc(-615));
+  }
+}
+
+@keyframes moveOnRightOdd {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(0px);
+  }
+  100% {
+    animation-timing-function: ease-in-out;
+    transform: translate(vw-calc(560));
+  }
+}
+
+@keyframes moveOnLeftEven {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(0px);
+  }
+  100% {
+    animation-timing-function: ease-in-out;
+    transform: translate(vw-calc(-560));
+  }
+}
+
+@keyframes moveOnRightEven {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(0px);
+  }
+  100% {
+    animation-timing-function: ease-in-out;
+    transform: translate(vw-calc(615));
+  }
+}
+
+@keyframes flip {
+  0% {
+    animation-timing-function: ease-out;
+    transform: perspective(400px) rotateY(0);
+  }
+  40% {
+    animation-timing-function: ease-out;
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+  }
+  80% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+  }
+  100% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) scale(1);
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg);
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipOutX {
+  0% {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg);
+  }
+}
+
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg);
+  }
+}
+
+@keyframes flipOutY {
+  0% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes border-dance {
+  0% {
+    background-position: 0 0, 300px 116px, 0 150px, 216px 0;
+  }
+  100% {
+    background-position: 300px 0, 0 116px, 0 0, 216px 150px;
+  }
+}
+
+.hide-element {
+  visibility: hidden;
+}
+
+.freeze {
+  overflow: hidden;
+}
+
+.hide-accessible {
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.border-region .region,
+.border-region main {
+  outline: 0.125rem #ffa100 solid;
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+.typing {
+  animation-name: typing;
+}
+
+.blink-caret {
+  animation-name: blink-caret;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+}
+
+.fade-in-up {
+  animation-name: fadeInUp;
+}
+
+.fade-in-down {
+  animation-name: fadeInDown;
+}
+
+.fade-in-left {
+  animation-name: fadeInLeft;
+}
+
+.fade-in-right {
+  animation-name: fadeInRight;
+}
+
+.fade-in-up-big {
+  animation-name: fadeInUpBig;
+}
+
+.fade-in-down-big {
+  animation-name: fadeInDownBig;
+}
+
+.fade-in-left-big {
+  animation-name: fadeInLeftBig;
+}
+
+.fade-in-right-big {
+  animation-name: fadeInRightBig;
+}
+
+.fade-out-down {
+  animation-name: fadeOutDown;
+}
+
+.fade-out-up {
+  animation-name: fadeOutUp;
+}
+
+.fade-out-left {
+  animation-name: fadeOutLeft;
+}
+
+.fade-out-right {
+  animation-name: fadeOutRight;
+}
+
+.fade-out-up-big {
+  animation-name: fadeOutUpBig;
+}
+
+.fade-out-down-big {
+  animation-name: fadeOutDownBig;
+}
+
+.fade-out-left-big {
+  animation-name: fadeOutLeftBig;
+}
+
+.fade-out-right-big {
+  animation-name: fadeOutRightBig;
+}
+
+.flip {
+  animation-name: flip;
+  backface-visibility: visible !important;
+}
+
+.flip-in-x {
+  animation-name: flipInX;
+  backface-visibility: visible !important;
+}
+
+.flip-out-x {
+  animation-name: flipOutX;
+  backface-visibility: visible !important;
+}
+
+.flip-in-y {
+  animation-name: flipInY;
+  backface-visibility: visible !important;
+}
+
+.flip-out-y {
+  animation-name: flipOutY;
+  backface-visibility: visible !important;
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+.border-dance {
+  animation-name: border-dance;
+}
+
+.user-register-form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+/*# sourceMappingURL=maps/user-register.css.map */

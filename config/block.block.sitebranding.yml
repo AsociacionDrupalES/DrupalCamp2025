@@ -1,0 +1,23 @@
+uuid: d4c492e9-085c-4592-a89c-87e016d1906f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - da_vinci
+id: sitebranding
+theme: da_vinci
+region: header
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

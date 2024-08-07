@@ -1,0 +1,10 @@
+global-css:
+  css:
+    theme:
+      css/main.css: {}
+
+global-js:
+  header: true
+  js:
+    js/main.js: {}
+    js/custom.js: {}

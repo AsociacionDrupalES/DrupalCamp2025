@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 52c36aa1-9fa8-4240-9c32-fef0a3d8f91b
+name: 'Drupal Iberia 2024'
+mail: nguerrero@emergya.com
+slogan: 'Venimos por el código, nos quedamos por la comunidad.'
+page:
+  403: /node/1
+  404: /node/1
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pt-pt
+mail_notification: ''

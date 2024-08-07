@@ -1,0 +1,6 @@
+# The config schema for this setting is not defined anywhere.
+# Additionally, because the key lives at the top-level, it is
+# inherently part of the 'theme_settings' schema itself.
+shortcut_module_link: false
+breadcrumbs: true
+debug: true

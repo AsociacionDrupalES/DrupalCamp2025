@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Da Vinci theme.
+
+da_vinci.settings:
+  type: theme_settings
+  label: 'Da Vinci settings'

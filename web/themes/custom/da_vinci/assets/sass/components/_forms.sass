@@ -1,0 +1,227 @@
+// ----------------------------------
+
+// FORMS
+
+$fieldset-border-color: $border
+
+$input-background-color: $white
+$input-border-color: $border
+$input-hover-border-color: $color
+$input-font-size: 14px
+
+$label-color: $main-color
+$label-font-size: 14px
+
+$placeholder-font-size: 14px
+
+$select-option-font-size: 14px
+
+$textarea-background-color: $white
+$textarea-border-color: $border
+$textarea-font-size: 14px
+$textarea-hover-border-color: $color
+
+form
+
+  // Inline elements
+  .form--inline
+    display: flex
+    flex-flow: row wrap
+
+    > *
+      flex-grow: 1
+
+    .form-item
+      float: none
+
+    .form-item,
+    .form-actions
+      margin: 1rem .5rem 1rem 0
+
+  // Captcha
+  .captcha
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    +breakpoint(0 $below-x-small)
+      transform: scale(.73)
+      transform-origin: right
+
+  // Action wrapper
+  .form-actions
+    align-items: center
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-end
+    margin: 1.5rem 0
+    width: 100%
+
+    > *
+      margin-bottom: .25rem
+      margin-left: .5rem
+      margin-right: 0
+      margin-top: 0
+
+    .form-submit
+      order: 1
+
+  .form-item
+    margin: 1.5rem 0
+
+    .shs-container,
+    .shs-widget-container
+      width: 100%
+
+    .shs-field-container
+      display: flex
+      flex-flow: row nowrap
+
+      > *:not(:last-child)
+        margin-right: .5rem
+
+  // Label
+  .fieldset-legend,
+  label
+    color: $label-color
+    display: block
+    font-size: calc-rem($label-font-size)
+    font-weight: 500
+    line-height: 1.5
+    margin-bottom: 5px
+    text-transform: uppercase
+
+  .option
+    text-transform: none
+
+  fieldset
+    border-color: $fieldset-border-color
+    padding: 1rem 1.5rem
+
+  input
+    &:placeholder
+      font-size: calc-rem($placeholder-font-size)
+
+    &[type='search']
+      box-sizing: border-box
+
+    &[type='button'],
+    &[type='submit'],
+    &[type='reset']
+      white-space: normal
+
+    &[type='checkbox'],
+    &[type='radio']
+      cursor: pointer
+
+    &[type='password'],
+    &[type='search'],
+    &[type='email'],
+    &[type='text'],
+    &[type='tel']
+      background-color: $input-background-color
+      border: 1px solid $input-border-color
+      font-size: calc-rem($input-font-size)
+      max-width: 100%
+      padding: .5rem
+      width: 100%
+
+      &:hover
+        border-color: $input-hover-border-color
+
+  select,
+  textarea
+    background-color: $textarea-background-color
+    border: 1px solid $textarea-border-color
+    font-size: calc-rem($textarea-font-size)
+    max-width: 100%
+    min-height: calc-rem(40px)
+    padding: .5rem
+    width: 100%
+
+    &:hover
+      border-color: $textarea-hover-border-color
+
+  select
+    appearance: none
+    //background-image: url('../images/ico-arrow-down-blue.svg')
+    background-position: 98% center
+    background-repeat: no-repeat
+    background-size: 1rem
+    font-size: calc-rem($textarea-font-size)
+    padding-right: 2rem
+    width: 100%
+
+    &.focus-animation
+      animation: focus 1s ease-in-out
+
+    option
+      font-size: calc-rem($select-option-font-size)
+
+// ----------------------------------
+
+// DESCRIPTION
+
+$description-color: $grey
+$description-font-size: 14px
+
+.description
+  color: $description-color
+  font-size: calc-rem($description-font-size)
+  font-style: italic
+  font-weight: normal
+  margin: .25rem 0
+
+  *
+    font-size: inherit
+    font-style: inherit
+    font-weight: inherit
+    margin: 0
+
+// ----------------------------------
+
+// FORM TYPES
+
+.form-type
+  &-radio,
+  &-checkbox
+    .description
+      margin-left: 0
+
+    input
+      margin-right: 5px
+
+// ----------------------------------
+
+// PASSWORD STRENGTH
+
+$password-strength-font-size: 12px
+
+.password-strength
+  font-size: calc-rem($password-strength-font-size)
+  margin: .5rem 0
+
+// ----------------------------------
+
+// MACHINE NAME
+
+$field-suffix-color: $secondary-color
+$field-suffix-font-size: 10px
+
+.field-suffix
+  margin-left: 5px
+
+  .link
+    color: $field-suffix-color
+    font-size: calc-rem($field-suffix-font-size)
+    margin-left: calc-rem(10px)
+    text-transform: uppercase
+
+// ----------------------------------
+
+// CHECK BOXES & RADIOS
+.form-checkboxes,
+.form-radios
+  .form-item
+    margin: 0 .5rem .5rem 0
+
+// ----------------------------------

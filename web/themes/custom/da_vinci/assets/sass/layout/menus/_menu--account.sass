@@ -1,0 +1,44 @@
+$account-user-background-color: $main-color
+$account-link-background-color: $main-color
+$account-link-background-color-hover: shade($account-link-background-color, 15%)
+
+.menu--account
+  position: relative
+
+  &:hover
+    .menu
+      opacity: 1
+      transition: .2s
+      visibility: visible
+
+    h2
+      &:before
+        font-size: 25px
+        text-shadow: 1px 1px $black
+
+  h2
+    +icomoon($ico-user, 18px, $white, 32px, $account-user-background-color)
+    cursor: pointer
+    font-weight: normal
+    margin: 0
+
+  .menu
+    max-width: calc-rem(280px)
+    opacity: 0
+    position: absolute
+    right: 0
+    top: 100%
+    transition: .2s
+    visibility: hidden
+    width: 100vw
+
+    a
+      background-color: $account-link-background-color
+      color: $white
+      display: block
+      padding: .75rem
+      transition: .2s
+
+      &:hover
+        background-color: $account-link-background-color-hover
+        transition: .2s

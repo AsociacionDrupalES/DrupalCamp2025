@@ -1,0 +1,37 @@
+// Mobile menu svg
+$menu-slide-fill: $main-color
+
+.menu-slide-action
+  cursor: pointer
+  height: calc-rem(32px)
+  position: relative
+  width: calc-rem(32px)
+  z-index: 8
+  +breakpoint($large)
+    display: none
+
+  &.is-visible
+    position: fixed
+    right: 1rem
+    top: 1rem
+    z-index: 9999
+
+  #menu-svg
+    height: calc-rem(32px)
+    position: absolute
+    width: calc-rem(32px)
+
+  svg
+    height: calc-rem(32px) !important
+    position: absolute
+    top: 0
+    width: calc-rem(32px) !important
+
+    path,
+    a,
+    g
+      fill: $menu-slide-fill
+      transition: fill 2s ease
+
+
+

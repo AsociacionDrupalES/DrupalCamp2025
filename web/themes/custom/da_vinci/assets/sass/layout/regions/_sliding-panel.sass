@@ -1,0 +1,27 @@
+// Sliding panel content.
+$sliding-background-color: $secondary-color
+$sliding-top: 151px
+$sliding-top-topbar: 190px
+
+.sliding-panel-content
+  background-color: $sliding-background-color
+  height: calc(100vh - #{$sliding-top})
+  max-width: calc-rem(360px)
+  overflow-y: auto
+  padding: 2rem $container-padding
+  position: fixed
+  right: 0
+  top: calc-rem($sliding-top)
+  transform: translateX(100%)
+  transition: .5s ease-in-out
+  width: 100%
+  z-index: 9
+
+  &.is-visible
+    transform: translateX(0)
+    transition: .5s ease-in-out
+
+.toolbar-vertical
+  .sliding-panel-content
+    height: calc(100vh - #{$sliding-top-topbar})
+    top: calc-rem($sliding-top-topbar)

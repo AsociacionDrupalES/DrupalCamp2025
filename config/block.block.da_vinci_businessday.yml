@@ -1,0 +1,37 @@
+uuid: 8ba6c016-d68e-4278-82ec-f74ba8a727f0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a18b38a3-b679-41d5-9887-04f3b3bec714'
+  module:
+    - block_class
+    - block_content
+    - node
+  theme:
+    - da_vinci
+third_party_settings:
+  block_class:
+    classes: 'text-image image-right'
+id: da_vinci_businessday
+theme: da_vinci
+region: featured_top
+weight: -6
+provider: null
+plugin: 'block_content:a18b38a3-b679-41d5-9887-04f3b3bec714'
+settings:
+  id: 'block_content:a18b38a3-b679-41d5-9887-04f3b3bec714'
+  label: 'Business Day'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      component_page: component_page

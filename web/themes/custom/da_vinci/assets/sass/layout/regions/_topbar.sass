@@ -1,0 +1,17 @@
+// Topbar.
+$topbar-background-color: red
+
+.top--bar
+  background-color: $topbar-background-color
+  padding: .5rem $container-padding
+
+  .region-top-bar
+    +container
+    align-items: center
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-end
+    position: relative
+
+    > *:not(:first-child)
+      margin-left: 1rem

@@ -1,0 +1,23 @@
+---
+
+- name: drush updb
+  include_tasks: 'run-drush.yml'
+  vars:
+    command: 'updb --no-cache-clear'
+  run_once: true
+  tags:
+    - drush_updb
+
+- name: drush cr
+  include_tasks: 'run-drush.yml'
+  vars:
+    command: 'cr'
+  run_once: true
+
+- name: drush cim sync
+  include_tasks: 'run-drush.yml'
+  vars:
+    command: 'cim'
+  run_once: true
+  tags:
+    - drush_cim_sync

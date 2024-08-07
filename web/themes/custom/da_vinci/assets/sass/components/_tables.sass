@@ -1,0 +1,41 @@
+// Tables.
+$table-th-background-color: tint($color, 75%)
+$table-th-color: shade($color, 20%)
+$table-tbody-tr-background-color: $white
+$table-tbody-tr-hover-background-color: tint($color, 90%)
+$table-tbody-tr-box-shadow-color: tint($color, 75%)
+
+table
+  border-collapse: separate
+  border-spacing: 0 .1875rem
+  width: 100%
+
+  th,
+  td
+    font-size: calc-rem(14px)
+    padding: 1rem
+
+    p,
+    ul
+      margin: 0
+      padding: 0
+
+  th
+    background-color: $table-th-background-color
+    color: $table-th-color
+    font-size: calc-rem(12px)
+    font-weight: 700
+    padding: .75rem 1rem
+    text-align: left
+    text-transform: uppercase
+    vertical-align: top
+
+  tbody
+    tr
+      background-color: $table-tbody-tr-background-color
+      box-shadow: inset 0 0 0 1px $table-tbody-tr-box-shadow-color
+
+      &:hover
+        background-color: $table-tbody-tr-hover-background-color
+
+

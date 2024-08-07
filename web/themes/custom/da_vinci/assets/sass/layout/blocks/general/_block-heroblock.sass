@@ -1,0 +1,43 @@
+.region-hero
+  background: url("../images/bg-header.png") top center no-repeat
+  background-size: cover
+  padding-left: calc-rem(16px)
+  padding-right: calc-rem(16px)
+  text-align: center
+  min-height: calc-rem(360px)
+  +breakpoint($large)
+    text-align: left
+    height: calc-rem(675px)
+
+  .field--name-body
+    +container()
+    +breakpoint($large)
+      min-height: calc-rem(625px)
+      margin-top: calc-rem(10px)
+    margin-top: calc-rem(150px)
+    height: 100%
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    p
+      font-family: $title-font
+      color: $theme-light
+      font-size: calc-rem(14px)
+      letter-spacing: calc-rem(1.5px)
+      font-weight: bold
+      margin-bottom: calc-rem(20px)
+      text-align: center
+    h2
+      color: $base-white
+      font-size: calc-rem(36px)
+      font-weight: 800
+      margin-top: 0
+      +breakpoint($large)
+        font-size: calc-rem(52px)
+        width: 50%
+        text-align: center
+    a
+      border: 1px solid $theme-light
+      color: $theme-light

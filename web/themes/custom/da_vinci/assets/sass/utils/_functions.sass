@@ -1,0 +1,64 @@
+////
+/// Functions.
+/// @link http://thesassway.com/intermediate/if-for-each-while
+/// @group functions
+////
+
+/// Strips unit suffix from value.
+/// @param {number} $num - number with unit.
+/// @return {number} number with the unit removed.
+
+@function _strip-unit($num)
+  @if type-of($num) != "number"
+    @warn "num: #{$num} is not a number"
+    @return null
+  @return $num / ($num * 0 + 1)
+
+/// Calculate vw value from px number.
+/// @link http://sassbreak.com/viewport-relative-headings-with-sass
+/// @param {number} $target - number in pixel for conversion.
+
+@function calc-vw($target)
+  /// 1 vw is equal to 1% of the viewport width.
+  $vw-context: $monster * 0.01 * 1px
+  /// 1% viewport width.
+  @return $target / $vw-context * 1vw
+
+/// Calculate rem value from px number.
+/// @param {number} $value - valor to conversion.
+/// @param {number} $rem-size - basis for the conversion.
+/// @return {number} number converted to rem.
+
+@function calc-rem($value)
+  @if type-of($value) != 'number'
+    @warn 'values: #{$value} is not a number'
+    @return null
+  $rem-size: $value / $rem-base
+  @return #{$rem-size}rem
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+
+@function tint($color, $percentage)
+  @return mix(white, $color, $percentage)
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+
+@function shade($color, $percentage)
+  @return mix(black, $color, $percentage)
+
+/// Setup the function in your functions or helpers files, wherever you keep these bits.
+/// @param {Number} $from - valor to conversion.
+/// @return {Number}
+@function headings($from:1, $to:6)
+  @if $from == $to
+    @return 'h#{$from}'
+  @else
+    @return 'h#{$from},' + headings($from+1, $to)

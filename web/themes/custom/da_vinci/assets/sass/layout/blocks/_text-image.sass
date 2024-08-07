@@ -1,0 +1,61 @@
+.text-image
+  padding: calc-rem(64px) 0
+  color: #2A2828
+  .field--name-body
+    line-height: calc-rem(25px)
+    text-align: center
+
+  +breakpoint($large)
+    .field--name-body
+      text-align: left
+
+  .field--name-body
+    +container()
+    align-items: center
+    +breakpoint($large)
+      display: flex
+
+    p
+      line-height: calc-rem(25px)
+      margin: 0
+      font-size: calc-rem(20px)
+      margin-left: calc-rem(16px)
+      line-height: calc-rem(32px)
+      margin-right: calc-rem(16px)
+      +breakpoint($large)
+        margin: 0
+        max-width: calc-rem(464px)
+
+    h3
+      margin-top: 0
+      color: #2A2828
+      padding-top: 2rem
+      +breakpoint($large)
+        padding-top: 0
+
+    a
+      border: 1px solid #2A2828
+      border-radius: calc-rem(50px)
+      color: #2A2828
+      margin-bottom: 2rem
+      margin-top: calc-rem(32px)
+      padding: calc-rem(12px) calc-rem(64px)
+      +breakpoint($large)
+        margin-bottom: 0
+
+    img
+      padding: 100px
+      width: 50%
+      border-radius: calc-rem(18px)
+      margin-right: calc-rem(80px)
+      display: none
+      +breakpoint($large)
+        display: block
+
+  &.image-right 
+    .field--name-body
+      +breakpoint($large)
+        display: flex
+        flex-direction: row-reverse
+      img
+        margin-left: calc-rem(80px)

@@ -1,0 +1,31 @@
+// Breadcrumb nav.
+$breadcrumb-color: $secondary-color
+$breadcrumb-link-color: $color
+$breadcrumb-hover-link-color: tint($breadcrumb-link-color, 15%)
+$breadcrumb-crumb-color: $main-color
+$breadcrumb-font-size: 14px
+
+.breadcrumb
+  padding: 0
+
+  ol
+    align-items: center
+    display: flex
+    flex-flow: row wrap
+
+  li
+    color: $breadcrumb-color
+    font-size: calc-rem($breadcrumb-font-size)
+
+    &:not(:last-child)
+      margin-right: .25rem
+
+    &:not(:first-child)
+      +icomoon-text($ico-chevron-right, 10px, $breadcrumb-crumb-color)
+
+  a
+    color: $breadcrumb-link-color
+    display: block
+
+    &:hover
+      color: $breadcrumb-hover-link-color

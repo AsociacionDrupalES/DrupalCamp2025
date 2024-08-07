@@ -1,0 +1,9 @@
+uuid: b2672ed2-cd22-443b-856b-1e78d8903175
+langcode: pt-pt
+status: true
+dependencies: {  }
+id: pt-pt
+label: Pt
+direction: ltr
+weight: -10
+locked: false

@@ -1,0 +1,26 @@
+uuid: dc1b80c3-7827-477f-8fcd-66e49edbeb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - eu_cookie_compliance
+    - file
+    - filter
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'delete own files'
+  - 'display eu cookie compliance popup'
+  - 'use text format basic_html'
+  - 'view media'

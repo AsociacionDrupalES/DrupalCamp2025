@@ -1,0 +1,15 @@
+---
+
+- name: "Run drush: {{ command }}"
+  drush:
+  args:
+    alias: "{{ _alias }}"
+    args: "{{ _args }}"
+    command: "{{ command }}"
+  vars:
+    _alias: "{{ item.drush_alias|default(drush_alias)|default('') }}"
+    _args: "{{ item.drush_args|default(drush_args)|default('') }}"
+    _sites: "{{ drupal_multisite|default([{}]) }}"
+  loop: "{{ _sites }}"
+  loop_control:
+    label: "drush {{ _alias }} {{ _args }} {{ command }}"

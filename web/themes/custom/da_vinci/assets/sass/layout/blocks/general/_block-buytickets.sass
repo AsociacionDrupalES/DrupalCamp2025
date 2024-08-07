@@ -1,0 +1,49 @@
+#block-buytickets
+  background: $base-white
+  padding: calc-rem(64px) calc-rem(16px)
+  text-align: center
+  +breakpoint($large)
+    text-align: left
+
+  .field--name-body
+    +container()
+    line-height: calc-rem(25px)
+    padding: calc-rem(40px) calc-rem(20px)
+    color: #2A2828
+
+    +breakpoint($large)
+      padding: calc-rem(40px) calc-rem(64px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    h3
+      color: #2A2828
+      font-size: calc-rem(32px)
+      margin: 0
+      margin-bottom: calc-rem(12px)
+
+    p
+      margin-left: auto
+      margin-bottom: 0
+      font-size: calc-rem(20px)
+      &:first-child
+        font-size: calc-rem(16px)
+        color: #0E8044
+      
+      &:last-child
+        color: #2A2828
+
+      a
+        border: 1px solid #2A2828
+        border-radius: calc-rem(50px)
+        color: #2A2828
+        margin-top: calc-rem(32px)
+        padding: calc-rem(12px) calc-rem(32px)
+        text-align: center
+        display: inline-block
+  .group-image-venue
+    margin-left: calc-rem(80px)
+    display: none
+    +breakpoint($large)
+      display: block

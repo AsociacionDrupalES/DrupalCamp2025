@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: DS_Fi0eMyfLcS8VctYnMtCyPPQfvzI9v3aF1Nv6xr8Q
+langcode: en
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: themes/da_vinci/logo.png
+  use_default: true
+search-placeholder: 0
+responsive-project: 0
+styling: 0
+styling_code: ''

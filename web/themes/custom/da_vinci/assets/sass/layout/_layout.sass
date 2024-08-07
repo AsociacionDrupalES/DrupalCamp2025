@@ -1,0 +1,54 @@
+html,
+body
+  min-height: 100vh
+
+body
+  &.frozen-body
+    overflow: hidden
+
+  &.toolbar-horizontal
+    .menu-administration-user-content
+      max-height: calc(100vh - 79px)
+.layout-container
+  display: flex
+  flex-direction: column
+  margin: 0
+  min-height: 100vh
+
+  // Main content.
+  > main
+    flex-grow: 1
+    padding: 3rem $container-padding
+    width: 100%
+
+  .site-layout
+    //+container 
+    display: flex
+    flex-direction: column
+    +breakpoint($large)
+      flex-direction: row
+      flex-wrap: wrap
+
+    > *:not(:last-child)
+      +breakpoint(0 $bellow-large)
+        margin-bottom: 1rem
+
+    &__content
+      width: 100%
+      +breakpoint($large)
+        flex-grow: 1
+        width: 50%
+
+    aside
+      width: 100%
+      +breakpoint($large)
+        width: 23.5%
+
+    &__sidebar--first
+      +breakpoint($large)
+        margin-right: 1.5%
+        order: -1
+
+    &__sidebar--second
+      +breakpoint($large)
+        margin-left: 1.5%
