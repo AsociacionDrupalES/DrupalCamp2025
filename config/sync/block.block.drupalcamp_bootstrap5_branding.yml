@@ -1,0 +1,25 @@
+uuid: 7538f873-afaf-453c-821b-28247d40893f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: drupalcamp_bootstrap5_branding
+theme: drupalcamp_bootstrap5
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

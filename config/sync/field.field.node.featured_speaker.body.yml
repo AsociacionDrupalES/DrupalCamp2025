@@ -1,0 +1,26 @@
+uuid: 670d59b0-9750-4470-b36b-6fea09d2d99d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.featured_speaker
+  module:
+    - text
+_core:
+  default_config_hash: H9eGrVR7OJVsTJcZKV4qaA3etSLpJwibbLNcD2jZNNI
+id: node.featured_speaker.body
+field_name: body
+entity_type: node
+bundle: featured_speaker
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

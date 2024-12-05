@@ -1,0 +1,26 @@
+uuid: 381617e2-f61d-4751-900d-edbefa894f12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sponsor
+  module:
+    - text
+_core:
+  default_config_hash: cqie6TRQKqWqQ14kqxhOK2cFnh0UmvY8-6eiuklIo2s
+id: node.sponsor.body
+field_name: body
+entity_type: node
+bundle: sponsor
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

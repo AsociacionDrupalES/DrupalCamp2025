@@ -1,0 +1,20 @@
+uuid: e168a638-40e0-4ef9-a6dc-2e6ed70d7ffa
+langcode: es
+status: true
+dependencies:
+  module:
+    - event_platform_details
+  theme:
+    - drupalcamp_bootstrap5
+id: drupalcamp_bootstrap5_eventplatformheadercta
+theme: drupalcamp_bootstrap5
+region: nav_additional
+weight: -8
+provider: null
+plugin: event_platform_header_cta
+settings:
+  id: event_platform_header_cta
+  label: 'Event Platform Header CTA'
+  label_display: '0'
+  provider: event_platform_details
+visibility: {  }

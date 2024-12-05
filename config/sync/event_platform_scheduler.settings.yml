@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: UXfFZqQ_H91mvznJK4mOqpLCXW9QFFkah-o3tdiJsWU
+types:
+  0: session
+  bof: bof
+states:
+  - session_acceptance||accepted
+  - session_acceptance||published
+filters:
+  - field_audience
+  - field_session_category

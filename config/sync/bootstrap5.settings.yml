@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: o7UdhCuEHWPn7Pz1c9KT7W818Cvg9EMVd2Gay1qKKPk
+b5_body_schema: none
+b5_body_bg_schema: none
+b5_navbar_schema: dark
+b5_navbar_bg_schema: dark
+b5_footer_schema: dark
+b5_footer_bg_schema: secondary
+b5_top_container: container
+b5_top_container_config: ''
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://logo_0.svg'
+favicon:
+  use_default: 1
+subtheme_folder: themes/custom
+subtheme_name: 'B5 subtheme'
+subtheme_machine_name: b5subtheme

@@ -1,0 +1,25 @@
+uuid: 364aab3b-3e5f-4e99-89f9-504f841fcbd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.job_listings
+  module:
+    - views
+  theme:
+    - drupalcamp_bootstrap5
+id: drupalcamp_bootstrap5_views_block__job_listings_block_1
+theme: drupalcamp_bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:job_listings-block_1'
+settings:
+  id: 'views_block:job_listings-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }
