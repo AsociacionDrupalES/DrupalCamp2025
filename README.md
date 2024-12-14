@@ -5,8 +5,16 @@
 Get a copy of the database and files and put them in
 ```
 ddev start
+# Get dependencies:
 ddev composer install
+
+# Import a the base DB:
 ddev import-db --file=database-file.sql.gz
+
+# Ensure you are up to date in terms of configration:
+ddev drush cim -y
+
+# Access to the site
 ddev drush uli
 ```
 
