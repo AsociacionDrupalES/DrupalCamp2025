@@ -11,3 +11,9 @@ ddev drush uli
 ```
 
 From now on you'd be able to access to https://drupaliberia.ddev.site
+
+## How to contribute
+
+ - Git workflow information: https://docs.github.com/en/get-started/using-github/github-flow
+ - Development branch: ```dev```
+ - Production branch: ```main```
