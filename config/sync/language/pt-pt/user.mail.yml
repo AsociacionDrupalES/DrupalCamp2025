@@ -1,0 +1,27 @@
+cancel_confirm:
+  subject: 'Pedido de cancelamento de conta para [user:display-name] em [site:name]'
+  body: "[user:display-name]\r\n\r\nUma solicitação para cancelar a sua conta foi feita em [site:name].\r\n\r\nPode cancelar a sua conta em [site:url-brief] ao clicar nesta ligação ou ao copiar e colar no seu navegador:\r\n\r\n[user:cancel-url]\r\n\r\nNOTA: O cancelamento da sua conta não é reversível.\r\n\r\nEsta ligação expira em num dia e nada acontecerá se não for utilizado.\r\n\r\n--  Equipa [site:name]"
+password_reset:
+  subject: 'Alteração de dados de acesso de [user:display-name] em [site:name]'
+  body: "[user:display-name],\r\n\r\nUm pedido para restabelecer a senha da sua conta foi feito em [site:name].\r\n\r\nPode agora iniciar sessão ao clicar neste link ou copiá-lo e colá-lo no seu browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste link pode apenas ser usado uma vez para inicio de sessão e irá direccioná-lo para uma página onde poderá definir a sua senha. Irá expirar após um dia e nada acontecerá se não for utilizada.\r\n\r\n--  Equipa [site:name]"
+register_admin_created:
+  subject: 'Um administrador criou uma conta para si em [site:name]'
+  body: "[user:display-name],\r\n\r\nUm administrador do site [site:name] criou uma conta para si. Pode agora iniciar a sessão ao clicar neste link ou copiá-lo e colá-lo no seu browser: \r\n\r\n[user:one-time-login-url] \r\n\r\nEste link pode apenas ser usado uma vez para inicio de sessão e irá direccioná-lo para uma página onde poderá definir a sua senha. \r\n\r\nApós definir a sua senha, poderá iniciar sessão em [site:login-url]: \r\n\r\nUtilizador: [user:name] \r\nSenha: A sua senha \r\n\r\n--Equipa [site:name]"
+register_no_approval_required:
+  subject: 'Informações de conta para [user:display-name] em [site:name]'
+  body: "[user:display-name],\r\n\r\nObrigado por se registar no [site:name]. Pode agora iniciar sessão ao clicar neste link ou copiá-lo e colá-lo no seu browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste link pode apenas ser usado uma vez para inicio de sessão e irá direccioná-lo para uma página onde poderá definir a sua senha. \r\n\r\nApós definir a sua senha, poderá iniciar sessão em [site:login-url]: \r\n\r\nUtilizador: [user:name]\r\nSenha: A sua senha\r\n\r\n-- Equipa [site:name]"
+register_pending_approval:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (pendente de aprovação administrativa)'
+  body: "[user:display-name],\r\n\r\nObrigado por se registar em [site:name]. O seu pedido para uma conta está a aguardar aprovação. Uma vez aprovado, irá receber outro email contendo informação de como iniciar sessão, definir a sua senha e outros detalhes.\r\n\r\n--  Equipa [site:name]"
+register_pending_approval_admin:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (pendente de aprovação administrativa)'
+  body: "[user:display-name] efetuou um pedido para criar uma conta.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (aprovada)'
+  body: "[user:display-name],\r\n\r\nA sua conta em [site:name] foi ativada.\r\n\r\nObrigado por se registar no [site:name]. Pode agora iniciar sessão ao clicar neste link ou copiá-lo e colá-lo no seu browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste link pode apenas ser usado uma vez para inicio de sessão e irá direccioná-lo para uma página onde poderá definir a sua senha. \r\n\r\nApós definir a sua senha, poderá iniciar sessão em [site:login-url]: \r\n\r\nUtilizador: [user:account-name]\r\nSenha: A sua senha\r\n\r\n--  Equipa [site:name]"
+status_blocked:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (bloqueada)'
+  body: "[user:display-name],\r\n\r\nA sua conta em [site:name] foi bloqueada.\r\n\r\n--  [site:name] team"
+status_canceled:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (cancelado)'
+  body: "[user:display-name],\r\n\r\nA sua conta em [site:name] foi cancelada.\r\n\r\n--  Equipa de [site:name]"

@@ -1,0 +1,21 @@
+label: 'Featured Speakers'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Featured Speakers'
+      fields:
+        title:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      header:
+        add_content_by_bundle:
+          label: 'Add Featured Speaker'
+  block_1:
+    display_title: Block

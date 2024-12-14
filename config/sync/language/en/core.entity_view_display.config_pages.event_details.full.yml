@@ -1,0 +1,4 @@
+content:
+  field_dates:
+    settings:
+      separator: '-'

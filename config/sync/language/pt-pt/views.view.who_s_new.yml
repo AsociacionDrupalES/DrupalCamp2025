@@ -1,0 +1,20 @@
+label: 'Quem é novo'
+description: 'Mostra uma lista de contas de utilizador mais recentes no sítio.'
+display:
+  default:
+    display_title: 'Por defeito'
+    display_options:
+      title: 'Quem é novo'
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  block_1:
+    display_title: 'Quem é novo'
+    display_options:
+      display_description: 'Uma lista de utilizadores novos'
+      block_description: 'Quem é novo'
+      block_category: Utilizador

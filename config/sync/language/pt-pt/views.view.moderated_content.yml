@@ -1,0 +1,61 @@
+label: 'Conteúdo moderado'
+description: 'Pesquisar e moderar conteúdo.'
+display:
+  default:
+    display_title: 'Por defeito'
+    display_options:
+      title: 'Conteúdo moderado'
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        type:
+          label: 'Tipo de conteúdo'
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        moderation_state:
+          label: 'Estado de moderação'
+          separator: ', '
+        changed:
+          label: Atualizado
+          separator: ', '
+        operations:
+          label: Operações
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nenhum conteúdo moderado disponível. Apenas versões pendentes de conteúdo, como rascunhos, são listadas aqui.'
+      filters:
+        title:
+          expose:
+            label: Título
+        type:
+          expose:
+            label: 'Tipo de conteúdo'
+        moderation_state:
+          expose:
+            label: 'Estado de moderação'
+        langcode:
+          expose:
+            label: Idioma
+  moderated_content:
+    display_title: 'Conteúdo moderado'

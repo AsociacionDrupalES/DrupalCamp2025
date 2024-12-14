@@ -1,0 +1,5 @@
+label: 'Is Non-session / Non-training'
+description: 'Select if this is a opening session, lunch, etc. '
+settings:
+  on_label: 'On'
+  off_label: 'Off'

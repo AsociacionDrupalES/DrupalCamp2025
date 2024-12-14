@@ -1,0 +1,31 @@
+label: 'Job Listings'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Job Listings'
+      fields:
+        field_sponsor_level:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      header:
+        add_content_by_bundle:
+          label: 'List A Job'
+  block_1:
+    display_title: 'Block - Listings by Sponsor'
+    display_options:
+      arguments:
+        field_company_target_id:
+          exception:
+            title: All
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Job Listings'

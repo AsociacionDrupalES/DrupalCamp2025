@@ -1,0 +1,7 @@
+label: 'Date Only'
+date_format: 'D, M j Y'
+separator: ' - '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'
+site_time_toggle: '1'

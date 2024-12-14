@@ -1,0 +1,4 @@
+label: 'Session Rejected'
+subject: '[config_page:event_details:field_event_name] Session, [node:title]'
+body:
+  value: "On behalf of our team, THANK YOU for submitting your \"[node:title]\" session to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. We are beyond grateful and appreciative.\r\n\r\nUnfortunately, we could not accept all of the excellent sessions that were submitted, and this session did not make this year's cut. \r\n\r\nNevertheless, we still hope to see you in [config_page:event_details:field_event_location_short] this year. Please reach out and let us know if you have any questions. \r\n\r\nThanks again,\r\n\r\nThe [config_page:event_details:field_event_name] planning team"

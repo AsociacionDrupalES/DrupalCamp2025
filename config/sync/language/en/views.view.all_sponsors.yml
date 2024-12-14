@@ -1,0 +1,39 @@
+label: 'All Sponsors'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'All Sponsors'
+      fields:
+        field_sponsor_level:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      header:
+        add_content_by_bundle:
+          label: 'Add Sponsor'
+  block_1:
+    display_title: Block
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: Sponsors
+  page_2:
+    display_title: 'Page 2'
+    display_options:
+      title: 'Sponsor List w URLs (for Salim)'
+      fields:
+        field_sponsor_level:
+          separator: ', '
+        title:
+          separator: ', '
+        view_node:
+          alter:
+            text: ' - <a href="{{ view_node }}">https://www.fldrupal.camp{{ view_node }}</a>'
+          text: view

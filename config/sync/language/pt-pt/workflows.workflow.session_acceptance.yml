@@ -1,0 +1,9 @@
+type_settings:
+  states:
+    draft:
+      label: Rascunho
+    published:
+      label: Publicado
+  transitions:
+    publish:
+      label: Publicar

@@ -1,0 +1,20 @@
+label: Editorial
+type_settings:
+  states:
+    archived:
+      label: Arquivado
+    draft:
+      label: Rascunho
+    published:
+      label: Publicado
+  transitions:
+    archive:
+      label: Arquivar
+    archived_draft:
+      label: 'Restaurar para rascunho'
+    archived_published:
+      label: Restaurar
+    create_new_draft:
+      label: 'Criar novo rascunho'
+    publish:
+      label: Publicar

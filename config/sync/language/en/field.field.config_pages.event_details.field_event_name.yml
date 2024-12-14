@@ -1,0 +1,5 @@
+label: 'Event Name'
+description: 'eg "Florida DrupalCamp"'
+default_value:
+  -
+    value: 'Florida DrupalCamp'

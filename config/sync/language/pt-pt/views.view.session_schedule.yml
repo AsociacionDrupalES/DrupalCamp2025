@@ -1,0 +1,40 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      title: Agenda
+      fields:
+        field_when:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  attachment_1:
+    display_options:
+      fields:
+        field_when:
+          separator: ', '
+      arguments:
+        field_when_value:
+          exception:
+            title: Todos
+  page_1:
+    display_title: Página
+    display_options:
+      arguments:
+        field_when_value:
+          exception:
+            title: Todos
+      filters:
+        field_audience_target_id:
+          expose:
+            label: Público
+        field_session_category_target_id:
+          expose:
+            label: Categoria
+      menu:
+        title: Agenda

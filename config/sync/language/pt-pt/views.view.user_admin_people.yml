@@ -1,0 +1,82 @@
+label: Pessoas
+description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'
+display:
+  default:
+    display_title: 'Por defeito'
+    display_options:
+      title: Pessoas
+      fields:
+        user_bulk_form:
+          label: 'Atualização em massa'
+        name:
+          label: 'Nome de utilizador'
+        status:
+          label: Estado
+          settings:
+            format_custom_false: Bloqueado
+            format_custom_true: Ativo
+        roles_target_id:
+          label: 'Grupos de utilizador'
+        created:
+          label: 'Membro desde'
+          settings:
+            future_format: '@interval'
+            past_format: '@interval'
+        access:
+          label: 'Último acesso'
+          settings:
+            future_format: '@interval a contar deste momento'
+            past_format: '@interval atrás'
+        operations:
+          label: Operações
+        mail:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nenhuma pessoa disponível.'
+      filters:
+        combine:
+          expose:
+            label: 'Nome ou email contém'
+        status:
+          group_info:
+            label: Estado
+            group_items:
+              1:
+                title: Ativo
+              2:
+                title: Bloqueado
+        roles_target_id:
+          expose:
+            label: Grupo
+        permission:
+          expose:
+            label: Permissão
+      use_more_text: mais
+  page_1:
+    display_title: Página
+    display_options:
+      menu:
+        title: Lista
+        description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'
+      tab_options:
+        title: Pessoas
+        description: 'Gerir contas de utilizadores, grupos e permissões.'
