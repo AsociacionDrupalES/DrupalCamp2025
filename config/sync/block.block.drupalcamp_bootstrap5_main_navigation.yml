@@ -13,7 +13,7 @@ _core:
 id: drupalcamp_bootstrap5_main_navigation
 theme: drupalcamp_bootstrap5
 region: nav_main
-weight: -9
+weight: 1
 provider: null
 plugin: 'system_menu_block:main'
 settings:

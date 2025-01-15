@@ -26,6 +26,7 @@
         "drupal/event_platform": "^1.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/lang_dropdown": "~2.1.0",
         "drush/drush": "^13.3"
     },
     "conflict": {
