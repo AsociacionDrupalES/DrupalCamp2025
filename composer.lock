@@ -1634,29 +1634,30 @@
         },
         {
             "name": "drupal/auto_entitylabel",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/auto_entitylabel.git",
-                "reference": "8.x-3.3"
+                "reference": "8.x-3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "38fd79973a7b49441bf622a1429a7c6623b93035"
+                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "9b3d7bc8e450ae008b3f48fed0dd9dace03ddbb5"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
             },
             "require-dev": {
+                "drupal/book": "^1.0",
                 "drupal/token": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1723462798",
+                    "version": "8.x-3.4",
+                    "datestamp": "1736308389",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1764,17 +1765,17 @@
         },
         {
             "name": "drupal/config_pages",
-            "version": "2.16.0",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_pages.git",
-                "reference": "8.x-2.16"
+                "reference": "8.x-2.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_pages-8.x-2.16.zip",
-                "reference": "8.x-2.16",
-                "shasum": "7896a698c6b85ea0babc4676f0af82e2f2c885b3"
+                "url": "https://ftp.drupal.org/files/projects/config_pages-8.x-2.17.zip",
+                "reference": "8.x-2.17",
+                "shasum": "717b1eb911e30e766a891d45eeefa34825794ac4"
             },
             "require": {
                 "drupal/core": "^8.5 | ^9 || ^10 || ^11"
@@ -1782,8 +1783,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.16",
-                    "datestamp": "1723641125",
+                    "version": "8.x-2.17",
+                    "datestamp": "1736029180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1805,7 +1806,7 @@
                     "homepage": "https://www.drupal.org/user/3193903"
                 },
                 {
-                    "name": "Qwaygon",
+                    "name": "qwaygon",
                     "homepage": "https://www.drupal.org/user/636624"
                 },
                 {
@@ -2829,17 +2830,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-rc14",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-rc14"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-rc14.zip",
-                "reference": "8.x-3.0-rc14",
-                "shasum": "8ca8735f5a1d7ef25ee446358cd704a3feb1cae7"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "bb1c660e85577d49db1deedfefe1ed3a91370aeb"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -2848,11 +2849,11 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-rc14",
-                    "datestamp": "1731015952",
+                    "version": "8.x-3.0",
+                    "datestamp": "1734771812",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2895,17 +2896,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-rc6",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-rc6"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-rc6.zip",
-                "reference": "8.x-1.0-rc6",
-                "shasum": "542def14b9a5435efb4e021d384fa3f7b0fc6e78"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "907a3c2202824168da98c8b1cede1af117f7adf2"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -2913,11 +2914,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc6",
-                    "datestamp": "1718368950",
+                    "version": "8.x-1.0",
+                    "datestamp": "1734698810",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
