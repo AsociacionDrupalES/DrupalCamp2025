@@ -3,13 +3,16 @@
 ## Initial setup
 
 Get a copy of the database and files and put them in
-```
+```shell
 ddev start
 # Get dependencies:
 ddev composer install
 
 # Import a the base DB:
 ddev import-db --file=database-file.sql.gz
+
+# Run possible pending updates:
+ddev drush updb -y
 
 # Ensure you are up to date in terms of configration:
 ddev drush cim -y
