@@ -2,13 +2,13 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: es
 uuid: 66448003-3cd8-4de3-9c40-e792648d3fc5
-name: 'drupal event platform'
-mail: isabelmariasantamaria@gmail.com
+name: 'Drupal Iberia 2025'
+mail: no-reply@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /sessions
+  front: /node/32
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es
