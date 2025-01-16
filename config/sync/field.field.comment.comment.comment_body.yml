@@ -16,7 +16,7 @@ bundle: comment
 label: Comentario
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -14,7 +14,7 @@ bundle: job_listing
 label: Ubicación
 description: 'Job location (ex. "Remote", "Gainesville, FL")'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

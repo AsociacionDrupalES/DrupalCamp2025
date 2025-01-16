@@ -1,0 +1,18 @@
+uuid: 78e53d4d-cbaa-4ecf-87a0-2ecbb3c9a321
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bof
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.bof
+target_entity_type_id: node
+target_bundle: bof
+default_langcode: site_default
+language_alterable: true

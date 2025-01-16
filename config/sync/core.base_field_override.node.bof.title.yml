@@ -1,0 +1,18 @@
+uuid: db50432c-3e0b-4cfb-badb-f32d2b8e97bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bof
+id: node.bof.title
+field_name: title
+entity_type: node
+bundle: bof
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

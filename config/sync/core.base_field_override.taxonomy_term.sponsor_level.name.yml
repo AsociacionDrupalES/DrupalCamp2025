@@ -1,0 +1,18 @@
+uuid: b4513b2b-a717-45b2-9787-7e9a427d538f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor_level
+id: taxonomy_term.sponsor_level.name
+field_name: name
+entity_type: taxonomy_term
+bundle: sponsor_level
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

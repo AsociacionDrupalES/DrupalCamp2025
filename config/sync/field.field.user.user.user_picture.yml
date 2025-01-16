@@ -16,7 +16,7 @@ bundle: user
 label: Imagen
 description: 'Su cara o foto virtual.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

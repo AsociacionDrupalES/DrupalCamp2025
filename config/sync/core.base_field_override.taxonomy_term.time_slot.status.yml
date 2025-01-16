@@ -1,0 +1,22 @@
+uuid: 147fe2e7-698b-4cc8-9e38-62c51767e7e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+id: taxonomy_term.time_slot.status
+field_name: status
+entity_type: taxonomy_term
+bundle: time_slot
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

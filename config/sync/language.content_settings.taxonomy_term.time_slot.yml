@@ -1,0 +1,18 @@
+uuid: df6f80e3-a8d6-4611-8c70-fe4b66162249
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.time_slot
+target_entity_type_id: taxonomy_term
+target_bundle: time_slot
+default_langcode: site_default
+language_alterable: false

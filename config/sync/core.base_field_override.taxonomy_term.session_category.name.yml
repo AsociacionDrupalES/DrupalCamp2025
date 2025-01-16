@@ -1,0 +1,18 @@
+uuid: d87788cb-3ffa-494f-9205-70f50167d79d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_category
+id: taxonomy_term.session_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: session_category
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

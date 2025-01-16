@@ -14,6 +14,7 @@ module:
   comment: 0
   config: 0
   config_pages: 0
+  config_translation: 0
   contact: 0
   content_moderation: 0
   contextual: 0
@@ -72,6 +73,7 @@ module:
   workflows: 0
   hide_revision_field: 1
   pathauto: 1
+  content_translation: 10
   views: 10
   standard: 1000
 theme:
