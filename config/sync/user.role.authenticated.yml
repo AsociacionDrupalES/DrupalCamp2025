@@ -4,14 +4,11 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - node.type.bof
   module:
     - comment
-    - contact
     - field_permissions
     - file
     - filter
-    - node
     - search
     - shortcut
     - system
@@ -25,9 +22,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
-  - 'access user profiles'
-  - 'create bof content'
+  - 'cancel account'
   - 'delete own files'
   - 'post comments'
   - 'search content'
