@@ -19,12 +19,7 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  contact:
-    weight: 5
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -45,23 +40,24 @@ content:
       placeholder: ''
     third_party_settings: {  }
   language:
-    weight: 0
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: -1
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
+  contact: true
   langcode: true
   path: true
