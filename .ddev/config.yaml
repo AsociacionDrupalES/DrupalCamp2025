@@ -1,4 +1,4 @@
-name: drupaliberia
+name: dcamp2025
 type: drupal
 docroot: web
 php_version: "8.3"

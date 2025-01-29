@@ -1,4 +1,4 @@
-# Drupal Iberia 2025
+# DrupalCamp Spain 2025
 
 ## Initial setup
 
@@ -21,7 +21,7 @@ ddev drush cim -y
 ddev drush uli
 ```
 
-From now on you'd be able to access to https://drupaliberia.ddev.site
+From now on you'd be able to access to https://dcamp2025.ddev.site
 
 ## How to contribute
 
