@@ -1,4 +1,4 @@
-uuid: 18b2a8a4-7c08-45e2-835c-ce8570615d74
+uuid: 6596ee86-3689-414a-b77c-b26fd1602b71
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - text
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -18,9 +19,18 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 0
+    weight: -10
     region: content
-    settings: {  }
+  contact:
+    weight: 5
+    region: content
+  field_bio:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_display_name:
     type: string_textfield
@@ -31,25 +41,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
   language:
-    weight: 4
+    weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   timezone:
-    weight: 3
+    weight: 6
     region: content
-    settings: {  }
-    third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: 2
+    weight: -1
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
-  contact: true
-  field_bio: true
   langcode: true
   path: true

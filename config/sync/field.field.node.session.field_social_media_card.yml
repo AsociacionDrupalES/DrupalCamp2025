@@ -6,14 +6,7 @@ dependencies:
     - field.storage.node.field_social_media_card
     - node.type.session
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 _core:
   default_config_hash: V0KjSTIoKzip8B46SEoY04ImeJbQsy7F0W2Gymj-BAg
 id: node.session.field_social_media_card
@@ -23,7 +16,7 @@ bundle: session
 label: 'Social Media Card'
 description: 'This will be displayed when shared across social media (Twitter, Facebook). Alt text is automatically generated. '
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

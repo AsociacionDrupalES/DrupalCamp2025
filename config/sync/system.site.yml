@@ -1,14 +1,14 @@
 _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: es
-uuid: 66448003-3cd8-4de3-9c40-e792648d3fc5
-name: 'Drupal Iberia 2025'
-mail: no-reply@gmail.com
+uuid: fda33e75-8699-4f03-bf4e-9d7fb0774539
+name: 'DrupalCamp Spain 2025'
+mail: eventos@drupal.es
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/32
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es

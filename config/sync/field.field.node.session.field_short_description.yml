@@ -14,7 +14,7 @@ bundle: session
 label: 'Short Description'
 description: 'Please provide a short description for your session, up to 600 characters in length.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

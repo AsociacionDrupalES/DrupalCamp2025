@@ -3,7 +3,6 @@ _core:
 module:
   auto_entitylabel: -100
   add_content_by_bundle: 0
-  admin_toolbar: 0
   announcements_feed: 0
   automated_cron: 0
   big_pipe: 0
@@ -15,19 +14,17 @@ module:
   config: 0
   config_pages: 0
   config_translation: 0
+  contact: 0
   content_moderation: 0
   contextual: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   event_platform: 0
-  event_platform_bofs: 0
   event_platform_details: 0
   event_platform_job_listings: 0
-  event_platform_olivero: 0
   event_platform_scheduler: 0
   event_platform_sessions: 0
   event_platform_speakers: 0
@@ -42,7 +39,6 @@ module:
   history: 0
   honeypot: 0
   image: 0
-  lang_dropdown: 0
   language: 0
   link: 0
   locale: 0
@@ -78,8 +74,4 @@ module:
 theme:
   olivero: 0
   claro: 0
-  gin: 0
-  stable9: 0
-  bootstrap5: 0
-  drupalcamp_bootstrap5: 0
 profile: standard

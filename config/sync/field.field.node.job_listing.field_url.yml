@@ -16,7 +16,7 @@ bundle: job_listing
 label: URL
 description: 'Link to the job posting. '
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

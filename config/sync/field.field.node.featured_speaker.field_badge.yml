@@ -14,7 +14,7 @@ bundle: featured_speaker
 label: Badge
 description: 'Badge that appears to the bottom left of the speaker''s image (ex. "Speaker")'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: Speaker

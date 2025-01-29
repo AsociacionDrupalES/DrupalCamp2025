@@ -1,4 +1,4 @@
-uuid: bff29a9d-0449-4aae-8fc3-42e30e6e6791
+uuid: 51f93516-ed55-4868-aa34-54e4c4565f62
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - file
     - user
 _core:
-  default_config_hash: blP1XdpU4RqVoA_8po7qnIokIbHB6DJt0lpilgY5ovM
+  default_config_hash: NYJWABHsIFg-cU-Qya8fiMuQSM4rirBEfPFqkgRtsKA
 id: files
 label: Archivos
 module: file
@@ -463,7 +463,7 @@ display:
           decimal: .
           separator: ','
           format_plural: true
-          format_plural_string: !!binary MSBsdWdhcgNAY291bnQgbHVnYXJlcw==
+          format_plural_string: !!binary QGNvdW50IHBsYWNlA0Bjb3VudCBwbGFjZXM=
           prefix: ''
           suffix: ''
         operations:

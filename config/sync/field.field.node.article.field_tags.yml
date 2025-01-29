@@ -1,4 +1,4 @@
-uuid: 09f80dd5-8b8b-421d-ae58-9e35a9a335d5
+uuid: 446b7791-ab6b-4eae-b4e2-fd632a4a755f
 langcode: es
 status: true
 dependencies:
@@ -15,7 +15,7 @@ bundle: article
 label: Etiquetas
 description: 'Especifique una lista separada por comas. Por ejemplo: Amsterdam, Mexico City, "Cleveland, Ohio"'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

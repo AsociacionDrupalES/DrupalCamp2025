@@ -1,18 +1,12 @@
-uuid: 7351a941-3828-48bd-a04a-8748264ed42f
+uuid: d78980f4-7c27-4249-80df-20e98c6e4529
 langcode: es
 status: true
 dependencies:
   config:
-    - block_content.type.basic
     - node.type.article
-    - node.type.bof
-    - node.type.featured_speaker
-    - node.type.job_listing
     - node.type.page
-    - node.type.session
     - taxonomy.vocabulary.tags
   module:
-    - block_content
     - comment
     - contextual
     - file
@@ -29,61 +23,25 @@ weight: 2
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access toolbar'
-  - 'administer menu'
   - 'administer url aliases'
   - 'create article content'
-  - 'create basic block content'
-  - 'create bof content'
-  - 'create featured_speaker content'
-  - 'create job_listing content'
   - 'create page content'
-  - 'create session content'
   - 'create terms in tags'
   - 'create url aliases'
-  - 'delete all revisions'
-  - 'delete any article content'
-  - 'delete any basic block content'
-  - 'delete any basic block content revisions'
-  - 'delete any bof content'
-  - 'delete any featured_speaker content'
-  - 'delete any job_listing content'
-  - 'delete any page content'
-  - 'delete any session content'
   - 'delete article revisions'
-  - 'delete bof revisions'
-  - 'delete featured_speaker revisions'
-  - 'delete job_listing revisions'
+  - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
-  - 'delete session revisions'
-  - 'edit any article content'
-  - 'edit any basic block content'
-  - 'edit any bof content'
-  - 'edit any featured_speaker content'
-  - 'edit any job_listing content'
-  - 'edit any page content'
-  - 'edit any session content'
+  - 'edit own article content'
   - 'edit own comments'
+  - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
-  - 'revert any basic block content revisions'
-  - 'revert article revisions'
-  - 'revert bof revisions'
-  - 'revert featured_speaker revisions'
-  - 'revert job_listing revisions'
-  - 'revert page revisions'
-  - 'revert session revisions'
   - 'view all revisions'
-  - 'view any basic block content history'
-  - 'view article revisions'
-  - 'view bof revisions'
-  - 'view featured_speaker revisions'
-  - 'view job_listing revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

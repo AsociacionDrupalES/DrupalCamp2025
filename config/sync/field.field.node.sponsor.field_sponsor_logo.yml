@@ -6,14 +6,7 @@ dependencies:
     - field.storage.node.field_sponsor_logo
     - node.type.sponsor
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 _core:
   default_config_hash: irM51IhmBSxu59hsjcFDN25gCI5aNDUbpSVt3Gj4E-g
 id: node.sponsor.field_sponsor_logo
@@ -23,7 +16,7 @@ bundle: sponsor
 label: 'Sponsor Logo'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

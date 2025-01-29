@@ -1,4 +1,4 @@
-uuid: e4c943cd-5c23-484a-911c-c83166e8a83d
+uuid: 2883a214-bd84-410c-b851-5c068eb8a73a
 langcode: es
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
+    - contact
     - field_permissions
     - file
     - filter
@@ -22,7 +23,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'cancel account'
+  - 'access site-wide contact form'
+  - 'access user profiles'
   - 'delete own files'
   - 'post comments'
   - 'search content'

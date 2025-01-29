@@ -1,4 +1,4 @@
-uuid: 1058f9e1-1cbd-4de0-b75b-5a622ac284ff
+uuid: 927dbdb8-d6c6-4e58-886a-55f1371bc4b2
 langcode: es
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - filter.format.restricted_html
   module:
     - comment
+    - contact
     - field_permissions
     - filter
     - search
@@ -19,6 +20,8 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
   - 'search content'
   - 'use text format restricted_html'
   - 'view field_r'
