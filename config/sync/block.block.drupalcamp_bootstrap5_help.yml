@@ -1,0 +1,22 @@
+uuid: 0d5f4599-3559-4e31-9337-8cd14c8a258b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: POA2DL8HnLs6eacbARLWiG5XpTu8kOfqrvLkcX4XSxQ
+id: drupalcamp_bootstrap5_help
+theme: drupalcamp_bootstrap5
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

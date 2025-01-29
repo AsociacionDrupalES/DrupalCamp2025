@@ -1,0 +1,20 @@
+uuid: c7658bc9-27ea-45c8-8c8a-d28c3e18ec11
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: olUc5_TVLYvAOxdceC4RhocMtvIxvFS8pdPxJLv6UUQ
+id: drupalcamp_bootstrap5_local_actions
+theme: drupalcamp_bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
