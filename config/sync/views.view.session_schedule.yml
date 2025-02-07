@@ -352,19 +352,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.job_listing.default'
-        - 'config:core.entity_view_display.node.job_listing.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.taxonomy_term.field_when'
   attachment_1:
     id: attachment_1
@@ -446,6 +433,7 @@ display:
           field: field_when
           relationship: field_time_slot
           plugin_id: field
+      empty: {  }
       sorts:
         field_when_value_1:
           id: field_when_value_1
@@ -528,6 +516,7 @@ display:
         groups:
           1: AND
       defaults:
+        empty: false
         fields: false
         sorts: false
         arguments: false
@@ -745,21 +734,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.job_listing.default'
-        - 'config:core.entity_view_display.node.job_listing.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.taxonomy_term.field_when'

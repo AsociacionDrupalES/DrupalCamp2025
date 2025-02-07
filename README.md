@@ -23,6 +23,13 @@ ddev drush uli
 
 From now on you'd be able to access to https://dcamp2025.ddev.site
 
+## Translations
+
+If the folder `web/sites/default/files/translations` is not created, then run the command:
+```
+mkdir web/sites/default/files/translations
+```
+
 ## How to contribute
 
  - Git workflow information: https://docs.github.com/en/get-started/using-github/github-flow

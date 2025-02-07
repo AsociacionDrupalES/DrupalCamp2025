@@ -322,19 +322,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.job_listing.default'
-        - 'config:core.entity_view_display.node.job_listing.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.node.field_sponsor_level'
   block_1:
     id: block_1
@@ -409,19 +396,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.job_listing.default'
-        - 'config:core.entity_view_display.node.job_listing.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.node.field_sponsor_level'
   page_1:
     id: page_1
@@ -436,6 +410,7 @@ display:
         title: 'Job Listings'
         description: ''
         weight: 0
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'views_view:views.all_sponsors.page_1'
@@ -448,17 +423,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.job_listing.default'
-        - 'config:core.entity_view_display.node.job_listing.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.node.field_sponsor_level'

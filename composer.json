@@ -25,6 +25,7 @@
         "drupal/devel": "^5.3",
         "drupal/event_platform": "^1.0",
         "drupal/gin": "^3.0@RC",
+        "drupal/gin_login": "^2.1",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/lang_dropdown": "~2.1.0",
         "drush/drush": "^13.3"

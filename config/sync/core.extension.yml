@@ -35,6 +35,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gin_login: 0
+  gin_toolbar: 0
   help: 0
   history: 0
   honeypot: 0
@@ -77,4 +79,5 @@ theme:
   stable9: 0
   bootstrap5: 0
   drupalcamp_bootstrap5: 0
+  gin: 0
 profile: standard
