@@ -1,0 +1,22 @@
+label: 'Session Acceptance'
+type_settings:
+  states:
+    accepted:
+      label: Accepted
+    draft:
+      label: Draft
+    proposed:
+      label: Proposed
+    published:
+      label: Published
+    rejected:
+      label: Rejected
+  transitions:
+    accept_session:
+      label: 'Accept Session'
+    propose_session:
+      label: 'Propose Session'
+    publish:
+      label: Publish
+    reject_session:
+      label: 'Reject Session'

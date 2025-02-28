@@ -1,0 +1,31 @@
+label: 'Training List'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: Trainings
+      fields:
+        title:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'There are currently no trainings published.'
+      filters:
+        field_audience_target_id:
+          expose:
+            label: Audience
+        field_session_category_target_id:
+          expose:
+            label: Category
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: Trainings

@@ -1,0 +1,61 @@
+label: 'Moderated content'
+description: 'Find and moderate content.'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Moderated content'
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: 'Content type'
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        moderation_state:
+          label: 'Moderation state'
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+        operations:
+          label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No moderated content available. Only pending versions of content, such as drafts, are listed here.'
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: 'Content type'
+        moderation_state:
+          expose:
+            label: 'Moderation state'
+        langcode:
+          expose:
+            label: Language
+  moderated_content:
+    display_title: 'Moderated content'

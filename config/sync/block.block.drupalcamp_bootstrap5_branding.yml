@@ -1,0 +1,25 @@
+uuid: e0404649-5441-4fb6-bffc-0abe15fc3c0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: 0uAxdol5uT7azw6sQpiaB-Z88AL-1aG7pUwlQZd_5Z4
+id: drupalcamp_bootstrap5_branding
+theme: drupalcamp_bootstrap5
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

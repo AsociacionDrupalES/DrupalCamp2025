@@ -1,0 +1,5 @@
+label: Badge
+description: 'Badge that appears to the bottom left of the speaker''s image (ex. "Speaker")'
+default_value:
+  -
+    value: Speaker

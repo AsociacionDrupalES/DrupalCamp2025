@@ -1,0 +1,11 @@
+third_party_settings:
+  field_group:
+    group_scheduling:
+      label: 'Admin Functions'
+    group_session_metadata:
+      label: 'Session Metadata'
+content:
+  field_short_description:
+    third_party_settings:
+      maxlength:
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'

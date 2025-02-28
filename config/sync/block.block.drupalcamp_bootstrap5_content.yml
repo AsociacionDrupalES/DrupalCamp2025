@@ -1,0 +1,22 @@
+uuid: 0786b2ec-5357-47a7-8492-5eae3e630830
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: 7c5OCukSwzJZU1iITT9_iwbcRbFyDdOSRQs4C_gQFYU
+id: drupalcamp_bootstrap5_content
+theme: drupalcamp_bootstrap5
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

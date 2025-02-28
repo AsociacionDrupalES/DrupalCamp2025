@@ -1,0 +1,14 @@
+uuid: ddf99862-ed49-4f9c-ab37-57a9da7a7a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.session_moderator
+  module:
+    - user
+id: user_remove_role_action.session_moderator
+label: 'Elimina el rol Session moderator al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: session_moderator

@@ -1,0 +1,23 @@
+uuid: 11e66bf9-66a8-4174-9835-9e2784bfa638
+langcode: es
+status: true
+dependencies:
+  config:
+    - config_pages.type.event_details
+    - field.storage.config_pages.field_event_location_short
+_core:
+  default_config_hash: '-0H8t0KJgkus8KAwxaLn8Qz79XlgdIX3fcLxD-TVHsc'
+id: config_pages.event_details.field_event_location_short
+field_name: field_event_location_short
+entity_type: config_pages
+bundle: event_details
+label: 'Event Location (Short)'
+description: 'eg Orlando, FL'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Orlando, FL'
+default_value_callback: ''
+settings: {  }
+field_type: string

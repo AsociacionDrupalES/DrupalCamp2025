@@ -1,34 +1,37 @@
-# DrupalCamp Spain 2024
+# DrupalCamp Spain 2025
 
 ## Initial setup
 
 Get a copy of the database and files and put them in
-```
+```shell
 ddev start
+# Get dependencies:
 ddev composer install
+
+# Import a the base DB:
 ddev import-db --file=database-file.sql.gz
+
+# Run possible pending updates:
+ddev drush updb -y
+
+# Ensure you are up to date in terms of configration:
+ddev drush cim -y
+
+# Access to the site
 ddev drush uli
 ```
 
-## Composer-enabled Drupal template
+From now on you'd be able to access to https://dcamp2025.ddev.site
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+## Translations
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+If the folder `web/sites/default/files/translations` is not created, then run the command:
+```
+mkdir web/sites/default/files/translations
+```
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+## How to contribute
 
-## Contributing
-
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-composer-managed` repository is a mirror that does not
-directly accept pull requests.
-
-Instead, to propose a change, please fork [pantheon-systems/drupal-composer-managed](https://github.com/pantheon-systems/drupal-composer-managed)
-and submit a PR to that repository.
+ - Git workflow information: https://docs.github.com/en/get-started/using-github/github-flow
+ - Development branch: ```dev```
+ - Production branch: ```main```

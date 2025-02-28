@@ -1,0 +1,5 @@
+label: 'Is Training'
+description: 'Check this if this session is a training. '
+settings:
+  on_label: 'On'
+  off_label: 'Off'

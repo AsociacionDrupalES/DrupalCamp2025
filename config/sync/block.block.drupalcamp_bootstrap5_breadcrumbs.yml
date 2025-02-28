@@ -1,0 +1,22 @@
+uuid: 4b0997f0-9854-4229-9008-b68195801e98
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: uHG_E1bbrvmoSo2ldzMtJxur2Aaxrl1hZtqRx8he7fw
+id: drupalcamp_bootstrap5_breadcrumbs
+theme: drupalcamp_bootstrap5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

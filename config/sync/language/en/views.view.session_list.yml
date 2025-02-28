@@ -1,0 +1,39 @@
+label: 'Session List'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Submitted Sessions'
+      fields:
+        title:
+          separator: ', '
+        body:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'There are no sessions submitted that meet this criteria.'
+      filters:
+        field_audience_target_id:
+          expose:
+            label: Audience
+        field_session_category_target_id:
+          expose:
+            label: Category
+        combine:
+          expose:
+            label: Search
+      header:
+        add_content_by_bundle:
+          label: 'Propose A Session'
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: Sessions

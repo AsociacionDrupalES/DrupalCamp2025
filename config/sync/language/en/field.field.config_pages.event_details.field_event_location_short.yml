@@ -1,0 +1,5 @@
+label: 'Event Location (Short)'
+description: 'eg Orlando, FL'
+default_value:
+  -
+    value: 'Orlando, FL'

@@ -1,0 +1,560 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+h1 {
+    color: #ffa100 !important;
+    text-align: center;
+}
+
+body {
+    cursor: url('/ruta-a-tu-cursor/drupal-drop.svg') 12 12, auto;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+header {
+    background: url(../images/caceres-bg-2.jpg) top center no-repeat;
+    background-size: cover;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    min-height: 28.5rem;
+}
+
+.region.region-nav-branding {
+    margin-top: 30px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
+    --bs-bg-opacity: 0;
+}
+
+#block-drupalcamp-bootstrap5-drupaliberia2025caceres{
+    h3 {
+        font-family: "Manrope", sans-serif;
+        color: #96E095;
+        letter-spacing: 0.09375rem;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+main {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+  
+h1 {
+    font-size: 2rem;
+    color: $primary; 
+}
+
+/* Header personalizado */
+header.navbar {
+    background-color: #343a40; /* Fondo oscuro para el header */
+    padding: 15px 0;
+}
+  
+.navbar-brand img {
+    max-height: 50px; /* Ajusta el tamaño del logo */
+}
+  
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+/* Estilo base para los enlaces del menú */
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Asegura que los enlaces sean blancos */
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none; /* Elimina subrayado si lo tiene */
+    display: inline-block; /* Para que los enlaces se comporten como bloques */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza las transiciones */
+}
+
+/* Efecto de hover para los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    color: #96E095 !important; /* Color de hover */
+    transform: scale(1.1); /* Efecto de aumento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para resaltar */
+}
+
+/* Estilo para los enlaces del menú de primer nivel */
+.nav-item > .nav-link {
+    position: relative; /* Necesario para el posicionamiento del submenú */
+    padding: 0.5rem 1rem; /* Espaciado de los enlaces */
+    color: #333; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño del texto */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza el efecto */
+}
+  
+  /* Efecto de zoom al hacer hover en los enlaces de primer nivel */
+.nav-item > .nav-link:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del enlace */
+    color: #96E095 !important;/* Cambia el color del texto */
+}
+  
+  /* Estilo para los enlaces del submenú (nivel 1) */
+.nav-item .dropdown-menu {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú debajo del enlace principal */
+    top: 100%; /* Alinea el submenú justo debajo del elemento principal */
+    left: 0;
+    z-index: 1000; /* Asegura que el submenú se muestre encima de otros elementos */
+    padding: 0;
+    margin-top: 0.2rem; /* Espaciado entre los elementos del menú */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Suaviza la transición del submenú */
+}
+  
+  /* Muestra el submenú al hacer hover sobre el ítem de menú principal */
+.nav-item:hover .dropdown-menu {
+    display: block; /* Muestra el submenú */
+    opacity: 1; /* Asegura que el submenú sea visible */
+    transform: translateY(0); /* Anima la aparición del submenú */
+}
+  
+  /* Estilo para los enlaces dentro del submenú */
+.nav-item .dropdown-item {
+    padding: 0.5rem 1rem; /* Espaciado de los enlaces del submenú */
+    color: #555; /* Color de los enlaces del submenú */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 14px; /* Tamaño de fuente para los enlaces del submenú */
+    transition: color 0.3s ease; /* Transición para color al hacer hover */
+}
+  
+  /* Efecto de color al pasar el mouse sobre los enlaces del submenú */
+.nav-item .dropdown-item:hover {
+    color: #96E095 !important; /* Cambia el color al pasar el mouse */
+}
+  
+ul.navbar-nav.justify-content-end.flex-wrap.nav-level-0 {
+    align-items: center;
+}
+  
+  /* Ajustes para dispositivos pequeños */
+@media (max-width: 767px) {
+    header.navbar {
+      padding: 10px 0;
+    }
+    .navbar-brand img {
+      max-height: 40px; /* Tamaño del logo más pequeño en móviles */
+    }
+}
+#block-drupalcamp-bootstrap5-eventplatformhomepagehero {
+    //width: 100vw; // Ocupa todo el ancho de la ventana
+    //position: relative;
+    //margin-left: calc(-50vw + 50%);
+    padding: 2rem 0;
+    //background-color: #1a1a1a; // Fondo oscuro
+    //color: #fff; // Texto blanco
+  
+    .site-hero {
+      display: flex; // Activamos Flexbox para la alineación
+      flex-direction: column; // Alineamos los elementos en una columna
+      justify-content: center; // Centra los elementos verticalmente
+      align-items: center; // Centra los elementos horizontalmente
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+  
+      &.grid {
+        // Si necesitas mantener grillas, este bloque sigue respetando Flexbox
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .site-hero__details,
+    .site-hero__main,
+    .site-hero__media {
+      text-align: center; // Centra el texto dentro de cada bloque
+      margin-bottom: 1rem; // Espaciado entre los elementos
+    }
+  
+    .site-hero__title {
+      //color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .site-hero__desc {
+      //color: #dddddd;
+      text-align: center;
+      max-width: 800px; // Opcional: Limita el ancho del texto para mejor legibilidad
+      line-height: 1.5; // Mejora la separación entre líneas
+    }
+  }
+  
+  
+div#block-drupalcamp-bootstrap5-eventplatformheadercta{
+    margin: 20px;
+}
+
+footer {
+    --bs-bg-opacity: 1;
+}
+
+
+a.button.button--primary {
+    border-radius: 2.5rem; /* Mantiene los bordes redondeados */
+    background: #0E8044; /* Fondo verde */
+    color: #fafafa; /* Texto blanco */
+    border: 1px solid #0E8044; /* Borde del mismo color que el fondo */
+    padding: 0.75rem 2.5rem; /* Tamaño del botón */
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 1rem; /* Ajusta el tamaño del texto si es necesario */
+    display: inline-block; /* Asegura que se comporte como botón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el efecto */
+}
+
+/* Efecto zoom al hacer hover */
+a.button.button--primary:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+    background: #0C6C39; /* Fondo más oscuro para resaltar el efecto */
+    border-color: #0C6C39; /* Ajusta el color del borde */
+}
+
+/* Estilo para los enlaces principales */
+.navbar-nav .nav-link, 
+.navbar-nav .dropdown-item {
+  text-decoration: none;
+  color: #333; /* Ajusta según tu diseño */
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Asegura que el zoom funcione correctamente */
+}
+
+/* Efecto zoom al pasar el mouse */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .dropdown-item:hover {
+  //transform: scale(1.1); /* Ajusta el nivel de zoom si lo deseas */
+  color: #96E095 !important; /* Color al hacer hover */
+}
+
+/* Opcional: Cambiar el color del enlace activo */
+.navbar-nav .nav-link.is-active {
+  font-weight: bold; /* Resalta el enlace activo */
+  color: #96E095 !important; /* Ajusta según tu diseño */
+}
+
+#block-drupalcamp-bootstrap5-logosfooter{
+    padding-bottom: 4rem;
+    display: flex;
+    margin-top: 3rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#block-drupalcamp-bootstrap5-footer {
+    text-align: center;
+    border-bottom: 1px solid #ECEFFD;
+    padding-bottom: 2rem;
+}
+
+/* .views-view-table {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.views-view-table th, .views-view-table td {
+    text-align: center; // Centra horizontalmente 
+    vertical-align: middle; // Centra verticalmente 
+    padding: 0.75rem; // Espaciado interno 
+}
+
+.views-view-table th {
+    font-weight: bold;
+    background-color: #f8f9fa; // Color de fondo para encabezados 
+    border-bottom: 2px solid #dee2e6; // Línea de separación más gruesa 
+}
+.views-view-table th, .views-view-table td {
+    width: calc(100% / 3); // Divide el ancho uniformemente 
+    white-space: nowrap; // Evita que el contenido se desborde 
+    overflow: hidden; // Oculta contenido que no quepa 
+    text-overflow: ellipsis; // Agrega puntos suspensivos si es necesario 
+}
+.views-view-table caption {
+    caption-side: top; // Mueve el título al inicio 
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; // Alterna colores para las filas 
+}
+.view-content {
+    overflow-x: auto;
+}
+
+.views-view-table {
+    min-width: 600px; // Define un ancho mínimo para evitar deformaciones 
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+table th, table td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+} */
+
+// tabla view sessions list
+// Estilos generales para la tabla
+
+// Estilo para los filtros (usando flexbox)
+.views-exposed-form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los filtros se ajusten en varias líneas si es necesario */
+    justify-content: flex-start; /* Alinea los filtros a la izquierda */
+    gap: 1rem; /* Espaciado entre los filtros */
+  
+    .form-item {
+      flex: 1 1 200px; /* Cada filtro ocupa un mínimo de 200px pero puede crecer hasta el tamaño disponible */
+      max-width: 300px; /* Limita el tamaño máximo de los filtros */
+      min-width: 150px; /* Ancho mínimo para filtros pequeños */
+    }
+  
+    .form-submit {
+      flex: 1 1 100%; /* El botón de submit ocupará todo el ancho en pantallas pequeñas */
+      max-width: 200px; /* Limita el tamaño máximo del botón */
+      margin-top: 1rem; /* Separación superior */
+    }
+  
+    @media (max-width: 768px) {
+      .form-item {
+        flex: 1 1 100%; /* En pantallas pequeñas los filtros se alinean en una sola columna */
+      }
+    }
+  }
+  
+  // Estilo para la tabla con un diseño responsivo
+  .views-view-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    min-width: 300px; /* Ancho mínimo para evitar que se rompa */
+    overflow-x: auto; /* Permite el desplazamiento horizontal solo cuando sea necesario */
+    
+    /* Definir la disposición de las celdas */
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #dee2e6;
+      text-align: center;
+      vertical-align: middle;
+      max-width: 50px;
+    }
+  
+    /* Cabecera de la tabla */
+    th {
+      font-weight: bold;
+      background-color: #f8f9fa;
+      border-bottom: 2px solid #dee2e6;
+      text-transform: uppercase;
+    }
+  
+    /* Filas alternas de la tabla */
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+    }
+  
+    /* Responsividad para pantallas pequeñas */
+    @media (max-width: 768px) {
+      /* En pantallas pequeñas, cambiamos la disposición para evitar que las celdas se salgan del contenedor */
+      table {
+        display: block; /* Convierte la tabla en un contenedor bloque para permitir desplazamiento */
+        width: 100%; /* Asegura que ocupe el 100% del ancho */
+        overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+      }
+  
+      th, td {
+        display: block;
+        width: 100%; /* Hacemos que cada celda ocupe todo el ancho disponible */
+        text-align: left; /* Alineamos el texto a la izquierda */
+        max-width: 100%;
+      }
+  
+      td {
+        padding: 0.5rem; /* Menor padding en pantallas pequeñas */
+        border: none; /* Quitamos el borde de las celdas */
+      }
+  
+      th {
+        display: none; /* Ocultamos los encabezados en pantallas pequeñas */
+      }
+  
+      tr {
+        display: block;
+        margin-bottom: 1rem; /* Separación entre las filas */
+      }
+  
+      td::before {
+        content: attr(data-label); /* Añadimos los títulos de las columnas en dispositivos pequeños */
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+  
+  
+// Estilos de animación para la tabla (transición suave)
+@keyframes fadeInTable {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.views-view-table {
+    animation: fadeInTable 0.5s ease;
+}
+  
+
+// Variables para colores y tamaños
+/* $primary-color: #ffa100;
+$secondary-color: #f8f9fa;
+$border-color: #ddd;
+$text-color: #333;
+$hover-color: darken($primary-color, 10%);
+$border-radius: 8px;
+$transition-speed: 0.3s; */
+
+// Contenedor del formulario vista session list
+.views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  margin-bottom: 1.5rem;
+
+  // Elementos del formulario
+  .form-item {
+    flex: 1 1 100%; // Ancho completo en móvil
+
+    @media (min-width: 768px) {
+      flex: 1 1 calc(50% - 1rem); // Mitad del ancho en desktop
+    }
+
+    // Etiquetas
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: block;
+      color: $text-color;
+    }
+
+    // Inputs y selects
+    .form-control {
+      border: 1px solid $border-color;
+      border-radius: $border-radius / 2;
+      padding: 0.5rem;
+      font-size: 1rem;
+      transition: all $transition-speed ease;
+      min-width: 125px;  
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 4px rgba($primary-color, 0.5);
+      }
+    }
+  }
+
+  // Botón de envío
+  .form-submit {
+    background-color: $primary-color;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: $border-radius / 2;
+    cursor: pointer;
+    transition: background-color $transition-speed ease;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  // Animaciones
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .form-item {
+    animation: fadeIn 0.5s ease;
+  }
+
+  // Estilo colapsable para mobile
+  &.collapsed {
+    display: none;
+
+    &.open {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .views-exposed-form {
+      .toggle-filters {
+        display: block;
+        background: $primary-color;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: $border-radius / 2;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .views-exposed-form {
+      .toggle-filters {
+        display: none;
+      }
+    }
+  }
+  

@@ -1,0 +1,20 @@
+uuid: 084f865a-3a45-49e8-a291-62c2b4a97032
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcamp_bootstrap5
+_core:
+  default_config_hash: lItLElVr83iAG70b2DoFOAXXQ1vRZtErY1oEFhkOmSQ
+id: drupalcamp_bootstrap5_page_title
+theme: drupalcamp_bootstrap5
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
