@@ -6,24 +6,31 @@ dependencies:
     - field.storage.node.field_sponsor_logo
     - node.type.sponsor
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 _core:
   default_config_hash: irM51IhmBSxu59hsjcFDN25gCI5aNDUbpSVt3Gj4E-g
 id: node.sponsor.field_sponsor_logo
 field_name: field_sponsor_logo
 entity_type: node
 bundle: sponsor
-label: 'Sponsor Logo'
+label: Logo
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg webp'
+  file_extensions: 'png gif jpg jpeg webp svg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

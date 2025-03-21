@@ -1,0 +1,18 @@
+uuid: ff5533ff-e679-404e-8ed9-23d03fc6a631
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_audience
+id: taxonomy_term.session_audience.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: session_audience
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

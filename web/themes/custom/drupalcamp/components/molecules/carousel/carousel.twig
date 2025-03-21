@@ -1,0 +1,12 @@
+{% set attributes = attributes.addClass('swiper') %}
+<div {{ attributes }}>
+  <div class="swiper-wrapper">
+    {{ slides }}
+    {{ dump() }}
+  </div>
+  <div class="swiper-buttons">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>

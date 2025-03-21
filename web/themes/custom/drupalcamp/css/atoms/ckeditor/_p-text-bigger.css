@@ -1,0 +1,4 @@
+.p--text-bigger {
+  font-size: calc(var(--font-size) * 1.4);
+  line-height: calc(var(--font-line-height) * 1.3);
+}

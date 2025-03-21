@@ -1,0 +1,18 @@
+uuid: 6c2a3982-b3ea-4ff3-aa92-46a52d2443b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+id: taxonomy_term.time_slot.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: time_slot
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

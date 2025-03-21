@@ -1,0 +1,18 @@
+uuid: 6fd0e093-62dd-42e6-90fa-1c44d2021ffa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_category
+id: taxonomy_term.session_category.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: session_category
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,31 @@
+uuid: f99be115-fedd-4356-b9d4-57ba54eb950d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_images
+    - media.type.image
+    - media.type.vector_image
+    - paragraphs.paragraphs_type.images
+id: paragraph.images.field_media_images
+field_name: field_media_images
+entity_type: paragraph
+bundle: images
+label: Imágenes
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      vector_image: vector_image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

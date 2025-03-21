@@ -1,0 +1,10 @@
+uuid: b27b318d-7d90-4e1a-b822-6d5633d7df99
+langcode: es
+status: true
+dependencies: {  }
+id: accordion_element
+label: 'Elemento de acordeón'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

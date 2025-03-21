@@ -1,0 +1,173 @@
+.header {
+  position: fixed;
+  top: calc(20px + var(--admin-toolbar-top-bar-height, 0px));
+  left: calc(var(--page-side-margin) + var(--gutter-x));
+  z-index: 10;
+  padding: 10px var(--gutter-x);
+  border-radius: 20px;
+  background: white;
+  max-width: calc(100% - var(--page-side-margin) - var(--gutter-x) * 2);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 #00000033;
+
+  @media (min-width: 768px) {
+    top: calc(44px + var(--drupal-displace-offset-top, 0px));
+  }
+
+  @media (min-width: 1200px) {
+    padding: 16px 40px 16px 30px;
+    font-size: 0.9375rem;
+  }
+
+  @media (min-width: 1360px) {
+    left: calc(50% + var(--drupal-displace-offset-left, 0px) / 2);
+    right: 50%;
+    transform: translateX(-50%);
+    max-width: var(--max-width);
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header__language {
+  margin-right: 20px;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header__toggle {
+  display: none;
+
+  &.header__toggle-line {
+    display: none;
+
+    &::before {
+      content: '×';
+      font-size: 24px;
+      line-height: 1;
+      display: block;
+    }
+  }
+}
+
+.header__close {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 64px;
+  cursor: pointer;
+  margin-left: auto;
+
+  @media (max-width: 1234px) {
+    display: block;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1234px) {
+  .header__container {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 #00000033;
+    position: fixed;
+    top: var(--drupal-displace-offset-top, 0);
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    &.header__container--open {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    @media (min-width: 481px) and (max-width: 1360px) {
+      width: 480px;
+    }
+
+    & .region-header-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header__toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    & .header__toggle-line {
+      display: block;
+      width: 24px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #000;
+    }
+  }
+}
+
+@media (min-width: 1235px) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__close {
+    display: none;
+  }
+
+  .header__container {
+    position: static;
+    transform: none;
+    transition: none;
+    width: auto;
+
+    & .region-header-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+}
+
+@media (max-width: 1234px) {
+  #block-drupalcamp-quick-actions .menu {
+    padding: 0;
+
+    .menu-item {
+      margin: 24px auto;
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+
+.header .header-menu a,
+.header .links a {
+  color: var(--color--primary);
+  text-decoration: none;
+  transition: text-shadow 0.3s ease;
+
+  &:hover {
+    color: var(--color--primary);
+    text-shadow: 0 0 1px var(--color--primary);
+    text-decoration: underline;
+  }
+}

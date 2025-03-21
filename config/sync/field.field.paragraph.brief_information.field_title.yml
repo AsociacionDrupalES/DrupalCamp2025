@@ -1,0 +1,19 @@
+uuid: 159ddfb4-b0eb-44d9-b7e9-354a5bd45b8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.brief_information
+id: paragraph.brief_information.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: brief_information
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

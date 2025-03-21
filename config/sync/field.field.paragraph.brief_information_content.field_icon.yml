@@ -1,0 +1,29 @@
+uuid: 1a552a4b-7fbd-4c17-8404-87111e84837a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - media.type.vector_image
+    - paragraphs.paragraphs_type.brief_information_content
+id: paragraph.brief_information_content.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: brief_information_content
+label: Icono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      vector_image: vector_image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

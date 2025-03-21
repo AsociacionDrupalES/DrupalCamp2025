@@ -1,0 +1,26 @@
+uuid: 6a3639a5-4178-4f96-a6d9-9cb891a700ed
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: lItLElVr83iAG70b2DoFOAXXQ1vRZtErY1oEFhkOmSQ
+id: drupalcamp_page_title
+theme: drupalcamp
+region: title
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

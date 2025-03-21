@@ -1,0 +1,4 @@
+widget:
+  css:
+    component:
+      dist/css/widget.css: {}

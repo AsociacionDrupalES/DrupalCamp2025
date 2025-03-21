@@ -1,0 +1,24 @@
+uuid: 15480d1c-d43e-45a4-8b03-a33dbc66249f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.all_sponsors
+  module:
+    - views
+  theme:
+    - drupalcamp
+id: drupalcamp_all_sponsors
+theme: drupalcamp
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:all_sponsors-block_1'
+settings:
+  id: 'views_block:all_sponsors-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

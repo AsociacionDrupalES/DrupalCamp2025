@@ -1,0 +1,112 @@
+uuid: 26bda572-0799-4186-9d8c-a038b3fe4abc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_title
+    - field.field.paragraph.hero.field_title
+    - field.field.paragraph.images.field_title
+    - field.field.paragraph.links.field_title
+    - field.field.paragraph.text.field_link
+    - field.field.paragraph.text.field_text
+    - field.field.paragraph.text.field_title
+    - field.field.paragraph.ticket.field_title
+    - paragraphs.paragraphs_type.text
+  module:
+    - field_group
+    - link
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+third_party_settings:
+  field_group:
+    group_text:
+      children:
+        - field_title
+        - field_link
+        - field_text
+      label: Texto
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:text'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            title:
+              source_id: token
+              source:
+                value: '[paragraph:field_title]'
+            link_text:
+              source_id: token
+              source:
+                value: '[paragraph:field_link:title]'
+            link_uri:
+              source_id: token
+              source:
+                value: '[paragraph:field_link:uri]'
+          slots:
+            text:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_text
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
+id: paragraph.text.default
+targetEntityType: paragraph
+bundle: text
+mode: default
+content:
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:title'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          text:
+            source_id: 'field_property:paragraph:field_title:value'
+          html_tag:
+            source_id: select
+            source:
+              value: h2
+        slots: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

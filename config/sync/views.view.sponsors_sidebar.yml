@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'All Sponsors'
+      title: Patrocinadores
       fields:
         field_sponsor_level:
           id: field_sponsor_level

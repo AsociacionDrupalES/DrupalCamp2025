@@ -1,0 +1,24 @@
+uuid: 93eccc43-fe66-4e1e-9938-6f8385adf785
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_general_features
+  theme:
+    - drupalcamp
+id: drupalcamp_become_sponsor
+theme: drupalcamp
+region: content
+weight: 1
+provider: null
+plugin: custom_general_features_become_sponsor
+settings:
+  id: custom_general_features_become_sponsor
+  label: '¿Quieres ser patrocinador?'
+  label_display: '0'
+  provider: custom_general_features
+  title: '¿Quieres ser patrocinador?'
+  body:
+    value: '<p>Si te interesa patrocinar el evento y mostrar el apoyo de tu empresa a la comunidad Drupal, consulta nuestros paquetes de patrocinio y ponte en contacto con nosotros a través del formulario de contacto.</p><p><a class="link--button link--button--secondary" href="#">Dossier de patrocinio</a></p>'
+    format: full_html
+visibility: {  }

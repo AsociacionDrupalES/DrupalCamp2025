@@ -1,0 +1,11 @@
+<div {{ attributes }}>
+  {{ logo_svg }}
+  <div class="text-wrapper">
+    {{ include(
+      'drupalcamp:title',
+      { text: title, html_tag: 'h2' },
+      with_context = false
+    ) }}
+    <div class="text text-formatted">{{ text }}</div>
+  </div>
+</div>

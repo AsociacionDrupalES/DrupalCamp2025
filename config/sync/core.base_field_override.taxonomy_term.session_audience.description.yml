@@ -1,0 +1,21 @@
+uuid: a099c880-adc9-4c5e-ac18-1269d8ec2dd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_audience
+  module:
+    - text
+id: taxonomy_term.session_audience.description
+field_name: description
+entity_type: taxonomy_term
+bundle: session_audience
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

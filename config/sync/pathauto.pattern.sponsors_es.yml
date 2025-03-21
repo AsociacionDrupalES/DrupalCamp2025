@@ -1,0 +1,33 @@
+uuid: 9f531d85-1ee9-4275-91b2-2a715e616660
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: sponsors_es
+label: 'Patrocinadores (es)'
+type: 'canonical_entities:node'
+pattern: 'patrocinadores/[node:title]'
+selection_criteria:
+  cdd6290a-c9d2-4ef4-bcf2-45b0e71d6ba4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cdd6290a-c9d2-4ef4-bcf2-45b0e71d6ba4
+    context_mapping:
+      node: node
+    bundles:
+      sponsor: sponsor
+  bc128834-60c6-4be8-90e1-70fc30cbf434:
+    id: language
+    negate: false
+    uuid: bc128834-60c6-4be8-90e1-70fc30cbf434
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

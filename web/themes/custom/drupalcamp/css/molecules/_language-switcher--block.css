@@ -1,0 +1,30 @@
+#block-drupalcamp-language-switcher .links {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    display: inline;
+
+    &:not(:first-child):before {
+      content: "/";
+    }
+
+    a.is-active {
+      text-shadow: 0 0 1px var(--color--primary);
+    }
+
+    @media (min-width: 1235px) {
+      text-transform: uppercase;
+      display: inline-block;
+      width: auto;
+      max-width: 16px;
+      overflow-x: clip;
+      white-space: nowrap;
+
+      &[hreflang="en"] {
+        max-width: 25px;
+      }
+    }
+  }
+}

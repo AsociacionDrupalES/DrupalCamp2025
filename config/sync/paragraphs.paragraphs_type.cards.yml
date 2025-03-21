@@ -1,0 +1,15 @@
+uuid: df9af1f1-f108-4099-8410-f07d62f51e8f
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: cards
+label: Tarjetas
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

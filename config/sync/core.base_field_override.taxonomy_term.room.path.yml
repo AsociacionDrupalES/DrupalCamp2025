@@ -1,0 +1,20 @@
+uuid: 7a3a3ba7-a253-43d6-a486-3bfe34d3225f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room
+  module:
+    - path
+id: taxonomy_term.room.path
+field_name: path
+entity_type: taxonomy_term
+bundle: room
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

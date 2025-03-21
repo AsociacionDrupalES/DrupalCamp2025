@@ -1,0 +1,10 @@
+block.settings.custom_general_features_become_sponsor:
+  type: block_settings
+  label: 'Become a sponsor block'
+  mapping:
+    title:
+      type: label
+      label: Title
+    body:
+      type: text_format
+      label: Body

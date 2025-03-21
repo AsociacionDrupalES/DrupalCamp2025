@@ -1,0 +1,15 @@
+<div {{ attributes }}>
+  <div class="content">
+    {{ description }}
+  </div>
+  <div class="sidebar">
+    <div class="speakers">{{ speakers }}</div>
+    <ul class="tags ul--pills--inline">
+      {% for tag in tags %}
+        {% if tag|render|striptags is not empty %}
+          <li>{{ tag }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

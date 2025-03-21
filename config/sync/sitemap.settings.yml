@@ -1,0 +1,46 @@
+_core:
+  default_config_hash: GUKBlXIBQ2d0H8Q7M_Rqn1Q93tRxLPfs9cG-VeQC9NI
+langcode: es
+page_title: 'Mapa del sitio'
+path: /sitemap
+message:
+  value: ''
+  format: plain_text
+plugins:
+  frontpage:
+    base_plugin: frontpage
+    enabled: true
+    weight: -40
+    settings:
+      title: 'Página de Inicio'
+      rss: ''
+    id: frontpage
+    provider: sitemap
+  'menu:main':
+    base_plugin: menu
+    enabled: true
+    weight: -39
+    settings:
+      title: 'Navegación principal'
+      show_disabled: false
+    id: 'menu:main'
+    provider: sitemap
+  'menu:quick-actions':
+    base_plugin: menu
+    enabled: true
+    weight: -38
+    settings:
+      title: 'Acciones rápidas'
+      show_disabled: false
+    id: 'menu:quick-actions'
+    provider: sitemap
+  'menu:footer':
+    base_plugin: menu
+    enabled: true
+    weight: -37
+    settings:
+      title: 'Pie de página'
+      show_disabled: false
+    id: 'menu:footer'
+    provider: sitemap
+include_css: false

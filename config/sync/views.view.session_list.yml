@@ -33,7 +33,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Submitted Sessions'
+      title: 'Sesiones propuestas'
       fields:
         title:
           id: title
@@ -176,8 +176,24 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'There are no sessions submitted that meet this criteria.'
+          content: 'No se han presentado sesiones que cumplan estos criterios.'
           tokenize: false
+        add_content_by_bundle:
+          id: add_content_by_bundle
+          table: views
+          field: add_content_by_bundle
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: add_content_by_bundle
+          label: 'Proponer una charla'
+          empty: true
+          bundle: session
+          class: 'link--button link--button--primary'
+          target: ''
+          width: 600
+          form_mode: null
+          params: ''
       sorts:
         random:
           id: random
@@ -479,12 +495,14 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid_responsive
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: false
           uses_fields: true
+          columns: 3
+          cell_min_width: 320
+          grid_gutter: 10
+          alignment: horizontal
       row:
         type: 'entity:node'
         options:
@@ -507,10 +525,10 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: add_content_by_bundle
-          label: 'Propose A Session'
+          label: 'Proponer una charla'
           empty: true
           bundle: session
-          class: 'button button--primary button--action'
+          class: 'link--button link--button--primary'
           target: ''
           width: 600
           form_mode: null
@@ -523,7 +541,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -540,13 +557,12 @@ display:
       path: sessions
       menu:
         type: normal
-        title: Sessions
+        title: Sesiones
         description: ''
         weight: 1
-        enabled: true
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:dade5811-bed8-4038-a100-928ab74ad69d'
+        parent: ''
         context: '0'
       tab_options:
         type: none
@@ -559,7 +575,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

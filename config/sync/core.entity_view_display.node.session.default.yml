@@ -1,5 +1,5 @@
 uuid: 1f2bfaa4-516b-4b20-a1ee-fef6a39953e9
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -15,8 +15,72 @@ dependencies:
     - field.field.node.session.field_time_slot
     - node.type.session
   module:
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_card_detail:
+      children:
+        - field_description
+        - field_speakers
+        - field_time_slot
+        - field_r
+        - field_audience
+        - field_session_category
+      label: 'Card detail'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:session_detail'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+          slots:
+            description:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_description
+                  _weight: '0'
+            tags:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_time_slot
+                  _weight: '0'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_r
+                  _weight: '1'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_audience
+                  _weight: '2'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_session_category
+                  _weight: '3'
+            speakers:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_speakers
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
 _core:
   default_config_hash: XPqDf9kT0h8MaYfLnXdmZxaOb6M4MXk0Wf52gkNFGi4
 id: node.session.default
@@ -31,34 +95,34 @@ content:
     region: content
   field_audience:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_r:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_session_category:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_speakers:
     type: entity_reference_entity_view
@@ -67,15 +131,15 @@ content:
       view_mode: compact
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_time_slot:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   field_is_non_session: true

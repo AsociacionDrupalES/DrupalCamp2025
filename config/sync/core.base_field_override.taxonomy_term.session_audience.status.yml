@@ -1,0 +1,22 @@
+uuid: 18fa151f-00b9-4415-8e35-3b737b31cedd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_audience
+id: taxonomy_term.session_audience.status
+field_name: status
+entity_type: taxonomy_term
+bundle: session_audience
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

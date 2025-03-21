@@ -1,0 +1,15 @@
+uuid: 589afb15-d754-426d-a834-05e3b6a5a90f
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: text
+label: Texto
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

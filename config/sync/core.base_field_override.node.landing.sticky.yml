@@ -1,0 +1,22 @@
+uuid: 6713eaa4-3e1a-4101-afb3-a6771fb23e01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.landing
+id: node.landing.sticky
+field_name: sticky
+entity_type: node
+bundle: landing
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

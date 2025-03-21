@@ -1,0 +1,4 @@
+{% set attributes = variant ? attributes.addClass('link link--button--' ~ variant) : attributes.addClass('link') %}
+<div {{ attributes }}>
+  <a href="{{ link_uri }}">{{ link_title }}</a>
+</div>

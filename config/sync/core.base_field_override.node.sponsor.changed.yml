@@ -1,0 +1,18 @@
+uuid: cc3eeecd-b0b8-46fc-b68e-44f2caf0ac46
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.changed
+field_name: changed
+entity_type: node
+bundle: sponsor
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

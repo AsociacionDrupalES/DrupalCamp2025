@@ -1,0 +1,41 @@
+.maintenance-page {
+  align-items: center;
+  background-image: url('../../images/page-title/default.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  &:before {
+    background-color: rgba(0, 0, 0, 0.38);
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: calc(100vw - var(--page-side-margin));
+    z-index: 0;
+  }
+
+  .layout-container {
+    position: relative;
+    z-index: 1;
+
+    header {
+      padding-bottom: 100px;
+      img {
+        filter: brightness(100);
+        max-width: 500px;
+      }
+      a {
+        color: white
+      }
+    }
+    main {
+      color: white;
+    }
+  }
+}

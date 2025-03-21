@@ -1,0 +1,14 @@
+uuid: e6ab05b0-7d6f-48e6-b4f5-512dff9337bb
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: ticket
+label: Entrada
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_color:
+    enabled: true

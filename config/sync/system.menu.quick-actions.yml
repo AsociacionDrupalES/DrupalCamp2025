@@ -1,0 +1,8 @@
+uuid: c4fa6fbc-fe99-46d0-b3e0-4cd4379e57fc
+langcode: es
+status: true
+dependencies: {  }
+id: quick-actions
+label: 'Acciones rápidas'
+description: ''
+locked: false

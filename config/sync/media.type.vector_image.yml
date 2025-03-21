@@ -1,0 +1,14 @@
+uuid: c0ead7bb-881d-4f26-a87d-119c7ea534a8
+langcode: es
+status: true
+dependencies: {  }
+id: vector_image
+label: 'Imagen vectorial'
+description: 'Un archivo de gráficos vectoriales escalables alojado localmente.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

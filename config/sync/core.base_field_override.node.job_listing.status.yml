@@ -1,0 +1,22 @@
+uuid: c9a5cb4b-9240-43c1-9786-3221c7e2c0a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.job_listing
+id: node.job_listing.status
+field_name: status
+entity_type: node
+bundle: job_listing
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

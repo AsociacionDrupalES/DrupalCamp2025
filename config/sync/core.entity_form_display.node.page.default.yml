@@ -1,5 +1,5 @@
 uuid: 6cc76e83-5204-4677-966b-d54933ff7e8c
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -38,6 +38,12 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -50,6 +56,19 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  revision_log:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      hide_revision: false
     third_party_settings: {  }
   status:
     type: boolean_checkbox

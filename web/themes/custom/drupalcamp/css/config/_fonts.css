@@ -1,0 +1,55 @@
+@font-face {
+  font-family: ZTGatha-SemiBold;
+  src: url(../../fonts/ZT_Gatha/ZTGatha-SemiBold.woff) format("woff"), url(../../fonts/ZT_Gatha/ZTGatha-SemiBold.woff2) format("woff2"), url(../../fonts/ZT_Gatha/ZTGatha-SemiBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-BoldItalic.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-BoldItalic.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-Bold.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-Bold.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-Italic.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-Italic.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-MediumItalic.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-MediumItalic.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-Medium.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-Medium.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/Noto_Sans/NotoSans-Regular.woff) format("woff"), url(../../fonts/Noto_Sans/NotoSans-Regular.woff2) format("woff2"), url(../../fonts/Noto_Sans/NotoSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,22 @@
+uuid: c4cb948a-65aa-4611-8df9-5f02b81c48f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.landing
+id: node.landing.status
+field_name: status
+entity_type: node
+bundle: landing
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: 2bc29c96-1b5f-4366-8331-84104bb33f06
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: tickets
+label: Entradas
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

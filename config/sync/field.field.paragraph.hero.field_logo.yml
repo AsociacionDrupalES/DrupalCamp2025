@@ -1,0 +1,29 @@
+uuid: dce3e980-b444-414e-9ba0-9fd7bd7989d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo
+    - media.type.vector_image
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.field_logo
+field_name: field_logo
+entity_type: paragraph
+bundle: hero
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      vector_image: vector_image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

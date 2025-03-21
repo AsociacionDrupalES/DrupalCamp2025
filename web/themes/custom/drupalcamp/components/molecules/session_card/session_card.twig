@@ -1,0 +1,15 @@
+<a href="{{ link_url }}" {{ attributes }}>
+  {{ include(
+    'drupalcamp:title',
+    { text: title, html_tag: 'h3' },
+    with_context = false
+  ) }}
+  <div class="speakers">{{ speakers }}</div>
+  <ul class="tags ul--pills--inline">
+    {% for tag in tags %}
+      {% if tag|render|striptags is not empty %}
+      <li>{{ tag }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</a>

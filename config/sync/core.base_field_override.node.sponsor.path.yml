@@ -1,0 +1,20 @@
+uuid: 84aef594-3151-4de0-98ea-a30d69fb086d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+  module:
+    - path
+id: node.sponsor.path
+field_name: path
+entity_type: node
+bundle: sponsor
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,11 @@
+$schema: "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Footer
+description: "Main site footer that includes acknowledgements, social networks and footer menu."
+status: stable
+props:
+  type: object
+  properties:
+    content:
+      type: array
+      title: "Content"
+      description: "Slot for the footer content."

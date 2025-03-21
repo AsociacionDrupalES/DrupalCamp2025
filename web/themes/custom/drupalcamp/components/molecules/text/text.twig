@@ -1,0 +1,20 @@
+{% set attributes = link_uri ? attributes.addClass('text-with-button') : attributes %}
+<div {{ attributes }}>
+  {% if title %}
+    <div class="title-bar">
+      {{ include(
+        'drupalcamp:title',
+        { text: title, html_tag: 'h2' },
+        with_context = false
+      ) }}
+      {% if link_uri %}
+        {{ include(
+          'drupalcamp:link',
+          { link_title: link_text, link_uri: link_uri, variant: 'primary-light' },
+          with_context = false
+        ) }}
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="text text-formatted">{{ text }}</div>
+</div>

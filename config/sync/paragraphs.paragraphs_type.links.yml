@@ -1,0 +1,17 @@
+uuid: 21d8d12f-042d-41bf-8929-ea5790d47283
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: links
+label: Enlaces
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width
+  custom_color:
+    enabled: true

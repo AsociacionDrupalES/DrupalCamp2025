@@ -1,0 +1,19 @@
+uuid: 4dd490f7-cd19-4e10-a2d9-ab4c4c26e343
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_image
+id: paragraph.text_image.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_image
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

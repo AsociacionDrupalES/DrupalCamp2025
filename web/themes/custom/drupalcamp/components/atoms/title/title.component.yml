@@ -1,0 +1,14 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Title
+status: stable
+props:
+  type: object
+  properties:
+    text:
+      type: string
+      title: Text
+    html_tag:
+      type: string
+      title: HTML tag
+      enum: [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span' ]
+      default: h2

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 1kL-gZQ-iBd_tapr5De4waLtpMj_ppvJWKHlhNAFMUg
-name: 'Sponsor Level'
+name: 'Nivel de patrocinador'
 vid: sponsor_level
 description: null
 weight: 0

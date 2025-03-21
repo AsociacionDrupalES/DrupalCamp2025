@@ -1,0 +1,4 @@
+label: 'Is individual'
+settings:
+  on_label: Enabled
+  off_label: Disabled

@@ -1,0 +1,36 @@
+name: DrupalCamp
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - drupalcamp/base
+  - drupalcamp/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - drupalcamp/user
+  core/drupal.dropbutton:
+    - drupalcamp/dropbutton
+  core/drupal.dialog:
+    - drupalcamp/dialog
+  file/drupal.file:
+    - drupalcamp/file
+  core/drupal.progress:
+    - drupalcamp/progress
+description: 'DrupalCamp2025 theme'
+core_version_requirement: ^10 | ^11
+generator: 'starterkit_theme:10.4.2'
+regions:
+  sidebar_second: 'Right sidebar'
+  title: 'Title'
+  content: 'Content'
+  header_logo: 'Header Logo'
+  header_content: 'Header Content'
+  secondary_menu: 'Secondary menu'
+  footer: 'Footer'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  breadcrumb: 'Breadcrumb'
+
+'interface translation project': drupalcamp
+'interface translation server pattern': 'themes/custom/drupalcamp/translations/%language.po'

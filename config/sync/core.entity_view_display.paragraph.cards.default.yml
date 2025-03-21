@@ -1,0 +1,44 @@
+uuid: d72c94e2-cd25-4f32-9361-4ec709621ac2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards.field_subsections
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+id: paragraph.cards.default
+targetEntityType: paragraph
+bundle: cards
+mode: default
+content:
+  field_subsections:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:cards'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          cards:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:cards:field_subsections'
+                source:
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+                _weight: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

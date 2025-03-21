@@ -1,0 +1,22 @@
+uuid: 73d316e0-427c-4fba-9f9c-f5f4e8d65699
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor_level
+id: taxonomy_term.sponsor_level.status
+field_name: status
+entity_type: taxonomy_term
+bundle: sponsor_level
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

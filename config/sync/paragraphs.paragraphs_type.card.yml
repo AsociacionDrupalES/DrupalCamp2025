@@ -1,0 +1,23 @@
+uuid: ba80d577-5c89-4473-a669-b4f1a29c876a
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: card
+label: Tarjeta
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width
+  custom_color:
+    enabled: true
+  custom_variant:
+    enabled: true
+    variants:
+      default: default
+      featured: featured
+      with-border: with-border

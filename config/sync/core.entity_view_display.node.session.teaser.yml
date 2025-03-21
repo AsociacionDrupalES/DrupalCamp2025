@@ -1,5 +1,5 @@
 uuid: b567bd3b-9cae-42e1-93bc-88ab9c1b33ef
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -16,7 +16,68 @@ dependencies:
     - field.field.node.session.field_time_slot
     - node.type.session
   module:
+    - field_group
+    - nomarkup
     - user
+third_party_settings:
+  field_group:
+    group_card:
+      children:
+        - content_moderation_control
+        - field_speakers
+        - field_r
+        - field_session_category
+        - field_audience
+      label: Card
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:session_card'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            title:
+              source_id: token
+              source:
+                value: '[node:title]'
+            link_url:
+              source_id: entity_link
+              source:
+                template: canonical
+          slots:
+            text: {  }
+            tags:
+              sources:
+                2:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_r
+                  _weight: '-2'
+                0:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_session_category
+                  _weight: '-1'
+                1:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_audience
+                  _weight: '0'
+            speakers:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_speakers
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
 _core:
   default_config_hash: 733Y5FXtKXsPu9FuD-Ofl9sMp0qtfkwDjLh24spZyaE
 id: node.session.teaser
@@ -31,47 +92,58 @@ content:
     region: content
   field_audience:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
-    third_party_settings: {  }
-    weight: 4
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 5
     region: content
   field_r:
     type: entity_reference_label
     label: inline
     settings:
       link: false
-    third_party_settings: {  }
-    weight: 1
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
     region: content
   field_session_category:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_short_description:
-    type: basic_string
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
     region: content
   field_speakers:
-    type: entity_reference_label
-    label: inline
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
+      view_mode: compact
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '0'
     weight: 2
     region: content
 hidden:
   field_description: true
   field_is_non_session: true
   field_is_training: true
+  field_short_description: true
   field_social_media_card: true
   field_time_slot: true
   langcode: true

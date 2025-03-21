@@ -1,0 +1,22 @@
+uuid: 5698b5f4-9f7c-4ba8-b33b-8f42410970f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cards
+id: paragraph.cards.status
+field_name: status
+entity_type: paragraph
+bundle: cards
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

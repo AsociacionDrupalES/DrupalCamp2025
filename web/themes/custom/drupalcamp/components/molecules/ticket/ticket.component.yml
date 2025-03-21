@@ -1,0 +1,24 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Ticket
+status: stable
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+    price:
+      type: string
+      title: Price
+    link_text:
+      type: string
+      title: Link text
+    link_uri:
+      type: string
+      title: Link uri
+    link_variant:
+      type: string
+      title: Link variant
+slots:
+  text:
+    title: Text

@@ -1,0 +1,19 @@
+#block-drupalcamp-quick-actions .menu li {
+  list-style-type: none;
+}
+
+@media (min-width: 1235px) {
+  #block-drupalcamp-quick-actions .menu {
+    display: flex;
+    gap: 22px;
+    margin-left: 47px;
+
+    & .link--button {
+      padding: 8px 20px;
+
+      &:hover {
+        box-shadow: 0 0 8px 0 #00000080;
+      }
+    }
+  }
+}

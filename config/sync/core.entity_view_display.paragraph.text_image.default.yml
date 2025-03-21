@@ -1,0 +1,110 @@
+uuid: b6548c3e-578a-491d-861e-ae0127c87efc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_element.field_title
+    - field.field.paragraph.brief_information.field_title
+    - field.field.paragraph.brief_information_content.field_title
+    - field.field.paragraph.card.field_title
+    - field.field.paragraph.hero.field_title
+    - field.field.paragraph.images.field_title
+    - field.field.paragraph.links.field_title
+    - field.field.paragraph.text.field_title
+    - field.field.paragraph.text_image.field_media_image
+    - field.field.paragraph.text_image.field_text
+    - field.field.paragraph.text_image.field_title
+    - field.field.paragraph.ticket.field_title
+    - image.style.full_width
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - field_group
+    - media
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_text
+        - field_media_image
+      label: Contenido
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:two_columns'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+          slots:
+            left_column:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_text
+                  _weight: '0'
+            right_column:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_media_image
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: full_width
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:title'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          text:
+            source_id: 'field_property:paragraph:field_title:value'
+          html_tag:
+            source_id: select
+            source:
+              value: h2
+        slots: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

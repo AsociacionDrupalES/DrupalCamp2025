@@ -5,30 +5,36 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
+    - antibot
     - comment
     - contact
     - field_permissions
     - file
     - filter
-    - search
-    - shortcut
+    - honeypot
+    - media
+    - sitemap
     - system
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
 label: 'Usuario autenticado'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access sitemap'
   - 'access user profiles'
+  - 'bypass honeypot protection'
+  - 'cancel account'
   - 'delete own files'
   - 'post comments'
-  - 'search content'
+  - 'skip antibot'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view field_r'
   - 'view field_time_slot'
+  - 'view media'
+  - 'view the administration theme'

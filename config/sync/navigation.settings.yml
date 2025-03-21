@@ -1,8 +1,8 @@
 _core:
   default_config_hash: FeJ38-AShWZUh_NwJprQueefcE06zSnUa3cw1lOdjTY
 logo:
-  provider: default
-  path: ''
+  provider: custom
+  path: themes/custom/drupalcamp/favicon.svg
   max:
     filesize: 1048576
     height: 40

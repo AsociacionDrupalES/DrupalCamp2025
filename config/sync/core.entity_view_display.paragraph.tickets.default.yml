@@ -1,0 +1,48 @@
+uuid: 20da3069-c3ea-4a54-9d8a-acb1119c7b54
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tickets.field_subsections
+    - paragraphs.paragraphs_type.tickets
+  module:
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+id: paragraph.tickets.default
+targetEntityType: paragraph
+bundle: tickets
+mode: default
+content:
+  field_subsections:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:grid'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          columns:
+            source_id: number
+            source:
+              value: '3'
+        slots:
+          content:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:tickets:field_subsections'
+                source:
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+                _weight: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

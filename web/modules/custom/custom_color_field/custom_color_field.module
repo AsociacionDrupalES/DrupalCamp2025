@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Custom Color Field module.
+ */
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function custom_color_field_field_formatter_info_alter(array &$info): void {
+  $info['string']['field_types'][] = 'custom_color';
+}

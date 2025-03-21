@@ -1,0 +1,4 @@
+color:
+  label: Color
+  description: Field to store colors.
+  weight: 0

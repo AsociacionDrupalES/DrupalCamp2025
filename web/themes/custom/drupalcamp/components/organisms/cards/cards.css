@@ -1,0 +1,63 @@
+[data-component-id="drupalcamp:cards"] {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      box-sizing: border-box;
+      padding: 0;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      &:before,
+      &:after {
+        @media (min-width: 768px) {
+          transform: unset;
+          width: calc(50vw - (var(--page-side-margin) / 2) - 16px);
+        }
+      }
+
+      @media (min-width: 768px) {
+        &:nth-child(odd) {
+          border-right: 16px solid transparent;
+          > div {
+            padding-left: 0;
+          }
+
+          &:before,
+          &:after {
+            left: unset;
+            right: 0;
+            margin-left: calc(50% - (50vw - (var(--page-side-margin) / 2)));
+          }
+        }
+        &:nth-child(even) {
+          border-left: 16px solid transparent;
+          > div {
+            padding-right: 0;
+          }
+
+          &:before,
+          &:after {
+            left: 0;
+            margin-right: calc(50% - (50vw - (var(--page-side-margin) / 2)));
+          }
+        }
+      }
+
+      &.variant--with-border {
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-width: 20px;
+        padding: 0;
+
+        .card--with-border {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

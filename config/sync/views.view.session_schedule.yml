@@ -723,7 +723,7 @@ display:
         title: 'Tarea programada'
         description: ''
         weight: 1
-        enabled: true
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'menu_link_content:dade5811-bed8-4038-a100-928ab74ad69d'

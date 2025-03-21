@@ -1,0 +1,15 @@
+uuid: 2501b874-8b2a-490d-81b0-5f54f3428a5b
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: brief_information
+label: 'Información breve'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

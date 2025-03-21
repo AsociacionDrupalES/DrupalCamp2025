@@ -1,0 +1,18 @@
+uuid: dc3d6e30-015d-41cb-9a2f-56d665ba57ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.vector_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.vector_image
+target_entity_type_id: media
+target_bundle: vector_image
+default_langcode: site_default
+language_alterable: false

@@ -314,7 +314,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -332,6 +331,7 @@ display:
         title: Trainings
         description: ''
         weight: 2
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'menu_link_content:30b07840-7761-479c-89a6-fd81b482b823'
@@ -347,7 +347,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

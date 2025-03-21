@@ -1,0 +1,20 @@
+uuid: 96bf5ff2-d486-4fef-8428-80522ee0a0fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_category
+  module:
+    - path
+id: taxonomy_term.session_category.path
+field_name: path
+entity_type: taxonomy_term
+bundle: session_category
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

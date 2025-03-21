@@ -1,0 +1,22 @@
+uuid: 9c278929-6f39-4e3c-98b1-f5ceb60214a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accordion_element
+id: paragraph.accordion_element.status
+field_name: status
+entity_type: paragraph
+bundle: accordion_element
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

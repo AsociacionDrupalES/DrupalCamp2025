@@ -1,0 +1,20 @@
+uuid: 93068dbf-b1a8-4f23-9649-f6bad36ad7a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.featured_speaker
+  module:
+    - path
+id: node.featured_speaker.path
+field_name: path
+entity_type: node
+bundle: featured_speaker
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,11 @@
+uuid: fda2095f-72b1-474e-9c39-a3d56921a000
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.gallery
+label: Galería
+description: ''
+targetEntityType: paragraph
+cache: true

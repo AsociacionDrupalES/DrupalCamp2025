@@ -1,8 +1,11 @@
-label: 'Session List'
 display:
   default:
-    display_title: Default
     display_options:
+      empty:
+        add_content_by_bundle:
+          label: 'Propose a session'
+        area_text_custom:
+          content: 'There are no sessions submitted that meet this criteria.'
       title: 'Submitted Sessions'
       fields:
         title:
@@ -16,9 +19,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      empty:
-        area_text_custom:
-          content: 'There are no sessions submitted that meet this criteria.'
       filters:
         field_audience_target_id:
           expose:
@@ -32,8 +32,10 @@ display:
       header:
         add_content_by_bundle:
           label: 'Propose A Session'
+    display_title: Default
   page_1:
     display_title: Page
     display_options:
       menu:
         title: Sessions
+label: 'Session List'

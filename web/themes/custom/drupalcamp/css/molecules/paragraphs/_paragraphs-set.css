@@ -1,0 +1,10 @@
+.paragraph--type--paragraphs-set {
+  > .field__items {
+    > .field__item {
+      > .paragraph:not(.paragraph--type--links,.paragraph--type--card) {
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+    }
+  }
+}

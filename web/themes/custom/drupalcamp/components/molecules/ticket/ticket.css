@@ -1,0 +1,48 @@
+[data-component-id="drupalcamp:ticket"] {
+  background: white;
+  border: 2px solid var(--color--primary);
+  border-radius: 17px;
+  box-sizing: border-box;
+  padding: 32px;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+    .price {
+      font-size: calc(var(--font-size) * 5);
+      line-height: calc(var(--font-line-height) * 5.10);
+    }
+    .link {
+      font-size: calc(var(--font-size) * 1.2);
+
+      a {
+        transform: none;
+      }
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .price {
+    font-size: calc(var(--font-size) * 3.10);
+    font-weight: 700;
+    line-height: calc(var(--font-line-height) * 3.10);
+    padding-bottom: 32px;
+    text-align: center;
+    transition: var(--transition);
+  }
+
+  .link {
+    padding-bottom: 32px;
+    text-align: center;
+
+    a {
+      width: 100%
+    }
+  }
+}

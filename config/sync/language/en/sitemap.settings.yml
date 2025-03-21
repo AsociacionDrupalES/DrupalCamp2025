@@ -1,0 +1,14 @@
+plugins:
+  frontpage:
+    settings:
+      title: 'Home page'
+  'menu:main':
+    settings:
+      title: 'Main navigation'
+  'menu:quick-actions':
+    settings:
+      title: 'Quick actions'
+  'menu:footer':
+    settings:
+      title: Footer
+page_title: Sitemap

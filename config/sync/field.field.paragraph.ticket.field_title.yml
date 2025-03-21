@@ -1,0 +1,19 @@
+uuid: 8a65a38b-84d3-4f50-9112-627afcf5dd27
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.ticket
+id: paragraph.ticket.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: ticket
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,5 +1,5 @@
 uuid: bb29195d-0dad-4a61-be06-71f92a5aac3c
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -58,6 +58,8 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+    linkit_extension:
+      linkit_enabled: false
 image_upload:
   status: true
   scheme: public

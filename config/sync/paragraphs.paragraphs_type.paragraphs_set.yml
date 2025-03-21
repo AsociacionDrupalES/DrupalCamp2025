@@ -1,0 +1,15 @@
+uuid: 4dc62113-e4cc-4731-9220-48f24b4191f8
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: paragraphs_set
+label: 'Conjunto de paragraphs'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

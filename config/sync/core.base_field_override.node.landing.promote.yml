@@ -1,0 +1,22 @@
+uuid: d05ddab0-cd59-4e0f-a642-588c0e5bbf3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.landing
+id: node.landing.promote
+field_name: promote
+entity_type: node
+bundle: landing
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

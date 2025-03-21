@@ -1,0 +1,74 @@
+uuid: 93630a7f-d2f0-4a93-84f0-f6f1354b5692
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.landing
+    - paragraphs.paragraphs_type.accordion_element
+    - paragraphs.paragraphs_type.brief_information_content
+    - paragraphs.paragraphs_type.ticket
+  module:
+    - entity_reference_revisions
+id: node.landing.field_sections
+field_name: field_sections
+entity_type: node
+bundle: landing
+label: Secciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ticket: ticket
+      brief_information_content: brief_information_content
+      accordion_element: accordion_element
+    negate: 1
+    target_bundles_drag_drop:
+      accordion:
+        weight: -29
+        enabled: false
+      accordion_element:
+        weight: -16
+        enabled: true
+      brief_information:
+        weight: -24
+        enabled: false
+      brief_information_content:
+        weight: -17
+        enabled: true
+      card:
+        weight: -23
+        enabled: false
+      cards:
+        weight: -22
+        enabled: false
+      hero:
+        weight: -26
+        enabled: false
+      images:
+        weight: -25
+        enabled: false
+      links:
+        weight: -28
+        enabled: false
+      paragraphs_set:
+        weight: -19
+        enabled: false
+      text:
+        weight: -21
+        enabled: false
+      text_image:
+        weight: -20
+        enabled: false
+      ticket:
+        weight: -18
+        enabled: true
+      tickets:
+        weight: -27
+        enabled: false
+field_type: entity_reference_revisions

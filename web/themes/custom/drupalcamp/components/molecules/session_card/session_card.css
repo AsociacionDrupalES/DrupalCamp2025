@@ -1,0 +1,38 @@
+[data-component-id="drupalcamp:session_card"] {
+  display: block;
+  background: white;
+  border: 2px solid var(--color--primary);
+  border-radius: 17px;
+  box-sizing: border-box;
+  padding: 32px;
+  width: 100%;
+  transition: var(--transition);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+    background: var(--color--primary);
+
+    .avatar {
+      outline-color: #ffffff;
+      border-color: var(--color--primary);
+    }
+  }
+
+  .speakers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+
+    .avatar {
+      transition: var(--transition);
+    }
+  }
+
+  ul.ul--pills--inline li:hover {
+    border: 2px solid var(--color--primary-light);
+  }
+}

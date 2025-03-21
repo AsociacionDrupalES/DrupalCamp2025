@@ -1,0 +1,14 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: "Page title"
+description": "A hero banner component with a title, subtitle, and background image."
+status": "stable"
+props:
+  type: object
+  properties:
+    image_url:
+      type: "string"
+      title: "Image"
+      description: "The background image of the hero banner."
+slots:
+  content:
+    title: Content

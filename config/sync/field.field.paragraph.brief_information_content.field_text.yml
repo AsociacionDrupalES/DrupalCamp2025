@@ -1,0 +1,22 @@
+uuid: f55ed095-98e4-4514-adc2-0bf7ab0f4a34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.brief_information_content
+  module:
+    - text
+id: paragraph.brief_information_content.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: brief_information_content
+label: Texto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

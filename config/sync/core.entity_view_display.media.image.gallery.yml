@@ -1,0 +1,42 @@
+uuid: d1bb0311-1265-4f41-ba28-d9e17286eadc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.gallery
+    - field.field.media.image.field_media_image
+    - image.style.full_width
+    - image.style.gallery
+    - media.type.image
+  module:
+    - colorbox
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.image.gallery
+targetEntityType: media
+bundle: image
+mode: gallery
+content:
+  field_media_image:
+    type: colorbox
+    label: visually_hidden
+    settings:
+      colorbox_image_style: full_width
+      colorbox_gallery: page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+      colorbox_node_style: gallery
+      colorbox_node_style_first: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 6b67709d-a96e-4213-8b4c-64379c355396
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.featured_speaker
+id: node.featured_speaker.status
+field_name: status
+entity_type: node
+bundle: featured_speaker
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

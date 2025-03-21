@@ -1,0 +1,21 @@
+[data-component-id="drupalcamp:session_detail"] {
+  @media (min-width: 960px) {
+    display: flex;
+    gap: 48px;
+
+    .content {
+      flex: 1;
+    }
+
+    .sidebar {
+      width: 300px;
+    }
+  }
+
+  .speakers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
