@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - file
     - node
 _core:
   default_config_hash: 0Jw_BFJCCtWk187tIYvME58VFpYwPaAdrc4eRtAyHH0
@@ -20,4 +21,20 @@ matchers:
       substitution_type: canonical
       limit: 100
       include_unpublished: false
+    weight: 0
+  04d96dfc-121f-4c1f-afcb-c6196f8b38fd:
+    id: 'entity:file'
+    uuid: 04d96dfc-121f-4c1f-afcb-c6196f8b38fd
+    settings:
+      metadata: '[file:basename] #[file:fid] | [file:created:medium]'
+      bundles: null
+      group_by_bundle: null
+      substitution_type: file
+      limit: 100
+      file_extensions: pdf
+      file_status: 1
+      images:
+        show_dimensions: false
+        show_thumbnail: false
+        thumbnail_image_style: null
     weight: 0
