@@ -19,5 +19,5 @@ props:
       type: string
       title: Link title
     link_uri:
-      type: string
+      "$ref": ui-patterns://url
       title: Link uri

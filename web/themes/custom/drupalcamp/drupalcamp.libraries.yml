@@ -58,6 +58,10 @@ dropbutton:
     component:
       css/components/dropbutton.css:
         weight: -10
+email:
+  css:
+    theme:
+      css/mail.css: { preprocess: false }
 file:
   version: VERSION
   css:

@@ -8,7 +8,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - text
     - user
 _core:
@@ -19,11 +19,10 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
-  contact:
-    weight: 5
-    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_bio:
     type: text_textarea
     weight: 2
@@ -41,19 +40,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
   language:
-    weight: 0
+    weight: 4
     region: content
-  timezone:
-    weight: 6
-    region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: -1
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
+  contact: true
   langcode: true
   path: true
+  timezone: true

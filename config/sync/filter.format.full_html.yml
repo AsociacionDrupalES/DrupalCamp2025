@@ -10,7 +10,7 @@ _core:
   default_config_hash: vpZysv3RHJjhYzq7O_q5q8mVlHdrSzKELmXyiX6RtV0
 name: 'HTML completo'
 format: full_html
-weight: 2
+weight: -9
 filters:
   editor_file_reference:
     id: editor_file_reference

@@ -1,6 +1,6 @@
 uuid: 9d6f6602-4d8c-436e-9b04-bdb6fe3516cf
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - spamspan
@@ -8,7 +8,7 @@ _core:
   default_config_hash: QiKqQS_YGAT3Qr4vaAgZICJknm-MGCzt_xBAMqg-tRM
 name: 'HTML Restringido'
 format: restricted_html
-weight: 1
+weight: -6
 filters:
   filter_autop:
     id: filter_autop

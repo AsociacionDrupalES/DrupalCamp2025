@@ -4,5 +4,5 @@ body {
   font-size: var(--font-size);
   line-height: var(--font-line-height);
   background-color: var(--color--gray);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }

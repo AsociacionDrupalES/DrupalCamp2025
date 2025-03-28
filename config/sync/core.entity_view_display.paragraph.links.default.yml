@@ -3,12 +3,16 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.accordion_element.field_title
+    - field.field.paragraph.brief_information.field_title
+    - field.field.paragraph.brief_information_content.field_title
     - field.field.paragraph.card.field_title
     - field.field.paragraph.hero.field_title
     - field.field.paragraph.images.field_title
     - field.field.paragraph.links.field_links
     - field.field.paragraph.links.field_title
     - field.field.paragraph.text.field_title
+    - field.field.paragraph.text_image.field_title
     - field.field.paragraph.ticket.field_title
     - paragraphs.paragraphs_type.links
   module:
@@ -71,7 +75,11 @@ content:
           link_uri:
             source_id: 'field_property:paragraph:field_links:uri'
         slots: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
     weight: 1
     region: content
   field_title:
