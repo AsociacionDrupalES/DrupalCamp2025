@@ -30,45 +30,51 @@ settings:
     negate: 1
     target_bundles_drag_drop:
       accordion:
-        weight: -29
+        weight: -33
         enabled: false
       accordion_element:
-        weight: -16
-        enabled: true
-      brief_information:
-        weight: -24
-        enabled: false
-      brief_information_content:
-        weight: -17
-        enabled: true
-      card:
-        weight: -23
-        enabled: false
-      cards:
-        weight: -22
-        enabled: false
-      hero:
-        weight: -26
-        enabled: false
-      images:
-        weight: -25
-        enabled: false
-      links:
-        weight: -28
-        enabled: false
-      paragraphs_set:
-        weight: -19
-        enabled: false
-      text:
-        weight: -21
-        enabled: false
-      text_image:
-        weight: -20
-        enabled: false
-      ticket:
         weight: -18
         enabled: true
-      tickets:
+      brief_information:
+        weight: -26
+        enabled: false
+      brief_information_content:
+        weight: -19
+        enabled: true
+      card:
+        weight: -25
+        enabled: false
+      cards:
+        weight: -24
+        enabled: false
+      hero:
+        weight: -28
+        enabled: false
+      images:
         weight: -27
+        enabled: false
+      links:
+        weight: -32
+        enabled: false
+      paragraphs_set:
+        weight: -21
+        enabled: false
+      person_card:
+        weight: -29
+        enabled: false
+      person_cards:
+        weight: -30
+        enabled: false
+      text:
+        weight: -23
+        enabled: false
+      text_image:
+        weight: -22
+        enabled: false
+      ticket:
+        weight: -20
+        enabled: true
+      tickets:
+        weight: -31
         enabled: false
 field_type: entity_reference_revisions

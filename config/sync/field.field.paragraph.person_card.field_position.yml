@@ -1,0 +1,19 @@
+uuid: bfd3b641-04aa-47b5-9513-b7ab662a3319
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.person_card
+id: paragraph.person_card.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: person_card
+label: Posición
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

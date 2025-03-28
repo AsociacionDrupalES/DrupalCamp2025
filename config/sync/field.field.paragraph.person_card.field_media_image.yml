@@ -1,0 +1,31 @@
+uuid: c9aed856-b08a-4ca5-b559-0af14ce773ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_image
+    - media.type.image
+    - media.type.vector_image
+    - paragraphs.paragraphs_type.person_card
+id: paragraph.person_card.field_media_image
+field_name: field_media_image
+entity_type: paragraph
+bundle: person_card
+label: Imagen
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      vector_image: vector_image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

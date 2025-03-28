@@ -1,0 +1,37 @@
+uuid: 19e0a749-7f2a-44e8-8959-5f5632eaa1cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.person_cards.field_subsections
+    - paragraphs.paragraphs_type.person_cards
+  module:
+    - paragraphs
+id: paragraph.person_cards.default
+targetEntityType: paragraph
+bundle: person_cards
+mode: default
+content:
+  field_subsections:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Elemento
+      title_plural: Elementos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

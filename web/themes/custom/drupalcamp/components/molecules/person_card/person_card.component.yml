@@ -1,0 +1,23 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Person card
+status: stable
+props:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Name
+      # @todo Add examples here.
+      examples: []
+    position:
+      type: string
+      title: Position
+      # @todo Add examples here.
+      examples: []
+slots:
+  summary:
+    title: Summary
+  image:
+    title: Image
+  links:
+    title: Links

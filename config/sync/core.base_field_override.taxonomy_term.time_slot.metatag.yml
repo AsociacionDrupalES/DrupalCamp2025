@@ -1,0 +1,20 @@
+uuid: b886ac8f-b4ee-4ee6-ab8a-522afb6ed24b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+  module:
+    - metatag
+id: taxonomy_term.time_slot.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: time_slot
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

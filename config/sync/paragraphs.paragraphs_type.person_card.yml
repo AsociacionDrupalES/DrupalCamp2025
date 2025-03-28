@@ -1,0 +1,10 @@
+uuid: 22b3f489-f178-4097-826a-497f9749a3c3
+langcode: es
+status: true
+dependencies: {  }
+id: person_card
+label: 'Ficha de persona'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

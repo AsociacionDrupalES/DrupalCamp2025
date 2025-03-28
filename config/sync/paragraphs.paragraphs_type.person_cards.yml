@@ -1,0 +1,15 @@
+uuid: ba84a716-6cf4-4b79-b16f-30eed85799c4
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: person_cards
+label: 'Fichas de persona'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

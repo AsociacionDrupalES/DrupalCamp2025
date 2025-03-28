@@ -1,0 +1,20 @@
+uuid: fd215c6e-1630-41d2-a181-ff82bf0760ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_audience
+  module:
+    - metatag
+id: taxonomy_term.session_audience.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: session_audience
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

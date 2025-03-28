@@ -1,0 +1,22 @@
+uuid: 475a733f-49ed-4ae0-ae32-a1c7962d06e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.person_card
+id: paragraph.person_card.status
+field_name: status
+entity_type: paragraph
+bundle: person_card
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

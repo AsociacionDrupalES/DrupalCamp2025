@@ -1,0 +1,46 @@
+[data-component-id="drupalcamp:person_card"] {
+  display: flex;
+  gap: 20px 50px;
+
+  .image-wrapper {
+    @media (min-width: 768px) {
+      width: 20%;
+    }
+
+    img {
+      border-radius: 17px;
+      width: 100%;
+    }
+  }
+
+  .text-wrapper {
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+
+    h2 {
+      font-size: calc(var(--font-size-h2) * 0.63);
+      line-height: calc(var(--font-line-height-h2) * 0.63);
+      margin-bottom: 10px;
+    }
+
+    .position {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .links {
+      > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        a {
+          font-size: calc(var(--font-size) * 0.7);
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

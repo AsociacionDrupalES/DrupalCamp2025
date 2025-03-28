@@ -1,0 +1,20 @@
+uuid: 00ecb569-ea92-49d2-9052-b7c6bdb49fda
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.featured_speaker
+  module:
+    - metatag
+id: node.featured_speaker.metatag
+field_name: metatag
+entity_type: node
+bundle: featured_speaker
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

@@ -1,0 +1,20 @@
+uuid: 1d59ef25-bbe0-47c4-a39d-1c8894a61499
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.job_listing
+  module:
+    - metatag
+id: node.job_listing.metatag
+field_name: metatag
+entity_type: node
+bundle: job_listing
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

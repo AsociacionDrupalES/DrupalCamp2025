@@ -1,0 +1,139 @@
+uuid: 1cb51e22-adc1-4787-9b22-f2e1a057da2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.person_card.field_links
+    - field.field.paragraph.person_card.field_media_image
+    - field.field.paragraph.person_card.field_position
+    - field.field.paragraph.person_card.field_text
+    - field.field.paragraph.person_card.field_title
+    - image.style.featured_speaker
+    - paragraphs.paragraphs_type.person_card
+  module:
+    - field_group
+    - link
+    - media
+    - nomarkup
+    - text
+third_party_settings:
+  field_group:
+    group_person_card:
+      children:
+        - field_title
+        - field_position
+        - field_text
+        - field_media_image
+        - field_links
+      label: 'Ficha de persona'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:person_card'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            name:
+              source_id: entity_field
+              source:
+                derivable_context: 'field:paragraph:person_card:field_title'
+                'field:paragraph:person_card:field_title':
+                  value:
+                    source_id: 'field_property:paragraph:field_title:value'
+            position:
+              source_id: entity_field
+              source:
+                derivable_context: 'field:paragraph:person_card:field_position'
+                'field:paragraph:person_card:field_position':
+                  value:
+                    source_id: 'field_property:paragraph:field_position:value'
+          slots:
+            summary:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_text
+                  _weight: '0'
+            image:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_media_image
+                  _weight: '0'
+            links:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_links
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
+id: paragraph.person_card.default
+targetEntityType: paragraph
+bundle: person_card
+mode: default
+content:
+  field_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 5
+    region: content
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: featured_speaker
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
+    region: content
+  field_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
