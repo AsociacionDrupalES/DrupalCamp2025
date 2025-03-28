@@ -76,7 +76,7 @@
     background-blend-mode: var(--bg-img-blend-mode);
     background-color: var(--component-bg-color);
     background-image: var(--bg-img);
-    background-position: center;
+    background-position: center 75%;
     background-repeat: repeat;
     background-size: var(--bg-img-size);
     content: '';
