@@ -14,16 +14,23 @@
       text-shadow: 0 0 1px var(--color--primary);
     }
 
+    .short-text {
+      display: none;
+    }
+
+    .full-text {
+      display: inline-block;
+    }
+
     @media (min-width: 1235px) {
       text-transform: uppercase;
-      display: inline-block;
-      width: auto;
-      max-width: 16px;
-      overflow-x: clip;
-      white-space: nowrap;
 
-      &[hreflang="en"] {
-        max-width: 25px;
+      .short-text {
+        display: inline-block;
+      }
+
+      .full-text {
+        display: none;
       }
     }
   }
