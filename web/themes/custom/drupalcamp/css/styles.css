@@ -16,6 +16,7 @@
 @import url('atoms/_lists.css');
 @import url('atoms/_p.css');
 @import url('atoms/_selection.css');
+@import url('atoms/_table.css');
 @import url('atoms/_titles.css');
 @import url('atoms/ckeditor/_p-text-bigger.css');
 @import url('atoms/ckeditor/_ul-pills-inline.css');
