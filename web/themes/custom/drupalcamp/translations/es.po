@@ -83,7 +83,7 @@ msgstr "Ruta de navegación"
 
 #: themes/custom/drupalcamp/components/molecules/footer/footer.twig:3
 msgid "Acknowledgements"
-msgstr "Patrocinadores"
+msgstr "Agradecimientos"
 
 #: themes/custom/drupalcamp/templates/block/block--local-tasks-block.html.twig:10
 msgid "Tabs"
