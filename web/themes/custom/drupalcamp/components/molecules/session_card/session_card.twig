@@ -5,7 +5,7 @@
     with_context = false
   ) }}
   <div class="speakers">{{ speakers }}</div>
-  <ul class="tags ul--pills--inline">
+  <ul class="tags ul--pills--inline ul--pills--small">
     {% for tag in tags %}
       {% if tag|render|striptags is not empty %}
       <li>{{ tag }}</li>

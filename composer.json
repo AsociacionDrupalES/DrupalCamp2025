@@ -28,6 +28,7 @@
         "drupal/metatag": "^2.1",
         "drupal/nomarkup": "^1.0",
         "drupal/paragraphs": "^1.18",
+        "drupal/r4032login": "^2.2",
         "drupal/redirect": "^1.11",
         "drupal/schema_metatag": "^3.0",
         "drupal/simple_sitemap": "^4.2",

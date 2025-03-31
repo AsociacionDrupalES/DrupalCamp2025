@@ -45,15 +45,12 @@
     {{ title }}
   {% endif %}
   {{ title_suffix }}
-  {% if header %}
-    <div class="view-header">
-      {{ header }}
-    </div>
-  {% endif %}
-  {% if exposed %}
-    <div class="view-filters">
-      {{ exposed }}
-    </div>
+  {% if header or exposed or pager %}
+    {{ include ('drupalcamp:list_header', {
+      header: header,
+      filters: exposed,
+      pager: pager
+    }) }}
   {% endif %}
   {% if attachment_before %}
     <div class="attachment attachment-before">
@@ -71,9 +68,6 @@
     } %}
   {% endif %}
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
   {% if attachment_after %}
     <div class="attachment attachment-after">
       {{ attachment_after }}
@@ -82,10 +76,11 @@
   {% if more %}
     {{ more }}
   {% endif %}
-  {% if footer %}
-    <div class="view-footer">
-      {{ footer }}
-    </div>
+  {% if footer or pager %}
+    {{ include ('drupalcamp:list_footer', {
+      content: footer,
+      pager: pager
+    }) }}
   {% endif %}
   {% if feed_icons %}
     <div class="feed-icons">

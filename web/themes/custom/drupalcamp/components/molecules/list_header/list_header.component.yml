@@ -1,0 +1,16 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: List header
+status: stable
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+slots:
+  header:
+    title: Header
+  filters:
+    title: Content
+  pager:
+    title: Pager

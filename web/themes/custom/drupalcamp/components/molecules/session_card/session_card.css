@@ -1,38 +1,49 @@
 [data-component-id="drupalcamp:session_card"] {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   background: white;
-  border: 2px solid var(--color--primary);
+  border: 1px solid var(--color--primary);
   border-radius: 17px;
   box-sizing: border-box;
-  padding: 32px;
+  padding: 30px 22px 20px;
   width: 100%;
   transition: var(--transition);
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    height: 100%;
+  }
 
   &:focus,
   &:hover {
     color: #ffffff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
     background: var(--color--primary);
-
-    .avatar {
-      outline-color: #ffffff;
-      border-color: var(--color--primary);
-    }
   }
 
   .speakers {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 16px;
+    flex: 1;
 
     .avatar {
       transition: var(--transition);
     }
   }
 
-  ul.ul--pills--inline li:hover {
-    border: 2px solid var(--color--primary-light);
+  ul.ul--pills--inline {
+    margin: 0;
+    gap: 14px;
+    flex-direction: column;
+
+    li {
+      width: fit-content;
+
+      &:hover {
+        border: 2px solid var(--color--primary-light);
+      }
+    }
   }
 }

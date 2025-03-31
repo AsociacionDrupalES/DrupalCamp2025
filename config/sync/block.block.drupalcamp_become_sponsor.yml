@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - custom_general_features
+    - system
   theme:
     - drupalcamp
 id: drupalcamp_become_sponsor
@@ -21,4 +22,8 @@ settings:
   body:
     value: '<p>Si te interesa patrocinar el evento y mostrar el apoyo de tu empresa a la comunidad Drupal, consulta nuestros paquetes de patrocinio y ponte en contacto con nosotros a través del formulario de contacto.</p><p><a class="link--button link--button--secondary" href="#">Dossier de patrocinio</a></p>'
     format: full_html
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/sessions/*\r\n/sesiones/*"

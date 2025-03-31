@@ -70,6 +70,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  r4032login: 0
   redirect: 0
   registration_role: 0
   simple_sitemap: 0

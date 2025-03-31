@@ -1,16 +1,21 @@
 .form-email,
 .form-text,
-.form-textarea {
-  border: 1px solid var(--color--primary-light);
-  border-radius: 17px;
+.form-textarea,
+.form-select {
+  border: 1px solid var(--color--primary);
+  border-radius: 7px;
   box-sizing: border-box;
   padding: 6px 20px;
+  transition: border-color 0.3s ease;
+  background-color: var(--color--gray);
+  line-height: normal;
 
   &:focus,
   &:focus-visible {
     outline: 2px solid var(--color--primary-light);
   }
 }
+
 .form-textarea {
   padding: 20px;
 }

@@ -1,15 +1,16 @@
 <div {{ attributes }}>
-  <div class="content">
-    {{ description }}
-  </div>
-  <div class="sidebar">
+  <div class="sidebar component-background-image component-background-color component-background-color-gray" style="--bg-img: url({{ '/' ~ active_theme_path() ~ '/images/noise.jpg'}});">
+    <a href="{{  path('view.session_list.page_1') }}" class="sidebar--back-button">{{ 'Back'|t }}</a>
     <div class="speakers">{{ speakers }}</div>
-    <ul class="tags ul--pills--inline">
+    <ul class="tags ul--pills--inline ul--pills--small">
       {% for tag in tags %}
         {% if tag|render|striptags is not empty %}
           <li>{{ tag }}</li>
         {% endif %}
       {% endfor %}
     </ul>
+  </div>
+  <div class="content">
+    {{ description }}
   </div>
 </div>

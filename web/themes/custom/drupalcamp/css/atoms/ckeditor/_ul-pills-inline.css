@@ -22,4 +22,10 @@
       content: "";
     }
   }
+
+  &.ul--pills--small {
+    li {
+      padding: 4px 16px;
+    }
+  }
 }

@@ -22,8 +22,6 @@ base:
         weight: -10
       css/components/icons.css:
         weight: -10
-      css/components/inline-form.css:
-        weight: -10
       css/components/item-list.css:
         weight: -10
       css/components/link.css:
@@ -45,6 +43,8 @@ base:
       css/components/textarea.css:
         weight: -10
       css/components/ui-dialog.css:
+        weight: -10
+      css/components/views.css:
         weight: -10
 dialog:
   version: VERSION

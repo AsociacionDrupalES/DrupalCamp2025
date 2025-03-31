@@ -8,20 +8,20 @@ dependencies:
 id: sessions_es
 label: 'Sesiones (es)'
 type: 'canonical_entities:node'
-pattern: '/sesion/[node:title]'
+pattern: '/sesiones/[node:title]'
 selection_criteria:
-  4c1475c1-113b-41ba-a62c-f952b358810a:
+  79945280-bce6-4351-9bf1-08fd937825dd:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4c1475c1-113b-41ba-a62c-f952b358810a
+    uuid: 79945280-bce6-4351-9bf1-08fd937825dd
     context_mapping:
       node: node
     bundles:
       session: session
-  8589c45e-bf1e-4fc9-85cc-cb921ec606db:
+  07c3199d-5ed6-470b-8e66-0a7fa11fbded:
     id: language
     negate: false
-    uuid: 8589c45e-bf1e-4fc9-85cc-cb921ec606db
+    uuid: 07c3199d-5ed6-470b-8e66-0a7fa11fbded
     context_mapping:
       language: 'node:langcode:language'
     langcodes:

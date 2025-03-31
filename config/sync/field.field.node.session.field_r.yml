@@ -12,7 +12,7 @@ id: node.session.field_r
 field_name: field_r
 entity_type: node
 bundle: session
-label: Habitacion
+label: Sala
 description: ''
 required: false
 translatable: false
