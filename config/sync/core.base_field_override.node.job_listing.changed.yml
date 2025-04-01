@@ -1,0 +1,18 @@
+uuid: b11dc844-fc65-4e09-afd2-92667e1daf77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.job_listing
+id: node.job_listing.changed
+field_name: changed
+entity_type: node
+bundle: job_listing
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

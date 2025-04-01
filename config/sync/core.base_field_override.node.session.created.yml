@@ -1,0 +1,18 @@
+uuid: e7359d4f-9586-4cf6-924b-09aa1cc2afd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.session
+id: node.session.created
+field_name: created
+entity_type: node
+bundle: session
+label: 'Fecha de autoría'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

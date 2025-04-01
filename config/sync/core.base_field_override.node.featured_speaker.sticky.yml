@@ -1,0 +1,22 @@
+uuid: 0ae23d55-68d7-4e53-8ad4-f81bac45c88c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.featured_speaker
+id: node.featured_speaker.sticky
+field_name: sticky
+entity_type: node
+bundle: featured_speaker
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

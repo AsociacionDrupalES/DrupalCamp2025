@@ -554,9 +554,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filtrar
           reset_button: false
-          reset_button_label: Restablecer
+          reset_button_label: Limpiar
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc

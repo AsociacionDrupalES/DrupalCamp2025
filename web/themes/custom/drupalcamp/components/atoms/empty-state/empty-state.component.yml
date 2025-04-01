@@ -1,0 +1,7 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Empty state
+description: "Displays an empty state message."
+status: stable
+slots:
+  content:
+    title: Content

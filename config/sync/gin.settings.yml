@@ -1,0 +1,29 @@
+_core:
+  default_config_hash: ug4-rUG_KE9H5v1RaDLLpkSZsu70E9HnJp6sqFfjvHk
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: themes/custom/drupalcamp/favicon.ico
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: themes/custom/drupalcamp/logo.svg
+  use_default: false
+third_party_settings:
+  shortcut:
+    module_link: true
+preset_accent_color: custom
+preset_focus_color: custom
+enable_darkmode: '0'
+classic_toolbar: vertical
+secondary_toolbar_frontend: true
+high_contrast_mode: false
+accent_color: '#202e56'
+focus_color: '#fcbf1d'
+layout_density: default
+show_description_toggle: false
+show_user_theme_settings: false
+sticky_action_buttons: false

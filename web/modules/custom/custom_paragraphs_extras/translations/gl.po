@@ -1,0 +1,153 @@
+# $Id$
+#
+# Galician translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.module: n/a
+#  modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.info.yml: n/a
+#  modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php: n/a
+#  modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php: n/a
+#  modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php: n/a
+#  modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2025-04-01 10:28+0200\n"
+"PO-Revision-Date: 2025-04-01 10:28+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Galician <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.module:33
+msgid "Behavior value"
+msgstr "Valor do behavior"
+
+#: modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.module:34
+msgid "Specific behavior value."
+msgstr "Valor específico do behavior."
+
+#: modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.info.yml:0
+msgid "Paragraphs - Extras"
+msgstr "Paragraphs - Extras"
+
+#: modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.info.yml:0
+msgid "Additional features and customizations for paragraphs."
+msgstr "Funcións adicionais e personalizacións para paragraphs."
+
+#: modules/custom/custom_paragraphs_extras/custom_paragraphs_extras.info.yml:0
+msgid "Custom"
+msgstr "Personalizado"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:120;155;164 modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:45 modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:43
+msgid "- None -"
+msgstr "- Ningún -"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:124
+msgid "Image style"
+msgstr "Estilo de imaxe"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:138
+msgid "Background settings"
+msgstr "Configuración de fondo"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:143 modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:49;13
+msgid "Color"
+msgstr "Cor"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:149
+msgid "Upload your background image"
+msgstr "Sube a túa imaxe de fondo"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:159
+msgid "Image blend mode"
+msgstr "Modo de fusión de imaxes"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:168
+msgid "Image size"
+msgstr "Tamaño da imaxe"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:22
+msgid "Background"
+msgstr "Fondo"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/BackgroundBehavior.php:22
+msgid "Adds a background to the Paragraph entity."
+msgstr "Agrega un fondo á entidade Parágrafo"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:29
+msgid "Primary"
+msgstr "Primario"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:30
+msgid "Secondary"
+msgstr "Secundario"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:31
+msgid "Primary light"
+msgstr "Primario claro"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:32
+msgid "White"
+msgstr "Branco"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:13
+msgid "Adds a color class to the Paragraph entity."
+msgstr "Engade unha clase de cor á entidade Parágrafo."
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:30
+msgid "Default"
+msgstr "Predeterminado"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:31
+msgid "Featured"
+msgstr "Destacado"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:32
+msgid "With border"
+msgstr "Con borde"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:48
+msgid "Allowed variants"
+msgstr "Variantes permitidas"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:68
+msgid "Variant"
+msgstr "Variante"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:13
+msgid "SDC variant"
+msgstr "Variante SDC"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/VariantBehavior.php:13
+msgid "Allow select a SDC variant for the Paragraph entity."
+msgstr "Permitir seleccionar unha variante de SDC para a entidade Parágrafo."
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:71
+msgid "Select which view modes are allowable"
+msgstr "Seleccione que modos de visualización están permitidos"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:77
+msgid "Select default view mode for content to use"
+msgstr "Seleccione o modo de visualización predeterminado para o contido a utilizar"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:127
+msgid "Select which view mode to use for this paragraph"
+msgstr "Seleccione que modo de visualización utilizar para este parágrafo"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:147
+msgid "View mode: @view_mode"
+msgstr "Modo de visualización: @view_mode"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:15
+msgid "View mode behavior"
+msgstr "Comportamento de modo de visualización"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ViewModeBehavior.php:15
+msgid "Adds a 'view mode' selector field to the Paragraph entity."
+msgstr "Engade un selector de 'modo de visualización' á entidade Parágrafo."
+

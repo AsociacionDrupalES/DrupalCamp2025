@@ -1,0 +1,33 @@
+<footer role="contentinfo" class="footer">
+  <div class="footer__top">
+    <p class="footer__top__title h3">{{ 'Acknowledgements'|t }}</p>
+    <div class="footer__top__logos">
+      <a href="https://asociaciondrupal.es/" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/aed.svg' }}" alt="Asociación Española de Drupal">
+      </a>
+      <a href="https://www.drupal.org/association" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/drupal-association.svg' }}" alt="Drupal Association">
+      </a>
+      <a href="https://amtega.xunta.gal/" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/amtega.svg' }}" alt="Axencia para a modernización tecnolóxica de Galicia">
+      </a>
+    </div>
+  </div>
+  <div class="footer__pre-links">
+    <div class="footer__logo">
+      <img src="{{ '/' ~ directory ~ '/logo-white.png' }}" alt="DrupalCamp Santiago 2025" />
+    </div>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/showcase/drupalcamp-spain/" title="Linkedin" class="footer__social__icon" target="_blank">{{ source(directory ~ '/images/icons/social/linkedin.svg') }}</a>
+      <a href="https://www.instagram.com/drupalcampspain/" title="Instagram" class="footer__social__icon" target="_blank">{{ source(directory ~ '/images/icons/social/instagram.svg') }}</a>
+      <a href="https://www.youtube.com/channel/UCJlthEUN__9_-KWFQ_-0fLg" title="Youtube" class="footer__social__icon" target="_blank">{{ source(directory ~ '/images/icons/social/youtube.svg') }}</a>
+      <a href="https://github.com/AsociacionDrupalES" title="GitHub" class="footer__social__icon" target="_blank">{{ source(directory ~ '/images/icons/social/github.svg') }}</a>
+    </div>
+  </div>
+  <div class="footer__links">
+    <p class="footer__links__copyright">© 2025 <a href="https://asociaciondrupal.es/" target="_blank">Asociación Española de Drupal</a></p>
+    <div>
+      {{ content }}
+    </div>
+  </div>
+</footer>

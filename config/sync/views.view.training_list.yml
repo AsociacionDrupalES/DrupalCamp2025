@@ -85,9 +85,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filtrar
           reset_button: false
-          reset_button_label: Restablecer
+          reset_button_label: Limpiar
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -314,7 +314,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -332,6 +331,7 @@ display:
         title: Trainings
         description: ''
         weight: 2
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'menu_link_content:30b07840-7761-479c-89a6-fd81b482b823'
@@ -347,7 +347,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

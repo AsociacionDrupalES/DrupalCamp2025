@@ -1,0 +1,16 @@
+.messages__wrapper {
+  background: var(--color--gray);
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  bottom: 0;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  left: 0;
+  line-height: 1.3rem;
+  margin-left: var(--page-side-margin);
+  padding: 2rem;
+  position: fixed;
+  right: 0;
+  width: calc(100% - var(--page-side-margin));
+  z-index: 100;
+}

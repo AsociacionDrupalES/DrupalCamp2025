@@ -1,0 +1,22 @@
+uuid: ac4fab5e-d462-4f85-bfa6-04a8531d4c8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.promote
+field_name: promote
+entity_type: node
+bundle: article
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

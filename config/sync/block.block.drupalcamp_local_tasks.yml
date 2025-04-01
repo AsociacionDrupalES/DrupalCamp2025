@@ -1,0 +1,22 @@
+uuid: 266e0119-d530-4be2-9328-ff069219527a
+langcode: es
+status: true
+dependencies:
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: IaC-Amz5T3WnvJmDY1kjzPvZKSPWbu-AwLS-d31Z3Qw
+id: drupalcamp_local_tasks
+theme: drupalcamp
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

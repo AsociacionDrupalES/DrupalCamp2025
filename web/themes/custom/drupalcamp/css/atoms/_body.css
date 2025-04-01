@@ -1,0 +1,8 @@
+body {
+  color: var(--color--primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  background-color: var(--color--gray);
+  overflow-x: hidden !important;
+}

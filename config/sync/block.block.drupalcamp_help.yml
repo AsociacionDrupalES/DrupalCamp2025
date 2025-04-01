@@ -1,0 +1,22 @@
+uuid: 422b8bd9-aec5-4e3b-aa4f-7e4250fb2da4
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: POA2DL8HnLs6eacbARLWiG5XpTu8kOfqrvLkcX4XSxQ
+id: drupalcamp_help
+theme: drupalcamp
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

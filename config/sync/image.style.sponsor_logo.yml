@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: 36Kfsn6O1D5WWD83v-CulrXhBZtqYo9zEqAYc8T8dbk
 name: sponsor_logo
-label: 'Sponsor Logo'
+label: Logo
 effects:
   3ce036ef-350a-44b7-a0ab-26fa4b46b3d8:
     uuid: 3ce036ef-350a-44b7-a0ab-26fa4b46b3d8

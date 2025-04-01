@@ -1,0 +1,15 @@
+<div {{ attributes }}>
+  <div class="image-wrapper">
+    {{ image }}
+  </div>
+  <div class="text-wrapper">
+    {{ include(
+      'drupalcamp:title',
+      { text: name, html_tag: 'h2' },
+      with_context = false
+    ) }}
+    <div class="position">{{ position }}</div>
+    <div class="summary">{{ summary }}</div>
+    <div class="links">{{ links }}</div>
+  </div>
+</div>

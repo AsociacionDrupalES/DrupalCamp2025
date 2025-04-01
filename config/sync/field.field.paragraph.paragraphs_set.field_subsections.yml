@@ -1,0 +1,81 @@
+uuid: ad4c906e-f9dc-470d-9722-f8b4fc0bdfc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subsections
+    - paragraphs.paragraphs_type.accordion_element
+    - paragraphs.paragraphs_type.brief_information_content
+    - paragraphs.paragraphs_type.paragraphs_set
+    - paragraphs.paragraphs_type.ticket
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_set.field_subsections
+field_name: field_subsections
+entity_type: paragraph
+bundle: paragraphs_set
+label: Párrafos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraphs_set: paragraphs_set
+      ticket: ticket
+      accordion_element: accordion_element
+      brief_information_content: brief_information_content
+    negate: 1
+    target_bundles_drag_drop:
+      accordion:
+        weight: -33
+        enabled: false
+      accordion_element:
+        weight: -19
+        enabled: true
+      brief_information:
+        weight: -26
+        enabled: false
+      brief_information_content:
+        weight: -18
+        enabled: true
+      card:
+        weight: -25
+        enabled: false
+      cards:
+        weight: -24
+        enabled: false
+      hero:
+        weight: -28
+        enabled: false
+      images:
+        weight: -27
+        enabled: false
+      links:
+        weight: -32
+        enabled: false
+      paragraphs_set:
+        weight: -21
+        enabled: true
+      person_card:
+        weight: -29
+        enabled: false
+      person_cards:
+        weight: -30
+        enabled: false
+      text:
+        weight: -23
+        enabled: false
+      text_image:
+        weight: -22
+        enabled: false
+      ticket:
+        weight: -20
+        enabled: true
+      tickets:
+        weight: -31
+        enabled: false
+field_type: entity_reference_revisions

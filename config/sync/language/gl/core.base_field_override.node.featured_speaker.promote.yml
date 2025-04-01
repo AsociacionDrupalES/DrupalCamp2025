@@ -1,0 +1,4 @@
+label: 'Promocionado á páxina principal'
+settings:
+  on_label: Activo
+  off_label: Desactivado

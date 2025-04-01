@@ -1,0 +1,40 @@
+uuid: ec20fc40-88b2-4146-8070-78df009dc78e
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: 0Jw_BFJCCtWk187tIYvME58VFpYwPaAdrc4eRtAyHH0
+label: 'Por defecto'
+id: default
+description: 'A default Linkit profile'
+matchers:
+  556010a3-e317-48b3-b4ed-854c10f4b950:
+    id: 'entity:node'
+    uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
+    settings:
+      metadata: '[node:content-type:name] #[node:nid] | [node:created:medium] by [node:author]'
+      bundles: {  }
+      group_by_bundle: false
+      substitution_type: canonical
+      limit: 100
+      include_unpublished: false
+    weight: 0
+  04d96dfc-121f-4c1f-afcb-c6196f8b38fd:
+    id: 'entity:file'
+    uuid: 04d96dfc-121f-4c1f-afcb-c6196f8b38fd
+    settings:
+      metadata: '[file:basename] #[file:fid] | [file:created:medium]'
+      bundles: null
+      group_by_bundle: null
+      substitution_type: file
+      limit: 100
+      file_extensions: pdf
+      file_status: 1
+      images:
+        show_dimensions: false
+        show_thumbnail: false
+        thumbnail_image_style: null
+    weight: 0

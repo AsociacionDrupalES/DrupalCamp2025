@@ -1,0 +1,94 @@
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: Medios
+      fields:
+        media_bulk_form:
+          action_title: Acción
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      sorts:
+        created:
+          expose:
+            label: 'O máis recente primeiro'
+      filters:
+        status:
+          group_info:
+            label: Publicado
+            group_items:
+              1:
+                title: Publicado
+              2:
+                title: 'Non publicado'
+        name:
+          expose:
+            label: Nome
+        langcode:
+          expose:
+            label: Idioma
+  page:
+    display_title: Páxina
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Acción
+        name:
+          separator: ', '
+        edit_media:
+          text: Editar
+        delete_media:
+          text: Borrar
+  widget:
+    display_title: Control
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Todo
+      filters:
+        name:
+          expose:
+            label: Nome
+      header:
+        display_link_grid:
+          label: Grella
+        display_link_table:
+          label: Táboa
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatura
+        name:
+          label: Nome
+        uid:
+          label: Autor/a
+        changed:
+          label: Actualizado
+      arguments:
+        bundle:
+          exception:
+            title: Todo
+      filters:
+        name:
+          expose:
+            label: Nome
+      header:
+        display_link_grid:
+          label: Grella
+        display_link_table:
+          label: Táboa

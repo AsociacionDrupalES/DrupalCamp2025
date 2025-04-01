@@ -1,0 +1,33 @@
+uuid: d3a1316c-012d-434b-9900-1929ad31377b
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: sessions_es
+label: 'Sesiones (es)'
+type: 'canonical_entities:node'
+pattern: '/sesiones/[node:title]'
+selection_criteria:
+  79945280-bce6-4351-9bf1-08fd937825dd:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 79945280-bce6-4351-9bf1-08fd937825dd
+    context_mapping:
+      node: node
+    bundles:
+      session: session
+  07c3199d-5ed6-470b-8e66-0a7fa11fbded:
+    id: language
+    negate: false
+    uuid: 07c3199d-5ed6-470b-8e66-0a7fa11fbded
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

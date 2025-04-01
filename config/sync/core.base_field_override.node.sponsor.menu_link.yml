@@ -1,0 +1,20 @@
+uuid: 34f7b119-03a1-42e6-b869-b9668d3d3068
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.menu_link
+field_name: menu_link
+entity_type: node
+bundle: sponsor
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

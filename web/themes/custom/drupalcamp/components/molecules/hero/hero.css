@@ -1,0 +1,52 @@
+[data-component-id="drupalcamp:hero"] {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 824px;
+
+  &:before {
+    background-color: rgba(0, 0, 0, 0.38);
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: calc(100vw - var(--page-side-margin));
+    z-index: -1;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+
+    .text-wrapper {
+      font-size: calc(var(--font-size) * 1.38);
+      line-height: calc(var(--font-line-height) * 1.38);
+      max-width: 566px;
+
+      .link--button {
+        font-size: calc(var(--font-size));
+        line-height: calc(var(--font-line-height));
+      }
+    }
+    .logo {
+      flex-grow: 1;
+      text-align: center;
+
+      img {
+        max-width: 276px;
+      }
+
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
+  }
+}

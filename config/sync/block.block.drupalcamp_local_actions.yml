@@ -1,0 +1,20 @@
+uuid: e77b6fec-b007-44da-9513-adf503887721
+langcode: es
+status: true
+dependencies:
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: olUc5_TVLYvAOxdceC4RhocMtvIxvFS8pdPxJLv6UUQ
+id: drupalcamp_local_actions
+theme: drupalcamp
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

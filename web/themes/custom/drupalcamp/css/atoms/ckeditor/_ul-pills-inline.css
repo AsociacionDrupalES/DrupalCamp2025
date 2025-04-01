@@ -1,0 +1,31 @@
+.text-formatted .ul--pills--inline,
+.ul--pills--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    border: 2px solid var(--color--primary-light);
+    border-radius: 50px;
+    cursor: default;
+    margin: 0;
+    padding: 10px 20px;
+    transition: var(--transition);
+
+    &:hover {
+      border: 2px solid var(--color--secondary);
+    }
+
+    &::marker {
+      content: "";
+    }
+  }
+
+  &.ul--pills--small {
+    li {
+      padding: 4px 16px;
+    }
+  }
+}

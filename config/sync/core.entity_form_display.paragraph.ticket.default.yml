@@ -1,0 +1,64 @@
+uuid: e0756b80-0363-4638-9a7b-1543bc1cca78
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ticket.field_link
+    - field.field.paragraph.ticket.field_price
+    - field.field.paragraph.ticket.field_text
+    - field.field.paragraph.ticket.field_title
+    - paragraphs.paragraphs_type.ticket
+  module:
+    - link
+    - text
+id: paragraph.ticket.default
+targetEntityType: paragraph
+bundle: ticket
+mode: default
+content:
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_price:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true

@@ -1,0 +1,38 @@
+.custom-color-selector-widget div .form-radios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.custom-color-selector-widget div .form-radios .form-item {
+  border-radius: 50px;
+  height: 50px;
+  margin: 0;
+  width: 50px;
+}
+
+.custom-color-selector-widget div .form-radios .form-item input {
+  display: none;
+}
+
+.custom-color-selector-widget div .form-radios .form-item label {
+  border: 3px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  outline: 1px solid #000;
+  text-indent: -9999px;
+  transition: all 0.1s;
+}
+
+.custom-color-selector-widget div .form-radios .form-item input[type="radio"]:checked + label {
+  border: 3px solid #fff;
+  outline: 3px solid #000;
+}
+
+.custom-color-selector-widget div .form-radios .form-item label:hover {
+  border: 3px solid #fff;
+  outline: 3px solid #999;
+}

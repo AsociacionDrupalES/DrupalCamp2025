@@ -1,0 +1,3 @@
+.admin-toolbar ~ .dialog-off-canvas-main-canvas {
+  --page-side-margin: var(--drupal-displace-offset-left, 0px);
+}

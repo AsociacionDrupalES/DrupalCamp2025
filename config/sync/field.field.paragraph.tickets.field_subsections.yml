@@ -1,0 +1,46 @@
+uuid: 8a00f097-201b-4c04-a63b-4a1fb23a2fc8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subsections
+    - paragraphs.paragraphs_type.ticket
+    - paragraphs.paragraphs_type.tickets
+  module:
+    - entity_reference_revisions
+id: paragraph.tickets.field_subsections
+field_name: field_subsections
+entity_type: paragraph
+bundle: tickets
+label: Entradas
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ticket: ticket
+    negate: 0
+    target_bundles_drag_drop:
+      hero:
+        weight: 8
+        enabled: false
+      images:
+        weight: 9
+        enabled: false
+      links:
+        weight: 10
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      ticket:
+        weight: 7
+        enabled: true
+      tickets:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

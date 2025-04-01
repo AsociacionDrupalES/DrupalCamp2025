@@ -1,0 +1,44 @@
+uuid: 0eb02e42-a887-4004-8f07-b38b973d883e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_subsections
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_subsections:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:accordion'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          elements:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:accordion:field_subsections'
+                source:
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+                _weight: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

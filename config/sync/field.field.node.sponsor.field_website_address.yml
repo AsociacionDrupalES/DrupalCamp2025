@@ -13,7 +13,7 @@ id: node.sponsor.field_website_address
 field_name: field_website_address
 entity_type: node
 bundle: sponsor
-label: 'Sponsor Website Address'
+label: 'Sitio web'
 description: ''
 required: true
 translatable: false

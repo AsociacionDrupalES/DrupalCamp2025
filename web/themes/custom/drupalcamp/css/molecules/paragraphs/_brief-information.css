@@ -1,0 +1,10 @@
+.paragraph--type--brief-information {
+  [data-component-id="drupalcamp:title"] {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .paragraph--type--brief-information-content {
+    padding: 0;
+  }
+}

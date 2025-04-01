@@ -1,0 +1,7 @@
+<ul class="header-menu">
+  {% for item in items %}
+    <li class="header-menu__item">
+      <a href="{{ item.url }}" class="header-menu__link{% if item.in_active_trail %} is-active{% endif %}">{{ item.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

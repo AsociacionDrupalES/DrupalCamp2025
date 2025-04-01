@@ -1,0 +1,20 @@
+uuid: ac990246-4b23-4fca-be6f-9120d5eca7f7
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - drupalcamp
+id: drupalcamp_language_switcher
+theme: drupalcamp
+region: header_content
+weight: -5
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+visibility: {  }

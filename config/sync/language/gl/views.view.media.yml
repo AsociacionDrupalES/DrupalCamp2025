@@ -1,0 +1,71 @@
+label: Medios
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: Medios
+      fields:
+        media_bulk_form:
+          action_title: Acción
+        thumbnail__target_id:
+          label: Miniatura
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: Tipo
+          separator: ', '
+        uid:
+          label: Autor/a
+          separator: ', '
+        status:
+          label: Estado
+          settings:
+            format_custom_false: 'Non publicado'
+            format_custom_true: Publicado
+          separator: ', '
+        changed:
+          label: Actualizado
+          separator: ', '
+        operations:
+          label: Operacións
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        bundle:
+          expose:
+            label: Tipo
+        status:
+          expose:
+            label: Verdadeiro
+          group_info:
+            label: 'Estado de publicación'
+            group_items:
+              1:
+                title: Publicado
+              2:
+                title: 'Non publicado'
+        langcode:
+          expose:
+            label: Idioma
+  media_page_list:
+    display_title: Medios
+    display_options:
+      menu:
+        title: Medios

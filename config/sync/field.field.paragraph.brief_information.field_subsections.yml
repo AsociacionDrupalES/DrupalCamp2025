@@ -1,0 +1,61 @@
+uuid: f029e81f-e128-485f-8cb0-ff72aff4e2c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subsections
+    - paragraphs.paragraphs_type.brief_information
+    - paragraphs.paragraphs_type.brief_information_content
+  module:
+    - entity_reference_revisions
+id: paragraph.brief_information.field_subsections
+field_name: field_subsections
+entity_type: paragraph
+bundle: brief_information
+label: Elementos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      brief_information_content: brief_information_content
+    negate: 0
+    target_bundles_drag_drop:
+      brief_information:
+        weight: 11
+        enabled: false
+      brief_information_content:
+        weight: 12
+        enabled: true
+      card:
+        weight: 9
+        enabled: false
+      cards:
+        weight: 10
+        enabled: false
+      hero:
+        weight: 8
+        enabled: false
+      images:
+        weight: 9
+        enabled: false
+      links:
+        weight: 10
+        enabled: false
+      paragraphs_set:
+        weight: 17
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      ticket:
+        weight: 7
+        enabled: false
+      tickets:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

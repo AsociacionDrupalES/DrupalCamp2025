@@ -1,0 +1,79 @@
+[data-component-id="drupalcamp:session_detail"] {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .sidebar {
+    padding: 1.5em 0;
+    --bg-img-blend-mode: overlay;
+    --bg-img-size: auto;
+
+    .sidebar--back-button {
+      display: none;
+    }
+  }
+
+  .content {
+    flex: 1;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    .content {
+      flex: 1;
+      margin-top: 50px;
+      margin-bottom: 70px;
+    }
+
+    .sidebar {
+      width: 330px;
+      padding: 50px 30px 70px 0;
+      --bg-img-blend-mode: overlay;
+      --bg-img-size: auto;
+
+      &:before, &:after {
+        right: 0;
+        margin-left: calc(50% - (50vw - (var(--page-side-margin) / 2)));
+      }
+
+      .sidebar--back-button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid var(--color--primary);
+        color: var(--color--primary);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: var(--transition);
+
+        &:before {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgOEgxTTggMUwxIDhMOCAxNSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
+          font-size: 20px;
+        }
+
+        /* Hide text but keep accessible */
+        font-size: 0;
+
+        &:hover,
+        &:focus {
+          background-color: var(--color--secondary);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .speakers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}

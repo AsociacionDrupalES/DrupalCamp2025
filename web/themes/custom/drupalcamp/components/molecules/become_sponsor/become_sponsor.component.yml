@@ -1,0 +1,15 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Become a sponsor
+status: stable
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+    logo_svg:
+      type: string
+      title: Logo SVG
+slots:
+  text:
+    title: Text

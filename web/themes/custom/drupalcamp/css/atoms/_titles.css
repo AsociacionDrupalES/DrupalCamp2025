@@ -1,0 +1,22 @@
+h1, .h1, h2, .h2, h3, .h3, h4, h5, h6 {
+  font-family: var(--font-family-h);
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--font-line-height-h1);
+  margin: 0;
+}
+
+h2, .h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--font-line-height-h2);
+  margin: 0 0 20px 0;
+}
+
+h3, .h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--font-line-height-h3);
+  margin: 0;
+}

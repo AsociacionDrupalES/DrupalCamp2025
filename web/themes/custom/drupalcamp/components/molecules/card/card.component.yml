@@ -1,0 +1,22 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Card
+status: stable
+variants:
+  default:
+    title: Default
+  featured:
+    title: Featured
+  with-border:
+    title: Card with border
+props:
+  type: object
+  properties:
+    css_classes:
+      type: string
+      title: CSS classes
+    title:
+      type: string
+      title: Title
+slots:
+  text:
+    title: Text

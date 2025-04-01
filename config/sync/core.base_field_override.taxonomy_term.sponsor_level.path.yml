@@ -1,0 +1,20 @@
+uuid: 0c4f5ce1-78f3-4f02-9d9d-4c4e902895fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor_level
+  module:
+    - path
+id: taxonomy_term.sponsor_level.path
+field_name: path
+entity_type: taxonomy_term
+bundle: sponsor_level
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,107 @@
+uuid: b5486427-44b8-4cc1-afbf-f3f438d68912
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_element.field_title
+    - field.field.paragraph.brief_information.field_title
+    - field.field.paragraph.brief_information_content.field_title
+    - field.field.paragraph.card.field_title
+    - field.field.paragraph.hero.field_title
+    - field.field.paragraph.images.field_title
+    - field.field.paragraph.links.field_links
+    - field.field.paragraph.links.field_title
+    - field.field.paragraph.text.field_title
+    - field.field.paragraph.text_image.field_title
+    - field.field.paragraph.ticket.field_title
+    - paragraphs.paragraphs_type.links
+  module:
+    - field_group
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+third_party_settings:
+  field_group:
+    group_links:
+      children:
+        - field_links
+      label: Enlaces
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:links'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+          slots:
+            links:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_links
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
+id: paragraph.links.default
+targetEntityType: paragraph
+bundle: links
+mode: default
+content:
+  field_links:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:link'
+        variant_id:
+          source_id: token
+          source:
+            value: '[paragraph:behavior_settings_value:custom_color:color]'
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          link_title:
+            source_id: 'field_property:paragraph:field_links:title'
+          link_uri:
+            source_id: 'field_property:paragraph:field_links:uri'
+        slots: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_title:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:title'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          text:
+            source_id: 'field_property:paragraph:field_title:value'
+          html_tag:
+            source_id: select
+            source:
+              value: h2
+        slots: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

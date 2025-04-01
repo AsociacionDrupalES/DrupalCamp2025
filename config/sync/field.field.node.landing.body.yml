@@ -1,0 +1,24 @@
+uuid: eb5024c8-89ca-4ed9-a227-1b83a6770a29
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.landing
+  module:
+    - text
+id: node.landing.body
+field_name: body
+entity_type: node
+bundle: landing
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

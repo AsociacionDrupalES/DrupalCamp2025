@@ -1,5 +1,5 @@
 uuid: a49301f2-0903-4fcf-85a6-fb9b95e32b87
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -15,7 +15,7 @@ settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: 2
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

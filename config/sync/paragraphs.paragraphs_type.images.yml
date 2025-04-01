@@ -1,0 +1,21 @@
+uuid: 3f6be253-2560-49bc-a44b-94c44aeb05f2
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: images
+label: Imágenes
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width
+  custom_view_mode_behavior:
+    enabled: true
+    override_available:
+      default: default
+      gallery: gallery
+    override_default: default

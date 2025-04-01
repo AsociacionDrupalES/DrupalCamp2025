@@ -159,7 +159,7 @@ display:
         options:
           submit_button: Aplicar
           reset_button: false
-          reset_button_label: Restablecer
+          reset_button_label: Limpiar
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -723,7 +723,7 @@ display:
         title: 'Tarea programada'
         description: ''
         weight: 1
-        enabled: true
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'menu_link_content:dade5811-bed8-4038-a100-928ab74ad69d'

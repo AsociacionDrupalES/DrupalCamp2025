@@ -1,0 +1,25 @@
+uuid: 3d526b7e-68d1-470a-9cfc-b305b21ecfaa
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.quick-actions
+  module:
+    - system
+  theme:
+    - drupalcamp
+id: drupalcamp_quick_actions
+theme: drupalcamp
+region: header_content
+weight: -4
+provider: null
+plugin: 'system_menu_block:quick-actions'
+settings:
+  id: 'system_menu_block:quick-actions'
+  label: 'Acciones rápidas'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

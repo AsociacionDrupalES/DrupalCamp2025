@@ -1,5 +1,5 @@
 uuid: 29be80c3-20f1-42f1-85b3-e1e0d23fe1d0
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -11,9 +11,8 @@ dependencies:
     - image.style.sponsor_logo
     - node.type.sponsor
   module:
-    - image
     - link
-    - text
+    - svg_image
     - user
 _core:
   default_config_hash: 6vWHLnXHW9384TxyVAO2ZJJlmFmwwB1LygAKqsinlvk
@@ -22,21 +21,20 @@ targetEntityType: node
 bundle: sponsor
 mode: teaser
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_sponsor_logo:
     type: image
     label: hidden
     settings:
       image_link: ''
       image_style: sponsor_logo
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_website_address:
     type: link
@@ -48,9 +46,10 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
+  body: true
   field_sponsor_level: true
   langcode: true
   links: true

@@ -33,7 +33,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Submitted Sessions'
+      title: 'Sesiones propuestas'
       fields:
         title:
           id: title
@@ -145,18 +145,35 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: none
+        type: full
         options:
           offset: 0
-          items_per_page: 0
+          pagination_heading_level: h4
+          items_per_page: 9
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Siguiente >'
+            previous: '‹ Anterior'
+            first: ''
+            last: ''
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Todo -'
+            offset: false
+            offset_label: Desplazamiento
+          quantity: 3
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
-          reset_button: false
-          reset_button_label: Restablecer
+          submit_button: Filtrar
+          reset_button: true
+          reset_button_label: Limpiar
           exposed_sorts_label: 'Ordenar por'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
@@ -176,22 +193,41 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'There are no sessions submitted that meet this criteria.'
+          content: 'No se han presentado sesiones que cumplan estos criterios.'
           tokenize: false
-      sorts:
-        random:
-          id: random
+        add_content_by_bundle:
+          id: add_content_by_bundle
           table: views
-          field: random
+          field: add_content_by_bundle
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: random
-          order: ASC
+          plugin_id: add_content_by_bundle
+          label: 'Proponer una charla'
+          empty: true
+          bundle: session
+          class: 'link--button link--button--primary'
+          target: ''
+          width: 600
+          form_mode: null
+          params: ''
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -419,8 +455,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              speaker: '0'
               anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
               content_editor: '0'
               administrator: '0'
             placeholder: ''
@@ -436,7 +473,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          fields: {  }
+          fields:
+            title: title
+            body: body
         moderation_state:
           id: moderation_state
           table: node_field_data
@@ -479,12 +518,14 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid_responsive
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: false
           uses_fields: true
+          columns: 3
+          cell_min_width: 320
+          grid_gutter: 42
+          alignment: horizontal
       row:
         type: 'entity:node'
         options:
@@ -507,23 +548,43 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: add_content_by_bundle
-          label: 'Propose A Session'
+          label: 'Proponer una charla'
           empty: true
           bundle: session
-          class: 'button button--primary button--action'
+          class: 'link--button link--button--primary'
           target: ''
           width: 600
           form_mode: null
           params: ''
-      footer: {  }
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -540,13 +601,12 @@ display:
       path: sessions
       menu:
         type: normal
-        title: Sessions
+        title: Sesiones
         description: ''
         weight: 1
-        enabled: true
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:dade5811-bed8-4038-a100-928ab74ad69d'
+        parent: ''
         context: '0'
       tab_options:
         type: none
@@ -554,12 +614,12 @@ display:
         description: ''
         weight: 0
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

@@ -1,0 +1,38 @@
+uuid: 5aa67db8-6c5b-494e-ba44-99c3e9478305
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.gallery
+    - field.field.media.vector_image.field_media_image
+    - image.style.large
+    - media.type.vector_image
+  module:
+    - layout_builder
+    - svg_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.vector_image.gallery
+targetEntityType: media
+bundle: vector_image
+mode: gallery
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

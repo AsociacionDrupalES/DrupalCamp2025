@@ -1,0 +1,16 @@
+[data-component-id="drupalcamp:two_columns"] {
+  --gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+
+  .column {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .column {
+      width: calc(50% - (var(--gap) / 2));
+    }
+  }
+}

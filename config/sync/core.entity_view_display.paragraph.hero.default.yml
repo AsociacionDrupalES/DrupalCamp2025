@@ -1,0 +1,87 @@
+uuid: b69020ec-1aa9-4ddb-a8ff-179376be4f4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_logo
+    - field.field.paragraph.hero.field_text
+    - field.field.paragraph.hero.field_title
+    - paragraphs.paragraphs_type.hero
+  module:
+    - field_group
+    - media
+    - text
+third_party_settings:
+  field_group:
+    group_hero:
+      children:
+        - field_title
+        - field_text
+        - field_logo
+      label: Hero
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:hero'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            title:
+              source_id: token
+              source:
+                value: '[paragraph:field_title]'
+          slots:
+            text:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_text
+                  _weight: '0'
+            logo:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_logo
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_logo:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 20px;
+  list-style: none;
+}
+
+.header-menu__link {
+  text-decoration: none;
+}
+
+@media (min-width: 1235px) {
+  .header-menu {
+    flex-direction: row;
+    gap: 25px;
+  }
+}

@@ -1,0 +1,22 @@
+uuid: 281e6500-0524-49f6-8f4a-10df9b7b7b2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.status
+field_name: status
+entity_type: node
+bundle: sponsor
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

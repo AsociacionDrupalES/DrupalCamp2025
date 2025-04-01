@@ -1,0 +1,20 @@
+uuid: d5ca6763-6820-4d27-a898-1ab8322ec44e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.job_listing
+  module:
+    - path
+id: node.job_listing.path
+field_name: path
+entity_type: node
+bundle: job_listing
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Custom Paragraph Extras module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\custom_paragraphs_extras\ViewModeBehaviorInterface;
+use Drupal\paragraphs\ParagraphInterface;
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ */
+function custom_paragraphs_extras_entity_view_mode_alter(string &$view_mode, EntityInterface $entity): void {
+  if ($entity instanceof ParagraphInterface) {
+    $paragraph_type = $entity->getParagraphType();
+    foreach ($paragraph_type->getEnabledBehaviorPlugins() as $plugin) {
+      if ($plugin instanceof ViewModeBehaviorInterface) {
+        $plugin->entityViewModeAlter($view_mode, $entity);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function custom_paragraphs_extras_token_info(): array {
+  $info = [];
+  $info['tokens']['paragraph']['behavior_settings_value'] = [
+    'name'        => t('Behavior value'),
+    'description' => t("Specific behavior value."),
+    'dynamic'     => TRUE,
+  ];
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function custom_paragraphs_extras_tokens(string $type, array $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata): array {
+  $replacements = [];
+  if ($type === 'paragraph' && !empty($data['paragraph'])) {
+    $paragraph = $data['paragraph'];
+    foreach ($tokens as $name => $original) {
+      if (str_starts_with($name, 'behavior_settings_value:')) {
+        $behaviors = unserialize($paragraph->get('behavior_settings')->getString(), ['allowed_classes' => FALSE]);
+        $behavior_path = str_replace('behavior_settings_value:', '', $name);
+        if (is_array($behaviors) && $behavior_path) {
+          $data = _custom_paragraphs_extras_get_value_from_array($behaviors, $behavior_path);
+          $replacements[$original] = $data;
+        }
+      }
+    }
+  }
+  return $replacements;
+}
+
+/**
+ * Get value from array by path.
+ *
+ * @param array $array
+ *   The array to search.
+ * @param string $path
+ *   The path to search.
+ *
+ * @return string|null
+ *   The value or NULL if not found.
+ */
+function _custom_paragraphs_extras_get_value_from_array(array $array, string $path): ?string {
+  $keys = explode(':', $path);
+  foreach ($keys as $key) {
+    if (isset($array[$key])) {
+      $array = $array[$key];
+    }
+    else {
+      return NULL;
+    }
+  }
+  return $array;
+}

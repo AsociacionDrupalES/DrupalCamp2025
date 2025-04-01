@@ -1,0 +1,54 @@
+uuid: 73f576f7-6021-425e-ad3e-8541ed8939cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.person_cards.field_subsections
+    - paragraphs.paragraphs_type.person_cards
+  module:
+    - entity_reference_revisions
+    - nomarkup
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+id: paragraph.person_cards.default
+targetEntityType: paragraph
+bundle: person_cards
+mode: default
+content:
+  field_subsections:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:person_cards'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          person_cards:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:person_cards:field_subsections'
+                source:
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+                  third_party_settings:
+                    nomarkup:
+                      enabled: false
+                      separator: ''
+                      referenced_entity: ''
+                _weight: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: ''
+        referenced_entity: ''
+    weight: 1
+    region: content
+hidden: {  }

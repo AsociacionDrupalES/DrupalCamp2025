@@ -1,0 +1,16 @@
+schema: "https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata-full.schema.json"
+name: Header menu
+description: "Displays the main navigation menu."
+status: stable
+props:
+  items:
+    type: array
+    title: "Menu Items"
+    description: "Array of menu links."
+    items:
+      type: object
+      properties:
+        title:
+          type: string
+        url:
+          type: string

@@ -1,0 +1,22 @@
+.sitemap {
+  .sitemap-item {
+    background-color: white;
+    border: 3px solid var(--color--primary);
+    border-radius: 17px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding: 20px;
+
+    &:nth-child(3n+1) {
+      border-color: var(--color--primary-light);
+    }
+    &:nth-child(3n+2) {
+      border-color: var(--color--secondary);
+    }
+
+    h2 {
+      font-size: calc(var(--font-size) * 1.38);
+      line-height: calc(var(--line-height) * 1.38);
+    }
+  }
+}

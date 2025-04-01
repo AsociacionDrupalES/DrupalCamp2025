@@ -1,0 +1,78 @@
+uuid: 0660a76f-c4f8-4a5f-9003-8af7e99c7c32
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.brief_information.field_subsections
+    - field.field.paragraph.brief_information.field_title
+    - field.field.paragraph.brief_information_content.field_title
+    - field.field.paragraph.card.field_title
+    - field.field.paragraph.hero.field_title
+    - field.field.paragraph.images.field_title
+    - field.field.paragraph.links.field_title
+    - field.field.paragraph.text.field_title
+    - field.field.paragraph.ticket.field_title
+    - paragraphs.paragraphs_type.brief_information
+  module:
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+id: paragraph.brief_information.default
+targetEntityType: paragraph
+bundle: brief_information
+mode: default
+content:
+  field_subsections:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:grid'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          columns:
+            source_id: number
+            source:
+              value: '3'
+        slots:
+          content:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:brief_information:field_subsections'
+                source:
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+                _weight: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:title'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          text:
+            source_id: 'field_property:paragraph:field_title:value'
+          html_tag:
+            source_id: select
+            source:
+              value: h2
+        slots: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

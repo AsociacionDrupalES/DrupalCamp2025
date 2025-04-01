@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Default theme implementation for Symfony Email wrapper.
+ *
+ * Variables:
+ * - body: Email body content.
+ * - is_html: True if generating HTML output, false for plain text.
+ * - subject: Email subject.
+ * - type: Email type.
+ * - sub_type: Email sub-type.
+ * - attributes: HTML attributes for the top-level email element.
+ *
+ * @see template_preprocess_email_wrap()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'email-type-' ~ type|clean_class,
+  'email-sub-type-' ~ sub_type|clean_class,
+] %}
+
+{% if is_html %}
+<html>
+<body>
+<div{{ attributes.addClass(classes) }}>
+  <table cellpadding="0" cellspacing="0" role="presentation" class="main-table">
+    <tr>
+      <td class="main-cell">
+        <table class="content-table">
+          <tr>
+            <td class="header-cell">
+              <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+                <img class="site-logo"
+                     src="{{ logo }}"
+                     alt="{{ site_name }}"/></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="content-cell">
+                {{ body }}
+            </td>
+          </tr>
+          <tr>
+            <td class="footer-cell">
+              <table class="footer-table">
+                <tr>
+                  <td>
+                    <p>© 2025 <a href="https://asociaciondrupal.es/" target="_blank">Asociación Española de Drupal</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+{% else %}
+  {{ body }}
+{% endif %}

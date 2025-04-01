@@ -1,0 +1,18 @@
+uuid: 91e6d08f-b7a5-484c-aa6a-296210ab198d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.session
+id: node.session.changed
+field_name: changed
+entity_type: node
+bundle: session
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,21 @@
+uuid: 647d3005-95fa-4372-a929-1b58d2e4a6ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_is_individual
+    - taxonomy.vocabulary.sponsor_level
+id: taxonomy_term.sponsor_level.field_is_individual
+field_name: field_is_individual
+entity_type: taxonomy_term
+bundle: sponsor_level
+label: 'Es individual'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

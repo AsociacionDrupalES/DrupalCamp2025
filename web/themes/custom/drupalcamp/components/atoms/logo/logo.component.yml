@@ -1,0 +1,13 @@
+schema: "https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata-full.schema.json"
+name: Logo
+description: "Displays the site logo."
+status: stable
+props:
+  logo_url:
+    type: string
+    title: "Logo URL"
+    description: "Path to the logo image."
+  alt_text:
+    type: string
+    title: "Alt Text"
+    description: "Alternative text for the logo."

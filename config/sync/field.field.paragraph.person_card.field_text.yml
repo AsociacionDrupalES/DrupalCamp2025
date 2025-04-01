@@ -1,0 +1,22 @@
+uuid: 58c7a9d5-1bf7-4282-8ddb-895fcaf13695
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.person_card
+  module:
+    - text
+id: paragraph.person_card.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: person_card
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

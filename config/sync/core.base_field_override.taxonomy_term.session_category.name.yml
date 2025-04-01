@@ -1,0 +1,18 @@
+uuid: a1e2da30-9e15-4f19-84d4-01619e113fda
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_category
+id: taxonomy_term.session_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: session_category
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

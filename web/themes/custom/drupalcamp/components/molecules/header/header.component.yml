@@ -1,0 +1,15 @@
+$schema: "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Header
+description: "Main site header that includes logo, menu, language switcher, and buttons."
+status: stable
+props:
+  type: object
+  properties:
+    logo:
+      type: array
+      title: "Logo"
+      description: "Slot for the site logo component."
+    content:
+      type: array
+      title: "Main Menu"
+      description: "Slot for the main navigation menu, language switcher and other blocks."

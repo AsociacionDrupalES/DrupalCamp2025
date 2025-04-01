@@ -1,0 +1,213 @@
+# $Id$
+#
+# Galician translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  themes/custom/drupalcamp/drupalcamp.info.yml: n/a
+#  themes/custom/drupalcamp/templates/navigation/breadcrumb.html.twig: n/a
+#  themes/custom/drupalcamp/components/molecules/footer/footer.twig: n/a
+#  themes/custom/drupalcamp/components/organisms/session_detail/session_detail.twig: n/a
+#  themes/custom/drupalcamp/templates/block/block--local-tasks-block.html.twig: n/a
+#  themes/custom/drupalcamp/templates/block/block--system-branding-block.html.twig: n/a
+#  themes/custom/drupalcamp/templates/email/email-wrap.html.twig: n/a
+#  themes/custom/drupalcamp/templates/layout/maintenance-page.html.twig: n/a
+#  themes/custom/drupalcamp/templates/content/mark.html.twig: n/a
+#  themes/custom/drupalcamp/templates/content/node--session.html.twig: n/a
+#  themes/custom/drupalcamp/templates/content/node.html.twig: n/a
+#  themes/custom/drupalcamp/templates/content-edit/filter-tips.html.twig: n/a
+#  themes/custom/drupalcamp/templates/content-edit/node-add-list.html.twig: n/a
+#  themes/custom/drupalcamp/templates/field/field--comment.html.twig: n/a
+#  themes/custom/drupalcamp/templates/layout/html.html.twig: n/a
+#  themes/custom/drupalcamp/templates/navigation/menu-local-tasks.html.twig: n/a
+#  themes/custom/drupalcamp/templates/navigation/pager.html.twig: n/a
+#  themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2025-04-01 10:28+0200\n"
+"PO-Revision-Date: 2025-04-01 10:28+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Galician <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "DrupalCamp"
+msgstr "DrupalCamp"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "DrupalCamp2025 theme"
+msgstr "Tema DrupalCamp2025"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Right sidebar"
+msgstr "Barra lateral dereita"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Title"
+msgstr "Título"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Content"
+msgstr "Contido"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Header Logo"
+msgstr "Logotipo da cabeceira"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Header Content"
+msgstr "Contido da cabeceira"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Secondary menu"
+msgstr "Menú secundario"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Footer"
+msgstr "Pé de páxina"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Highlighted"
+msgstr "Resaltado"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0
+msgid "Help"
+msgstr "Axuda"
+
+#: themes/custom/drupalcamp/drupalcamp.info.yml:0 themes/custom/drupalcamp/templates/navigation/breadcrumb.html.twig:12
+msgid "Breadcrumb"
+msgstr "Miga de pan"
+
+#: themes/custom/drupalcamp/components/molecules/footer/footer.twig:3
+msgid "Acknowledgements"
+msgstr "Agradecementos"
+
+#: themes/custom/drupalcamp/components/organisms/session_detail/session_detail.twig:3
+msgid "Back"
+msgstr "Voltar"
+
+#: themes/custom/drupalcamp/templates/block/block--local-tasks-block.html.twig:10
+msgid "Tabs"
+msgstr "Lapelas"
+
+#: themes/custom/drupalcamp/templates/block/block--system-branding-block.html.twig:21 themes/custom/drupalcamp/templates/email/email-wrap.html.twig:34 themes/custom/drupalcamp/templates/layout/maintenance-page.html.twig:16;17
+msgid "Home"
+msgstr "Inicio"
+
+#: themes/custom/drupalcamp/templates/content/mark.html.twig:16
+msgid "New"
+msgstr "Novo"
+
+#: themes/custom/drupalcamp/templates/content/mark.html.twig:18
+msgid "Updated"
+msgstr "Actualizado"
+
+#: themes/custom/drupalcamp/templates/content/node--session.html.twig:80 themes/custom/drupalcamp/templates/content/node.html.twig:89
+msgid "Submitted by @author_name on @date"
+msgstr "Enviado por @author_name o @date"
+
+#: themes/custom/drupalcamp/templates/content-edit/filter-tips.html.twig:20
+msgid "Text Formats"
+msgstr "Formatos do texto"
+
+#: themes/custom/drupalcamp/templates/content-edit/node-add-list.html.twig:26
+msgid "You have not created any content types yet. Go to the <a href=\"@create_content\">content type creation page</a> to add a new content type."
+msgstr "Vostede aínda non creou ningún tipo de contido. Visite <a href=\"@create_content\">a páxina de creación de tipos de contido</a> para engadir un novo tipo de contido."
+
+#: themes/custom/drupalcamp/templates/field/field--comment.html.twig:53
+msgid "Add new comment"
+msgstr "Engadir un novo comentario"
+
+#: themes/custom/drupalcamp/templates/layout/html.html.twig:48
+msgid "Skip to main content"
+msgstr "Ir o contido principal"
+
+#: themes/custom/drupalcamp/templates/navigation/menu-local-tasks.html.twig:15
+msgid "Primary tabs"
+msgstr "Lapelas principais"
+
+#: themes/custom/drupalcamp/templates/navigation/menu-local-tasks.html.twig:19
+msgid "Secondary tabs"
+msgstr "Lapelas secundarias"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:36 themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:16
+msgid "Pagination"
+msgstr "Paxinación"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:41
+msgid "Go to first page"
+msgstr "Ir á primeira páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:42
+msgid "First page"
+msgstr "Primeira páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:43
+msgid "« First"
+msgstr "« Primeira"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:50 themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:20
+msgid "Go to previous page"
+msgstr "Ir á páxina anterior"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:51 themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:21
+msgid "Previous page"
+msgstr "Páxina anterior"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:52
+msgid "‹ Previous"
+msgstr "‹ Anterior"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:64
+msgid "Current page"
+msgstr "Páxina actual"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:66
+msgid "Go to page @key"
+msgstr "Ir á páxina @key"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:70
+msgid "Page"
+msgstr "Páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:83 themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:35
+msgid "Go to next page"
+msgstr "Ir á seguinte páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:84 themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:36
+msgid "Next page"
+msgstr "Páxina Seguinte"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:85
+msgid "Next ›"
+msgstr "Seguinte ›"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:92
+msgid "Go to last page"
+msgstr "Ir á última páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:93
+msgid "Last page"
+msgstr "Última páxina"
+
+#: themes/custom/drupalcamp/templates/navigation/pager.html.twig:94
+msgid "Last »"
+msgstr "Última »"
+
+#: themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:22
+msgid "‹‹"
+msgstr "‹‹"
+
+#: themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:28
+msgid "Page @items.current"
+msgstr "Páxina @items.current"
+
+#: themes/custom/drupalcamp/templates/views/views-mini-pager.html.twig:37
+msgid "››"
+msgstr "››"
+

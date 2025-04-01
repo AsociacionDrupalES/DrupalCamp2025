@@ -1,0 +1,8 @@
+name: 'Custom - General features'
+type: module
+description: 'General features for the DrupalCamp site.'
+package: Custom
+core_version_requirement: ^10 || ^11
+
+'interface translation project': custom_general_features
+'interface translation server pattern': 'modules/custom/custom_general_features/translations/%language.po'

@@ -1,0 +1,27 @@
+uuid: 0a1523b8-0fae-4f17-a5df-0b5093a80e8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: w4aWEVh91pptbJl6umUHmXkfXhWF2PlNj-AB4harQ_0
+id: drupalcamp_main_navigation
+theme: drupalcamp
+region: header_content
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

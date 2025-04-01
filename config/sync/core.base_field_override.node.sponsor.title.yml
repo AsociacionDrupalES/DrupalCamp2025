@@ -10,7 +10,7 @@ id: node.sponsor.title
 field_name: title
 entity_type: node
 bundle: sponsor
-label: 'Sponsor Name'
+label: Nombre
 description: ''
 required: true
 translatable: true

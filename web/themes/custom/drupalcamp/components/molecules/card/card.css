@@ -1,0 +1,97 @@
+[data-component-id="drupalcamp:card"] {
+
+  &.card--default {
+    padding: 50px;
+
+    .text-formatted {
+      .link--button:not(.link--button--transparent) {
+        border: 0;
+      }
+    }
+  }
+
+  &.card--featured {
+    padding: 20px 10px;
+
+    [data-component-id="drupalcamp:title"] {
+      > * {
+        border: 2px solid var(--color--primary);
+        border-radius: 20px;
+        cursor: default;
+        display: inline-block;
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+        font-weight: 700;
+        line-height: var(--line-height);
+        margin: 0 0 10px;
+        padding: 6px 21px;
+        transition: var(--transition);
+
+        &:hover {
+          border-color: var(--color--secondary);
+        }
+      }
+    }
+
+    &.color--primary-light {
+      [data-component-id="drupalcamp:title"] {
+        > * {
+          border-color: var(--color--primary-light);
+
+          &:hover {
+            border-color: var(--color--secondary);
+          }
+        }
+      }
+    }
+    &.color--secondary {
+      [data-component-id="drupalcamp:title"] {
+        > * {
+          border-color: var(--color--secondary);
+
+          &:hover {
+            border-color: var(--color--primary-light);
+          }
+        }
+      }
+    }
+    &.color--white {
+      [data-component-id="drupalcamp:title"] {
+        > * {
+          border-color: white;
+
+          &:hover {
+            border-color: var(--color--secondary);
+          }
+        }
+      }
+    }
+  }
+
+  &.card--with-border {
+    background-color: white;
+    border: 3px solid var(--color--primary);
+    border-radius: 17px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+
+    &.color--primary-light {
+      border-color: var(--color--primary-light);
+    }
+
+    &.color--secondary {
+      border-color: var(--color--secondary);
+    }
+
+    &.color--white {
+      border-color: white;
+    }
+
+    h2 {
+      font-size: calc(var(--font-size) * 1.38);
+      line-height: calc(var(--line-height) * 1.38);
+    }
+  }
+
+}

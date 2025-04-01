@@ -1,0 +1,21 @@
+uuid: 97b1abc3-9aef-4796-8bfe-2fe90c8d01ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+  module:
+    - text
+id: taxonomy_term.time_slot.description
+field_name: description
+entity_type: taxonomy_term
+bundle: time_slot
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

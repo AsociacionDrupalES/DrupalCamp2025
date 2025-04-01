@@ -1,0 +1,22 @@
+uuid: 5937e7e8-4c21-432d-a3fa-27c34fb1246b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: card
+label: Texto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

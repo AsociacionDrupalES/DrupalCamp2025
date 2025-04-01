@@ -1,5 +1,5 @@
 uuid: b0e39a38-9483-4523-b349-ba0745e30806
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -9,8 +9,47 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - field_group
+    - nomarkup
+    - svg_image
     - user
+third_party_settings:
+  field_group:
+    group_user:
+      children:
+        - user_picture
+        - field_display_name
+      label: User
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:user'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+          slots:
+            name:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_display_name
+                  _weight: '0'
+            avatar:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: user_picture
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
 id: user.user.compact
@@ -22,20 +61,32 @@ content:
     type: string
     label: hidden
     settings:
-      link_to_entity: true
-    third_party_settings: {  }
-    weight: 1
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
     region: content
   user_picture:
     type: image
     label: hidden
     settings:
-      image_link: content
+      image_link: ''
       image_style: thumbnail
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
-    weight: 0
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
     region: content
 hidden:
   field_bio: true

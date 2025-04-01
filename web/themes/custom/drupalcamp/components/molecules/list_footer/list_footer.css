@@ -1,0 +1,16 @@
+[data-component-id="drupalcamp:list_footer"] {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+
+  @media (min-width: 920px) {
+    flex-direction: row;
+  }
+
+  .results-summary {
+    flex: 1;
+  }
+}

@@ -1,0 +1,50 @@
+# $Id$
+#
+# Galician translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/custom/custom_general_features/custom_general_features.info.yml: n/a
+#  modules/custom/custom_general_features/src/Plugin/Block/BecomeSponsorBlock.php: n/a
+#  modules/custom/custom_general_features/config/schema/custom_general_features.schema.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2025-04-01 10:28+0200\n"
+"PO-Revision-Date: 2025-04-01 10:28+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Galician <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/custom/custom_general_features/custom_general_features.info.yml:0
+msgid "Custom - General features"
+msgstr "Personalizado - Funcionalidades xerais"
+
+#: modules/custom/custom_general_features/custom_general_features.info.yml:0
+msgid "General features for the DrupalCamp site."
+msgstr "Funcionalidades xerais para o sitio da DrupalCamp"
+
+#: modules/custom/custom_general_features/custom_general_features.info.yml:0 modules/custom/custom_general_features/src/Plugin/Block/BecomeSponsorBlock.php:21
+msgid "Custom"
+msgstr "Personalizado"
+
+#: modules/custom/custom_general_features/config/schema/custom_general_features.schema.yml:0
+msgid "Become a sponsor block"
+msgstr "Bloque de faite patrocinador"
+
+#: modules/custom/custom_general_features/config/schema/custom_general_features.schema.yml:0 modules/custom/custom_general_features/src/Plugin/Block/BecomeSponsorBlock.php:65
+msgid "Title"
+msgstr "Título"
+
+#: modules/custom/custom_general_features/config/schema/custom_general_features.schema.yml:0 modules/custom/custom_general_features/src/Plugin/Block/BecomeSponsorBlock.php:70
+msgid "Body"
+msgstr "Corpo"
+
+#: modules/custom/custom_general_features/src/Plugin/Block/BecomeSponsorBlock.php:54;20
+msgid "Do you want to be a sponsor?"
+msgstr "Queres ser patrocinador?"
+

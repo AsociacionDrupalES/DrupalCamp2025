@@ -1,0 +1,18 @@
+uuid: ecbce27b-5ae6-4e22-8896-572e59b84f21
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room
+id: taxonomy_term.room.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: room
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 463f5d86-2acc-4b39-ae1f-c5a0101e11bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: 7c5OCukSwzJZU1iITT9_iwbcRbFyDdOSRQs4C_gQFYU
+id: drupalcamp_content
+theme: drupalcamp
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

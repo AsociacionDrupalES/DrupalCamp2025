@@ -1,0 +1,33 @@
+uuid: deb2c976-5c72-4215-9830-e767eda43866
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: sponsors_en
+label: 'Patrocinadores (en)'
+type: 'canonical_entities:node'
+pattern: 'sponsors/[node:title]'
+selection_criteria:
+  328b04d3-c1a5-4e29-a5ea-3e5b50abbc41:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 328b04d3-c1a5-4e29-a5ea-3e5b50abbc41
+    context_mapping:
+      node: node
+    bundles:
+      sponsor: sponsor
+  d68e6146-c64c-423a-b623-cb040b35cc66:
+    id: language
+    negate: false
+    uuid: d68e6146-c64c-423a-b623-cb040b35cc66
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

@@ -1,0 +1,21 @@
+uuid: 71a9fec6-f1b0-4f0e-8256-f1923377a0b0
+langcode: es
+status: true
+dependencies: {  }
+name: gallery
+label: Galería
+effects:
+  f85eea6e-f289-4f0a-ba10-63ebfe059949:
+    uuid: f85eea6e-f289-4f0a-ba10-63ebfe059949
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 260
+      anchor: center-center
+  33390a36-774a-495b-a958-05363f01623d:
+    uuid: 33390a36-774a-495b-a958-05363f01623d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

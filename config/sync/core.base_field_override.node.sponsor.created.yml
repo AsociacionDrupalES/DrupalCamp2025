@@ -1,0 +1,18 @@
+uuid: 867d4045-dc15-458b-97b9-a5cd554357e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.created
+field_name: created
+entity_type: node
+bundle: sponsor
+label: 'Fecha de autoría'
+description: 'The date and time that the content was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

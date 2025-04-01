@@ -1,0 +1,19 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Session card
+status: stable
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+    link_url:
+      type: string
+      title: Link URL
+slots:
+  text:
+    title: Text
+  tags:
+    title: Tags
+  speakers:
+    title: Speakers

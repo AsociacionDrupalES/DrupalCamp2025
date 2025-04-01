@@ -1,0 +1,20 @@
+uuid: b0f1895f-3525-48dd-afd0-fbcdb3839aa9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot
+  module:
+    - path
+id: taxonomy_term.time_slot.path
+field_name: path
+entity_type: taxonomy_term
+bundle: time_slot
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

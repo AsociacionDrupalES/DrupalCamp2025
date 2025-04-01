@@ -1,0 +1,10 @@
+uuid: 90e98d50-84cf-4973-a55a-ad1d36ec5717
+langcode: es
+status: true
+dependencies: {  }
+id: brief_information_content
+label: 'Contenido de información breve'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

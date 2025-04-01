@@ -10,10 +10,10 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: lDmJO0gHi3qwHgAPs9IisIvyHbn9Nk6EHD4qfsI0DIc
-name: Sponsor
+name: Patrocinador
 type: sponsor
 description: null
 help: null
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false

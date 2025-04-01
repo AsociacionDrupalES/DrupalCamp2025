@@ -1,0 +1,42 @@
+:root {
+  --font-family: 'NotoSans', system-ui, sans-serif;
+  --font-family-h: 'ZTGatha-SemiBold', system-ui, sans-serif;
+  --font-size: 1rem;
+  --font-size-h1: calc(var(--font-size) * 2.5);
+  --font-size-h2: calc(var(--font-size) * 1.88);
+  --font-size-h3: calc(var(--font-size) * 1.5);
+  --font-line-height: 1.5rem;
+  --font-line-height-h1: calc(var(--font-line-height) * 1.7);
+  --font-line-height-h2: calc(var(--font-line-height) * 1.5);
+  --font-line-height-h3: calc(var(--font-line-height) * 1.3);
+  --color--primary: #293156;
+  --color--secondary: #ecbe34;
+  --color--primary-light: #179ad7;
+  --color--gray: #f5f5f5;
+  --color--degree-1: #88ad80;
+  --color--degree-2: #cfb949;
+  --color--background-primary: #fff;
+  --color--background-secondary: var(--color--primary);
+  --color--background-primary-light: var(--color--primary);
+  --page-side-margin: 0px;
+  --transition: all 0.3s ease;
+  --bg-img: none;
+  --bg-img-blend-mode: normal;
+  --bg-img-size: auto;
+  --max-width: 1235px;
+  --gutter-x: 20px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size: 1.125rem;
+    --font-size-h1: calc(var(--font-size) * 3.55);
+    --font-size-h2: calc(var(--font-size) * 2.22);
+    --font-size-h3: calc(var(--font-size) * 1.8);
+    --font-line-height: 1.687rem;
+    --font-line-height-h1: calc(var(--font-line-height) * 2.371);
+    --font-line-height-h2: calc(var(--font-line-height) * 1.778);
+    --font-line-height-h3: calc(var(--font-line-height) * 1.3);
+    --gutter-x: 16px;
+  }
+}

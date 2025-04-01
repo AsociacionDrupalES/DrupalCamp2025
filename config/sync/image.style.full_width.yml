@@ -1,0 +1,27 @@
+uuid: 880d08db-8e1c-4545-aace-5175533e211c
+langcode: es
+status: true
+dependencies: {  }
+name: full_width
+label: 'Ancho completo'
+effects:
+  858e8113-d78b-44c4-b1e0-50e15f581fee:
+    uuid: 858e8113-d78b-44c4-b1e0-50e15f581fee
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
+  d66a7953-f103-47c4-8062-857e781eb352:
+    uuid: d66a7953-f103-47c4-8062-857e781eb352
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  4bdd9c5c-427a-4f31-bf71-357da2a91fe7:
+    uuid: 4bdd9c5c-427a-4f31-bf71-357da2a91fe7
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,15 +1,11 @@
 uuid: cc74a4ca-06bf-4251-b2f7-033cc2dc3ddc
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
-    - field_permissions
     - file
     - image
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: public
 _core:
   default_config_hash: oLVikXR0FrV1KNM93Qn2tpeuJjW241SFQ0OSR8w8Evg
 id: node.field_sponsor_logo

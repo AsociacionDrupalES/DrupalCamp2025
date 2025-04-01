@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'All Sponsors'
+      title: Patrocinadores
       fields:
         field_sponsor_level:
           id: field_sponsor_level
@@ -153,7 +153,7 @@ display:
         options:
           submit_button: Aplicar
           reset_button: false
-          reset_button_label: Restablecer
+          reset_button_label: Limpiar
           exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc

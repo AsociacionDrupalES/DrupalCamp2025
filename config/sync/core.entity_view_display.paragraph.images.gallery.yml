@@ -1,0 +1,75 @@
+uuid: 84b79235-7a7f-4b8a-8b17-f2cb81fc7941
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.gallery
+    - field.field.paragraph.images.field_media_images
+    - field.field.paragraph.images.field_title
+    - paragraphs.paragraphs_type.images
+  module:
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - drupalcamp
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.images.gallery
+targetEntityType: paragraph
+bundle: images
+mode: gallery
+content:
+  field_media_images:
+    type: ui_patterns_component
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:carousel'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          slides:
+            sources:
+              -
+                source_id: 'field_formatter:paragraph:images:field_media_images'
+                source:
+                  type: ui_patterns_component_per_item
+                  settings:
+                    ui_patterns:
+                      component_id: 'drupalcamp:carousel_slide'
+                      variant_id: null
+                      props:
+                        attributes:
+                          source_id: attributes
+                          source:
+                            value: ''
+                      slots:
+                        slide:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:images:field_media_images'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: gallery
+                              _weight: '0'
+                _weight: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

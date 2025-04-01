@@ -1,0 +1,10 @@
+name: 'Paragraphs - Extras'
+type: module
+description: 'Additional features and customizations for paragraphs.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - paragraphs:paragraphs
+
+'interface translation project': custom_paragraphs_extras
+'interface translation server pattern': 'modules/custom/custom_paragraphs_extras/translations/%language.po'

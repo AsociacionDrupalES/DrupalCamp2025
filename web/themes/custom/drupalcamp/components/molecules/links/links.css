@@ -1,0 +1,15 @@
+[data-component-id="drupalcamp:links"] > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    gap: 40px;
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,23 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Link
+status: stable
+variants:
+  primary:
+    title: Primary
+  primary-light:
+    title: Light primary
+  secondary:
+    title: Secondary
+  white:
+    title: White
+  transparent:
+    title: Transparent
+props:
+  type: object
+  properties:
+    link_title:
+      type: string
+      title: Link title
+    link_uri:
+      "$ref": ui-patterns://url
+      title: Link uri

@@ -1,5 +1,5 @@
 uuid: bb29195d-0dad-4a61-be06-71f92a5aac3c
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -22,22 +22,11 @@ settings:
       - numberedList
       - '|'
       - blockQuote
-      - drupalInsertImage
       - '|'
-      - heading
       - code
       - '|'
       - sourceEditing
   plugins:
-    ckeditor5_heading:
-      enabled_headings:
-        - heading2
-        - heading3
-        - heading4
-        - heading5
-        - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
     ckeditor5_list:
       properties:
         reversed: false
@@ -58,6 +47,8 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+    linkit_extension:
+      linkit_enabled: false
 image_upload:
   status: true
   scheme: public

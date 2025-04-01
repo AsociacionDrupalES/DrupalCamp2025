@@ -1,0 +1,18 @@
+uuid: 94ca1b37-6ff6-4318-91bd-b8acd233bfe5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: sponsor
+label: 'Estado de moderación'
+description: 'El estado de moderación de esta pieza de contenido.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

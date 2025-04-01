@@ -1,0 +1,27 @@
+uuid: 75474584-23e0-433d-b07c-957f18deb508
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - drupalcamp
+_core:
+  default_config_hash: KEPyHBDMlCErbOYJeZHI1FmYb5-baY4P_cRKcnZXowg
+id: drupalcamp_account_menu
+theme: drupalcamp
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

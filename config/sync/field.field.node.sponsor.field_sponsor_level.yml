@@ -12,7 +12,7 @@ id: node.sponsor.field_sponsor_level
 field_name: field_sponsor_level
 entity_type: node
 bundle: sponsor
-label: 'Sponsor Level'
+label: 'Nivel de patrocinador'
 description: ''
 required: true
 translatable: false

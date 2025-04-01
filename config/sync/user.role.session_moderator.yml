@@ -11,22 +11,22 @@ dependencies:
     - config_pages
     - content_moderation
     - field_permissions
+    - navigation
     - node
     - system
     - taxonomy
-    - toolbar
 _core:
   default_config_hash: 4QkHyXo1STxBIIMeGpUjMolV6br4XMLKRW9cMvziOjQ
 id: session_moderator
 label: 'Session moderator'
-weight: 2
+weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access navigation'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'access user profiles'
   - 'create terms in room'
   - 'create terms in time_slot'

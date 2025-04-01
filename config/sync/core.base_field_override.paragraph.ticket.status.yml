@@ -1,0 +1,22 @@
+uuid: e5fc14e8-82e7-419a-9ac8-c4d872b6dc2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.ticket
+id: paragraph.ticket.status
+field_name: status
+entity_type: paragraph
+bundle: ticket
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

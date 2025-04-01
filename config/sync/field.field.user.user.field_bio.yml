@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_bio
+    - filter.format.basic_html
+    - filter.format.plain_text
     - filter.format.restricted_html
   module:
     - text
@@ -22,5 +24,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_formats:
+    - basic_html
     - restricted_html
+    - plain_text
 field_type: text_long

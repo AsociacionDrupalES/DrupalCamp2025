@@ -1,0 +1,6 @@
+settings:
+  label: 'Do you want to be a sponsor?'
+  body:
+    value: '<p>If you are interested in sponsoring the event and showing your company''s support for the Drupal community, please check out our sponsorship packages and get in touch with us via the contact form.</p><p><a class="link--button link--button--secondary" href="#">Sponsorship dossier</a></p>'
+    format: full_html
+  title: 'Do you want to be a sponsor?'

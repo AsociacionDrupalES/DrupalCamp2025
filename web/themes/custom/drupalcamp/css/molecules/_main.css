@@ -1,0 +1,6 @@
+main > .layout-content {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 var(--gutter-x);
+  min-height: 200px;
+}

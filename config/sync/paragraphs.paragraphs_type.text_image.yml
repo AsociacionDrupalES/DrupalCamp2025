@@ -1,0 +1,15 @@
+uuid: b4fd1b69-2aa8-41fc-895e-489ab286a949
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: text_image
+label: 'Texto + Imagen'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_background_behavior:
+    enabled: true
+    image_style: full_width

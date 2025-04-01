@@ -1,0 +1,27 @@
+[data-component-id="drupalcamp:user"] {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  .avatar {
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--primary-light);
+    background-image: url("../../../logo-simple-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38px;
+    background-position-x: 16px;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

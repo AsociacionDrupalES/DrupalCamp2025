@@ -1,0 +1,21 @@
+[data-component-id="drupalcamp:become_sponsor"] {
+  border: 3px solid var(--color--secondary);
+  border-radius: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 20px 50px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  svg {
+    height: auto;
+    min-width: 135px;
+  }
+}

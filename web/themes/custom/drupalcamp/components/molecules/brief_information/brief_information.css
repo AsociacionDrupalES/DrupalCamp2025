@@ -1,0 +1,17 @@
+[data-component-id="drupalcamp:brief_information"] {
+  display: flex;
+  gap: 24px;
+
+  .icon {
+    img {
+      height: auto;
+      width: 40px;
+    }
+  }
+
+  .title {
+    font-size: calc(var(--font-size) * 1.38);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}

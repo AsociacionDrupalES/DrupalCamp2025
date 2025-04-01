@@ -1,0 +1,48 @@
+[data-component-id="drupalcamp:link"] {
+  a {
+    --color-border: var(--color--primary);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: var(--color--primary);
+    display: inline-block;
+    font-weight: 500;
+    padding: 12px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+      transform: scale(1.2);
+    }
+  }
+  &.link--button--transparent a {
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      background-color: var(--color--primary);
+      color: var(--color--background-primary);
+    }
+  }
+  &.link--button--primary a {
+    background-color: var(--color--primary);
+    color: var(--color--background-primary);
+  }
+  &.link--button--secondary a {
+    --color-border: var(--color--secondary);
+    background-color: var(--color--secondary);
+    color: var(--color--background-secondary);
+  }
+  &.link--button--primary-light a {
+    --color-border: var(--color--primary-light);
+    background-color: var(--color--primary-light);
+    color: var(--color--background-primary-light);
+  }
+  &.link--button--white a {
+    background-color: white;
+  }
+}

@@ -1,0 +1,22 @@
+uuid: d3aa1147-f7b6-4658-9d82-43187258f876
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room
+id: taxonomy_term.room.status
+field_name: status
+entity_type: taxonomy_term
+bundle: room
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

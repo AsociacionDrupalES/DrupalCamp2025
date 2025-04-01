@@ -1,0 +1,8 @@
+name: Custom color field
+type: module
+description: 'Provides a color field type to store the color value of a fixed palette.'
+package: 'Custom'
+core_version_requirement: ^10 || ^11
+
+'interface translation project': custom_color_field
+'interface translation server pattern': 'modules/custom/custom_color_field/translations/%language.po'
