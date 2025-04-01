@@ -1,0 +1,71 @@
+label: Contido
+description: 'Encontrar e xestionar contido.'
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: Contido
+      fields:
+        title:
+          label: Título
+        type:
+          label: 'Tipo de contido'
+          separator: ', '
+        name:
+          label: Autor/a
+        status:
+          label: Estado
+          settings:
+            format_custom_false: 'Non publicado'
+            format_custom_true: Publicado
+        changed:
+          label: Actualizado
+        langcode:
+          label: Idioma
+          separator: ', '
+        operations:
+          label: Operacións
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Contido non dispoñible'
+      filters:
+        title:
+          expose:
+            label: Título
+        type:
+          expose:
+            label: 'Tipo de contido'
+        status:
+          expose:
+            label: Estado
+          group_info:
+            label: 'Estado de publicación'
+            group_items:
+              1:
+                title: Publicado
+              2:
+                title: 'Non publicado'
+        langcode:
+          expose:
+            label: Idioma
+  page_1:
+    display_title: Páxina
+    display_options:
+      menu:
+        title: Contido
+      tab_options:
+        title: Contido

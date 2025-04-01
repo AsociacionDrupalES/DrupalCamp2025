@@ -1,0 +1,25 @@
+label: Arquivo
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  block_1:
+    display_title: Bloque
+  page_1:
+    display_title: Páxina

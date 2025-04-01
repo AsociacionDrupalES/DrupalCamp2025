@@ -1,0 +1,21 @@
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: 'Usuarios conectados'
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        access:
+          expose:
+            label: 'Último acceso'
+            description: 'Un usuario considérase conectado (online) durante este tempo dende que viron unha páxina do sitio por última vez.'
+  who_s_online_block:
+    display_title: 'Usuarios conectados'
+    display_options:
+      block_description: 'Usuarios conectados'

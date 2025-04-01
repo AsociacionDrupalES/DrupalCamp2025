@@ -1,0 +1,14 @@
+label: 'Comentarios recentes'
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: 'Comentarios recentes'
+      empty:
+        area_text_custom:
+          content: 'Non hai comentarios dispoñibles.'
+  block_1:
+    display_title: Bloque
+    display_options:
+      block_description: 'Comentarios recentes'
+      block_category: 'Listas (Vistas)'

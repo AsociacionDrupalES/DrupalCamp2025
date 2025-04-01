@@ -1,0 +1,27 @@
+cancel_confirm:
+  subject: 'Solicitude de cancelación de conta para [user:display-name] en [site:name]'
+  body: "[user:display-name]\r\n\r\nRealizouse unha solicitude para cancelar a súa conta en [site:name].\r\n\r\nAgora pode cancelar a súa conta en [site:url-brief] facendo clic nesta ligazón ou copiándoa e pegándoa no seu navegador:\r\n\r\n[user:cancel-url]\r\n\r\nNOTA: A cancelación da súa conta non é reversible.\r\n\r\nEsta ligazón caduca nun día e non pasará nada se non se utiliza.\r\n\r\n--  O equipo de [site:name]"
+password_reset:
+  subject: 'Substitución de información de inicio de sesión para [user:display-name] en [site:name]'
+  body: "[user:display-name],\r\n\r\nFíxose unha petición para reestablecer o contrasinal da súa conta en [site:name].\r\n\r\nAgora pode iniciar sesión facendo clic nesta ligazón ou copiándoa e pegándoa no seu navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEsta ligazón só pode ser usada unha vez para iniciar sesión e levarao a unha páxina onde pode establecer o seu contrasinal. Caduca despois de un día e non ocurrirá nada se non se usa.\r\n\r\n-- O equipo de [site:name]"
+register_admin_created:
+  subject: 'Un administrador creou para vostede unha conta en [site:name]'
+  body: "[user:display-name],\r\n\r\nUn administrador do sitio [site:name] creou unha conta para vostede. Agora pode iniciar sesión facendo clic nesta ligazón ou copiándoa e pegándoa no seu navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEsta ligazón só pode ser usada unha vez para iniciar sesión e levarao á páxina onde poderá establecer o seu contrasinal.\r\n\r\nDespois de establecer o seu contrasinal, será capaz de iniciar sesión no futuro en [site:login-url] usando:\r\n\r\nNome de usuario: [user:name]\r\nContrasinal: O seu contrasinal\r\n\r\n--  O equipo de [site:name]"
+register_no_approval_required:
+  subject: 'Detalles de conta para [user:display-name] en [site:name]'
+  body: "[user:display-name],\r\n\r\nGrazas por rexistrarse en [site:name]. Agora pode iniciar sesión facendo clic nesta ligazón ou copiándoa e pegándoa no seu navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEsta ligazón só pode ser usada unha vez para iniciar sesión e levarao a unha páxina onde poderá establecer o seu contrasinal.\r\n\r\nDespois de establecer o seu contrasinal, será capaz de iniciar sesión no futuro en [site:login-url] usando:\r\n\r\nNome de usuario: [user:name]\r\nContrasinal: O seu contrasinal\r\n\r\n--  O equipo de [site:name]"
+register_pending_approval:
+  subject: 'Detalles de conta para [user:display-name] en [site:name] (pendente de aprobación polo administrador)'
+  body: "[user:display-name],\r\n\r\nGracias por rexistrarse en [site:name]. A súa solicitude dunha conta actualmente está pendente de aprobación. Unha vez que sexa aprobado, recibirá outro correo electrónico con información sobre como iniciar sesión, establecer o seu contrasinal e outros detalles.\r\n\r\n--  O equipo de [site:name]"
+register_pending_approval_admin:
+  subject: 'Detalles de conta para [user:display-name] en [site:name] (pendente de aprobación polo administrador)'
+  body: "[user:display-name] solicitou unha conta.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Detalles de conta para [user:display-name] en [site:name] (aprobada)'
+  body: "[user:display-name],\r\n\r\nA súa conta en [site:name] foi activada.\r\n\r\nAgora pode iniciar sesión facendo clic nesta ligazón ou copiándoa e pegándoa no seu navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEsta ligazón só pode ser usada unha vez para iniciar sesión e levarao a unha páxina onde poderá establecer o seu contrasinal.\r\n\r\nDespois de establecer o seu contrasinal, será capaz de iniciar sesión no futuro en [site:login-url] usando:\r\n\r\nNome de usuario: [user:account-name]\r\nContrasinal: O seu contrasinal\r\n\r\n--  O equipo de [site:name]"
+status_blocked:
+  subject: 'Detalles de conta de [user:display-name] en [site:name] (bloqueada)'
+  body: "[user:display-name],\r\n\r\nA súa conta en [site:name] foi bloqueada.\r\n\r\n--  O equipo de [site:name]"
+status_canceled:
+  subject: 'Detalles de conta para [user:display-name] en [site:name] (cancelada)'
+  body: "[user:display-name],\r\n\r\nA súa conta en [site:name] foi cancelada.\r\n\r\n--  O equipo de [site:name]"

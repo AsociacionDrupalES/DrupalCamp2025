@@ -1,0 +1,77 @@
+label: Ficheiros
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: Ficheiros
+      fields:
+        filename:
+          label: Nome
+          separator: ', '
+        filemime:
+          label: 'Tipo MIME'
+        filesize:
+          label: Tamaño
+        status:
+          label: Estado
+          settings:
+            format_custom_false: Temporal
+            format_custom_true: Permanente
+        created:
+          label: 'Data de subida'
+        count:
+          label: 'Usado en'
+        operations:
+          label: Operacións
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        filename:
+          expose:
+            label: 'Nome de ficheiro'
+        filemime:
+          expose:
+            label: 'Tipo MIME'
+        status:
+          expose:
+            label: Estado
+  page_1:
+    display_options:
+      menu:
+        title: Ficheiros
+  page_2:
+    display_options:
+      fields:
+        entity_label:
+          label: Entidade
+        type:
+          label: 'Tipo de entidade'
+        count:
+          label: 'Conta de usos'
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      arguments:
+        fid:
+          exception:
+            title: Todo

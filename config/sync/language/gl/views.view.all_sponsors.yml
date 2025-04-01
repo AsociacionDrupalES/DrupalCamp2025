@@ -1,0 +1,27 @@
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      fields:
+        field_sponsor_level:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  block_1:
+    display_title: Bloque
+  page_1:
+    display_title: Páxina
+  page_2:
+    display_options:
+      fields:
+        field_sponsor_level:
+          separator: ', '
+        title:
+          separator: ', '
+        view_node:
+          text: vista

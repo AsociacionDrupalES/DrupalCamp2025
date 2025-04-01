@@ -1,0 +1,40 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ anterior'
+            next: 'seguinte ›'
+            first: '« primeira'
+            last: 'última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      fields:
+        redirect_source__path:
+          label: De
+          separator: ', '
+        created:
+          label: Creado
+      filters:
+        redirect_source__path:
+          expose:
+            label: De
+        redirect_redirect__uri:
+          expose:
+            label: Para
+        language:
+          expose:
+            label: 'Idioma orixinal'
+  page_1:
+    display_title: Páxina

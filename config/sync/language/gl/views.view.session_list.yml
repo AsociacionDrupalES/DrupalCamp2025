@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      fields:
+        title:
+          separator: ', '
+        body:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        field_session_category_target_id:
+          expose:
+            label: Categoría
+        combine:
+          expose:
+            label: Buscar
+  page_1:
+    display_title: Páxina

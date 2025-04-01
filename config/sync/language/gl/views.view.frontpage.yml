@@ -1,0 +1,32 @@
+label: 'Páxina principal'
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Aínda non se creou ningún contido de páxina de inicio. <br>Siga a <a target="_blank" href="https://www.drupal.org/es/docs/user_guide/es/index.html">Guía do usuario</a> para comezar a construír o seu sitio.'
+        title:
+          title: Benvido!
+  feed_1:
+    display_title: Orixe
+  page_1:
+    display_title: Páxina

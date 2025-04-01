@@ -1,0 +1,76 @@
+label: Persoas
+description: 'Localizar e xestionar qué persoas interactúan co seu sitio web.'
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: Persoas
+      fields:
+        user_bulk_form:
+          label: 'Actualización masiva'
+        name:
+          label: 'Nome de usuario/a'
+        status:
+          label: Estado
+          settings:
+            format_custom_false: Bloqueado
+            format_custom_true: Activo
+        roles_target_id:
+          label: Roles
+        created:
+          label: 'Membro durante'
+        access:
+          label: 'Último acceso'
+        operations:
+          label: Operacións
+        mail:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Seguinte ›'
+            previous: '‹ Anterior'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Non hai persoas dispoñibles.'
+      filters:
+        combine:
+          expose:
+            label: 'Nome ou correo electrónico contén'
+        status:
+          group_info:
+            label: Estado
+            group_items:
+              1:
+                title: Activo
+              2:
+                title: Bloqueado
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permiso
+      use_more_text: máis
+  page_1:
+    display_title: Páxina
+    display_options:
+      menu:
+        title: Lista
+        description: 'Localizar e xestionar qué persoas interactúan co seu sitio web.'
+      tab_options:
+        title: Persoas
+        description: 'Xestionar contas de usuarios, roles e permisos.'

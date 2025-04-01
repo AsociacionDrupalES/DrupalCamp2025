@@ -1,0 +1,52 @@
+label: Vixiante
+description: 'Mensaxes recentes do rexistro'
+display:
+  default:
+    display_title: Predeterminado
+    display_options:
+      title: 'Mensaxes recentes do rexistro'
+      fields:
+        nothing:
+          admin_label: Icona
+        severity:
+          label: Gravidade
+        type:
+          label: Tipo
+        timestamp:
+          label: Data
+        message:
+          label: Mensaxe
+        name:
+          label: Usuario/a
+          separator: ', '
+        link:
+          label: Operacións
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Non hai mensaxes de rexistro dispoñibles.'
+          content: 'Non hai mensaxes de rexistro dispoñibles.'
+      filters:
+        type:
+          expose:
+            label: Tipo
+        severity:
+          expose:
+            label: Gravidade
+  page:
+    display_title: Páxina
