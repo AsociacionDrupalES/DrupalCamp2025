@@ -13,7 +13,7 @@ id: node.session.field_social_media_card
 field_name: field_social_media_card
 entity_type: node
 bundle: session
-label: 'Social Media Card'
+label: 'Tarjeta para redes sociales'
 description: 'This will be displayed when shared across social media (Twitter, Facebook). Alt text is automatically generated. '
 required: false
 translatable: false

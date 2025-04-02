@@ -1,0 +1,7 @@
+custom_general_features.propose_session:
+  path: '/add/session'
+  defaults:
+    _controller: '\Drupal\custom_general_features\Controller\ProposeSessionRedirect::redirectPage'
+    _title: 'Propose session'
+  requirements:
+    _custom_access: '\Drupal\custom_general_features\Controller\ProposeSessionRedirect::access'

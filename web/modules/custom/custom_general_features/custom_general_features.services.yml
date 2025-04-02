@@ -1,0 +1,4 @@
+services:
+  custom_general_features.submission_deadline:
+    class: Drupal\custom_general_features\SessionSubmissionDeadlineService
+    arguments: ['@logger.factory']

@@ -11,8 +11,8 @@ id: node.session.field_short_description
 field_name: field_short_description
 entity_type: node
 bundle: session
-label: 'Short Description'
-description: 'Please provide a short description for your session, up to 600 characters in length.'
+label: 'Descripción corta'
+description: 'Describe brevemente tu sesión, con un máximo de 600 caracteres.'
 required: true
 translatable: false
 default_value: {  }

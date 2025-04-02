@@ -1,3 +1,5 @@
+label: 'É un taller'
+description: 'Marca esta casa se esta sesión é un taller. '
 settings:
-  on_label: Activo
-  off_label: Desactivado
+  on_label: Si
+  off_label: Non
