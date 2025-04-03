@@ -19,6 +19,9 @@ ddev drush cim -y
 
 # Access to the site
 ddev drush uli
+
+# Bring images from the production site.
+ddev drush -y en stage_file_proxy
 ```
 
 From now on you'd be able to access to https://dcamp2025.ddev.site
