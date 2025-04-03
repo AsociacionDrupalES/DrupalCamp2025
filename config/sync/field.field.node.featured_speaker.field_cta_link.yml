@@ -14,7 +14,7 @@ field_name: field_cta_link
 entity_type: node
 bundle: featured_speaker
 label: Enlace
-description: 'Link to session description or speaker'
+description: 'Enlace a la descripción de la sesión o al ponente'
 required: false
 translatable: false
 default_value: {  }

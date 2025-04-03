@@ -127,7 +127,7 @@ settings:
           label: 'Texto grande'
           element: '<p class="p--text-bigger">'
         -
-          label: 'Píldoras inline'
+          label: 'Píldoras en línea'
           element: '<ul class="ul--pills--inline">'
     linkit_extension:
       linkit_enabled: true

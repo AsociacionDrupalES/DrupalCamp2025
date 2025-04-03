@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_entity_create_access().
+ */
+function custom_general_features_entity_create_access(AccountInterface $account, array $context, $entity_bundle) {
+  if ($context['entity_type_id'] !== 'node' || $entity_bundle !== 'session') {
+    return AccessResult::neutral();
+  }
+
+  if ($account->hasPermission('administer nodes')) {
+    return AccessResult::neutral();
+  }
+
+  /** @var \Drupal\custom_general_features\SessionSubmissionDeadlineService $submission_deadline */
+  $submission_deadline = \Drupal::service('custom_general_features.submission_deadline');
+
+  if (!$submission_deadline->isSubmissionAllowed()) {
+    return AccessResult::forbidden('The deadline for the call for papers has passed.')
+      ->addCacheableDependency('config_pages:event_details');
+  }
+
+  return AccessResult::neutral();
+}

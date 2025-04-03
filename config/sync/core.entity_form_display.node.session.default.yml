@@ -21,6 +21,7 @@ dependencies:
     - field_group
     - maxlength
     - svg_image
+    - tagify
     - text
 third_party_settings:
   field_group:
@@ -64,10 +65,13 @@ bundle: session
 mode: default
 content:
   field_audience:
-    type: options_select
+    type: tagify_select_widget
     weight: 9
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
   field_description:
     type: text_textarea
@@ -98,10 +102,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_session_category:
-    type: options_select
+    type: tagify_select_widget
     weight: 10
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
   field_short_description:
     type: string_textarea

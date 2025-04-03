@@ -5,6 +5,11 @@
   flex-wrap: wrap;
   height: 824px;
 
+  @media (max-width: 768px) {
+    height: 704px;
+    padding-top: 120px;
+  }
+
   &:before {
     background-color: rgba(0, 0, 0, 0.38);
     content: '';
@@ -21,9 +26,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 60px;
 
     @media (min-width: 768px) {
       flex-wrap: nowrap;
+      gap: 0;
     }
 
     .text-wrapper {
@@ -41,7 +48,11 @@
       text-align: center;
 
       img {
-        max-width: 276px;
+        max-width: 191px;
+
+        @media (min-width: 768px) {
+          max-width: 276px;
+        }
       }
 
       @media (min-width: 768px) {

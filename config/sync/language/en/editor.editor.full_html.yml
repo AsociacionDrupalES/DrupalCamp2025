@@ -4,29 +4,35 @@ settings:
       languages:
         -
           label: 'Plain text'
-        -
-          label: C
-        -
-          label: 'C#'
-        -
-          label: C++
-        -
-          label: CSS
+        - {  }
+        - {  }
+        - {  }
+        - {  }
         -
           label: Diff
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+    ckeditor5_style:
+      styles:
         -
-          label: HTML
+          label: 'White button'
         -
-          label: Java
+          label: 'Primary button'
         -
-          label: JavaScript
+          label: 'Secondary button'
         -
-          label: PHP
+          label: 'Light primary button'
         -
-          label: Python
+          label: 'Transparent button'
         -
-          label: Ruby
+          label: 'With arrow'
         -
-          label: TypeScript
+          label: 'Large text'
         -
-          label: XML
+          label: 'Inline pills'

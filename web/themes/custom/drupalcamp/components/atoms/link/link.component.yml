@@ -12,6 +12,8 @@ variants:
     title: White
   transparent:
     title: Transparent
+  disabled:
+    title: Disabled
 props:
   type: object
   properties:

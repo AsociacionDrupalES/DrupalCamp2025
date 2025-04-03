@@ -36,3 +36,9 @@ mkdir web/sites/default/files/translations
  - Git workflow information: https://docs.github.com/en/get-started/using-github/github-flow
  - Development branch: ```dev```
  - Production branch: ```main```
+
+### Branches
+
+- `main` is the source of truth, the branch with the production code, always.
+- `dev` is the development branch, any new functionality goes there.
+- `dev` is then merged to `main` via PR when the changes are accepted.

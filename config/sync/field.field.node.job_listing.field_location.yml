@@ -12,7 +12,7 @@ field_name: field_location
 entity_type: node
 bundle: job_listing
 label: Ubicación
-description: 'Job location (ex. "Remote", "Gainesville, FL")'
+description: 'Lugar de trabajo'
 required: true
 translatable: false
 default_value: {  }

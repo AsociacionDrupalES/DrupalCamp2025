@@ -3,11 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
-    - field_permissions
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: public
 _core:
   default_config_hash: QrLLkIaf355pIFuaR-JYHiCHhOHmWe4NNeqX3fEAm9o
 id: node.field_company

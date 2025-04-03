@@ -3,12 +3,8 @@ langcode: es
 status: true
 dependencies:
   module:
-    - field_permissions
     - link
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: public
 _core:
   default_config_hash: HZFEUt_gHHDR5Mi5s2B84Yk3ipHZ6oLe5XQBSt5OC0g
 id: node.field_url

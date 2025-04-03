@@ -45,4 +45,16 @@
   &.link--button--white a {
     background-color: white;
   }
+  &.link--button--disabled a {
+    background-color: var(--color--gray);
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &:focus,
+    &:hover {
+      background-color: var(--color--gray);
+      box-shadow: none;
+      transform: none;
+    }
+  }
 }

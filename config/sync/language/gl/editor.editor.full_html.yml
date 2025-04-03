@@ -1,0 +1,16 @@
+settings:
+  plugins:
+    ckeditor5_codeBlock:
+      languages:
+        0:
+          label: 'Texto sen formato'
+        5:
+          label: Diferenzas
+    ckeditor5_style:
+      styles:
+        0:
+          label: 'Botón branco'
+        5:
+          label: 'Con frecha'
+        7:
+          label: 'Píldoras en liña'

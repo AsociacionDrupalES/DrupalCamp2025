@@ -11,7 +11,7 @@ id: node.session.field_speakers
 field_name: field_speakers
 entity_type: node
 bundle: session
-label: Speaker(s)
+label: Ponente(s)
 description: ''
 required: true
 translatable: false
@@ -29,6 +29,8 @@ settings:
       type: role
       role:
         speaker: speaker
+        session_moderator: '0'
+        content_editor: '0'
         administrator: '0'
     include_anonymous: false
 field_type: entity_reference

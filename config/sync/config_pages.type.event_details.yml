@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: mhCajo3QacNf_bSKtP_cgir2QUPSjajDsYltFRCI0uo
 id: event_details
-label: 'Event Details'
+label: 'Detalles del evento'
 token: true
 context:
   show_warning: true
@@ -16,4 +16,4 @@ context:
 menu:
   path: /admin/event-details
   weight: 0
-  description: 'Event Details'
+  description: 'Detalles del evento'

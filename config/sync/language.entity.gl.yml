@@ -1,9 +1,9 @@
-uuid: a78d365e-75df-4a6c-b8ab-5cb644251acc
+uuid: b8779a2c-e009-4f3b-986d-a6680e8013b0
 langcode: es
 status: true
 dependencies: {  }
 id: gl
-label: Galician
+label: Galego
 direction: ltr
 weight: 2
 locked: false
