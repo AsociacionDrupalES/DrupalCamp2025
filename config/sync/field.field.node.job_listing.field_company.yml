@@ -13,7 +13,7 @@ field_name: field_company
 entity_type: node
 bundle: job_listing
 label: Organización
-description: 'Sponsor that is posting this job listing. '
+description: 'Patrocinador que publica esta oferta de trabajo.'
 required: true
 translatable: false
 default_value: {  }

@@ -14,7 +14,7 @@ field_name: field_social_media_card
 entity_type: node
 bundle: session
 label: 'Tarjeta para redes sociales'
-description: 'This will be displayed when shared across social media (Twitter, Facebook). Alt text is automatically generated. '
+description: 'Se mostrará cuando se comparta en las redes sociales (Twitter, Facebook). El texto alternativo se genera automáticamente.'
 required: false
 translatable: false
 default_value: {  }

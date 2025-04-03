@@ -12,7 +12,7 @@ field_name: field_weight
 entity_type: node
 bundle: featured_speaker
 label: Peso
-description: 'Determines the order in which the speakers are listed. Lower numbers come first. '
+description: 'Determina el orden en que se enumeran los speakers. Los números más bajos van primero.'
 required: true
 translatable: false
 default_value:
