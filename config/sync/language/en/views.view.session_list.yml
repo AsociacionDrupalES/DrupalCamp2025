@@ -1,17 +1,30 @@
 display:
   default:
     display_options:
-      empty:
-        add_content_by_bundle:
+      header:
+        result:
+          content: '<div class="results-summary"><strong>Results:</strong> @start to @end of @total proposals</div>'
+        propose_session_link:
           label: 'Propose a session'
-        area_text_custom:
-          content: 'There are no sessions submitted that meet this criteria.'
+      footer:
+        result:
+          content: '<div class="results-summary"><strong>Results:</strong> @start to @end of @total proposals</div>'
+        propose_session_link:
+          label: 'Propose a session'
       title: 'Submitted Sessions'
+      fields:
+        title: {  }
+        body: {  }
       exposed_form:
         options:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'There are no sessions submitted that meet this criteria.'
+        propose_session_link:
+          label: 'Propose a session'
       filters:
         field_audience_target_id:
           expose:
@@ -22,14 +35,6 @@ display:
         combine:
           expose:
             label: Search
-      header:
-        add_content_by_bundle:
-          label: 'Propose a session'
-        result:
-          content: '<div class="results-summary"><strong>Results:</strong> @start to @end of @total proposals</div>'
-      footer:
-        result:
-          content: '<div class="results-summary"><strong>Results:</strong> @start to @end of @total proposals</div>'
     display_title: Default
   page_1:
     display_title: Page

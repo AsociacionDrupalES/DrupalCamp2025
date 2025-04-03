@@ -81,6 +81,7 @@ module:
   svg_image: 0
   symfony_mailer: 0
   system: 0
+  tagify: 0
   taxonomy: 0
   text: 0
   token: 0

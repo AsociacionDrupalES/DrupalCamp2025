@@ -16,6 +16,7 @@ dependencies:
     - node.type.session
   module:
     - field_group
+    - nomarkup
     - text
     - user
 third_party_settings:
@@ -130,7 +131,11 @@ content:
     settings:
       view_mode: compact
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '0'
     weight: 3
     region: content
   field_time_slot:

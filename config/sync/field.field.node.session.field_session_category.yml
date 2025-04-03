@@ -12,7 +12,7 @@ id: node.session.field_session_category
 field_name: field_session_category
 entity_type: node
 bundle: session
-label: 'Session Category'
+label: 'Categoría/s de la sesión'
 description: ''
 required: true
 translatable: false

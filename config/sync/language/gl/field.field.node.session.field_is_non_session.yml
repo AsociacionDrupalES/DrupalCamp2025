@@ -1,3 +1,5 @@
 settings:
-  on_label: Activo
-  off_label: Desactivado
+  on_label: Si
+  off_label: Non
+label: 'Non sesión / Non formación'
+description: 'Seleccione se se trata dunha sesión de apertura, un xantar etc.'

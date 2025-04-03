@@ -1,11 +1,18 @@
 uuid: bf9d4ec0-6c09-4268-a51f-998d4fb9a5dc
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - field_permissions
 _core:
   default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
 id: administrator
 label: Administrador
 weight: -5
 is_admin: true
-permissions: {  }
+permissions:
+  - 'create field_is_non_session'
+  - 'edit field_is_non_session'
+  - 'edit own field_is_non_session'
+  - 'view field_is_non_session'
+  - 'view own field_is_non_session'

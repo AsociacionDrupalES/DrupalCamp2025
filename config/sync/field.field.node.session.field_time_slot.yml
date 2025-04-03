@@ -11,7 +11,7 @@ id: node.session.field_time_slot
 field_name: field_time_slot
 entity_type: node
 bundle: session
-label: 'Time Slot'
+label: 'Franja horaria'
 description: ''
 required: false
 translatable: false

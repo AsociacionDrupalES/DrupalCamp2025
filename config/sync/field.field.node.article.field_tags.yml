@@ -13,7 +13,7 @@ field_name: field_tags
 entity_type: node
 bundle: article
 label: Etiquetas
-description: 'Especifique una lista separada por comas. Por ejemplo: Amsterdam, Mexico City, "Cleveland, Ohio"'
+description: 'Especifique una lista separada por comas.'
 required: false
 translatable: false
 default_value: {  }
@@ -25,5 +25,7 @@ settings:
       tags: tags
     sort:
       field: _none
+      direction: asc
     auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference

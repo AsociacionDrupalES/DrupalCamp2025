@@ -38,6 +38,7 @@
         "drupal/spamspan": "^3.2",
         "drupal/svg_image": "^3.2",
         "drupal/symfony_mailer": "^1.5",
+        "drupal/tagify": "^1.2",
         "drupal/ui_patterns": "^2.0",
         "drupal/ui_patterns_field_group-ui_patterns_field_group": "^2.0@alpha",
         "drush/drush": "^13.3",

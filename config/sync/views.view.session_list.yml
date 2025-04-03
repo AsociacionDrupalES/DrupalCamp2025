@@ -11,8 +11,8 @@ dependencies:
     - taxonomy.vocabulary.session_category
     - workflows.workflow.session_acceptance
   module:
-    - add_content_by_bundle
     - content_moderation
+    - custom_general_features
     - node
     - taxonomy
     - text
@@ -195,20 +195,20 @@ display:
           empty: true
           content: 'No se han presentado sesiones que cumplan estos criterios.'
           tokenize: false
-        add_content_by_bundle:
-          id: add_content_by_bundle
+        propose_session_link:
+          id: propose_session_link
           table: views
-          field: add_content_by_bundle
+          field: propose_session_link
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: add_content_by_bundle
+          plugin_id: propose_session_link
           label: 'Proponer una charla'
           empty: true
           bundle: session
           class: 'link--button link--button--primary'
           target: ''
-          width: 600
+          width: '600'
           form_mode: null
           params: ''
       sorts:
@@ -540,20 +540,20 @@ display:
           query_tags: {  }
       relationships: {  }
       header:
-        add_content_by_bundle:
-          id: add_content_by_bundle
+        propose_session_link:
+          id: propose_session_link
           table: views
-          field: add_content_by_bundle
+          field: propose_session_link
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: add_content_by_bundle
+          plugin_id: propose_session_link
           label: 'Proponer una charla'
-          empty: true
+          empty: false
           bundle: session
           class: 'link--button link--button--primary'
           target: ''
-          width: 600
+          width: '600'
           form_mode: null
           params: ''
         result:
@@ -567,6 +567,22 @@ display:
           empty: false
           content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
       footer:
+        propose_session_link:
+          id: propose_session_link
+          table: views
+          field: propose_session_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: propose_session_link
+          label: 'Proponer una charla'
+          empty: false
+          bundle: session
+          class: 'link--button link--button--primary'
+          target: ''
+          width: '600'
+          form_mode: null
+          params: ''
         result:
           id: result
           table: views
