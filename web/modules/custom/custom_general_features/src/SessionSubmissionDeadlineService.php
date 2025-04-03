@@ -32,7 +32,7 @@ class SessionSubmissionDeadlineService {
     $config_page = ConfigPages::config($details_page);
     if ($config_page) {
       $date = $config_page->get('field_session_submission_deadlin')->value;
-      return strtotime($date);
+      return strtotime($date ?: '2025-12-31');
     }
 
     return strtotime('2025-12-31');

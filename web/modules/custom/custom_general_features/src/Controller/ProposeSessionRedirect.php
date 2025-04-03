@@ -41,7 +41,7 @@ class ProposeSessionRedirect extends ControllerBase {
    */
   public function redirectPage(): RedirectResponse|Response {
     if ($this->submissionDeadlineService->isSubmissionAllowed()) {
-      return new RedirectResponse('/node/add/session');
+      return new RedirectResponse($this->redirect('node.add', ['node_type' => 'session'])->getTargetUrl());
     }
     return new Response($this->t('The deadline for the call for papers has passed.'), 403);
   }
