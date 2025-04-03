@@ -29,6 +29,11 @@
       margin-bottom: 10px;
     }
 
+    .summary {
+      font-size: calc(var(--font-size) * 0.8);
+      line-height: calc(var(--font-line-height) * 0.8);
+    }
+
     .links {
       > div {
         display: flex;
