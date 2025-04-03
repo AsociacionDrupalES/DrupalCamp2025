@@ -11,7 +11,7 @@ bundle: menu_link_content
 label: Descripción
 description: 'Mostrar cuando se pase el cursor por encima del enlace de menú.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
