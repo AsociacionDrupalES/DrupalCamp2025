@@ -852,9 +852,18 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # $settings['migrate_file_public_path'] = '';
 # $settings['migrate_file_private_path'] = '';
 
+// Ignore dev modules from config.
+$settings['config_exclude_modules'] = [
+  'devel',
+  'devel_generate',
+  'stage_file_proxy',
+];
+
 // Automatically generated include for settings managed by ddev.
 if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
   include __DIR__ . '/settings.ddev.php';
+  // ddev drush -y en stage_file_proxy
+  $config['stage_file_proxy.settings']['origin'] = 'https://2025.drupalcamp.es';
 }
 // Non-local projects can only change configuration via "drush".
 elseif (PHP_SAPI !== 'cli') {
