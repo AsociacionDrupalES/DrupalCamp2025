@@ -40,9 +40,5 @@ mkdir web/sites/default/files/translations
 ### Branches
 
 - `main` is the source of truth, the branch with the production code, always.
-  - Any new branch is created from `main`
-- `dev` is a development branch, and it can be thrown away at any moment.
-  - `dev` is never merged to `main`
-- For new branches, create it from `main` and then:
-  - Create PRs against `dev` when you want to demo the changes, and you can make as many PRs as needed until the changes are fully tested and approved.
-  - When everything is approved, create a new PR from your branch to `main`.
+- `dev` is the development branch, any new functionality goes there.
+- `dev` is then merged to `main` via PR when the changes are accepted.
