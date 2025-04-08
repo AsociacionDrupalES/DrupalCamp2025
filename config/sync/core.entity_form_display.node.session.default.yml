@@ -22,6 +22,7 @@ dependencies:
     - maxlength
     - svg_image
     - tagify
+    - tagify_user_list
     - text
 third_party_settings:
   field_group:
@@ -131,14 +132,18 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_speakers:
-    type: entity_reference_autocomplete
+    type: tagify_user_list_entity_reference_autocomplete_widget
     weight: 11
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
-      size: 60
       placeholder: ''
+      suggestions_dropdown: 1
+      show_info_label: 1
+      info_label: '[user:mail]'
+      image_style: thumbnail
+      show_entity_id: 0
     third_party_settings: {  }
   field_time_slot:
     type: options_select
