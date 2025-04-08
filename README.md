@@ -2,20 +2,21 @@
 
 ## Initial setup
 
-Get a copy of the database and files and put them in
+Get a copy of the database and files for a closer set up to production, but it's not needed.
+
 ```shell
+# Get started.
 ddev start
-# Get dependencies:
 ddev composer install
 
-# Import a the base DB:
+# Import the DB:
 ddev import-db --file=database-file.sql.gz
 
-# Run possible pending updates:
-ddev drush updb -y
+# No database, no problem:
+ddev drush -y site:install --existing-config -v
 
-# Ensure you are up to date in terms of configration:
-ddev drush cim -y
+# Run possible pending updates and import the configuration from code.
+ddev drush deploy
 
 # Access to the site
 ddev drush uli
