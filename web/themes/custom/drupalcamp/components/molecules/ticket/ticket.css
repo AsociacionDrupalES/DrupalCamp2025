@@ -5,44 +5,49 @@
   box-sizing: border-box;
   padding: 32px;
   width: 100%;
+}
 
-  &:focus,
-  &:hover {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
-    .price {
-      font-size: calc(var(--font-size) * 5);
-      line-height: calc(var(--font-line-height) * 5.10);
-    }
-    .link {
-      font-size: calc(var(--font-size) * 1.2);
+[data-component-id="drupalcamp:ticket"]:focus,
+[data-component-id="drupalcamp:ticket"]:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+}
 
-      a {
-        transform: none;
-      }
-    }
-  }
+[data-component-id="drupalcamp:ticket"]:focus .price,
+[data-component-id="drupalcamp:ticket"]:hover .price {
+  font-size: calc(var(--font-size) * 5);
+  line-height: calc(var(--font-line-height) * 5.10);
+}
 
-  .title {
-    font-weight: 700;
-    padding-bottom: 32px;
-    text-align: center;
-  }
+[data-component-id="drupalcamp:ticket"]:focus .link,
+[data-component-id="drupalcamp:ticket"]:hover .link {
+  font-size: calc(var(--font-size) * 1.2);
+}
 
-  .price {
-    font-size: calc(var(--font-size) * 3.10);
-    font-weight: 700;
-    line-height: calc(var(--font-line-height) * 3.10);
-    padding-bottom: 32px;
-    text-align: center;
-    transition: var(--transition);
-  }
+[data-component-id="drupalcamp:ticket"]:focus .link a,
+[data-component-id="drupalcamp:ticket"]:hover .link a {
+  transform: none;
+}
 
-  .link {
-    padding-bottom: 32px;
-    text-align: center;
+[data-component-id="drupalcamp:ticket"] .title {
+  font-weight: 700;
+  padding-bottom: 32px;
+  text-align: center;
+}
 
-    a {
-      width: 100%
-    }
-  }
+[data-component-id="drupalcamp:ticket"] .price {
+  font-size: calc(var(--font-size) * 3.10);
+  font-weight: 700;
+  line-height: calc(var(--font-line-height) * 3.10);
+  padding-bottom: 32px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+[data-component-id="drupalcamp:ticket"] .link {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+[data-component-id="drupalcamp:ticket"] .link a {
+  width: 100%;
 }

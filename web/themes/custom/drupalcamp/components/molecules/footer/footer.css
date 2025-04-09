@@ -3,8 +3,10 @@
   background-color: var(--color--primary);
   color: white;
   text-align: center;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .footer {
     padding-top: 45px;
     padding-bottom: 62px;
   }
@@ -21,34 +23,34 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px 45px;
+}
 
-  a {
-    transition: var(--transition);
+.footer__top__logos a {
+  transition: var(--transition);
+}
 
-    &:hover {
-      transform: scale(1.05);
-    }
+.footer__top__logos a:hover {
+  transform: scale(1.05);
+}
+
+.footer__top__logos img {
+  height: 40px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .footer__top__logos {
+    justify-content: center;
   }
 
-  img {
-    height: 40px;
-    width: auto;
+  .footer__top__logos img {
+    height: 50px;
   }
+}
 
-  @media (min-width: 768px) {
-    & {
-      justify-content: center;
-
-      img {
-        height: 50px;
-      }
-    }
-  }
-
-  @media (min-width: 768px) {
-    & {
-      gap: 40px 98px;
-    }
+@media (min-width: 768px) {
+  .footer__top__logos {
+    gap: 40px 98px;
   }
 }
 
@@ -60,8 +62,10 @@
   max-width: var(--max-width);
   padding: 60px 0 16px;
   gap: 40px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .footer__pre-links {
     padding: 60px 0 16px;
     flex-direction: row;
     justify-content: space-between;
@@ -87,10 +91,10 @@
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease;
+}
 
-  &:hover {
-    color: #fff;
-  }
+.footer__social__icon:hover {
+  color: #fff;
 }
 
 /* Footer links - Copyright and footer menu */
@@ -109,14 +113,18 @@
   color: var(--color--primary);
   box-shadow: 0 0 10px 0 #00000033;
   gap: 8px;
+}
 
-  @media (min-width: 960px) {
+@media (min-width: 960px) {
+  .footer__links {
     flex-direction: row;
     padding-left: 32px;
     padding-right: 32px;
   }
+}
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
+  .footer__links {
     padding-right: 64px;
   }
 }
@@ -126,20 +134,20 @@
   text-decoration: none;
   transition: var(--transition);
   display: inline-block;
+}
 
-  &:hover {
-    color: var(--color--primary);
-    text-decoration: underline;
-    transform: scale(1.05);
-  }
+.footer__links a:hover {
+  color: var(--color--primary);
+  text-decoration: underline;
+  transform: scale(1.05);
 }
 
 .footer__links__copyright {
   margin: 0;
+}
 
-  & a {
-    text-decoration: underline;
-  }
+.footer__links__copyright a {
+  text-decoration: underline;
 }
 
 .footer__links .menu {
@@ -149,8 +157,10 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .footer__links .menu {
     flex-direction: row;
     gap: 21px;
   }

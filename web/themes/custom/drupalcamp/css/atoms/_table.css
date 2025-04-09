@@ -2,22 +2,21 @@ table {
   border-collapse: collapse;
   margin-bottom: 20px;
   width: 100%;
+}
 
-  thead {
-    background: linear-gradient(to right, var(--color--primary-light), var(--color--degree-1), var(--color--degree-2), var(--color--secondary));
-  }
+table thead {
+  background: linear-gradient(to right, var(--color--primary-light), var(--color--degree-1), var(--color--degree-2), var(--color--secondary));
+}
 
-  tr {
-    th {
-      border: 1px solid #e3e3e3;
-      padding: 10px;
-      text-align: left;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-    td {
-      background-color: #fff;
-      border: 1px solid #e3e3e3;
-      padding: 10px;
-    }
-  }
+table tr th {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+table tr td {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 10px;
 }

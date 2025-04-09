@@ -7,13 +7,13 @@
     display: flex;
     gap: 22px;
     margin-left: 47px;
+  }
 
-    & .link--button {
-      padding: 8px 20px;
+  #block-drupalcamp-quick-actions .menu .link--button {
+    padding: 8px 20px;
+  }
 
-      &:hover {
-        box-shadow: 0 0 8px 0 #00000080;
-      }
-    }
+  #block-drupalcamp-quick-actions .menu .link--button:hover {
+    box-shadow: 0 0 8px 0 #00000080;
   }
 }

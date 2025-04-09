@@ -8,14 +8,16 @@
   margin: 40px 0;
   padding: 20px 50px;
   text-align: center;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:become_sponsor"] {
     flex-wrap: nowrap;
     text-align: left;
   }
+}
 
-  svg {
-    height: auto;
-    min-width: 135px;
-  }
+[data-component-id="drupalcamp:become_sponsor"] svg {
+  height: auto;
+  min-width: 135px;
 }

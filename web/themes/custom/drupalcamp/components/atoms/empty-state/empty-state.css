@@ -7,56 +7,61 @@
   margin: 0 auto;
   text-align: center;
   transition: background-color 0.5s ease;
+}
 
-  &:hover {
-    background-color: #e0e0e0;
+.empty-state:hover {
+  background-color: #e0e0e0;
+}
 
-    .icon:nth-child(1) {
-      transform: rotate(-20deg) translateX(-2rem) translateY(-1rem);
-    }
-    .icon:nth-child(2) {
-      transform: translateY(-0.5rem);
-    }
-    .icon:nth-child(3) {
-      transform: rotate(20deg) translateX(2rem) translateY(-1rem);
-    }
-  }
+.empty-state:hover .icon:nth-child(1) {
+  transform: rotate(-20deg) translateX(-2rem) translateY(-1rem);
+}
+
+.empty-state:hover .icon:nth-child(2) {
+  transform: translateY(-0.5rem);
+}
+
+.empty-state:hover .icon:nth-child(3) {
+  transform: rotate(20deg) translateX(2rem) translateY(-1rem);
 }
 
 .empty-state__icons {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+}
 
-  .icon {
-    margin: 0 -1rem;
-    width: 3rem;
-    height: 3rem;
-    display: grid;
-    place-items: center;
-    border-radius: 0.75rem;
-    position: relative;
-    right: 0.625rem;
-    top: 0.375rem;
-    transform: rotate(6deg);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    background: #ffffff;
-    border: 1px solid var(--color--secondary);
-    transition: transform 0.5s ease;
+.empty-state__icons .icon {
+  margin: 0 -1rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.75rem;
+  position: relative;
+  right: 0.625rem;
+  top: 0.375rem;
+  transform: rotate(6deg);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  border: 1px solid var(--color--secondary);
+  transition: transform 0.5s ease;
+}
 
-    &:hover {
-      transition-duration: 0.2s; /* group-hover:duration-200 */
-    }
-    &:nth-child(1) {
-      transform: rotate(-6deg) translateX(-1.25rem) translateY(-0.125rem);
-    }
-    &:nth-child(2) {
-      transform: translateY(-0.25rem);
-    }
-    &:nth-child(3) {
-      transform: rotate(6deg) translateX(1.25rem) translateY(-0.125rem);
-    }
-  }
+.empty-state__icons .icon:hover {
+  transition-duration: 0.2s;
+}
+
+.empty-state__icons .icon:nth-child(1) {
+  transform: rotate(-6deg) translateX(-1.25rem) translateY(-0.125rem);
+}
+
+.empty-state__icons .icon:nth-child(2) {
+  transform: translateY(-0.25rem);
+}
+
+.empty-state__icons .icon:nth-child(3) {
+  transform: rotate(6deg) translateX(1.25rem) translateY(-0.125rem);
 }
 
 .empty-state-title {
@@ -79,10 +84,10 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
 
-  &:hover {
-    background-color: #0056b3;
-  }
+.empty-state-button:hover {
+  background-color: #0056b3;
 }
 
 .empty-state__content {
