@@ -9,12 +9,12 @@ _core:
 id: job_listing
 label: 'Job Listing'
 type: 'canonical_entities:node'
-pattern: '/job/[node:field_company]/[node:title]'
+pattern: 'job/[node:field_company]/[node:title]'
 selection_criteria:
-  4f1c929b-179c-47a9-8a98-ec8dd49af33e:
+  29e4423e-81b8-4a22-9a14-f02af5a92b8b:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4f1c929b-179c-47a9-8a98-ec8dd49af33e
+    uuid: 29e4423e-81b8-4a22-9a14-f02af5a92b8b
     context_mapping:
       node: node
     bundles:
