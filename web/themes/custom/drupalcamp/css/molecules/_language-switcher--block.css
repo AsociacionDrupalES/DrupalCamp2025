@@ -1,37 +1,39 @@
 #block-drupalcamp-language-switcher .links {
   margin: 0;
   padding: 0;
+}
 
-  li {
-    list-style-type: none;
-    display: inline;
+#block-drupalcamp-language-switcher .links li {
+  list-style-type: none;
+  display: inline;
+}
 
-    &:not(:first-child):before {
-      content: "/";
-    }
+#block-drupalcamp-language-switcher .links li:not(:first-child):before {
+  content: "/";
+}
 
-    a.is-active {
-      text-shadow: 0 0 1px var(--color--primary);
-    }
+#block-drupalcamp-language-switcher .links li a.is-active {
+  text-shadow: 0 0 1px var(--color--primary);
+}
 
-    .short-text {
-      display: none;
-    }
+#block-drupalcamp-language-switcher .links li .short-text {
+  display: none;
+}
 
-    .full-text {
-      display: inline-block;
-    }
+#block-drupalcamp-language-switcher .links li .full-text {
+  display: inline-block;
+}
 
-    @media (min-width: 1235px) {
-      text-transform: uppercase;
+@media (min-width: 1235px) {
+  #block-drupalcamp-language-switcher .links li {
+    text-transform: uppercase;
+  }
 
-      .short-text {
-        display: inline-block;
-      }
+  #block-drupalcamp-language-switcher .links li .short-text {
+    display: inline-block;
+  }
 
-      .full-text {
-        display: none;
-      }
-    }
+  #block-drupalcamp-language-switcher .links li .full-text {
+    display: none;
   }
 }

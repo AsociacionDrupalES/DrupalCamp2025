@@ -2,6 +2,7 @@ display:
   default:
     display_title: Master
     display_options:
+      title: 'Tarea programada'
       fields:
         field_when:
           separator: ', '
@@ -29,6 +30,11 @@ display:
           exception:
             title: Todo
       filters:
+        field_audience_target_id:
+          expose:
+            label: Audiencia
         field_session_category_target_id:
           expose:
             label: Categoría
+      menu:
+        title: 'Tarea programada'

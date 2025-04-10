@@ -1,0 +1,18 @@
+uuid: 14731c8d-780c-4931-b5b5-5a0a8541029f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.person_cards
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.person_cards
+target_entity_type_id: paragraph
+target_bundle: person_cards
+default_langcode: site_default
+language_alterable: false

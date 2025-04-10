@@ -1,0 +1,22 @@
+uuid: 84ad2d9c-7024-4770-948b-79ed772aa87f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.person_cards
+id: paragraph.person_cards.status
+field_name: status
+entity_type: paragraph
+bundle: person_cards
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Sí
+  off_label: 'No'
+field_type: boolean

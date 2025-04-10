@@ -6,10 +6,8 @@ blockquote {
   line-height: calc(var(--font-line-height) * 0.85);
   margin: 25px 0;
   padding: 20px;
+}
 
-  p {
-    &:last-child {
-      margin: 0;
-    }
-  }
+blockquote p:last-child {
+  margin: 0;
 }

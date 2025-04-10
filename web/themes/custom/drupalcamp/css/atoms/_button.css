@@ -10,49 +10,67 @@ a.link--button {
   text-align: center;
   text-decoration: none;
   transition: var(--transition);
+}
 
-  &:focus,
-  &:hover {
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-    transform: scale(1.2);
-  }
-  &.link--button--transparent {
-    background-color: transparent;
+input.button:focus,
+input.button:hover,
+a.link--button:focus,
+a.link--button:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+}
 
-    &:focus,
-    &:hover {
-      background-color: var(--color--primary);
-      color: var(--color--background-primary);
-    }
-  }
-  &.link--button--primary {
-    background-color: var(--color--primary);
-    border: 1px solid var(--color--background-primary);
-    color: var(--color--background-primary);
-  }
-  &.link--button--secondary {
-    background-color: var(--color--secondary);
-    border-color: var(--color--secondary);
-    color: var(--color--background-secondary);
-  }
-  &.link--button--primary-light {
-    background-color: var(--color--primary-light);
-    border-color: var(--color--primary-light);
-    color: var(--color--background-primary-light);
-  }
-  &.link--button--white {
-    background-color: white;
-  }
-  &.link--button--small {
-    padding: 7px 20px;
-    font-size: 1rem;
+input.button.link--button--transparent,
+a.link--button.link--button--transparent {
+  background-color: transparent;
+}
 
-    &:focus,
-    &:hover {
-      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
-      transform: scale(1.05);
-    }
-  }
+input.button.link--button--transparent:focus,
+input.button.link--button--transparent:hover,
+a.link--button.link--button--transparent:focus,
+a.link--button.link--button--transparent:hover {
+  background-color: var(--color--primary);
+  color: var(--color--background-primary);
+}
+
+input.button.link--button--primary,
+a.link--button.link--button--primary {
+  background-color: var(--color--primary);
+  border: 1px solid var(--color--background-primary);
+  color: var(--color--background-primary);
+}
+
+input.button.link--button--secondary,
+a.link--button.link--button--secondary {
+  background-color: var(--color--secondary);
+  border-color: var(--color--secondary);
+  color: var(--color--background-secondary);
+}
+
+input.button.link--button--primary-light,
+a.link--button.link--button--primary-light {
+  background-color: var(--color--primary-light);
+  border-color: var(--color--primary-light);
+  color: var(--color--background-primary-light);
+}
+
+input.button.link--button--white,
+a.link--button.link--button--white {
+  background-color: white;
+}
+
+input.button.link--button--small,
+a.link--button.link--button--small {
+  padding: 7px 20px;
+  font-size: 1rem;
+}
+
+input.button.link--button--small:focus,
+input.button.link--button--small:hover,
+a.link--button.link--button--small:focus,
+a.link--button.link--button--small:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
 }
 
 input.button {

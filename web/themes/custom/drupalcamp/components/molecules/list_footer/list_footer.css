@@ -5,12 +5,14 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
+}
 
-  @media (min-width: 920px) {
+@media (min-width: 920px) {
+  [data-component-id="drupalcamp:list_footer"] {
     flex-direction: row;
   }
+}
 
-  .results-summary {
-    flex: 1;
-  }
+[data-component-id="drupalcamp:list_footer"] .results-summary {
+  flex: 1;
 }

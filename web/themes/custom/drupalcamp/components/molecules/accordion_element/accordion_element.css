@@ -1,68 +1,68 @@
 [data-component-id="drupalcamp:accordion_element"] {
   padding: 0 0 30px 0;
+}
 
-  .accordion-link {
-    border-bottom: 1px solid var(--color--primary);
-    display: block;
-    font-family: var(--font-family-h);
-    font-size: calc(var(--font-size) * 1.38);
-    font-weight: 600;
-    line-height: calc(var(--font-line-height) * 1.38);
-    padding: 20px 60px 20px 0;
-    position: relative;
-    text-decoration: none;
+[data-component-id="drupalcamp:accordion_element"] .accordion-link {
+  border-bottom: 1px solid var(--color--primary);
+  display: block;
+  font-family: var(--font-family-h);
+  font-size: calc(var(--font-size) * 1.38);
+  font-weight: 600;
+  line-height: calc(var(--font-line-height) * 1.38);
+  padding: 20px 60px 20px 0;
+  position: relative;
+  text-decoration: none;
+}
 
-    &:focus,
-    &:hover {
-      color: var(--color--primary);
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:focus,
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:hover {
+  color: var(--color--primary);
+}
 
-      &:before {
-        background-color: var(--color--primary);
-      }
-      &:after {
-        background-color: white;
-      }
-    }
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:focus:before,
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:hover:before {
+  background-color: var(--color--primary);
+}
 
-    &:before,
-    &:after {
-      content: "";
-      height: 48px;
-      position: absolute;
-      right: 0;
-      top: calc(50% - 24px);
-      transition: var(--transition);
-      width: 48px;
-    }
-    &:before {
-      border: 1px solid var(--color--primary);
-      border-radius: 48px;
-    }
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:focus:after,
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:hover:after {
+  background-color: white;
+}
 
-    &:after {
-      background-color: var(--color--primary);
-      mask-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M9 16L9 3.83L14.59 9.42L16 8L8 -3.49691e-07L-3.49691e-07 8L1.41 9.41L7 3.83L7 16L9 16Z" fill="currentColor"/%3E%3C/svg%3E%0A');
-      mask-position: center;
-      mask-repeat: no-repeat;
-      transform: rotate(180deg);
-    }
-  }
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:before,
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:after {
+  content: "";
+  height: 48px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 24px);
+  transition: var(--transition);
+  width: 48px;
+}
 
-  .accordion-content {
-    height: 0;
-    overflow: hidden;
-    transition: var(--transition);
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:before {
+  border: 1px solid var(--color--primary);
+  border-radius: 48px;
+}
 
-    > div {
-      padding: 25px 0 0 0;
-    }
-  }
+[data-component-id="drupalcamp:accordion_element"] .accordion-link:after {
+  background-color: var(--color--primary);
+  mask-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M9 16L9 3.83L14.59 9.42L16 8L8 -3.49691e-07L-3.49691e-07 8L1.41 9.41L7 3.83L7 16L9 16Z" fill="currentColor"/%3E%3C/svg%3E%0A');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transform: rotate(180deg);
+}
 
-  &.accordion-element--open {
-    .accordion-link {
-      &:after {
-        transform: rotate(0deg);
-      }
-    }
-  }
+[data-component-id="drupalcamp:accordion_element"] .accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+[data-component-id="drupalcamp:accordion_element"] .accordion-content > div {
+  padding: 25px 0 0 0;
+}
+
+[data-component-id="drupalcamp:accordion_element"].accordion-element--open .accordion-link:after {
+  transform: rotate(0deg);
 }

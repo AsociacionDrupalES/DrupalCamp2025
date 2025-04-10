@@ -14,5 +14,5 @@ third_party_settings:
 id: node.session
 target_entity_type_id: node
 target_bundle: session
-default_langcode: site_default
+default_langcode: und
 language_alterable: false

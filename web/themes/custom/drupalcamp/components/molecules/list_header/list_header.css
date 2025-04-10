@@ -1,67 +1,66 @@
-[data-component-id="drupalcamp:list_header"] {
-  .filters-section {
-    --bg-img-blend-mode: overlay;
-    --bg-img-size: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
+[data-component-id="drupalcamp:list_header"] .filters-section {
+  --bg-img-blend-mode: overlay;
+  --bg-img-size: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
-  .header-section {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
+[data-component-id="drupalcamp:list_header"] .header-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
 
-    @media (min-width: 920px) {
-      flex-direction: row;
-    }
-
-    .results-summary {
-      flex: 1;
-    }
-  }
-
-  .form--inline {
-    select,
-    input {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .form-actions {
-      display: flex;
-      gap: 1em;
-
-      input.button {
-        line-height: var(--line-height);
-        max-width: 50%;
-        margin: 0;
-      }
-    }
-
-    @media (min-width: 768px) {
-      display: flex;
-      gap: 1.5em;
-
-      .form-actions {
-        flex-direction: row;
-
-        input.button {
-          margin-left: 0;
-          margin-right: 0;
-          align-self: end;
-          max-width: none;
-        }
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .form-item-search {
-        flex: 1;
-      }
-    }
+@media (min-width: 920px) {
+  [data-component-id="drupalcamp:list_header"] .header-section {
+    flex-direction: row;
   }
 }
 
+[data-component-id="drupalcamp:list_header"] .header-section .results-summary {
+  flex: 1;
+}
+
+[data-component-id="drupalcamp:list_header"] .form--inline select,
+[data-component-id="drupalcamp:list_header"] .form--inline input {
+  width: 100%;
+  max-width: 100%;
+}
+
+[data-component-id="drupalcamp:list_header"] .form--inline .form-actions {
+  display: flex;
+  gap: 1em;
+}
+
+[data-component-id="drupalcamp:list_header"] .form--inline .form-actions input.button {
+  line-height: var(--line-height);
+  max-width: 50%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:list_header"] .form--inline {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  [data-component-id="drupalcamp:list_header"] .form--inline .form-actions {
+    flex-direction: row;
+  }
+
+  [data-component-id="drupalcamp:list_header"] .form--inline .form-actions input.button {
+    margin-left: 0;
+    margin-right: 0;
+    align-self: end;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  [data-component-id="drupalcamp:list_header"] .form--inline .form-item-search {
+    flex: 1;
+  }
+}
