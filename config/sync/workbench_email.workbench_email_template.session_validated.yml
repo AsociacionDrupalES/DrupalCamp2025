@@ -17,7 +17,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\nTu sesión ha sido publicada y es posible visitarla en el listado de Sesiones propuestas y en [node:url].\r\n\r\nRecuerda: Asegúrate de rellenar todos los campos (foto, biografía, etc.) de tu perfil de usuario en [node:author:edit-url].\r\n\r\nEn [site:url]/criterios-de-seleccion-de-charlas y [site:url]/guia-para-ponentes encontrarás respuesta a las preguntas más frecuentes relacionadas con los ponentes. Responde a este correo electrónico si tienes más preguntas.\r\n\r\nGracias de nuevo por enviar la propuesta,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
+  value: "Hola,\r\n\r\nTu sesión ha sido publicada y es posible visitarla en el listado de sesiones propuestas y en [node:url].\r\n\r\nRecuerda: asegúrate de rellenar todos los campos (foto, biografía, etc.) de tu perfil de persona usuaria en [node:author:edit-url].\r\n\r\nEn [site:url]/criterios-de-seleccion-de-charlas y [site:url]/guia-para-ponentes encontrarás respuesta a las preguntas más frecuentes relacionadas con las intervenciones. Responde a este correo electrónico si tienes más preguntas.\r\n\r\nGracias de nuevo por enviar la propuesta,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:

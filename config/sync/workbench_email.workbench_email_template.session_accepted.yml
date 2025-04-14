@@ -19,7 +19,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\n¡Enhorabuena! Tu sesión \"[node:title]\" ([node:url]) ha sido aceptada con éxito en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]! Tenga en cuenta que este correo electrónico sólo va al autor del nodo, así que por favor informe a cualquier ponente adicional para esta sesión. \r\n\r\nPor favor, responde a este correo electrónico indicando que puede realizar esta sesión en persona. Puedes encontrar información sobre las preguntas más frecuentes en [site:url]/guia-para-ponentes. Responde a este correo electrónico si tienes alguna pregunta adicional.\r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
+  value: "Hola,\r\n\r\n¡Enhorabuena! ¡Tu sesión \"[node:title]\" ([node:url]) ha sido aceptada con éxito en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]! Ten en cuenta que este correo electrónico sólo va al autor del nodo, así que por favor informa a cualquier ponente adicional para esta sesión. \r\n\r\nPor favor, responde a este correo electrónico indicando que puedes realizar esta sesión en persona. Puedes encontrar información sobre las preguntas más frecuentes en [site:url]/guia-para-ponentes. Responde a este correo electrónico si tienes alguna pregunta adicional.\r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:

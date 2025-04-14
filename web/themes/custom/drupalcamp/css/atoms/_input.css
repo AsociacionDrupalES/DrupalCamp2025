@@ -9,11 +9,17 @@
   transition: border-color 0.3s ease;
   background-color: var(--color--gray);
   line-height: normal;
+}
 
-  &:focus,
-  &:focus-visible {
-    outline: 2px solid var(--color--primary-light);
-  }
+.form-email:focus,
+.form-email:focus-visible,
+.form-text:focus,
+.form-text:focus-visible,
+.form-textarea:focus,
+.form-textarea:focus-visible,
+.form-select:focus,
+.form-select:focus-visible {
+  outline: 2px solid var(--color--primary-light);
 }
 
 .form-textarea {

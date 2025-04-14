@@ -10,40 +10,42 @@
   width: 100%;
   transition: var(--transition);
   text-decoration: none;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:session_card"] {
     height: 100%;
   }
+}
 
-  &:focus,
-  &:hover {
-    color: #ffffff;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
-    background: var(--color--primary);
-  }
+[data-component-id="drupalcamp:session_card"]:focus,
+[data-component-id="drupalcamp:session_card"]:hover {
+  color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+  background: var(--color--primary);
+}
 
-  .speakers {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1;
+[data-component-id="drupalcamp:session_card"] .speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
 
-    .avatar {
-      transition: var(--transition);
-    }
-  }
+[data-component-id="drupalcamp:session_card"] .speakers .avatar {
+  transition: var(--transition);
+}
 
-  ul.ul--pills--inline {
-    margin: 0;
-    gap: 14px;
-    flex-direction: column;
+[data-component-id="drupalcamp:session_card"] ul.ul--pills--inline {
+  margin: 0;
+  gap: 14px;
+  flex-direction: column;
+}
 
-    li {
-      width: fit-content;
+[data-component-id="drupalcamp:session_card"] ul.ul--pills--inline li {
+  width: fit-content;
+}
 
-      &:hover {
-        border: 2px solid var(--color--primary-light);
-      }
-    }
-  }
+[data-component-id="drupalcamp:session_card"] ul.ul--pills--inline li:hover {
+  border: 2px solid var(--color--primary-light);
 }

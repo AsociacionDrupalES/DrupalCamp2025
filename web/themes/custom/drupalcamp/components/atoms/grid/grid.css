@@ -1,17 +1,19 @@
 [data-component-id="drupalcamp:grid"] {
   display: grid;
   grid-gap: 32px;
+}
 
-  &.grid--columns--3 {
-    grid-template-columns: repeat(1, 1fr);
+[data-component-id="drupalcamp:grid"].grid--columns--3 {
+  grid-template-columns: repeat(1, 1fr);
+}
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:grid"].grid--columns--3 {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  > div {
-    display: flex;
-    width: 100%;
-  }
+[data-component-id="drupalcamp:grid"] > div {
+  display: flex;
+  width: 100%;
 }

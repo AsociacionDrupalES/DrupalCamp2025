@@ -3,14 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
+}
 
-  .column {
-    width: 100%;
-  }
+[data-component-id="drupalcamp:two_columns"] .column {
+  width: 100%;
+}
 
-  @media (min-width: 768px) {
-    .column {
-      width: calc(50% - (var(--gap) / 2));
-    }
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:two_columns"] .column {
+    width: calc(50% - (var(--gap) / 2));
   }
 }

@@ -1,0 +1,4 @@
+label: 'Sesión aceptada'
+subject: '🎉 [node:title] ha sido aceptada en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
+body:
+  value: "Ola,\r\n\r\nParabéns! A túa sesión \"[node:title]\" ([node:url]) foi aceptada con éxito en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]! Ten en conta que este correo electrónico só vai ao autor do nodo, así que por favor informa a calquera persoa relatora adicional para esta sesión. \r\n\r\nPor favor, responde a este correo electrónico indicando que podes realizar esta sesión en persoa. Podes atopar información sobre as preguntas máis frecuentes en [site:url]/guia-para-personas-relatoras. Responde a este correo electrónico se tes algunha pregunta adicional.\r\n\r\nGrazas de novo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"

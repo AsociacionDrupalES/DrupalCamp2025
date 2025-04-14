@@ -1,20 +1,15 @@
 .paragraph--type--links {
   padding: 18px 0;
+}
 
-  &.component-background-color-primary {
-    .link--button--primary a {
-      --color-border: var(--color--background-primary);
-    }
-  }
-  &.component-background-color-secondary {
-    .link--button--secondary a {
-      --color-border: var(--color--background-secondary);
-    }
-  }
-  &.component-background-color-primary-light {
-    .link--button--primary-light a {
-      --color-border: var(--color--background-primary-light);
-    }
-  }
+.paragraph--type--links.component-background-color-primary .link--button--primary a {
+  --color-border: var(--color--background-primary);
+}
 
+.paragraph--type--links.component-background-color-secondary .link--button--secondary a {
+  --color-border: var(--color--background-secondary);
+}
+
+.paragraph--type--links.component-background-color-primary-light .link--button--primary-light a {
+  --color-border: var(--color--background-primary-light);
 }

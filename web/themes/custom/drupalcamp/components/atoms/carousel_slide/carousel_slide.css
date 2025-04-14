@@ -1,15 +1,13 @@
-[data-component-id="drupalcamp:carousel_slide"] {
-  .slide {
-    border-radius: 17px;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
+[data-component-id="drupalcamp:carousel_slide"] .slide {
+  border-radius: 17px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
 
-    img {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
+[data-component-id="drupalcamp:carousel_slide"] .slide img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }

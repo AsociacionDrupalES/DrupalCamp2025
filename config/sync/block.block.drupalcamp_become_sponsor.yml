@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/sessions/*\r\n/sesiones/*"
+    pages: "/sessions/*\r\n/sesiones/*\r\n/sesions/*"

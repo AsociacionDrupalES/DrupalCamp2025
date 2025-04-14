@@ -1,5 +1,3 @@
-.paragraph--type--person-cards {
-  .paragraph--type--person-card {
-    padding: 0;
-  }
+.paragraph--type--person-cards .paragraph--type--person-card {
+  padding: 0;
 }
