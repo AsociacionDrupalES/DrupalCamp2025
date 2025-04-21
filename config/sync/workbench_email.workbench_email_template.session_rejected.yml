@@ -10,7 +10,7 @@ _core:
 id: session_rejected
 label: 'Sesión rechazada'
 format: plain_text
-subject: '[config_page:event_details:field_event_name] Session, [node:title]'
+subject: 'Sesión de [config_page:event_details:field_event_name], [node:title]'
 recipient_types:
   author:
     id: author
@@ -19,7 +19,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\nEn nombre de nuestro equipo, gracias por enviar tu sesión \"[node:title]\" a [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. Queremos trasladarte nuestro enorme agradecimiento.\r\n\r\nLamentablemente, no pudimos aceptar todas las excelentes sesiones que se presentaron, y esta sesión no pasó el corte de esta edición.  \r\n\r\nNo obstante, esperamos verte en [config_page:event_details:field_event_location_short] este año. Si tienes alguna pregunta, ponte en contacto con la organización. \r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]\r\n"
+  value: "Hola,\r\n\r\nEn nombre de nuestro equipo, gracias por enviar tu sesión \"[node:title]\" a [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. Queremos trasladarte nuestro enorme agradecimiento.\r\n\r\nLamentablemente, no pudimos aceptar todas las excelentes sesiones que se presentaron, y esta sesión no pasó el corte de esta edición. \r\n\r\nNo obstante, esperamos verte en [config_page:event_details:field_event_location_short] este año. Si tienes alguna pregunta, ponte en contacto con la organización. \r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]\r\n"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:
