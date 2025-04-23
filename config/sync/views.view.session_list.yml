@@ -14,6 +14,7 @@ dependencies:
     - content_moderation
     - custom_general_features
     - node
+    - options
     - taxonomy
     - text
     - user
@@ -252,6 +253,7 @@ display:
           plugin_id: bundle
           value:
             session: session
+          group: 1
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -353,6 +355,51 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        field_language_value:
+          id: field_language_value
+          table: node__field_language
+          field: field_language_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_language_value_op
+            label: Idioma
+            description: ''
+            use_operator: false
+            operator: field_language_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: language
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
         field_is_training_value:
           id: field_is_training_value
           table: node__field_is_training
@@ -517,6 +564,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: grid_responsive
         options:

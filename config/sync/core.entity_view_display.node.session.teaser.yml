@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.session.field_description
     - field.field.node.session.field_is_non_session
     - field.field.node.session.field_is_training
+    - field.field.node.session.field_language
     - field.field.node.session.field_r
     - field.field.node.session.field_session_category
     - field.field.node.session.field_short_description
@@ -143,6 +144,7 @@ hidden:
   field_description: true
   field_is_non_session: true
   field_is_training: true
+  field_language: true
   field_short_description: true
   field_social_media_card: true
   field_time_slot: true
