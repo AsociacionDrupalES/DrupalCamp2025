@@ -26,6 +26,7 @@
         "drupal/gin_login": "^2.1",
         "drupal/link_attributes": "^2.1",
         "drupal/linkit": "^7.0",
+        "drupal/media_entity_download": "^2.4",
         "drupal/media_library_form_element": "^2.1",
         "drupal/metatag": "^2.1",
         "drupal/nomarkup": "^1.0",
