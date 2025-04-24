@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: CLEUMMNwO2psVYSbide-cldvaeowTrWDVav0LFAG8GE
 name: featured_speaker
-label: 'Featured Speaker'
+label: 'Ponente destacado'
 effects:
   fd338125-1bef-4c36-9e60-0c81e8c4808b:
     uuid: fd338125-1bef-4c36-9e60-0c81e8c4808b

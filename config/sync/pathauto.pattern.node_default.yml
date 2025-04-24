@@ -8,15 +8,7 @@ id: node_default
 label: 'Por defecto'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
-selection_criteria:
-  ea0f2518-4886-44d5-9817-70954615af0d:
-    id: 'entity_bundle:node'
-    negate: false
-    uuid: ea0f2518-4886-44d5-9817-70954615af0d
-    context_mapping:
-      node: node
-    bundles:
-      landing: landing
+selection_criteria: {  }
 selection_logic: and
 weight: -5
 relationships: {  }

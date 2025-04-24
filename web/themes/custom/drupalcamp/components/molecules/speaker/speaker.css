@@ -1,0 +1,51 @@
+[data-component-id="drupalcamp:speaker"] {
+  --flex-direction: column;
+  --gap: 0;
+  display: flex;
+  flex-direction: var(--flex-direction);
+  gap: var(--gap);
+}
+[data-component-id="drupalcamp:speaker"] img {
+  border-radius: 10px;
+  display: block;
+}
+[data-component-id="drupalcamp:speaker"].speaker--horizontal .text-wrapper {
+  width: 100%;
+}
+[data-component-id="drupalcamp:speaker"] .text-wrapper .name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+[data-component-id="drupalcamp:speaker"] .text-wrapper .text > * {
+  margin: 0;
+}
+[data-component-id="drupalcamp:speaker"] .text-wrapper .text + .link {
+  margin-top: 14px;
+}
+
+/* Horizontal */
+[data-component-id="drupalcamp:speaker"].speaker--horizontal {
+  --gap: 50px;
+  margin-top: 50px;
+}
+@media (min-width: 576px) {
+  [data-component-id="drupalcamp:speaker"].speaker--horizontal {
+    --flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:speaker"].speaker--horizontal img {
+    min-width: 300px;
+  }
+}
+
+/* Vertical */
+[data-component-id="drupalcamp:speaker"].speaker--vertical img {
+  border-radius: 0 0 10px 10px;
+}
+[data-component-id="drupalcamp:speaker"].speaker--vertical .text-wrapper .text {
+  font-size: calc(var(--font-size) * 0.9);
+}
+[data-component-id="drupalcamp:speaker"].speaker--vertical .text-wrapper {
+  padding: 24px;
+}

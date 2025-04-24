@@ -1,0 +1,4 @@
+description: 'Badge que aparece na parte inferior da imaxe do relator (ex. "Relator")'
+default_value:
+  -
+    value: Relator

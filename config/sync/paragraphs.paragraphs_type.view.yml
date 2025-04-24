@@ -1,0 +1,10 @@
+uuid: 0ab3bc2d-e191-4fa1-9032-afb91055c32c
+langcode: es
+status: true
+dependencies: {  }
+id: view
+label: Vista
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

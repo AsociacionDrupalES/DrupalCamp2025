@@ -12,12 +12,12 @@ field_name: field_badge
 entity_type: node
 bundle: featured_speaker
 label: Badge
-description: 'Badge that appears to the bottom left of the speaker''s image (ex. "Speaker")'
+description: 'Badge que aparece en la parte inferior de la imagen del ponente (ej. "Ponente")'
 required: false
-translatable: false
+translatable: true
 default_value:
   -
-    value: Speaker
+    value: Ponente
 default_value_callback: ''
 settings: {  }
 field_type: string

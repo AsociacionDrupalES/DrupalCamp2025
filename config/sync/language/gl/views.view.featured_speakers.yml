@@ -1,7 +1,9 @@
+label: 'Relatores destacados'
 display:
   default:
     display_title: Predeterminado
     display_options:
+      title: 'Relatores destacados'
       fields:
         title:
           separator: ', '

@@ -41,6 +41,7 @@
         "drupal/tagify": "^1.2",
         "drupal/ui_patterns": "^2.0",
         "drupal/ui_patterns_field_group-ui_patterns_field_group": "^2.0@alpha",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^13.3",
         "oomphinc/composer-installers-extender": "^2.0.0"
     },

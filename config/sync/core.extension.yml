@@ -88,10 +88,12 @@ module:
   ui_patterns: 0
   ui_patterns_field_formatters: 0
   ui_patterns_field_group: 0
+  ui_patterns_views: 0
   update: 0
   user: 0
   views_summary_tabs: 0
   views_ui: 0
+  viewsreference: 0
   workbench_email: 0
   workflows: 0
   extlink: 1

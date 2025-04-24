@@ -11,7 +11,7 @@ bundle: featured_speaker
 label: 'Estado de moderación'
 description: 'El estado de moderación de esta pieza de contenido.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
