@@ -1,0 +1,18 @@
+uuid: 7c5d23af-45da-4715-a08b-c3b72722678e
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.created
+field_name: created
+entity_type: paragraph
+bundle: view
+label: 'Fecha de autoría'
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -11,7 +11,7 @@ bundle: featured_speaker
 label: 'Enlace del menu'
 description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

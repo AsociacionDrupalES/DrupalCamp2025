@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: UCH7R8yOLhEGG308gtT7JmmcrTBWjPHg9SapJuoKYRQ
 id: speaker
-label: Speaker
+label: Ponente
 weight: -8
 is_admin: null
 permissions:
