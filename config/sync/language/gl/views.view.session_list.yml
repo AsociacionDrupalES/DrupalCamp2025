@@ -1,13 +1,6 @@
 display:
   default:
     display_options:
-      pager:
-        options:
-          tags:
-            next: 'Seguinte >'
-          expose:
-            items_per_page_label: 'Elementos por páxina'
-            offset_label: Desprazamento
       empty:
         propose_session_link:
           label: 'Propoñer unha charla'

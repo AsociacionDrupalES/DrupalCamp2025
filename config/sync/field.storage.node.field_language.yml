@@ -1,0 +1,30 @@
+uuid: 79f3c783-ff96-480c-ab27-fc030e753f73
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_language
+field_name: field_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: es
+      label: Español
+    -
+      value: en
+      label: Inglés
+    -
+      value: gl
+      label: Gallego
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: Spanish
+    -
+      label: English
+    -
+      label: Galician

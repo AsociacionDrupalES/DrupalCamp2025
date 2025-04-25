@@ -8,8 +8,7 @@ id: feedback
 label: 'Comentarios sobre el sitio web'
 recipients:
   - eventos@drupal.es
-  - cbccharlie@gmail.com
-  - dani.lc86@gmail.com
+  - drupal.galicia@gmail.com
 reply: ''
 weight: 0
 message: 'Su mensaje ha sido enviado.'

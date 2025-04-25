@@ -14,6 +14,7 @@ dependencies:
     - content_moderation
     - custom_general_features
     - node
+    - options
     - taxonomy
     - text
     - user
@@ -145,27 +146,9 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: none
         options:
           offset: 0
-          pagination_heading_level: h4
-          items_per_page: 9
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
-            first: ''
-            last: ''
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
-            offset: false
-            offset_label: Desplazamiento
-          quantity: 3
       exposed_form:
         type: basic
         options:
@@ -181,8 +164,12 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 21600
+          results_lifespan_custom: 0
+          output_lifespan: 21600
+          output_lifespan_custom: 0
       empty:
         area_text_custom:
           id: area_text_custom
@@ -212,22 +199,19 @@ display:
           form_mode: null
           params: ''
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: random
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -252,6 +236,7 @@ display:
           plugin_id: bundle
           value:
             session: session
+          group: 1
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -353,6 +338,51 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        field_language_value:
+          id: field_language_value
+          table: node__field_language
+          field: field_language_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_language_value_op
+            label: Idioma
+            description: ''
+            use_operator: false
+            operator: field_language_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: language
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
         field_is_training_value:
           id: field_is_training_value
           table: node__field_is_training
@@ -517,6 +547,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: grid_responsive
         options:
@@ -595,12 +629,11 @@ display:
           content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -630,12 +663,11 @@ display:
         description: ''
         weight: 0
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
