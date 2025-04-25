@@ -13,38 +13,6 @@
   padding-top: 5px;
 }
 
-.sponsors-logos .sponsor-level-group:nth-child(2) .sponsors {
-  gap: 25px 50px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(2) .sponsors img {
-  height: 50px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(3) .sponsors {
-  gap: 25px 30px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(3) .sponsors img {
-  height: 35px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(4) .sponsors {
-  gap: 25px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(4) .sponsors img {
-  height: 20px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(5) .sponsors {
-  gap: 40px;
-}
-
-.sponsors-logos .sponsor-level-group:nth-child(5) .sponsors img {
-  height: 20px;
-}
-
 .sponsors-logos .sponsor-level-group h3 {
   font-size: var(--font-size);
   line-height: var(--font-line-height);
@@ -55,9 +23,43 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px 70px;
+  gap: 35px;
   padding-bottom: 25px;
   padding-top: 25px;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors a {
+  text-decoration: none;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors a .name {
+  display: none;
+  font-size: calc(var(--font-size) * 0.84);
+  line-height: calc(var(--font-line-height) * 0.7);
+  max-width: 100px;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors a img {
+  height: 85px;
+  max-width: 350px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors .level-1 img {
+  height: 50px;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors .level-2 img {
+  height: 35px;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors .level-3 img {
+  height: 25px;
+}
+
+.sponsors-logos .sponsor-level-group .sponsors .level-4 img {
+  height: 25px;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors .is-individual-1 a {
@@ -75,21 +77,4 @@
 
 .sponsors-logos .sponsor-level-group .sponsors .is-individual-1 a .name {
   display: block;
-}
-
-.sponsors-logos .sponsor-level-group .sponsors a {
-  text-decoration: none;
-}
-
-.sponsors-logos .sponsor-level-group .sponsors a .name {
-  display: none;
-  font-size: calc(var(--font-size) * 0.84);
-  line-height: calc(var(--font-line-height) * 0.7);
-  max-width: 100px;
-}
-
-.sponsors-logos .sponsor-level-group .sponsors a img {
-  height: 85px;
-  object-fit: contain;
-  width: 100%;
 }

@@ -8,11 +8,11 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: false
+    enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
 id: node.featured_speaker
 target_entity_type_id: node
 target_bundle: featured_speaker
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

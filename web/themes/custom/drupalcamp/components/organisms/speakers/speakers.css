@@ -1,0 +1,35 @@
+[data-component-id="drupalcamp:speakers"] {
+  --width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+@media (min-width: 576px) {
+  [data-component-id="drupalcamp:speakers"] {
+    --width: calc(50% - 20px);
+  }
+}
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:speakers"] {
+    --width: calc(33% - 30px);
+  }
+}
+
+@media (min-width: 992px) {
+  [data-component-id="drupalcamp:speakers"] {
+    --width: calc(25% - 30px);
+  }
+}
+
+[data-component-id="drupalcamp:speakers"] > * {
+  border: 2px solid var(--color--primary-light);
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: var(--width);
+}
+
+[data-component-id="drupalcamp:speakers"] > *:nth-child(even) {
+  border-color: var(--color--secondary)
+}

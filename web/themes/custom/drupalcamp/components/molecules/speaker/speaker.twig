@@ -1,0 +1,13 @@
+{% set attributes = variant ? attributes.addClass('speaker speaker--' ~ variant) : attributes.addClass('speaker') %}
+<div {{ attributes }}>
+  {{ image }}
+  <div class="text-wrapper">
+    {% if name %}
+      <div class="name">{{ name }}</div>
+    {% endif %}
+    <div class="text">{{ text }}</div>
+    {% if link %}
+      <div class="link"><a href="{{ link }}" class="link--arrow">{{ 'Learn more' | t }}</a></div>
+    {% endif %}
+  </div>
+</div>

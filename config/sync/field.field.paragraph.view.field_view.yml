@@ -1,0 +1,31 @@
+uuid: 4450bbae-6ff1-44aa-ae79-4581498d3c31
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - viewsreference
+id: paragraph.view.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: view
+label: Vista
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    featured_speakers: featured_speakers
+  enabled_settings:
+    title: title
+field_type: viewsreference

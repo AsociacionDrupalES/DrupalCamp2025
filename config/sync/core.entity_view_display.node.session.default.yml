@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.session.field_description
     - field.field.node.session.field_is_non_session
     - field.field.node.session.field_is_training
+    - field.field.node.session.field_language
     - field.field.node.session.field_r
     - field.field.node.session.field_session_category
     - field.field.node.session.field_short_description
@@ -17,6 +18,7 @@ dependencies:
   module:
     - field_group
     - nomarkup
+    - options
     - text
     - user
 third_party_settings:
@@ -29,6 +31,7 @@ third_party_settings:
         - field_r
         - field_audience
         - field_session_category
+        - field_language
       label: 'Card detail'
       parent_name: ''
       region: content
@@ -73,6 +76,11 @@ third_party_settings:
                   source:
                     field_group_child: field_session_category
                   _weight: '3'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_language
+                  _weight: '4'
             speakers:
               sources:
                 -
@@ -108,6 +116,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_language:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_r:
     type: entity_reference_label

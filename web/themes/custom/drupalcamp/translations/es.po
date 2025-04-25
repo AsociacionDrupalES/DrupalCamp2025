@@ -6,6 +6,7 @@
 #  themes/custom/drupalcamp/drupalcamp.info.yml: n/a
 #  themes/custom/drupalcamp/templates/navigation/breadcrumb.html.twig: n/a
 #  themes/custom/drupalcamp/components/molecules/footer/footer.twig: n/a
+#  themes/custom/drupalcamp/components/molecules/speaker/speaker.twig: n/a
 #  themes/custom/drupalcamp/components/organisms/session_detail/session_detail.twig: n/a
 #  themes/custom/drupalcamp/templates/block/block--local-tasks-block.html.twig: n/a
 #  themes/custom/drupalcamp/templates/block/block--system-branding-block.html.twig: n/a
@@ -26,8 +27,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-04-01 10:28+0200\n"
-"PO-Revision-Date: 2025-04-01 10:28+0200\n"
+"POT-Creation-Date: 2025-04-23 12:17+0200\n"
+"PO-Revision-Date: 2025-04-23 12:17+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Español <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -86,6 +87,10 @@ msgstr "Ruta de navegación"
 #: themes/custom/drupalcamp/components/molecules/footer/footer.twig:3
 msgid "Acknowledgements"
 msgstr "Agradecimientos"
+
+#: themes/custom/drupalcamp/components/molecules/speaker/speaker.twig:7
+msgid "Learn more"
+msgstr "Saber más"
 
 #: themes/custom/drupalcamp/components/organisms/session_detail/session_detail.twig:3
 msgid "Back"

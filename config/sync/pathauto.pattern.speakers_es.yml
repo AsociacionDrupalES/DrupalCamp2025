@@ -1,0 +1,33 @@
+uuid: 743afaf1-ea4b-4d6c-9346-cfe5df960c23
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: speakers_es
+label: 'Ponentes (es)'
+type: 'canonical_entities:node'
+pattern: 'ponentes/[node:title]'
+selection_criteria:
+  44258302-4972-4b44-8d75-538b29312b51:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 44258302-4972-4b44-8d75-538b29312b51
+    context_mapping:
+      node: node
+    bundles:
+      featured_speaker: featured_speaker
+  60382bf4-b386-4d03-a472-e96b0b1572f4:
+    id: language
+    negate: false
+    uuid: 60382bf4-b386-4d03-a472-e96b0b1572f4
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma
