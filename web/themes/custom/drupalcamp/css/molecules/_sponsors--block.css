@@ -10,6 +10,7 @@
 .sponsors-logos .sponsor-level-group {
   border-top: 1px solid #e3e3e3;
   display: flex;
+  flex-direction: column;
   padding-top: 5px;
 }
 
@@ -23,9 +24,10 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 20px;
   padding-bottom: 25px;
   padding-top: 25px;
+  justify-content: center;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors a {
@@ -44,22 +46,17 @@
   max-width: 350px;
   object-fit: contain;
   width: 100%;
+  aspect-ratio: 21 / 7;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors .level-1 img {
-  height: 50px;
+  height: 52px;
 }
 
-.sponsors-logos .sponsor-level-group .sponsors .level-2 img {
-  height: 35px;
-}
-
-.sponsors-logos .sponsor-level-group .sponsors .level-3 img {
-  height: 25px;
-}
-
+.sponsors-logos .sponsor-level-group .sponsors .level-2 img,
+.sponsors-logos .sponsor-level-group .sponsors .level-3 img,
 .sponsors-logos .sponsor-level-group .sponsors .level-4 img {
-  height: 25px;
+  height: 32px;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors .is-individual-1 a {
@@ -77,4 +74,30 @@
 
 .sponsors-logos .sponsor-level-group .sponsors .is-individual-1 a .name {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .sponsors-logos .sponsor-level-group {
+    flex-direction: row;
+  }
+
+  .sponsors-logos .sponsor-level-group .sponsors {
+    gap: 35px;
+  }
+
+  .sponsors-logos .sponsor-level-group .sponsors .level-1 img {
+    height: 65px;
+  }
+
+  .sponsors-logos .sponsor-level-group .sponsors .level-2 img {
+    height: 50px;
+  }
+
+  .sponsors-logos .sponsor-level-group .sponsors .level-3 img {
+    height: 40px;
+  }
+
+  .sponsors-logos .sponsor-level-group .sponsors .level-4 img {
+    height: 40px;
+  }
 }
