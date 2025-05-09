@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_help
 theme: drupalcamp
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: help_block
 settings:

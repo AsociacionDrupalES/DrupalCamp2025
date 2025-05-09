@@ -10,7 +10,7 @@ dependencies:
 id: drupalcamp_become_sponsor
 theme: drupalcamp
 region: content
-weight: 1
+weight: -1
 provider: null
 plugin: custom_general_features_become_sponsor
 settings:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/sessions/*\r\n/sesiones/*\r\n/sesions/*"
+    pages: '/sesiones/*'

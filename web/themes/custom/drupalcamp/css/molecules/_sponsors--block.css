@@ -1,5 +1,18 @@
 .block-views-blockall-sponsors-block-1 {
   padding: 40px 0;
+  position: relative;
+}
+
+.block-views-blockall-sponsors-block-1:before {
+  background: white;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: calc(100vw - var(--page-side-margin));
+  height: 100%;
+  z-index: -1;
 }
 
 .block-views-blockall-sponsors-block-1 h2 {

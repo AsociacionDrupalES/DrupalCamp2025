@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_content
 theme: drupalcamp
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: system_main_block
 settings:
