@@ -1,0 +1,21 @@
+uuid: b93c3baf-8c8f-4a72-ba9f-e981609d10ad
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: YNrKbYrWWjeubUUM8AsQ19KnX7cU1elACR14CZJHmdg
+id: days
+label: Días
+category: 'Fecha y hora'
+likert: false
+options: |
+  Sunday: Sunday
+  Monday: Monday
+  Tuesday: Tuesday
+  Wednesday: Wednesday
+  Thursday: Thursday
+  Friday: Friday
+  Saturday: Saturday

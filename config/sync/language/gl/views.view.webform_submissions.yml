@@ -1,0 +1,152 @@
+label: 'Envíos dos formularios'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      fields:
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        remote_addr:
+          label: 'Enderezo IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacións
+          text: vista
+      arguments:
+        in_draft:
+          exception:
+            title: Todo
+      title: 'Envíos dos formularios'
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Acción
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: Pegañoso
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Enderezo IP'
+          separator: ', '
+        operations:
+          label: Operacións
+      filters:
+        sticky:
+          expose:
+            label: Pegañoso
+        locked:
+          expose:
+            label: Bloqueado
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Acción
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: Pegañoso
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Enderezo IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacións
+          text: vista
+        edit_webform_submission:
+          label: Operacións
+          text: editar
+      filters:
+        sticky:
+          expose:
+            label: Pegañoso
+        locked:
+          expose:
+            label: Bloqueado
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: Pegañoso
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Enderezo IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacións
+          text: vista
+      filters:
+        sticky:
+          expose:
+            label: Pegañoso
+        locked:
+          expose:
+            label: Bloqueado
