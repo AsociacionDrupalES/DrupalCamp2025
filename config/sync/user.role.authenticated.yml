@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform
     - filter.format.webform_default
   module:
     - antibot
@@ -37,6 +38,7 @@ permissions:
   - 'skip antibot'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'use text format webform'
   - 'use text format webform_default'
   - 'view field_r'
   - 'view field_time_slot'

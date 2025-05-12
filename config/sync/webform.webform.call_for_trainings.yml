@@ -30,18 +30,23 @@ elements: |-
     '#type': number
     '#title': 'Número de horas'
     '#required': true
+    '#min': 2
+    '#max': 8
   target:
     '#type': textfield
     '#title': 'A quién está dirigido'
     '#required': true
-  description:
-    '#type': textarea
+  body:
+    '#type': text_format
     '#title': 'Descripción de la formación'
     '#required': true
+    '#allowed_formats':
+      webform: webform
+    '#hide_help': true
   trainer:
     '#type': textfield
     '#title': Formador
-    '#description': '<p>Indica la empresa y/o persona que impartirá la formación</p>'
+    '#description': '<p>Indica la empresa y/o persona que impartirá la formación.</p>'
     '#required': true
   trainer_email:
     '#type': email
@@ -56,7 +61,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /formacion/nueva
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
@@ -154,7 +159,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Se ha enviado correctamente tu propuesta para el [webform:title].'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

@@ -1,0 +1,11 @@
+elements: |
+  title:
+    '#title': 'Título da formación'
+  target:
+    '#title': 'A quen está dirixido'
+  body:
+    '#title': 'Descrición da formación'
+  trainer:
+    '#description': '<p>Indica a empresa e/o persoa que impartirá a formación.</p>'
+settings:
+  confirmation_message: '<p>Enviouse correctamente a túa proposta para o [webform:title].</p>'
