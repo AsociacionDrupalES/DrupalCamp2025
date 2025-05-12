@@ -10,35 +10,27 @@ display:
         propose_session_link:
           label: 'Propoñer unha charla'
         result:
-          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propostas</div>'
+          content: '<div class="results-summary"><strong>Resultados:</strong> @total propostas</div>'
       footer:
         propose_session_link:
           label: 'Propoñer unha charla'
         result:
-          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propostas</div>'
+          content: '<div class="results-summary"><strong>Resultados:</strong> @total propostas</div>'
       title: 'Sesións propostas'
       fields:
-        title:
-          separator: ', '
-        body:
-          separator: ', '
+        title: {  }
+        body: {  }
       exposed_form:
         options:
           submit_button: Filtro
           reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       filters:
         field_audience_target_id:
-          expose:
-            label: Audiencia
+          expose: {  }
         field_session_category_target_id:
-          expose:
-            label: Categoría
+          expose: {  }
         combine:
-          expose:
-            label: Buscar
+          expose: {  }
     display_title: Predeterminado
   page_1:
     display_title: Páxina
