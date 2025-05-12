@@ -1,0 +1,36 @@
+uuid: 92630400-12aa-4fde-985f-6cc0b77ae01b
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.webform
+  module:
+    - ckeditor5
+format: webform
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    linkit_extension:
+      linkit_enabled: false
+image_upload:
+  status: false

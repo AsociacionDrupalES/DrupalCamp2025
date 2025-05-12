@@ -1,0 +1,18 @@
+elements: |
+  title:
+    '#title': 'Title of the training'
+  attendees:
+    '#title': 'Maximum number of attendees'
+  hours:
+    '#title': 'Number of hours'
+  target:
+    '#title': 'Who it is aimed at'
+  body:
+    '#title': 'Description of the training'
+  trainer:
+    '#title': Trainer
+    '#description': '<p>Indicate the company and/or person who will provide the training.</p>'
+  trainer_email:
+    '#title': 'Contact email'
+settings:
+  confirmation_message: '<p>Your proposal for the [webform:title] has been successfully submitted.</p>'

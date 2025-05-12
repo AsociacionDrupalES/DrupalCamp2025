@@ -6,7 +6,7 @@ _core:
   default_config_hash: JLMwODO0epnA_H-jFlH9ezVfa5YBJniRv3MmLqYNl_Q
 name: 'Texto sin formato'
 format: plain_text
-weight: -7
+weight: -6
 filters:
   filter_autop:
     id: filter_autop

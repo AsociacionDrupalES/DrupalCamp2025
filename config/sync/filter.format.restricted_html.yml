@@ -8,7 +8,7 @@ _core:
   default_config_hash: QiKqQS_YGAT3Qr4vaAgZICJknm-MGCzt_xBAMqg-tRM
 name: 'HTML Restringido'
 format: restricted_html
-weight: -6
+weight: -5
 filters:
   filter_autop:
     id: filter_autop
