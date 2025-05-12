@@ -2,10 +2,13 @@ uuid: 927dbdb8-d6c6-4e58-886a-55f1371bc4b2
 langcode: es
 status: true
 dependencies:
+  config:
+    - filter.format.webform
   module:
     - comment
     - contact
     - field_permissions
+    - filter
     - media
     - sitemap
     - system
@@ -21,6 +24,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access sitemap'
   - 'access user profiles'
+  - 'use text format webform'
   - 'view field_r'
   - 'view field_time_slot'
   - 'view media'
