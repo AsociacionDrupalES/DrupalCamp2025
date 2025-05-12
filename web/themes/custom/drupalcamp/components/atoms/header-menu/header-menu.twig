@@ -1,11 +1,12 @@
 <ul class="header-menu">
   {% for item in items %}
     <li class="header-menu__item{% if item.below %} header-menu__item--has-children{% endif %}">
-      <a href="{{ item.url }}" class="header-menu__link{% if item.in_active_trail %} is-active{% endif %}">{{ item.title }}</a>
+      <a href="{{ item.url }}"
+         class="header-menu__link{% if item.in_active_trail %} is-active{% endif %}"
+         {% if item.below %}aria-expanded="false"{% endif %}>
+        {{ item.title }}
+      </a>
       {% if item.below %}
-        <button class="header-menu__toggle" aria-expanded="false" aria-label="Expandir submenú de {{ item.title }}">
-          <span class="header-menu__toggle-icon"></span>
-        </button>
         <ul class="header-menu__submenu" aria-hidden="true">
           {% for subitem in item.below %}
             <li class="header-menu__submenu-item">
