@@ -95,6 +95,8 @@ module:
   views_summary_tabs: 0
   views_ui: 0
   viewsreference: 0
+  webform: 0
+  webform_ui: 0
   workbench_email: 0
   workflows: 0
   extlink: 1
