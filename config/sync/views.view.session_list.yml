@@ -599,7 +599,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
+          content: '<div class="results-summary"><strong>Resultados:</strong> @total propuestas</div>'
       footer:
         propose_session_link:
           id: propose_session_link
@@ -626,7 +626,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: '<div class="results-summary"><strong>Resultados:</strong> @start a @end de @total propuestas</div>'
+          content: '<div class="results-summary"><strong>Resultados:</strong> @total propuestas</div>'
       display_extenders: {  }
     cache_metadata:
       max-age: 0

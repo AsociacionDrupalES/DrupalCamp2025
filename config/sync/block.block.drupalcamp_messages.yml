@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_messages
 theme: drupalcamp
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:
