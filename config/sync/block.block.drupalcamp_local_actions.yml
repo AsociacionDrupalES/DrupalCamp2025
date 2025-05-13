@@ -9,7 +9,7 @@ _core:
 id: drupalcamp_local_actions
 theme: drupalcamp
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:
