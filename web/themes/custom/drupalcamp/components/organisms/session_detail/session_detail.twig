@@ -5,7 +5,7 @@
     <ul class="tags ul--pills--inline ul--pills--small">
       {% for tag in tags %}
         {% if tag|render|striptags is not empty %}
-          <li>{{ tag }}</li>
+          {{ tag }}
         {% endif %}
       {% endfor %}
     </ul>

@@ -8,7 +8,7 @@
 /**
  * Implements hook_views_data().
  */
-function custom_general_features_views_data() {
+function custom_general_features_views_data(): array {
   $data['views']['propose_session_link'] = [
     'title' => t('Propose session link'),
     'help' => t('Provide a link to add a new session.'),
