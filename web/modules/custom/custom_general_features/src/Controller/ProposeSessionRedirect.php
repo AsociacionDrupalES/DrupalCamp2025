@@ -24,7 +24,7 @@ class ProposeSessionRedirect extends ControllerBase {
    *   The session submission deadline service.
    */
   public function __construct(
-    protected SessionSubmissionDeadlineService $submissionDeadlineService
+    protected SessionSubmissionDeadlineService $submissionDeadlineService,
   ) {}
 
   /**

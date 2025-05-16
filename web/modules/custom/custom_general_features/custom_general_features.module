@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains custom hooks for the custom_general_features module.
+ */
+
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Session\AccountInterface;
@@ -8,7 +13,7 @@ use Drupal\node\NodeInterface;
 /**
  * Implements hook_entity_create_access().
  */
-function custom_general_features_entity_create_access(AccountInterface $account, array $context, $entity_bundle) {
+function custom_general_features_entity_create_access(AccountInterface $account, array $context, ?string $entity_bundle): AccessResult {
   if ($context['entity_type_id'] !== 'node' || $entity_bundle !== 'session') {
     return AccessResult::neutral();
   }
@@ -32,7 +37,7 @@ function custom_general_features_entity_create_access(AccountInterface $account,
  * Implements hook_ENTITY_TYPE_view().
  */
 function custom_general_features_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, string $view_mode): void {
-  // Hide default title in view modes.
+  // Hide the default title in view modes.
   if ($view_mode === 'teaser' && $entity->getType() === 'featured_speaker') {
     unset($build['title']);
   }

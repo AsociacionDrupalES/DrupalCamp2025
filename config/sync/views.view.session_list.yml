@@ -260,14 +260,15 @@ display:
             operator: field_audience_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: audience
+            identifier: session_audience
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              speaker: '0'
               anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
               content_editor: '0'
               administrator: '0'
             reduce: false
@@ -309,14 +310,15 @@ display:
             operator: field_session_category_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: cat
+            identifier: session_category
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              speaker: '0'
               anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
               content_editor: '0'
               administrator: '0'
             reduce: false
@@ -652,10 +654,11 @@ display:
         type: normal
         title: Sesiones
         description: ''
-        weight: 1
+        weight: -49
+        enabled: true
         expanded: false
         menu_name: main
-        parent: ''
+        parent: 'menu_link_content:0593f77a-bb3b-475e-9f4e-4f9edd3a4bc1'
         context: '0'
       tab_options:
         type: none

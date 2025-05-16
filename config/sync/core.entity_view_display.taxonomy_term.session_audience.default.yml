@@ -1,0 +1,22 @@
+uuid: a5b0d064-73c5-4823-859a-0e4fbe0f0ec7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_audience
+  module:
+    - text
+id: taxonomy_term.session_audience.default
+targetEntityType: taxonomy_term
+bundle: session_audience
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

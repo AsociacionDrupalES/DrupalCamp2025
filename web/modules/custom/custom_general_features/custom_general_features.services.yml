@@ -2,3 +2,9 @@ services:
   custom_general_features.submission_deadline:
     class: Drupal\custom_general_features\SessionSubmissionDeadlineService
     arguments: ['@logger.factory']
+
+  custom_general_features.route_subscriber:
+    class: Drupal\custom_general_features\Routing\RouteSubscriber
+    arguments: ['@entity_type.manager', '@router.route_provider']
+    tags:
+      - { name: event_subscriber }

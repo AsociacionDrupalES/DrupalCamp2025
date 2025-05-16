@@ -1,0 +1,80 @@
+uuid: 1896bb19-d2b0-4231-8dd6-425919495bb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.tag
+    - taxonomy.vocabulary.session_audience
+  module:
+    - field_group
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_pill:
+      children: {  }
+      label: Pill
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: component_formatter
+      format_settings:
+        show_empty_fields: '1'
+        ui_patterns:
+          component_id: 'drupalcamp:tag'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            background_color:
+              source_id: select
+              source:
+                value: ''
+            size:
+              source_id: select
+              source:
+                value: ''
+          slots:
+            name:
+              sources:
+                -
+                  source_id: entity_field
+                  source:
+                    derivable_context: 'field:taxonomy_term:session_audience:name'
+                    'field:taxonomy_term:session_audience:name':
+                      value:
+                        sources:
+                          -
+                            source_id: 'field_formatter:taxonomy_term:session_audience:name'
+                            source:
+                              type: string
+                              third_party_settings:
+                                nomarkup:
+                                  enabled: '1'
+                                  separator: '|'
+                                  referenced_entity: ''
+                              settings:
+                                link_to_entity: 0
+                            _weight: '0'
+                  _weight: '0'
+            url:
+              sources:
+                -
+                  source_id: entity_link
+                  source:
+                    template: 'event_platform:sessions'
+                    absolute: 0
+                  _weight: '0'
+        label_as_html: 0
+id: taxonomy_term.session_audience.tag
+targetEntityType: taxonomy_term
+bundle: session_audience
+mode: tag
+content: {  }
+hidden:
+  description: true
+  langcode: true

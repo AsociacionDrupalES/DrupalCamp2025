@@ -39,7 +39,6 @@
 [data-component-id="drupalcamp:session_card"] ul.ul--pills--inline {
   margin: 0;
   gap: 14px;
-  flex-direction: column;
 }
 
 [data-component-id="drupalcamp:session_card"] ul.ul--pills--inline li {
@@ -48,4 +47,5 @@
 
 [data-component-id="drupalcamp:session_card"] ul.ul--pills--inline li:hover {
   border: 2px solid var(--color--primary-light);
+  cursor: pointer;
 }

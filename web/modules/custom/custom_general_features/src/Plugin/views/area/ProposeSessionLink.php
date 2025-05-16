@@ -41,4 +41,3 @@ class ProposeSessionLink extends AddContentByBundle {
   }
 
 }
-
