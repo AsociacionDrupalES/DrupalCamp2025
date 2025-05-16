@@ -1,0 +1,11 @@
+uuid: 627df2b9-f99c-40d9-bd6e-749ea0debe93
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.tag
+label: Etiqueta
+description: ''
+targetEntityType: taxonomy_term
+cache: true

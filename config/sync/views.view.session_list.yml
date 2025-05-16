@@ -309,14 +309,15 @@ display:
             operator: field_session_category_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: cat
+            identifier: session_category
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              speaker: '0'
               anonymous: '0'
+              speaker: '0'
+              session_moderator: '0'
               content_editor: '0'
               administrator: '0'
             reduce: false
