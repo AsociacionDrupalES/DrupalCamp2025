@@ -1,7 +1,8 @@
 .form-email,
 .form-text,
 .form-textarea,
-.form-select {
+.form-select,
+.form-number {
   border: 1px solid var(--color--primary);
   border-radius: 7px;
   box-sizing: border-box;
@@ -18,7 +19,9 @@
 .form-textarea:focus,
 .form-textarea:focus-visible,
 .form-select:focus,
-.form-select:focus-visible {
+.form-select:focus-visible,
+.form-number:focus,
+.form-number:focus-visible {
   outline: 2px solid var(--color--primary-light);
 }
 

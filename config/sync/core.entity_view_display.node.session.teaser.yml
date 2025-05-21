@@ -19,20 +19,23 @@ dependencies:
   module:
     - field_group
     - nomarkup
+    - ui_patterns
+    - ui_patterns_field_formatters
     - user
+  theme:
+    - drupalcamp
 third_party_settings:
   field_group:
     group_card:
       children:
         - content_moderation_control
         - field_speakers
-        - field_r
         - field_session_category
         - field_audience
       label: Card
       parent_name: ''
       region: content
-      weight: 1
+      weight: 0
       format_type: component_formatter
       format_settings:
         ui_patterns:
@@ -51,21 +54,17 @@ third_party_settings:
               source_id: entity_link
               source:
                 template: canonical
+                absolute: 0
           slots:
             text: {  }
             tags:
               sources:
-                2:
-                  source_id: field_group_child
-                  source:
-                    field_group_child: field_r
-                  _weight: '-2'
-                0:
+                -
                   source_id: field_group_child
                   source:
                     field_group_child: field_session_category
                   _weight: '-1'
-                1:
+                -
                   source_id: field_group_child
                   source:
                     field_group_child: field_audience
@@ -92,10 +91,45 @@ content:
     weight: 0
     region: content
   field_audience:
-    type: entity_reference_label
+    type: ui_patterns_component_per_item
     label: hidden
     settings:
-      link: false
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: ''
+          size:
+            source_id: select
+            source:
+              value: ''
+          show_link:
+            source_id: checkbox
+            source:
+              value: false
+        slots:
+          name:
+            sources:
+              -
+                source_id: 'field_formatter:node:session:field_audience'
+                source:
+                  type: entity_reference_label
+                  settings:
+                    link: false
+                  third_party_settings:
+                    nomarkup:
+                      enabled: false
+                      separator: '|'
+                      referenced_entity: ''
+                _weight: '0'
+          url: {  }
     third_party_settings:
       nomarkup:
         enabled: true
@@ -103,27 +137,50 @@ content:
         referenced_entity: ''
     weight: 5
     region: content
-  field_r:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: false
-    third_party_settings:
-      nomarkup:
-        enabled: true
-        separator: '|'
-        referenced_entity: ''
-    weight: 3
-    region: content
   field_session_category:
-    type: entity_reference_label
+    type: ui_patterns_component_per_item
     label: hidden
     settings:
-      link: false
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: ''
+          size:
+            source_id: select
+            source:
+              value: ''
+          show_link:
+            source_id: checkbox
+            source:
+              value: false
+        slots:
+          name:
+            sources:
+              -
+                source_id: 'field_formatter:node:session:field_session_category'
+                source:
+                  type: entity_reference_label
+                  settings:
+                    link: false
+                  third_party_settings:
+                    nomarkup:
+                      enabled: true
+                      separator: ''
+                      referenced_entity: ''
+                _weight: '0'
+          url: {  }
     third_party_settings:
       nomarkup:
         enabled: true
-        separator: '|'
+        separator: ''
         referenced_entity: ''
     weight: 4
     region: content
@@ -145,6 +202,7 @@ hidden:
   field_is_non_session: true
   field_is_training: true
   field_language: true
+  field_r: true
   field_short_description: true
   field_social_media_card: true
   field_time_slot: true

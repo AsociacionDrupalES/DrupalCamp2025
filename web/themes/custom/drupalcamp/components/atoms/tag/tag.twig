@@ -1,0 +1,19 @@
+{% if url %}
+  {% set attributes = attributes.addClass(['tag--has-link']) %}
+{% endif %}
+{% if background_color %}
+  {% set attributes = attributes.addClass(['tag__color-' ~ background_color]) %}
+{% endif %}
+{% if size %}
+  {% set attributes = attributes.addClass(['tag__size-' ~ size]) %}
+{% endif %}
+
+<li {{ attributes.addClass('tag') }}>
+  {% if url %}
+    <a href="{{ url }}" class="tag__link">
+  {% endif %}
+    {{ name }}
+  {% if url %}
+    </a>
+  {% endif %}
+</li>

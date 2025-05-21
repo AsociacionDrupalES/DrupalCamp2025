@@ -17,7 +17,7 @@ class SessionSubmissionDeadlineService {
    *   The logger factory.
    */
   public function __construct(
-    protected LoggerChannelFactoryInterface $loggerFactory
+    protected LoggerChannelFactoryInterface $loggerFactory,
   ) {}
 
   /**

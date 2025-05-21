@@ -1,0 +1,45 @@
+.ul--pills--inline > li[data-component-id="drupalcamp:tag"]:hover {
+  border-color: var(--color--primary-light);
+}
+
+.ul--pills--inline li[data-component-id="drupalcamp:tag"].tag--has-link:hover {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+  border-color: var(--color--primary);
+  text-shadow: 0 0 1px var(--color--primary);
+}
+
+li[data-component-id="drupalcamp:tag"] a {
+  text-decoration: none;
+}
+
+li[data-component-id="drupalcamp:tag"]:hover a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Variants */
+.ul--pills--inline li.tag.tag__size-tiny {
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: 1em;
+  text-shadow: 0 0 1px var(--color--primary);
+}
+
+.ul--pills--inline li.tag.tag__color-secondary {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+  border-color: var(--color--secondary);
+}
+
+.ul--pills--inline li.tag.tag__color-primary {
+  background-color: var(--color--primary);
+  color: #ffffff;
+  border-color: var(--color--primary);
+}
+
+.ul--pills--inline li.tag.tag__color-primary-light {
+  background-color: var(--color--primary-light);
+  color: var(--color--primary);
+  border-color: var(--color--primary-light);
+}
