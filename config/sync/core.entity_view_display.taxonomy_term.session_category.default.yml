@@ -1,0 +1,22 @@
+uuid: 24123235-759c-4e4b-a640-76ee6639c4bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.session_category
+  module:
+    - text
+id: taxonomy_term.session_category.default
+targetEntityType: taxonomy_term
+bundle: session_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
