@@ -6,5 +6,5 @@ _core:
   default_config_hash: 8UYEKlWeJ8cK8V-9ojit-_9SwBjQKk0SU-UkiuvlWKI
 name: 'Email HTML'
 format: email_html
-weight: -8
+weight: -7
 filters: {  }
