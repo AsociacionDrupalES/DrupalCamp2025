@@ -41,11 +41,12 @@
 
 /* Vertical */
 [data-component-id="drupalcamp:speaker"].speaker--vertical img {
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--color--primary);
 }
 [data-component-id="drupalcamp:speaker"].speaker--vertical .text-wrapper .text {
   font-size: calc(var(--font-size) * 0.9);
 }
 [data-component-id="drupalcamp:speaker"].speaker--vertical .text-wrapper {
-  padding: 24px;
+  padding: 24px 0;
 }

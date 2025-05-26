@@ -23,13 +23,14 @@
 }
 
 [data-component-id="drupalcamp:speakers"] > * {
-  border: 2px solid var(--color--primary-light);
-  border-radius: 10px;
   box-sizing: border-box;
-  overflow: hidden;
   width: var(--width);
 }
 
-[data-component-id="drupalcamp:speakers"] > *:nth-child(even) {
-  border-color: var(--color--secondary)
+[data-component-id="drupalcamp:speakers"] > *:nth-child(odd) img {
+  border-color: var(--color--primary-light);
+}
+
+[data-component-id="drupalcamp:speakers"] > *:nth-child(even) img {
+  border-color: var(--color--secondary);
 }
