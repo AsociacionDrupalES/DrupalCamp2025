@@ -50,12 +50,10 @@ third_party_settings:
                   value:
                     source_id: 'field_property:node:title:value'
             link:
-              source_id: entity_field
+              source_id: entity_link
               source:
-                derivable_context: 'field:node:featured_speaker:field_cta_link'
-                'field:node:featured_speaker:field_cta_link':
-                  value:
-                    source_id: 'field_property:node:field_cta_link:uri'
+                template: canonical
+                absolute: 0
           slots:
             image:
               sources:

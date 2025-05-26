@@ -18,6 +18,7 @@ dependencies:
   module:
     - field_group
     - nomarkup
+    - options
     - text
     - token
     - ui_patterns
@@ -138,28 +139,33 @@ content:
             source_id: attributes
             source:
               value: ''
+          background_color:
+            source_id: select
+            source:
+              value: ''
+          size:
+            source_id: select
+            source:
+              value: ''
         slots:
           name:
             sources:
               -
                 source_id: entity_field
                 source:
-                  derivable_context: 'field:node:session:langcode'
-                  'field:node:session:langcode':
+                  derivable_context: 'field:node:session:field_language'
+                  'field:node:session:field_language':
                     value:
                       sources:
                         -
-                          source_id: 'field_formatter:node:session:langcode'
+                          source_id: 'field_formatter:node:session:field_language'
                           source:
-                            type: language
+                            type: list_default
                             third_party_settings:
                               nomarkup:
-                                enabled: '1'
                                 separator: '|'
                                 referenced_entity: ''
-                            settings:
-                              link_to_entity: 0
-                              native_language: 0
+                                enabled: 0
                           _weight: '0'
                 _weight: '0'
           url:
@@ -167,7 +173,7 @@ content:
               -
                 source_id: token
                 source:
-                  value: '/sessions?language=[node:field_language:value]'
+                  value: '[site:url]/sessions?language=[node:field_language:value]'
                 _weight: '0'
     third_party_settings:
       nomarkup:

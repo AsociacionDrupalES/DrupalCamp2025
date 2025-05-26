@@ -6,11 +6,65 @@ dependencies:
     - field.field.user.user.field_bio
     - field.field.user.user.field_display_name
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.featured_speaker
   module:
-    - image
+    - field_group
+    - nomarkup
+    - svg_image
     - text
     - user
+third_party_settings:
+  field_group:
+    group_speaker:
+      children:
+        - user_picture
+        - field_display_name
+        - field_bio
+      label: Ponente
+      parent_name: ''
+      region: content
+      weight: 20
+      format_type: component_formatter
+      format_settings:
+        ui_patterns:
+          component_id: 'drupalcamp:speaker'
+          variant_id:
+            source_id: select
+            source:
+              value: horizontal
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            name:
+              source_id: entity_field
+              source:
+                derivable_context: 'field:user:user:field_display_name'
+                'field:user:user:field_display_name':
+                  value:
+                    source_id: 'field_property:user:field_display_name:value'
+            link:
+              source_id: url
+              source:
+                value: ''
+          slots:
+            image:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: user_picture
+                  _weight: '0'
+            text:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_bio
+                  _weight: '0'
+        show_empty_fields: 0
+        label_as_html: 0
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
 id: user.user.default
@@ -20,10 +74,10 @@ mode: default
 content:
   field_bio:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_display_name:
     type: string
@@ -31,17 +85,25 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   user_picture:
     type: image
     label: hidden
     settings:
-      image_link: content
-      image_style: thumbnail
+      image_link: ''
+      image_style: featured_speaker
       image_loading:
-        attribute: lazy
-    third_party_settings: {  }
+        attribute: eager
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
     weight: 0
     region: content
 hidden:
