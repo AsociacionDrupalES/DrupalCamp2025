@@ -43,6 +43,7 @@
 [data-component-id="drupalcamp:speaker"].speaker--vertical img {
   border-radius: 10px;
   border: 2px solid var(--color--primary);
+  box-sizing: border-box;
 }
 [data-component-id="drupalcamp:speaker"].speaker--vertical .text-wrapper .text {
   font-size: calc(var(--font-size) * 0.9);
