@@ -31,7 +31,9 @@ class TaxonomyTermController extends ControllerBase {
       ],
     ];
 
-    $url = Url::fromRoute("view.$view_id.$view_display", [], $options)->toString();
+    $url = Url::fromRoute("view.$view_id.$view_display", [], $options)
+      ->toString(TRUE)
+      ->getGeneratedUrl();
 
     return new RedirectResponse($url);
   }
