@@ -1,0 +1,21 @@
+uuid: 58e9dd2b-e2d5-4464-a1da-fbde5dd880d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.special_session
+  module:
+    - custom_color_field
+id: node.special_session.field_color
+field_name: field_color
+entity_type: node
+bundle: special_session
+label: Color
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: custom_color

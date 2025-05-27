@@ -8,6 +8,7 @@
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Template\Attribute;
 use Drupal\node\NodeInterface;
 
 /**
@@ -27,7 +28,7 @@ function custom_general_features_entity_create_access(AccountInterface $account,
 
   if (!$submission_deadline->isSubmissionAllowed()) {
     return AccessResult::forbidden('The deadline for the call for papers has passed.')
-      ->addCacheableDependency('config_pages:event_details');
+      ->addCacheableDependency(\Drupal::config('config_pages.event_details'));
   }
 
   return AccessResult::neutral();
@@ -41,4 +42,45 @@ function custom_general_features_node_view(array &$build, NodeInterface $entity,
   if ($view_mode === 'teaser' && $entity->getType() === 'featured_speaker') {
     unset($build['title']);
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_general_features_preprocess_views_view_grid_responsive__session_schedule(array &$variables): void {
+  if (!$color = _custom_general_features_has_custom_color($variables)) {
+    return;
+  }
+
+  /** @var \Drupal\Core\Template\Attribute $attributes */
+  $attributes = &$variables['content_attributes'];
+  if (!$attributes instanceof Attribute) {
+    $attributes = new Attribute();
+  }
+  $attributes->addClass('session-schedule-slot--special');
+  $attributes->addClass('session-schedule-slot--' . $color);
+}
+
+/**
+ * Determines if there is a custom color present in the row variables.
+ *
+ * @param array $variables
+ *   An associative array of variables, typically containing 'rows', where
+ *   each row includes a result object representing a node entity.
+ *
+ * @return bool|string
+ *   Returns the custom color string if a valid 'special_session' node with
+ *   a non-empty 'field_color' field is found. Returns FALSE otherwise.
+ */
+function _custom_general_features_has_custom_color(array $variables): bool|string {
+  foreach ($variables['rows'] as $row) {
+    /** @var \Drupal\views\ResultRow $result_row */
+    $result_row = $row['#row'];
+    /** @var \Drupal\node\NodeInterface $node */
+    $node = $result_row->_entity;
+    if ($node->bundle() === 'special_session' && !$node->get('field_color')->isEmpty()) {
+      return $node->get('field_color')->getString();
+    }
+  }
+  return FALSE;
 }

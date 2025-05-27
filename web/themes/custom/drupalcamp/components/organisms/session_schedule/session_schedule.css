@@ -1,0 +1,6 @@
+.session-schedule {
+  background-color: #ffffff;
+  border: 2px solid var(--color--primary-light);
+  border-radius: 12px;
+  padding: 20px;
+}

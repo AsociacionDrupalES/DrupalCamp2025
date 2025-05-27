@@ -1,0 +1,297 @@
+uuid: 325f4fe6-28a5-4448-80b6-482714a33e3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.schedule
+    - field.field.node.session.field_audience
+    - field.field.node.session.field_description
+    - field.field.node.session.field_is_non_session
+    - field.field.node.session.field_is_training
+    - field.field.node.session.field_language
+    - field.field.node.session.field_r
+    - field.field.node.session.field_session_category
+    - field.field.node.session.field_short_description
+    - field.field.node.session.field_social_media_card
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_time_slot
+    - node.type.session
+  module:
+    - field_group
+    - layout_builder
+    - nomarkup
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - drupalcamp
+third_party_settings:
+  field_group:
+    group_card_detail:
+      children:
+        - field_r
+        - field_speakers
+        - field_audience
+        - field_session_category
+        - field_language
+      label: Card
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: component_formatter
+      format_settings:
+        show_empty_fields: '1'
+        ui_patterns:
+          component_id: 'drupalcamp:session_schedule_card'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+          slots:
+            title:
+              sources:
+                -
+                  source_id: entity_field
+                  source:
+                    derivable_context: 'field:node:session:title'
+                    'field:node:session:title':
+                      value:
+                        sources:
+                          -
+                            source_id: 'field_formatter:node:session:title'
+                            source:
+                              type: string
+                              settings:
+                                link_to_entity: '1'
+                              third_party_settings:
+                                nomarkup:
+                                  enabled: '1'
+                                  separator: '|'
+                                  referenced_entity: ''
+                            _weight: '0'
+                  _weight: '0'
+            text: {  }
+            pre_tags:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_audience
+                  _weight: '0'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_language
+                  _weight: '1'
+            tags:
+              sources:
+                4:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_session_category
+                  _weight: '4'
+            speakers:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_speakers
+                  _weight: '0'
+            type:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_r
+                  _weight: '0'
+        label_as_html: 0
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: XPqDf9kT0h8MaYfLnXdmZxaOb6M4MXk0Wf52gkNFGi4
+id: node.session.schedule
+targetEntityType: node
+bundle: session
+mode: schedule
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_audience:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: primary-light
+          size:
+            source_id: select
+            source:
+              value: tiny
+        slots:
+          name:
+            sources:
+              -
+                source_id: 'field_formatter:node:session:field_audience'
+                source:
+                  type: entity_reference_label
+                  settings:
+                    link: false
+                  third_party_settings:
+                    nomarkup:
+                      enabled: true
+                      separator: '|'
+                      referenced_entity: ''
+                _weight: '0'
+          url: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_language:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: primary
+          size:
+            source_id: select
+            source:
+              value: tiny
+        slots:
+          name:
+            sources:
+              -
+                source_id: entity_field
+                source:
+                  derivable_context: 'field:node:session:field_language'
+                  'field:node:session:field_language':
+                    value:
+                      sources:
+                        -
+                          source_id: 'field_formatter:node:session:field_language'
+                          source:
+                            type: list_default
+                            third_party_settings:
+                              nomarkup:
+                                separator: '|'
+                                referenced_entity: ''
+                                enabled: 0
+                          _weight: '0'
+                _weight: '0'
+          url: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 5
+    region: content
+  field_r:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_session_category:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: ''
+          size:
+            source_id: select
+            source:
+              value: ''
+          show_link:
+            source_id: checkbox
+            source:
+              value: false
+        slots:
+          name:
+            sources:
+              -
+                source_id: 'field_formatter:node:session:field_session_category'
+                source:
+                  type: entity_reference_label
+                  settings:
+                    link: false
+                  third_party_settings:
+                    nomarkup:
+                      enabled: true
+                      separator: ''
+                      referenced_entity: ''
+                _weight: '0'
+          url: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: ''
+    weight: 4
+    region: content
+  field_speakers:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: compact
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '0'
+    weight: 2
+    region: content
+hidden:
+  field_description: true
+  field_is_non_session: true
+  field_is_training: true
+  field_short_description: true
+  field_social_media_card: true
+  field_time_slot: true
+  langcode: true
+  links: true

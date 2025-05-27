@@ -1,7 +1,7 @@
 base:
   version: VERSION
   css:
-    theme:
+    base:
       css/styles.css: {}
     component:
       css/components/action-links.css:

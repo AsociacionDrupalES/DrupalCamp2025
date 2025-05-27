@@ -38,4 +38,29 @@ class TaxonomyTermController extends ControllerBase {
     return new RedirectResponse($url);
   }
 
+  /**
+   * Redirects to the session schedule page.
+   *
+   * @param \Drupal\taxonomy\TermInterface $taxonomy_term
+   *   The taxonomy term object.
+   *
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
+   *   A redirect to the session schedule page.
+   */
+  public function redirectToSchedule(TermInterface $taxonomy_term) {
+    $view_id = 'session_schedule';
+    $view_display = 'page_1';
+
+    $options = [
+      'query' => [
+        $taxonomy_term->bundle() => $taxonomy_term->id(),
+      ],
+    ];
+
+    $url = Url::fromRoute("view.$view_id.$view_display", [
+      'arg_0' => '2025-09-19',
+    ], $options)->toString();
+    return new RedirectResponse($url);
+  }
+
 }

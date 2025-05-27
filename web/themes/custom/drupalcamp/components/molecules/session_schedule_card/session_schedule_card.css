@@ -1,0 +1,63 @@
+[data-component-id="drupalcamp:session_schedule_card"] {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: white;
+  width: 100%;
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:session_schedule_card"] {
+    height: 100%;
+  }
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] > a {
+  font-family: var(--font-family-h);
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] > a:hover {
+  text-decoration: underline;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .speakers .avatar {
+  display: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline {
+  margin: 0;
+  gap: 14px;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags {
+  gap: 12px;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags li,
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags li:hover {
+  border: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--tags li:hover {
+  border-color: var(--color--primary-light);
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline li {
+  width: fit-content;
+}
+
+@media (min-width: 1200px) {
+  [data-component-id="drupalcamp:session_schedule_card"] .session-schedule--type {
+    display: none;
+  }
+}

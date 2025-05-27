@@ -21,6 +21,7 @@ class CustomGeneralFeaturesHooks {
     /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
     if (isset($entity_types['taxonomy_term'])) {
       $entity_types['taxonomy_term']->setLinkTemplate('event_platform:sessions', '/taxonomy/term/{taxonomy_term}/sessions');
+      $entity_types['taxonomy_term']->setLinkTemplate('event_platform:schedule', '/taxonomy/term/{taxonomy_term}/schedule');
     }
   }
 

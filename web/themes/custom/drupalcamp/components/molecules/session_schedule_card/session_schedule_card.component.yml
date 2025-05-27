@@ -1,0 +1,23 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Session schedule card
+status: stable
+props:
+  type: object
+  properties:
+    categories:
+      type: array
+      title: Categories
+      description: "Array of category IDs for the session"
+      items:
+        type: string
+slots:
+  title:
+    title: Title
+  pre_tags:
+    title: Pre-tags
+  tags:
+    title: Tags
+  speakers:
+    title: Speakers
+  type:
+    title: Type

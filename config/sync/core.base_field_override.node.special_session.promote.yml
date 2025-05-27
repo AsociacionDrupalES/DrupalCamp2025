@@ -1,0 +1,22 @@
+uuid: 491f6a99-2471-4eda-96b7-3bb3e9fa9b50
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.special_session
+id: node.special_session.promote
+field_name: promote
+entity_type: node
+bundle: special_session
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Sí
+  off_label: 'No'
+field_type: boolean

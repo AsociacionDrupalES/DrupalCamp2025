@@ -7,8 +7,8 @@ _core:
 id: default
 label: predeterminado
 date_format: 'D, M j Y'
-time_format: 'g:ia'
-time_hour_format: ga
+time_format: 'h:s'
+time_hour_format: ''
 allday_label: 'All day'
 separator: ' - '
 join: ', '

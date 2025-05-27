@@ -1,0 +1,80 @@
+.session-schedule-slot:nth-child(first) {
+  border-top: var(--color--secondary);
+}
+
+.session-schedule-slot {
+  border-bottom: 2px solid var(--color--primary-light);
+  padding: 18px 0;
+}
+
+.session-schedule-slot__title h3 {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--color--secondary);
+  font-family: var(--font-family-h);
+  line-height: 1em;
+}
+
+.session-schedule-slot__content {
+  display: grid;
+  grid-template-columns: repeat(var(--session-schedule-slot--column-count), 1fr);
+  gap: var(--session-schedule-slot--layout-gap);
+}
+
+.session-schedule-slot__item {
+  min-width: var(--session-schedule-slot--cell-min-width);
+}
+
+@media (min-width: 960px) {
+  .session-schedule-slot {
+    display: flex;
+  }
+
+  .session-schedule-slot__title {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .session-schedule-slot__content {
+    flex: 1;
+  }
+}
+
+/* Special slots */
+.session-schedule-slot--special {
+  display: flex;
+  gap: 1em;
+  padding: 18px;
+  border: none;
+}
+
+.session-schedule-slot--special .session-schedule-slot__content {
+  grid-template-columns: 1fr;
+}
+
+.session-schedule-slot--special p {
+  margin: 0;
+}
+
+.session-schedule-slot--primary {
+  border-radius: 20px;
+  background-color: var(--color--primary);
+  color: #ffffff;
+}
+
+.session-schedule-slot--primary .session-schedule-slot__title h3 {
+  background-color: #ffffff;
+  color: var(--color--primary);
+}
+
+.session-schedule-slot--secondary {
+  border-radius: 20px;
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+}
+
+.session-schedule-slot--secondary .session-schedule-slot__title h3 {
+  background-color: #ffffff;
+  color: var(--color--primary);
+}

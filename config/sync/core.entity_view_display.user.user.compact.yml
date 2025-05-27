@@ -25,6 +25,7 @@ third_party_settings:
       weight: 0
       format_type: component_formatter
       format_settings:
+        show_empty_fields: '1'
         ui_patterns:
           component_id: 'drupalcamp:user'
           variant_id: null
@@ -48,7 +49,6 @@ third_party_settings:
                   source:
                     field_group_child: user_picture
                   _weight: '0'
-        show_empty_fields: 0
         label_as_html: 0
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
