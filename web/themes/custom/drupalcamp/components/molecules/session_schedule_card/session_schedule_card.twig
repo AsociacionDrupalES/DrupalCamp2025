@@ -4,9 +4,14 @@
   }
 %}
 <div {{ attributes.addClass(data_attributes) }}>
-  <div class="session-schedule--type">{{ type }}</div>
+  <div class="session-schedule-card__type">
+    {{ include ('drupalcamp:highlighted-pill', {
+      name: type,
+      background_color: 'primary'
+    }) }}
+  </div>
   {% if pre_tags %}
-  <ul class="session-schedule--pre-tags ul--pills--inline ul--pills--small">
+  <ul class="session-schedule-card__pre-tags ul--pills--inline ul--pills--small">
     {% for tag in pre_tags %}
       {% if tag|render|striptags is not empty %}
         {{ tag }}
@@ -14,9 +19,11 @@
     {% endfor %}
   </ul>
   {% endif %}
-  {{ title }}
-  <div class="speakers">{{ speakers }}</div>
-  <ul class="session-schedule--tags ul--pills--inline ul--pills--small">
+  <div class="session-schedule-card__content">
+    {{ title }}
+    <div class="session-schedule-card__speakers">{{ speakers }}</div>
+  </div>
+  <ul class="session-schedule-card__tags ul--pills--inline ul--pills--small">
     {{ tags }}
   </ul>
 </div>

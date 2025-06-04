@@ -51,11 +51,15 @@ class TaxonomyTermController extends ControllerBase {
     $view_id = 'session_schedule';
     $view_display = 'page_1';
 
-    $options = [
-      'query' => [
+    $options = [];
+    if ($taxonomy_term->bundle() === 'time_slot') {
+      $options['fragment'] = 'slot-' . $taxonomy_term->id();
+    }
+    else {
+      $options['query'] = [
         $taxonomy_term->bundle() => $taxonomy_term->id(),
-      ],
-    ];
+      ];
+    }
 
     $url = Url::fromRoute("view.$view_id.$view_display", [
       'arg_0' => '2025-09-19',

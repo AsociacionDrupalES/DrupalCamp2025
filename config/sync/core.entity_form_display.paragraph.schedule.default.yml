@@ -1,0 +1,46 @@
+uuid: 63c514ba-679b-498a-bdfc-5f654ea2041f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule.field_subsections
+    - field.field.paragraph.schedule.field_title
+    - paragraphs.paragraphs_type.schedule
+  module:
+    - paragraphs
+id: paragraph.schedule.default
+targetEntityType: paragraph
+bundle: schedule
+mode: default
+content:
+  field_subsections:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Elemento
+      title_plural: Elementos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

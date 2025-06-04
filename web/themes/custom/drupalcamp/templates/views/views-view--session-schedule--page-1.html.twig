@@ -45,12 +45,11 @@
     {{ title }}
   {% endif %}
   {{ title_suffix }}
-  {% if header or exposed or pager %}
+  {% if exposed or pager %}
     {{ include ('drupalcamp:list_header', {
-      header: header,
       filters: exposed,
       pager: pager
-    }) }}
+    }, with_context = false) }}
   {% endif %}
   {% if attachment_before %}
     <div class="attachment attachment-before">
@@ -60,6 +59,7 @@
 
   {% if rows %}
     {{ include ('drupalcamp:session_schedule', {
+      header: header,
       items: rows,
       attributes: attributes
     }, with_context = true) }}

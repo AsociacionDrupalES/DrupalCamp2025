@@ -1,0 +1,34 @@
+uuid: 5e390b3f-ef00-4b6c-a281-e2b4f4a539e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule_slot.field_text
+    - field.field.paragraph.schedule_slot.field_title
+    - paragraphs.paragraphs_type.schedule_slot
+  module:
+    - text
+id: paragraph.schedule_slot.default
+targetEntityType: paragraph
+bundle: schedule_slot
+mode: default
+content:
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

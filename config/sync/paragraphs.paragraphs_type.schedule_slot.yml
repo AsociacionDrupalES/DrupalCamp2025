@@ -1,0 +1,14 @@
+uuid: 8c4f8748-f1a7-468b-b191-e90782f0e99b
+langcode: es
+status: true
+dependencies:
+  module:
+    - custom_paragraphs_extras
+id: schedule_slot
+label: 'Elemento de programa'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  custom_color:
+    enabled: true

@@ -9,6 +9,7 @@
 @import url('atoms/_button.css');
 @import url('atoms/_field_body.css');
 @import url('atoms/_fieldset.css');
+@import url('atoms/_html.css');
 @import url('atoms/_img.css');
 @import url('atoms/_input.css');
 @import url('atoms/_label.css');
@@ -37,6 +38,7 @@
 @import url('molecules/paragraphs/_hero.css');
 @import url('molecules/paragraphs/_links.css');
 @import url('molecules/paragraphs/_person-cards.css');
+@import url('molecules/paragraphs/_schedule-slot.css');
 @import url('molecules/paragraphs/_text-image.css');
 @import url('molecules/paragraphs/_ticket.css');
 @import url('molecules/_language-switcher--block.css');

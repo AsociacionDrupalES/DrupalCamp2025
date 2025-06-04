@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - filter.format.basic_html
+    - filter.format.full_html
     - node.type.special_session
   module:
     - text
@@ -23,4 +24,5 @@ settings:
   required_summary: false
   allowed_formats:
     - basic_html
+    - full_html
 field_type: text_with_summary

@@ -11,18 +11,19 @@
 
 {%
   set classes = [
-    'session-schedule-slot',
-    'session-schedule-slot--' ~ options.alignment|default('horizontal'),
+    'session-schedule',
+    'session-schedule--' ~ options.alignment|default('horizontal'),
   ]
 %}
 
 {%
   set grid_styles = [
-    '--session-schedule-slot--column-count:' ~ options.columns|default(2) ~ ';',
-    '--session-schedule-slot--cell-min-width:' ~ options.cell_min_width|default(300) ~ 'px;',
-    '--session-schedule-slot--layout-gap:' ~ options.grid_gutter|default(20) ~ 'px;',
+    '--session-schedule--column-count:' ~ options.columns|default(2) ~ ';',
+    '--session-schedule--cell-min-width:' ~ options.cell_min_width|default(300) ~ 'px;',
+    '--session-schedule--layout-gap:' ~ options.grid_gutter|default(20) ~ 'px;',
   ]
 %}
-<div class="session-schedule">
+<div {{ attributes.addClass(classes) }} style="{{ grid_styles|join() }}">
+  {{ header }}
   {{ items }}
 </div>

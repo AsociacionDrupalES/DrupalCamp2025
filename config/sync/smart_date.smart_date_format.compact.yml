@@ -7,7 +7,7 @@ _core:
 id: compact
 label: Compacto
 date_format: 'M j Y'
-time_format: 'h:s'
+time_format: 'H:i'
 time_hour_format: ''
 allday_label: ''
 separator: ' - '

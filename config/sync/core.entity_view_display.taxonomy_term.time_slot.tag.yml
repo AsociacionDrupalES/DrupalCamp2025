@@ -89,7 +89,7 @@ content:
         date_format: long
         custom_date_format: ''
       join: ' a '
-      time_format: 'h:s'
+      time_format: 'H:i'
       time_hour_format: ''
       allday_label: 'All day'
       date_first: '1'

@@ -7,7 +7,7 @@ _core:
 id: default
 label: predeterminado
 date_format: 'D, M j Y'
-time_format: 'h:s'
+time_format: 'H:i'
 time_hour_format: ''
 allday_label: 'All day'
 separator: ' - '

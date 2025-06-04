@@ -1,0 +1,19 @@
+uuid: 0eb9b2ef-6b78-4180-b29f-aeb44705e11a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.schedule_slot
+id: paragraph.schedule_slot.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: schedule_slot
+label: Hora
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

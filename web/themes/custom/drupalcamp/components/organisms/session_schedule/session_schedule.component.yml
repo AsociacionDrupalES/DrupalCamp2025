@@ -6,6 +6,8 @@ dependencies:
   - core/drupal
   - core/jquery
 slots:
+  header:
+    title: Header
   items:
     title: Items
 props:

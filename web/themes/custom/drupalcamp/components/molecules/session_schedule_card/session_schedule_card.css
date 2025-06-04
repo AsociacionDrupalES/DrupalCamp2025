@@ -13,24 +13,24 @@
   }
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] > a {
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__content a {
   font-family: var(--font-family-h);
   font-size: 1.4em;
   text-decoration: none;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] > a:hover {
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__content a:hover {
   text-decoration: underline;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] .speakers {
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers {
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] .speakers .avatar {
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers img {
   display: none;
 }
 
@@ -39,16 +39,16 @@
   gap: 14px;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags {
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags {
   gap: 12px;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags li,
-[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--pre-tags li:hover {
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags li,
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags li:hover {
   border: none;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule--tags li:hover {
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__tags li:hover {
   border-color: var(--color--primary-light);
 }
 
@@ -56,8 +56,13 @@
   width: fit-content;
 }
 
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__type .highlighted-pill {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @media (min-width: 1200px) {
-  [data-component-id="drupalcamp:session_schedule_card"] .session-schedule--type {
+  [data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__type {
     display: none;
   }
 }

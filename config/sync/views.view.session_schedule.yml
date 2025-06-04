@@ -324,7 +324,7 @@ display:
               rendered: true
               rendered_strip: false
           columns: 4
-          cell_min_width: 200
+          cell_min_width: 250
           grid_gutter: 10
           alignment: horizontal
       row:
@@ -353,7 +353,20 @@ display:
           plugin_id: standard
           required: true
       use_ajax: false
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Balidea</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Hiberus</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Minsait</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Workshops</div>\r\n        </div>\r\n    </div>\r\n</div>"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -486,7 +499,7 @@ display:
             count: 0
             override: 0
             items_per_page: '25'
-            classes: 'tabs tabs--primary'
+            classes: ''
           summary:
             sort_order: asc
             number_of_records: 0
@@ -496,7 +509,7 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
-          format: 'M j'
+          format: 'j M'
           granularity: day
       filters:
         status:
@@ -535,7 +548,9 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        header: false
       display_description: ''
+      header: {  }
       display_extenders: {  }
       displays:
         page_1: page_1

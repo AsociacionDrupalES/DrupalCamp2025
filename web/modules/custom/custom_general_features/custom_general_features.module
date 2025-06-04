@@ -48,17 +48,44 @@ function custom_general_features_node_view(array &$build, NodeInterface $entity,
  * Implements hook_preprocess_HOOK().
  */
 function custom_general_features_preprocess_views_view_grid_responsive__session_schedule(array &$variables): void {
-  if (!$color = _custom_general_features_has_custom_color($variables)) {
-    return;
-  }
-
   /** @var \Drupal\Core\Template\Attribute $attributes */
   $attributes = &$variables['content_attributes'];
   if (!$attributes instanceof Attribute) {
     $attributes = new Attribute();
   }
+
+  $first_row = reset($variables['rows']);
+  /** @var \Drupal\views\ResultRow $row */
+  $row = $first_row['#row'];
+  $term = reset($row->_relationship_entities);
+  $attributes->setAttribute('id', 'slot-' . $term->id());
+
+  if (!$color = _custom_general_features_has_custom_color($variables)) {
+    return;
+  }
   $attributes->addClass('session-schedule-slot--special');
-  $attributes->addClass('session-schedule-slot--' . $color);
+  if ($color !== 'transparent') {
+    $attributes->addClass('session-schedule-slot--with-background');
+    $attributes->addClass('session-schedule-slot--' . $color);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_general_features_preprocess_paragraph__schedule_slot(array &$variables): void {
+  $attributes = &$variables['attributes'];
+  if (!$attributes instanceof Attribute) {
+    $attributes = new Attribute();
+  }
+  /** @var \Drupal\paragraphs\ParagraphInterface $paragraph */
+  $paragraph = $variables['elements']['#paragraph'];
+  $color = $paragraph->getBehaviorSetting('custom_color', 'color');
+  if ($color === 'transparent') {
+    return;
+  }
+
+  $variables['elements']['#fieldgroups']['group_slot']->format_settings['ui_patterns']['props']['attributes']['source']['value'] = 'class="session-schedule-slot--special session-schedule-slot--with-background session-schedule-slot--' . $color . '"';
 }
 
 /**
@@ -79,7 +106,8 @@ function _custom_general_features_has_custom_color(array $variables): bool|strin
     /** @var \Drupal\node\NodeInterface $node */
     $node = $result_row->_entity;
     if ($node->bundle() === 'special_session' && !$node->get('field_color')->isEmpty()) {
-      return $node->get('field_color')->getString();
+      $color = $node->get('field_color')->getString();
+      return $color ?: FALSE;
     }
   }
   return FALSE;

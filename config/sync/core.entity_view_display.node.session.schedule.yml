@@ -282,8 +282,8 @@ content:
     third_party_settings:
       nomarkup:
         enabled: true
-        separator: ''
-        referenced_entity: '0'
+        separator: ' / '
+        referenced_entity: '1'
     weight: 2
     region: content
 hidden:
