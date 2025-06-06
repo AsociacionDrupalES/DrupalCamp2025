@@ -42,6 +42,7 @@ permissions:
   - 'edit terms in time_slot'
   - 'use session_acceptance transition accept_session'
   - 'use session_acceptance transition reject_session'
+  - 'use session_acceptance transition validate_proposal'
   - 'view any unpublished content'
   - 'view event_details config page entity'
   - 'view field_social_media_card'
