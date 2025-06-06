@@ -34,7 +34,6 @@ permissions:
   - 'edit any session content'
   - 'edit event_details config page entity'
   - 'edit field_is_non_session'
-  - 'edit field_is_training'
   - 'edit field_r'
   - 'edit field_social_media_card'
   - 'edit field_time_slot'
