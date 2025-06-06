@@ -39,7 +39,7 @@ function drupalcamp_preprocess_page(array &$variables): void {
   $variables['page_title_image'] = '/' . $theme_path . '/images/page-title/default.webp';
 
   $node = \Drupal::routeMatch()->getParameter('node');
-  if (!$node instanceof NodeInterface) {
+  if (!$node instanceof NodeInterface || $node->bundle() === 'featured_speaker') {
     return;
   }
 
@@ -52,7 +52,6 @@ function drupalcamp_preprocess_page(array &$variables): void {
       }
     }
   }
-
 }
 
 /**
