@@ -9,7 +9,7 @@ third_party_settings:
     antibot: true
 weight: 0
 open: null
-close: '2025-06-08T23:59:59'
+close: '2025-06-15T23:59:59'
 uid: 1
 template: false
 archive: false
