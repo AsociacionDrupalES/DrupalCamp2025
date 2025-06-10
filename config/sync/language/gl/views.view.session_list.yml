@@ -31,9 +31,9 @@ display:
           expose: {  }
         field_is_training_value:
           expose:
-            label: 'És taller'
+            label: 'É un taller'
           group_info:
-            label: 'És taller'
+            label: 'É un taller'
             group_items:
               3:
                 title: 'Non'
