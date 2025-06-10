@@ -29,6 +29,14 @@ display:
           expose: {  }
         field_session_category_target_id:
           expose: {  }
+        field_is_training_value:
+          expose:
+            label: 'É un taller'
+          group_info:
+            label: 'É un taller'
+            group_items:
+              3:
+                title: 'Non'
         combine:
           expose: {  }
     display_title: Predeterminado
