@@ -32,6 +32,7 @@ third_party_settings:
         - field_speakers
         - field_session_category
         - field_audience
+        - field_is_training
       label: Card
       parent_name: ''
       region: content
@@ -69,6 +70,11 @@ third_party_settings:
                   source:
                     field_group_child: field_audience
                   _weight: '0'
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_is_training
+                  _weight: '2'
             speakers:
               sources:
                 -
@@ -135,7 +141,52 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: ''
-    weight: 5
+    weight: 3
+    region: content
+  field_is_training:
+    type: ui_patterns_component_per_item
+    label: hidden
+    settings:
+      ui_patterns:
+        component_id: 'drupalcamp:tag'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          background_color:
+            source_id: select
+            source:
+              value: ''
+          size:
+            source_id: select
+            source:
+              value: ''
+        slots:
+          name:
+            sources:
+              -
+                source_id: 'field_formatter:node:session:field_is_training'
+                source:
+                  type: boolean
+                  settings:
+                    format: custom
+                    format_custom_false: ''
+                    format_custom_true: Workshop
+                  third_party_settings:
+                    nomarkup:
+                      enabled: true
+                      separator: '|'
+                      referenced_entity: ''
+                _weight: '0'
+          url: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
     region: content
   field_session_category:
     type: ui_patterns_component_per_item
@@ -182,7 +233,7 @@ content:
         enabled: true
         separator: ''
         referenced_entity: ''
-    weight: 4
+    weight: 2
     region: content
   field_speakers:
     type: entity_reference_entity_view
@@ -195,12 +246,11 @@ content:
         enabled: true
         separator: ''
         referenced_entity: '0'
-    weight: 2
+    weight: 1
     region: content
 hidden:
   field_description: true
   field_is_non_session: true
-  field_is_training: true
   field_language: true
   field_r: true
   field_short_description: true
