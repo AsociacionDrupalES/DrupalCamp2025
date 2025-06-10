@@ -381,18 +381,26 @@ display:
               session_moderator: '0'
               content_editor: '0'
               administrator: '0'
-          is_grouped: false
+          is_grouped: true
           group_info:
-            label: ''
+            label: 'Es un taller'
             description: ''
-            identifier: ''
+            identifier: field_is_training_value
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              2:
+                title: Sí
+                operator: '='
+                value: '1'
+              3:
+                title: 'No'
+                operator: '='
+                value: '0'
         field_language_value:
           id: field_language_value
           table: node__field_language
