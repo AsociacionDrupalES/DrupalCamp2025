@@ -20,7 +20,7 @@ settings:
   provider: custom_general_features
   title: '¿Quieres ser patrocinador?'
   body:
-    value: '<p>Si te interesa patrocinar el evento y mostrar el apoyo de tu empresa a la comunidad Drupal, consulta nuestros paquetes de patrocinio y ponte en contacto con nosotros a través del formulario de contacto.</p><p><a class="link--button link--button--secondary" href="#">Dossier de patrocinio</a></p>'
+    value: '<p>Si te interesa patrocinar el evento y mostrar el apoyo de tu empresa a la comunidad Drupal, consulta nuestros paquetes de patrocinio y escríbenos a través del <a href="/contact">formulario de contacto</a>.</p><p><a class="link--button link--button--secondary" href="/sites/default/files/media/document/2025-03/dossier-patrocinio-2025.pdf" data-entity-type="file" data-entity-uuid="a84bfedb-64b6-4d7d-a202-95159ab79f57" data-entity-substitution="file">Dossier de patrocinio</a></p>'
     format: full_html
 visibility:
   request_path:

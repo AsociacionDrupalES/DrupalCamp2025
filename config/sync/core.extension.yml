@@ -20,6 +20,7 @@ module:
   contact: 0
   content_moderation: 0
   contextual: 0
+  csv_serialization: 0
   custom_color_field: 0
   custom_general_features: 0
   custom_paragraphs_extras: 0
@@ -74,6 +75,8 @@ module:
   r4032login: 0
   redirect: 0
   registration_role: 0
+  rest: 0
+  serialization: 0
   simple_sitemap: 0
   sitemap: 0
   smart_date: 0
@@ -92,6 +95,7 @@ module:
   ui_patterns_views: 0
   update: 0
   user: 0
+  views_data_export: 0
   views_summary_tabs: 0
   views_ui: 0
   viewsreference: 0
