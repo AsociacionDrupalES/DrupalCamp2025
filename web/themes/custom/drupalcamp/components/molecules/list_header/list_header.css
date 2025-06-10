@@ -28,6 +28,7 @@
 [data-component-id="drupalcamp:list_header"] .form--inline input {
   width: 100%;
   max-width: 100%;
+  min-width: 100px;
 }
 
 [data-component-id="drupalcamp:list_header"] .form--inline .form-actions {
