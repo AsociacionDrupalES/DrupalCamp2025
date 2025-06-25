@@ -21,6 +21,7 @@
 @import url('atoms/_titles.css');
 @import url('atoms/_webform-type-select-other.css');
 @import url('atoms/ckeditor/_p-text-bigger.css');
+@import url('atoms/ckeditor/_p-text-smaller.css');
 @import url('atoms/ckeditor/_ul-pills-inline.css');
 
 /* Molecules */

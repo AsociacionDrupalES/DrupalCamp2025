@@ -42,7 +42,7 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<a class="link--button link--button--white link--button--primary link--button--secondary link--button--primary-light link--button--transparent link--arrow"> <p class="p--text-bigger"> <ul class="ul--pills--inline">'
+      allowed_html: '<a class="link--button link--button--white link--button--primary link--button--secondary link--button--primary-light link--button--transparent link--arrow"> <p class="p--text-bigger p--text-smaller"> <ul class="ul--pills--inline">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
