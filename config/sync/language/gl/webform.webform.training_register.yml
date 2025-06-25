@@ -1,0 +1,21 @@
+title: 'Dá o seguinte paso: inscríbete nunha formación'
+elements: |
+  first_name:
+    '#title': Nome
+  last_name:
+    '#title': Apelidos
+  eres_estudiante:
+    '#title': 'Es estudiante?'
+    '#options':
+      'no': Non
+  trainings:
+    '#title': Formacións
+settings:
+  confirmation_message: '<p>Rexistrouse correctamente a túa inscrición.</p>'
+handlers:
+  places:
+    label: 'Límite de prazas'
+  mail:
+    settings:
+      subject: 'Nova inscrición en formación'
+      body: '<p>Enviado o [webform_submission:created]</p><p>Enviado por: [webform_submission:user]</p><p>Os valores enviados son:</p><p>[webform_submission:values]</p>'
