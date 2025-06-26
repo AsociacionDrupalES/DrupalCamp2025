@@ -1,0 +1,26 @@
+uuid: 09664ebd-3959-450b-bd0f-f1c6231c302a
+langcode: es
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+    - workflows.workflow.session_acceptance
+id: session_waiting_list
+label: 'Sesión en lista de espera'
+format: plain_text
+subject: '🎉 [node:title] incluida en lista de espera en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+bundles: {  }
+body:
+  value: "Hola,\r\n\r\nTe escribimos para informarte que tu propuesta \"[node:title]\" ha sido incluida en nuestra lista de espera en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year].\r\n\r\n¿Qué significa esto?\r\n- Tu sesión podría formar parte del programa si se libera algún espacio. En ese caso, nos pondremos en contacto contigo para invitarte a participar como ponente.\r\n- Esto puede ocurrir si alguna persona ponente confirmada no puede asistir al evento.\r\n\r\nPróximos pasos:\r\n- Para confirmar tu interés en mantener tu sesión en la lista de espera, por favor responde a este correo. Esto nos permitirá reaccionar rápidamente si se abre una vacante.\r\n\r\nAl responder a este correo confirmando tu interés en permanecer en la lista de espera, aceptas autorizar a la AED, de manera permanente, irrevocable y sin coste alguno, la grabación de la Presentación bajo una licencia Creative Commons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0/). Asimismo, cedes a la AED el derecho no exclusivo y sin coste alguno de usar tu voz, nombre, retrato o características similares con el único objetivo de anunciar, promover o utilizar la Presentación. También autorizas el uso de tu nombre o de otros datos relacionados con la sesión para publicitar o promover eventos similares en el futuro. La AED se reserva el derecho de editar o remover cualquier contenido que considere ofensivo, difamatorio, obsceno, inadecuado o inapropiado de cualquier otra manera.\r\n\r\nSi no recibimos tu respuesta en un plazo de 7 días, entenderemos que no deseas mantener tu propuesta como opción de reserva.\r\n\r\nGracias de nuevo por tu interés y por formar parte de [config_page:event_details:field_event_name].\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
+  format: plain_text
+replyTo: '[site:mail]'
+transitions:
+  editorial: {  }
+  session_acceptance:
+    waiting_list: waiting_list
