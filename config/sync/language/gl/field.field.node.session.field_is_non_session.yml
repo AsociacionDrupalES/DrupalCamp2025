@@ -1,5 +1,5 @@
+label: 'Non sesión / Non formación'
+description: 'Seleccione se se trata dunha sesión de apertura, un xantar etc.'
 settings:
   on_label: Si
   off_label: Non
-label: 'Non sesión / Non formación'
-description: 'Seleccione se se trata dunha sesión de apertura, un xantar etc.'

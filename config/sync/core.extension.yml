@@ -56,6 +56,7 @@ module:
   link_attributes_menu_link_content: 0
   linkit: 0
   locale: 0
+  mailer_transport: 0
   maxlength: 0
   media: 0
   media_entity_download: 0

@@ -16,19 +16,7 @@ display:
           label: 'Propoñer unha charla'
         result:
           content: '<div class="results-summary"><strong>Resultados:</strong> @total propostas</div>'
-      title: 'Sesións propostas'
-      fields:
-        title: {  }
-        body: {  }
-      exposed_form:
-        options:
-          submit_button: Filtro
-          reset_button_label: Reiniciar
       filters:
-        field_audience_target_id:
-          expose: {  }
-        field_session_category_target_id:
-          expose: {  }
         field_is_training_value:
           expose:
             label: 'É un taller'
@@ -36,9 +24,29 @@ display:
             label: 'É un taller'
             group_items:
               3:
-                title: 'Non'
+                title: Non
+        field_audience_target_id:
+          expose:
+            label: Audiencia
+        field_session_category_target_id:
+          expose:
+            label: Categoría
         combine:
-          expose: {  }
+          expose:
+            label: Buscar
+      title: 'Sesións propostas'
+      fields:
+        title:
+          separator: ', '
+        body:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
     display_title: Predeterminado
   page_1:
     display_title: Páxina
