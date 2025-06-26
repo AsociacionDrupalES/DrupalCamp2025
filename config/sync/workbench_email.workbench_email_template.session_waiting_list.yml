@@ -8,7 +8,7 @@ dependencies:
 id: session_waiting_list
 label: 'Sesión en lista de espera'
 format: plain_text
-subject: '🎉 [node:title] incluida en lista de espera en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
+subject: '[node:title] incluida en lista de espera en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
 recipient_types:
   author:
     id: author
