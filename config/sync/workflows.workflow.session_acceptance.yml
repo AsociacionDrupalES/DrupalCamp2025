@@ -46,11 +46,16 @@ type_settings:
       default_revision: true
     published:
       label: Publicado
-      weight: 1
+      weight: 2
       published: true
       default_revision: true
     rejected:
       label: Rechazada
+      weight: 1
+      published: false
+      default_revision: true
+    waiting_list:
+      label: 'Lista de espera'
       weight: 0
       published: false
       default_revision: true
@@ -61,6 +66,7 @@ type_settings:
         - accepted
         - proposed
         - rejected
+        - waiting_list
       to: accepted
       weight: -1
     propose_session:
@@ -80,16 +86,18 @@ type_settings:
         - proposed
         - published
         - rejected
+        - waiting_list
       to: published
-      weight: 1
+      weight: 2
     reject_session:
       label: 'Rechazar sesión'
       from:
         - accepted
         - proposed
         - rejected
+        - waiting_list
       to: rejected
-      weight: 0
+      weight: 1
     validate_proposal:
       label: 'Validar propuesta'
       from:
@@ -98,8 +106,18 @@ type_settings:
         - proposed
         - published
         - rejected
+        - waiting_list
       to: proposed
       weight: -2
+    waiting_list:
+      label: 'Lista de espera'
+      from:
+        - accepted
+        - proposed
+        - rejected
+        - waiting_list
+      to: waiting_list
+      weight: 0
   entity_types:
     node:
       - session
