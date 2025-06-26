@@ -8,8 +8,6 @@ dependencies:
     - node.type.session
     - node.type.special_session
     - system.menu.main
-    - taxonomy.vocabulary.session_audience
-    - taxonomy.vocabulary.session_category
   module:
     - node
     - smart_date
@@ -364,7 +362,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Balidea</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Hiberus</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Minsait</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Workshops</div>\r\n        </div>\r\n    </div>\r\n</div>"
+            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 1</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 2</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 3</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Workshops</div>\r\n        </div>\r\n    </div>\r\n</div>"
             format: full_html
           tokenize: false
       footer: {  }
@@ -663,96 +661,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_audience_target_id:
-          id: field_audience_target_id
-          table: node__field_audience
-          field: field_audience_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_audience_target_id_op
-            label: Audiencia
-            description: ''
-            use_operator: false
-            operator: field_audience_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: audience
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: session_audience
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_session_category_target_id:
-          id: field_session_category_target_id
-          table: node__field_session_category
-          field: field_session_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_session_category_target_id_op
-            label: Categoría
-            description: ''
-            use_operator: false
-            operator: field_session_category_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_session_category_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: session_category
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:

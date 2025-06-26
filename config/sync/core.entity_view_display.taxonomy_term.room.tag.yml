@@ -30,6 +30,14 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
+            background_color:
+              source_id: select
+              source:
+                value: ''
+            size:
+              source_id: select
+              source:
+                value: ''
           slots:
             name:
               sources:
@@ -53,14 +61,7 @@ third_party_settings:
                                 link_to_entity: 0
                             _weight: '0'
                   _weight: '0'
-            url:
-              sources:
-                -
-                  source_id: entity_link
-                  source:
-                    template: 'event_platform:schedule'
-                    absolute: 0
-                  _weight: '0'
+            url: {  }
         label_as_html: 0
 id: taxonomy_term.room.tag
 targetEntityType: taxonomy_term

@@ -48,6 +48,11 @@
   border: none;
 }
 
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__tags li {
+  font-size: 0.9rem;
+  padding: 0 8px;
+}
+
 [data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__tags li:hover {
   border-color: var(--color--primary-light);
 }

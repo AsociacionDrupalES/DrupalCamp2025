@@ -49,6 +49,10 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
+            categories:
+              source_id: list_textarea
+              source:
+                value: ''
           slots:
             title:
               sources:
@@ -72,19 +76,7 @@ third_party_settings:
                                   referenced_entity: ''
                             _weight: '0'
                   _weight: '0'
-            text: {  }
-            pre_tags:
-              sources:
-                -
-                  source_id: field_group_child
-                  source:
-                    field_group_child: field_audience
-                  _weight: '0'
-                -
-                  source_id: field_group_child
-                  source:
-                    field_group_child: field_language
-                  _weight: '1'
+            pre_tags: {  }
             tags:
               sources:
                 4:
@@ -92,6 +84,16 @@ third_party_settings:
                   source:
                     field_group_child: field_session_category
                   _weight: '4'
+                5:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_audience
+                  _weight: '5'
+                6:
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_language
+                  _weight: '6'
             speakers:
               sources:
                 -
@@ -137,11 +139,11 @@ content:
           background_color:
             source_id: select
             source:
-              value: primary-light
+              value: ''
           size:
             source_id: select
             source:
-              value: tiny
+              value: ''
         slots:
           name:
             sources:
@@ -180,11 +182,11 @@ content:
           background_color:
             source_id: select
             source:
-              value: primary
+              value: ''
           size:
             source_id: select
             source:
-              value: tiny
+              value: ''
         slots:
           name:
             sources:
