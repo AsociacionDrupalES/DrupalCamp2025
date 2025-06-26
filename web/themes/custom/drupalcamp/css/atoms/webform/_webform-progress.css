@@ -1,0 +1,6 @@
+.webform-progress .progress-marker::before {
+  border-radius: 5px;
+}
+.webform-progress .progress-step.is-active .progress-marker::before {
+  background-color: var(--color--primary-light);
+}

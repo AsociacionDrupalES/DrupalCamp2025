@@ -1,10 +1,9 @@
-uuid: 97cb7fab-54df-4bfa-9b29-28b0ebf0b5f1
+uuid: 572175aa-5d0e-411b-bd50-f05f7e6ebe8f
 langcode: es
 status: open
 dependencies:
   module:
     - antibot
-    - webform_options_limit
 third_party_settings:
   antibot:
     antibot: true
@@ -14,56 +13,122 @@ close: null
 uid: 1
 template: false
 archive: false
-id: training_register
-title: 'Da el siguiente paso: inscríbete en una formación'
+id: splash_awards_submit_project
+title: 'Splash Awards: Envía tu proyecto'
 description: ''
 categories: {  }
 elements: |-
-  first_name:
-    '#type': textfield
-    '#title': Nombre
-    '#size': 20
-    '#required': true
-  last_name:
-    '#type': textfield
-    '#title': Apellidos
-    '#size': 40
-    '#required': true
-  email:
-    '#type': webform_email_confirm
-    '#title': 'Correo electrónico'
-    '#size': 40
-    '#required': true
-    '#confirm__title': 'Confirmar correo electrónico'
-  state:
-    '#type': webform_select_other
-    '#title': Provincia
-    '#options': provinces_spain
-    '#required': true
-  drupal_experience:
-    '#type': radios
-    '#title': 'Experiencia en Drupal'
-    '#options':
-      basic: Básica
-      intermediate: Intermedia
-      advanced: Avanzada
-    '#required': true
-  eres_estudiante:
-    '#type': radios
-    '#title': '¿Eres estudiante?'
-    '#options':
-      'yes': Sí
-      'no': 'No'
-    '#required': true
-  trainings:
-    '#type': checkboxes
-    '#title': Formaciones
-    '#options':
-      1: 'Introducción a Drupal CMS: Construye sitios sin saber programar'
-      2: 'Optimización de la Calidad en Drupal con GitLab CI: Integración Continua y Tests Automatizado'
-      3: 'Drupal 11, programar módulos con la nueva API de Hooks + arquitectura Vertical Slice'
-      4: 'Introduction to D11 Module development'
-    '#required': true
+  project_information_page:
+    '#type': webform_wizard_page
+    '#title': 'Información del proyecto'
+    '#next_button_label': Siguiente
+    titulo:
+      '#type': textfield
+      '#title': Título
+      '#description': '<p>Título o nombre del proyecto</p>'
+      '#required': true
+    categoria:
+      '#type': checkboxes
+      '#title': Categoría
+      '#description': '<p>Selecciona la categoría del premio en la que participa tu proyecto</p>'
+      '#options': splash_awards_categories
+      '#options_display': buttons
+      '#required': true
+    launch_date:
+      '#type': date
+      '#title': 'Fecha de lanzamiento'
+      '#description': '<p>Fecha en la que se lanzó públicamente el proyecto</p>'
+      '#date_date_max': now
+    summary:
+      '#type': textarea
+      '#title': Resumen
+      '#description': '<p>Breve descripción general del proyecto</p>'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 400
+      '#counter_maximum_message': '%d restantes'
+      '#required': true
+    project_description:
+      '#type': text_format
+      '#title': 'Descripción del proyecto'
+      '#description': '<p>Explica los objetivos del proyecto, el público objetivo, la funcionalidad, ...</p>'
+      '#allowed_formats':
+        webform: webform
+      '#hide_help': true
+      '#required': true
+    challenges:
+      '#type': text_format
+      '#title': Desafíos
+      '#description': '<p>Describe los mayores desafíos técnicos o funcionales del proyecto y cómo los resolviste</p>'
+      '#allowed_formats':
+        webform: webform
+      '#hide_help': true
+      '#required': true
+    community_contributions:
+      '#type': text_format
+      '#title': 'Contribuciones a la comunidad'
+      '#description': '<p>¿Este proyecto ha generado contribuciones al ecosistema de Drupal? Por ejemplo: módulos, parches, documentación, traducciones...</p>'
+      '#allowed_formats':
+        webform: webform
+      '#hide_help': true
+      '#required': true
+    project_url:
+      '#type': url
+      '#title': URL
+      '#description': '<p>URL del proyecto</p>'
+      '#required': true
+    screenshots:
+      '#type': webform_image_file
+      '#title': 'Capturas de pantalla'
+      '#multiple': 5
+      '#description': '<p>Sube de 1 a 5 capturas de pantalla del proyecto</p>'
+      '#sanitize': true
+    video:
+      '#type': url
+      '#title': Vídeo
+      '#description': '<p>Enlace a un vídeo de presentación del proyecto (por ejemplo en YouTube o Vimeo)</p>'
+  client_page:
+    '#type': webform_wizard_page
+    '#title': Cliente
+    '#prev_button_label': Anterior
+    '#next_button_label': Siguiente
+    client:
+      '#type': textfield
+      '#title': Cliente
+      '#description': '<p>Nombre del cliente para el que se ha desarrollado el proyecto</p>'
+    client_logo:
+      '#type': webform_image_file
+      '#title': 'Logotipo del cliente'
+      '#sanitize': true
+  organization_page:
+    '#type': webform_wizard_page
+    '#title': Organización
+    '#prev_button_label': Anterior
+    '#next_button_label': Siguiente
+    organization:
+      '#type': textfield
+      '#title': Organización
+      '#required': true
+    organization_logo:
+      '#type': webform_image_file
+      '#title': 'Logotipo de la organización'
+      '#required': true
+    contact_name:
+      '#type': textfield
+      '#title': 'Nombre de la persona de contacto'
+      '#required': true
+    contact_email:
+      '#type': email
+      '#title': 'Correo electrónico de la persona de contacto'
+      '#required': true
+    contact_phone_number:
+      '#type': tel
+      '#title': 'Teléfono de contacto'
+      '#required': true
+    billing_email_address:
+      '#type': email
+      '#title': 'Correo electrónico de facturación'
+      '#required': true
 css: ''
 javascript: ''
 settings:
@@ -73,7 +138,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /formacion/inscripcion
+  page_submit_path: /splash-awards/enviar-proyecto
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
@@ -86,7 +151,7 @@ settings:
   form_confidential_message: ''
   form_disable_remote_addr: false
   form_convert_anonymous: false
-  form_prepopulate: true
+  form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
@@ -171,7 +236,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: '<p>Se ha registrado correctamente tu inscripción.</p>'
+  confirmation_message: '<p>Se ha registrado correctamente tu proyecto.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -248,33 +313,6 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  places:
-    id: options_limit
-    handler_id: places
-    label: 'Límite de plazas'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      element_key: trainings
-      limit: null
-      limits:
-        1: 20
-        2: 15
-        3: 15
-        4: 20
-      limit_reached_message: '@name is not available'
-      limit_source_entity: true
-      limit_user: false
-      option_none_action: disable
-      option_message_display: label
-      option_multiple_message: '[@remaining restantes]'
-      option_single_message: '[@remaining restante]'
-      option_none_message: '[@remaining restantes]'
-      option_unlimited_message: '[Unlimited]'
-      option_error_message: '@name: @label is unavailable.'
-      tableselect_header: ''
   mail:
     id: email
     handler_id: mail
@@ -299,7 +337,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Nueva inscripción en formación'
+      subject: 'Nuevo proyecto enviado para Splash Awards'
       body: '<p>Enviado el [webform_submission:created]</p><p>Enviado por: [webform_submission:user]</p><p>Los valores enviados son:</p><p>[webform_submission:values]</p>'
       excluded_elements: {  }
       ignore_access: false
