@@ -55,15 +55,18 @@ elements: |-
       'yes': Sí
       'no': 'No'
     '#required': true
-  trainings:
-    '#type': checkboxes
-    '#title': Formaciones
+  trainings_morning:
+    '#type': radios
+    '#title': 'Formaciones (mañana)'
     '#options':
       1: 'Introducción a Drupal CMS: Construye sitios sin saber programar'
-      2: 'Optimización de la Calidad en Drupal con GitLab CI: Integración Continua y Tests Automatizado'
-      3: 'Drupal 11, programar módulos con la nueva API de Hooks + arquitectura Vertical Slice'
-      4: 'Introduction to D11 Module development'
-    '#required': true
+      2: 'Introduction to D11 Module development'
+  trainings_afternoon:
+    '#type': radios
+    '#title': 'Formaciones (tarde)'
+    '#options':
+      1: 'Optimización de la Calidad en Drupal con GitLab CI: Integración Continua y Tests Automatizado'
+      2: 'Drupal 11, programar módulos con la nueva API de Hooks + arquitectura Vertical Slice'
 css: ''
 javascript: ''
 settings:
@@ -248,33 +251,6 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  places:
-    id: options_limit
-    handler_id: places
-    label: 'Límite de plazas'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      element_key: trainings
-      limit: null
-      limits:
-        1: 20
-        2: 15
-        3: 15
-        4: 20
-      limit_reached_message: '@name is not available'
-      limit_source_entity: true
-      limit_user: false
-      option_none_action: disable
-      option_message_display: label
-      option_multiple_message: '[@remaining restantes]'
-      option_single_message: '[@remaining restante]'
-      option_none_message: '[@remaining restantes]'
-      option_unlimited_message: '[Unlimited]'
-      option_error_message: '@name: @label is unavailable.'
-      tableselect_header: ''
   mail:
     id: email
     handler_id: mail
@@ -312,4 +288,54 @@ handlers:
       theme_name: ''
       parameters: {  }
       debug: false
+  places_morning:
+    id: options_limit
+    handler_id: places_morning
+    label: 'Límite de plazas (mañana)'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      element_key: trainings_morning
+      limit: null
+      limits:
+        1: 20
+        2: 20
+      limit_reached_message: '@name is not available'
+      limit_source_entity: true
+      limit_user: false
+      option_none_action: disable
+      option_message_display: label
+      option_multiple_message: '[@remaining restantes]'
+      option_single_message: '[@remaining restante]'
+      option_none_message: '[@remaining restantes]'
+      option_unlimited_message: '[Unlimited]'
+      option_error_message: '@name: @label is unavailable.'
+      tableselect_header: ''
+  places_afternoon:
+    id: options_limit
+    handler_id: places_afternoon
+    label: 'Límite de plazas (tarde)'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      element_key: trainings_afternoon
+      limit: null
+      limits:
+        1: 15
+        2: 15
+      limit_reached_message: '@name is not available'
+      limit_source_entity: true
+      limit_user: false
+      option_none_action: disable
+      option_message_display: label
+      option_multiple_message: '[@remaining restantes]'
+      option_single_message: '[@remaining restante]'
+      option_none_message: '[@remaining restantes]'
+      option_unlimited_message: '[Unlimited]'
+      option_error_message: '@name: @label is unavailable.'
+      tableselect_header: ''
 variants: {  }

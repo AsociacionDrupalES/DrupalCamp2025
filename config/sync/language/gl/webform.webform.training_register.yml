@@ -8,13 +8,13 @@ elements: |
     '#title': 'Es estudiante?'
     '#options':
       'no': Non
-  trainings:
-    '#title': Formacións
+  trainings_morning:
+    '#title': 'Formacións (mañá)'
+  trainings_afternoon:
+    '#title': 'Formacións (tarde)'
 settings:
   confirmation_message: '<p>Rexistrouse correctamente a túa inscrición.</p>'
 handlers:
-  places:
-    label: 'Límite de prazas'
   mail:
     settings:
       subject: 'Nova inscrición en formación'

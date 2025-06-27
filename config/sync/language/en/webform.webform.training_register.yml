@@ -19,17 +19,13 @@ elements: |
     '#title': 'Are you a student?'
     '#options':
       'yes': 'Yes'
-  trainings:
-    '#title': Trainings
+  trainings_morning:
+    '#title': 'Trainings (morning)'
+  trainings_afternoon:
+    '#title': 'Trainings (afternoon)'
 settings:
   confirmation_message: '<p>You have successfully registered.</p>'
 handlers:
-  places:
-    label: 'Seat limit'
-    settings:
-      option_multiple_message: '[@remaining remaining]'
-      option_single_message: '[@remaining remaining]'
-      option_none_message: '[@remaining remaining]'
   mail:
     label: 'Email address'
     settings:
