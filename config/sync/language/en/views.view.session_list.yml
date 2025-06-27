@@ -16,6 +16,27 @@ display:
           label: 'Propose a session'
         area_text_custom:
           content: 'There are no sessions submitted that meet this criteria.'
+      filters:
+        field_is_training_value:
+          expose:
+            label: 'Is training'
+          group_info:
+            label: 'Is training'
+            group_items:
+              2:
+                title: 'Yes'
+        field_language_value:
+          expose:
+            label: Language
+        field_audience_target_id:
+          expose:
+            label: Audience
+        field_session_category_target_id:
+          expose:
+            label: Category
+        combine:
+          expose:
+            label: Search
       title: 'Submitted Sessions'
       fields:
         title:
@@ -29,27 +50,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      filters:
-        field_audience_target_id:
-          expose:
-            label: Audience
-        field_session_category_target_id:
-          expose:
-            label: Category
-        field_is_training_value:
-          expose:
-            label: 'Is training'
-          group_info:
-            label: 'Is training'
-            group_items:
-              2:
-                title: Yes
-        field_language_value:
-          expose:
-            label: Language
-        combine:
-          expose:
-            label: Search
     display_title: Default
   page_1:
     display_title: Page

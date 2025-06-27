@@ -1,10 +1,12 @@
 {% set attributes = variant ? attributes.addClass('card card--' ~ variant) : attributes.addClass('card card--default') %}
 {% set attributes = attributes.addClass(css_classes) %}
 <div {{ attributes }}>
-  {{ include(
-    'drupalcamp:title',
-    { text: title, html_tag: 'h2' },
-    with_context = false
-  ) }}
+  {% if title %}
+    {{ include(
+      'drupalcamp:title',
+      { text: title, html_tag: 'h2' },
+      with_context = false
+    ) }}
+  {% endif %}
   <div class="text text-formatted">{{ text }}</div>
 </div>

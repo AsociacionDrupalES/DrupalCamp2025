@@ -1,0 +1,68 @@
+title: 'Splash Awards: Submit Your Project'
+elements: |
+  project_information_page:
+    '#title': 'Project Information'
+    '#next_button_label': Next
+  titulo:
+    '#title': Title
+    '#description': '<p>Title or Project Name</p>'
+  categoria:
+    '#title': Category
+    '#description': '<p>Select the award category your project belongs to</p>'
+  launch_date:
+    '#title': 'Launch Date'
+    '#description': '<p>Date the project was publicly launched</p>'
+  summary:
+    '#title': Summary
+    '#description': '<p>Brief overview of the project</p>'
+    '#counter_maximum_message': '%d remaining'
+  project_description:
+    '#title': 'Project Description'
+    '#description': '<p>Explain the project goals, target audience, functionality, ...</p>'
+  challenges:
+    '#title': Challenges
+    '#description': '<p>Describe the main technical or functional challenges of the project and how they were solved</p>'
+  community_contributions:
+    '#title': 'Community Contributions'
+    '#description': '<p>Has this project contributed to the Drupal ecosystem? For example: modules, patches, documentation, translations...</p>'
+  project_url:
+    '#description': '<p>Project URL</p>'
+  screenshots:
+    '#title': Screenshots
+    '#description': '<p>Upload 1 to 5 screenshots of the project</p>'
+  video:
+    '#title': Video
+    '#description': '<p>Link to a video presentation of the project (e.g. on YouTube or Vimeo)</p>'
+  client_page:
+    '#title': Client
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+  client:
+    '#title': Client
+    '#description': '<p>Name of the client for whom the project was developed</p>'
+  client_logo:
+    '#title': 'Client Logo'
+  organization_page:
+    '#title': Organization
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+  organization:
+    '#title': Organization
+  organization_logo:
+    '#title': 'Organization Logo'
+  contact_name:
+    '#title': 'Contact Person Name'
+  contact_email:
+    '#title': "Contact Person's Email Address"
+  contact_phone_number:
+    '#title': 'Contact Phone Number'
+  billing_email_address:
+    '#title': 'Billing Email Address'
+settings:
+  confirmation_message: '<p>Your project has been successfully registered.</p>'
+handlers:
+  mail:
+    label: Email
+    settings:
+      subject: 'New Project Submitted for Splash Awards'
+      body: '<p>Submitted on [webform_submission:created]</p><p>Submitted by: [webform_submission:user]</p><p>Los valores enviados son:</p><p>[webform_submission:values]</p>'

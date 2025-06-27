@@ -1,0 +1,7 @@
+.webform-options-display-buttons label.webform-options-display-buttons-label {
+  border-radius: 10px;
+}
+.webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
+  background-color: color-mix(in srgb, var(--color--primary-light) 15%, transparent);
+  border-color: var(--color--primary-light);
+}

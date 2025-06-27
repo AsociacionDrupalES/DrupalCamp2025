@@ -13,4 +13,6 @@ settings:
         5:
           label: 'Con frecha'
         7:
+          label: 'Texto pequeno'
+        8:
           label: 'Píldoras en liña'

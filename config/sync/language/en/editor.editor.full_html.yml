@@ -2,22 +2,10 @@ settings:
   plugins:
     ckeditor5_codeBlock:
       languages:
-        -
+        0:
           label: 'Plain text'
-        - {  }
-        - {  }
-        - {  }
-        - {  }
-        -
+        5:
           label: Diff
-        - {  }
-        - {  }
-        - {  }
-        - {  }
-        - {  }
-        - {  }
-        - {  }
-        - {  }
     ckeditor5_style:
       styles:
         -
@@ -34,5 +22,7 @@ settings:
           label: 'With arrow'
         -
           label: 'Large text'
+        -
+          label: 'Small text'
         -
           label: 'Inline pills'

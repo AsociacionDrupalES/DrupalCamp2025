@@ -1,0 +1,13 @@
+.webform-type-webform-email-confirm {
+  margin-left: 0;
+  margin-right: 0;
+}
+.webform-type-webform-email-confirm .fieldset-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.webform-type-webform-email-confirm .fieldset-wrapper > div {
+  margin: 0;
+}

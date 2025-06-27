@@ -1,0 +1,11 @@
+uuid: 5501f640-d343-46ec-bb58-bf236a09c9e5
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - navigation
+id: navigation-user-links
+label: 'Navigation user links'
+description: 'User links to be used in Navigation'
+locked: true
