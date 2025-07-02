@@ -1,8 +1,11 @@
+.form-date,
 .form-email,
+.form-number,
+.form-select,
+.form-tel,
 .form-text,
 .form-textarea,
-.form-select,
-.form-number {
+.form-url {
   border: 1px solid var(--color--primary);
   border-radius: 7px;
   box-sizing: border-box;
@@ -12,23 +15,27 @@
   line-height: normal;
   max-width: 100%;
 }
-
+.form-date:focus,
+.form-date:focus-visible,
 .form-email:focus,
 .form-email:focus-visible,
+.form-number:focus,
+.form-number:focus-visible,
+.form-select:focus,
+.form-select:focus-visible,
+.form-tel:focus,
+.form-tel:focus-visible,
 .form-text:focus,
 .form-text:focus-visible,
 .form-textarea:focus,
 .form-textarea:focus-visible,
-.form-select:focus,
-.form-select:focus-visible,
-.form-number:focus,
-.form-number:focus-visible {
+.form-url:focus,
+.form-url:focus-visible {
   outline: 2px solid var(--color--primary-light);
-}
-
-.form-textarea {
-  padding: 20px;
 }
 .form-select {
   padding: 6px;
+}
+.form-textarea {
+  padding: 20px;
 }

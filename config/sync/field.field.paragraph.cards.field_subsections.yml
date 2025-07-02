@@ -25,6 +25,18 @@ settings:
       card: card
     negate: 0
     target_bundles_drag_drop:
+      accordion:
+        weight: 18
+        enabled: false
+      accordion_element:
+        weight: 19
+        enabled: false
+      brief_information:
+        weight: 20
+        enabled: false
+      brief_information_content:
+        weight: 21
+        enabled: false
       card:
         weight: 9
         enabled: true
@@ -40,13 +52,28 @@ settings:
       links:
         weight: 10
         enabled: false
+      paragraphs_set:
+        weight: 27
+        enabled: false
+      person_card:
+        weight: 28
+        enabled: false
+      person_cards:
+        weight: 29
+        enabled: false
       text:
         weight: 11
+        enabled: false
+      text_image:
+        weight: 31
         enabled: false
       ticket:
         weight: 7
         enabled: false
       tickets:
         weight: 12
+        enabled: false
+      view:
+        weight: 34
         enabled: false
 field_type: entity_reference_revisions
