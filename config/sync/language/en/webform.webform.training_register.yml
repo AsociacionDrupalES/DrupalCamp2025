@@ -1,0 +1,33 @@
+title: 'Take the next step: sign up for a training session'
+elements: |
+  first_name:
+    '#title': 'First Name'
+  last_name:
+    '#title': 'Last Name'
+  email:
+    '#title': 'Email address'
+    '#confirm__title': 'Confirm email address'
+  state:
+    '#title': Province
+  drupal_experience:
+    '#title': 'Experience with Drupal'
+    '#options':
+      basic: Basic
+      intermediate: Intermediate
+      advanced: Advanced
+  eres_estudiante:
+    '#title': 'Are you a student?'
+    '#options':
+      'yes': 'Yes'
+  trainings_morning:
+    '#title': 'Trainings (morning)'
+  trainings_afternoon:
+    '#title': 'Trainings (afternoon)'
+settings:
+  confirmation_message: '<p>You have successfully registered.</p>'
+handlers:
+  mail:
+    label: 'Email address'
+    settings:
+      subject: 'New registration for training'
+      body: '<p>Submitted on [webform_submission:created]</p><p>Submitted by: [webform_submission:user]</p><p>The submitted values are:</p><p>[webform_submission:values]</p>'

@@ -1,0 +1,50 @@
+title: 'Splash Awards: Envía o teu proxecto'
+elements: |
+  project_information_page:
+    '#title': 'Información do proxecto'
+    '#next_button_label': Seguinte
+  titulo:
+    '#description': '<p>Título ou nome do proxecto</p>'
+  categoria:
+    '#description': '<p>Selecciona a categoría do premio na que participa o teu proxecto</p>'
+  launch_date:
+    '#title': 'Data de lanzamento'
+    '#description': '<p>Data na que se lanzou publicamente o proxecto</p>'
+  summary:
+    '#title': Resumo
+    '#description': '<p>Breve descrición xeral do proxecto</p>'
+  project_description:
+    '#title': 'Descrición do proxecto'
+    '#description': '<p>Explica os obxectivos do proxecto, o público obxectivo, a funcionalidade, ...</p>'
+  challenges:
+    '#description': '<p>Describe os maiores desafíos técnicos ou funcionais do proxecto e como os resolviches</p>'
+  community_contributions:
+    '#title': 'Contribucións á comunidade'
+    '#description': '<p>Este proxecto xerou contribucións ao ecosistema de Drupal? Por exemplo: módulos, parches, documentación, traducións...</p>'
+  project_url:
+    '#description': '<p>URL do proxecto</p>'
+  screenshots:
+    '#description': '<p>Sobe de 1 a 5 capturas de pantalla do proxecto</p>'
+  video:
+    '#description': '<p>Ligazón a un vídeo de presentación do proxecto (por exemplo en Youtube ou Vimeo)</p>'
+  client_page:
+    '#next_button_label': Seguinte
+  client:
+    '#description': '<p>Nome do cliente para o que se desenvolveu o proxecto</p>'
+  client_logo:
+    '#title': 'Logotipo do cliente'
+  organization_page:
+    '#next_button_label': Seguinte
+  organization_logo:
+    '#title': 'Logotipo da organización'
+  contact_name:
+    '#title': 'Nome da persoa de contacto'
+  contact_email:
+    '#title': 'Correo electrónico da persoa de contacto'
+settings:
+  confirmation_message: '<p>Rexistrouse correctamente o teu proxecto.</p>'
+handlers:
+  mail:
+    settings:
+      subject: 'Novo proxecto enviado para Splash Awards'
+      body: '<p>Enviado o [webform_submission:created]</p><p>Enviado por: [webform_submission:user]</p><p>Os valores enviados son:</p><p>[webform_submission:values]</p>'
