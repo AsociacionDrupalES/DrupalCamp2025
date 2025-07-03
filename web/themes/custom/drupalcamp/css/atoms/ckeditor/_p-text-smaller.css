@@ -1,4 +1,4 @@
 .p--text-smaller {
-  font-size: calc(var(--font-size) * 0.8);
-  line-height: calc(var(--font-line-height) * 0.8);
+  font-size: calc(var(--font-size) * 0.9);
+  line-height: calc(var(--font-line-height) * 0.9);
 }
