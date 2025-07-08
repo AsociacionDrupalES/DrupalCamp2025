@@ -6,7 +6,6 @@ dependencies:
     - field.storage.taxonomy_term.field_when
     - taxonomy.vocabulary.time_slot
   module:
-    - datetime_range
     - smart_date
     - taxonomy
     - user
@@ -77,11 +76,23 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_custom
+          type: smartdate_default
           settings:
             timezone_override: ''
-            date_format: 'D M j, Y g:i a'
-            separator: to
+            format: compact
+            force_chronological: false
+            add_classes: false
+            time_wrapper: true
+            localize: false
+            parts:
+              start: start
+              end: end
+              duration: '0'
+            duration:
+              separator: ' | '
+              unit: ''
+              decimals: 2
+              suffix: h
           group_column: value
           group_columns: {  }
           group_rows: true

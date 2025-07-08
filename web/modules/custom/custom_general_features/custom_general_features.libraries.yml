@@ -1,0 +1,7 @@
+session-duplicate-detector:
+  version: 1.x
+  js:
+    js/session-duplicate-detector.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

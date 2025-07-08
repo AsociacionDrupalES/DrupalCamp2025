@@ -7,6 +7,7 @@ dependencies:
     - node.type.landing
     - paragraphs.paragraphs_type.accordion_element
     - paragraphs.paragraphs_type.brief_information_content
+    - paragraphs.paragraphs_type.schedule_slot
     - paragraphs.paragraphs_type.ticket
   module:
     - entity_reference_revisions
@@ -27,6 +28,7 @@ settings:
       ticket: ticket
       brief_information_content: brief_information_content
       accordion_element: accordion_element
+      schedule_slot: schedule_slot
     negate: 1
     target_bundles_drag_drop:
       accordion:
@@ -65,6 +67,12 @@ settings:
       person_cards:
         weight: -32
         enabled: false
+      schedule:
+        weight: 20
+        enabled: false
+      schedule_slot:
+        weight: 33
+        enabled: true
       text:
         weight: -25
         enabled: false

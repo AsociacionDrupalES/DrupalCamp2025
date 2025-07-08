@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+}

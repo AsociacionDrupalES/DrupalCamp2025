@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Session Schedule Card component.
+ *
+ * @param {string} title - The title of the time slot group
+ * @param {array} items - Array of session items to display
+ * @param {object} options - Grid display options
+ */
+#}
+
+{%
+  set classes = [
+    'session-schedule-slot',
+    'session-schedule-slot--' ~ options.alignment|default('horizontal'),
+  ]
+%}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if title %}
+    <div class="session-schedule-slot__title">
+      <h3>{{ title }}</h3>
+    </div>
+  {% endif %}
+  <div class="session-schedule-slot__content">{{ items }}</div>
+</div>

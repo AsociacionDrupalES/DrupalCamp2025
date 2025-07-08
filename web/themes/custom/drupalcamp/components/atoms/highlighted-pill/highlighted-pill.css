@@ -1,0 +1,59 @@
+.highlighted-pill {
+  border-radius: 20px;
+  border: 2px solid var(--color--primary);
+  font-family: var(--font-family-h);
+  font-size: 1.667em;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.highlighted-pill--active {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+}
+
+.highlighted-pill--has-link {
+  text-decoration: none;
+}
+
+.highlighted-pill--has-link:hover {
+  text-decoration: none;
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+  border-color: var(--color--primary);
+  text-shadow: 0 0 1px var(--color--primary);
+}
+
+@media (min-width: 768px) {
+  .highlighted-pill {
+    padding: 6px 60px;
+  }
+}
+
+/* Variants */
+.highlighted-pill--size-tiny {
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: 1em;
+  text-shadow: 0 0 1px var(--color--primary);
+}
+
+.highlighted-pill--color-secondary {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+  border-color: var(--color--secondary);
+}
+
+.highlighted-pill--color-primary {
+  background-color: var(--color--primary);
+  color: #ffffff;
+  border-color: var(--color--primary);
+}
+
+.highlighted-pill--primary-light {
+  background-color: var(--color--primary-light);
+  color: var(--color--primary);
+  border-color: var(--color--primary-light);
+}

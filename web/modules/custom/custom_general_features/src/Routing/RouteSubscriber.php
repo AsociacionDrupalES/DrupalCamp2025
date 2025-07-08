@@ -43,6 +43,11 @@ class RouteSubscriber extends RouteSubscriberBase {
     if ($route instanceof Route) {
       $collection->add('entity.taxonomy_term.event_platform:sessions', $route);
     }
+
+    $route = $this->getTermSessionScheduleRoute($taxonomy_term_definition);
+    if ($route instanceof Route) {
+      $collection->add('entity.taxonomy_term.event_platform:schedule', $route);
+    }
   }
 
   /**
@@ -62,6 +67,33 @@ class RouteSubscriber extends RouteSubscriberBase {
       ->addDefaults([
         '_controller' => '\Drupal\custom_general_features\Controller\TaxonomyTermController::redirectToSessions',
         '_title' => 'Link to sessions list',
+      ])
+      ->addRequirements([
+        '_permission' => 'access content',
+      ])
+      ->setOption('parameters', [
+        'taxonomy_term' => ['type' => 'entity:taxonomy_term'],
+      ]);
+    return $route;
+  }
+
+  /**
+   * Get the route for the session schedule.
+   *
+   * @param \Drupal\Core\Entity\EntityTypeInterface $taxonomy_term_definition
+   *   The taxonomy terms entity type definition.
+   */
+  protected function getTermSessionScheduleRoute(EntityTypeInterface $taxonomy_term_definition): ?Route {
+    $event_platform_schedule = $taxonomy_term_definition->getLinkTemplate('event_platform:schedule');
+    if (is_bool($event_platform_schedule)) {
+      return NULL;
+    }
+
+    $route = new Route($event_platform_schedule);
+    $route
+      ->addDefaults([
+        '_controller' => '\Drupal\custom_general_features\Controller\TaxonomyTermController::redirectToSchedule',
+        '_title' => 'Link to schedule page',
       ])
       ->addRequirements([
         '_permission' => 'access content',

@@ -8,6 +8,7 @@
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Template\Attribute;
 use Drupal\node\NodeInterface;
 
 /**
@@ -27,7 +28,7 @@ function custom_general_features_entity_create_access(AccountInterface $account,
 
   if (!$submission_deadline->isSubmissionAllowed()) {
     return AccessResult::forbidden('The deadline for the call for papers has passed.')
-      ->addCacheableDependency('config_pages:event_details');
+      ->addCacheableDependency(\Drupal::config('config_pages.event_details'));
   }
 
   return AccessResult::neutral();
@@ -41,4 +42,113 @@ function custom_general_features_node_view(array &$build, NodeInterface $entity,
   if ($view_mode === 'teaser' && $entity->getType() === 'featured_speaker') {
     unset($build['title']);
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_general_features_preprocess_views_view_grid_responsive__session_schedule(array &$variables): void {
+  /** @var \Drupal\Core\Template\Attribute|null $attributes */
+  $attributes = &$variables['content_attributes'];
+  if (!$attributes instanceof Attribute) {
+    $attributes = new Attribute();
+  }
+
+  $variables['#attached']['library'][] = 'custom_general_features/session-duplicate-detector';
+
+  $first_row = reset($variables['rows']);
+  /** @var \Drupal\views\ResultRow $row */
+  $row = $first_row['#row'];
+  $term = reset($row->_relationship_entities);
+  $attributes->setAttribute('id', 'slot-' . ($term ? $term->id() : 'xx'));
+
+  if (!$color = _custom_general_features_has_custom_color($variables)) {
+    return;
+  }
+  $attributes->addClass('session-schedule-slot--special');
+  if ($color !== 'transparent') {
+    $attributes->addClass('session-schedule-slot--with-background');
+    $attributes->addClass('session-schedule-slot--' . $color);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_general_features_preprocess_paragraph__schedule_slot(array &$variables): void {
+  $attributes = &$variables['attributes'];
+  if (!$attributes instanceof Attribute) {
+    $attributes = new Attribute();
+  }
+
+  /** @var \Drupal\paragraphs\ParagraphInterface $paragraph */
+  $paragraph = $variables['elements']['#paragraph'];
+  $color = $paragraph->getBehaviorSetting('custom_color', 'color');
+  if ($color === 'transparent') {
+    return;
+  }
+
+  $variables['elements']['#fieldgroups']['group_slot']->format_settings['ui_patterns']['props']['attributes']['source']['value'] = 'class="session-schedule-slot--special session-schedule-slot--with-background session-schedule-slot--' . $color . '"';
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function custom_general_features_preprocess_node(array &$variables): void {
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $variables['elements']['#node'];
+  if ($node->bundle() !== 'session') {
+    return;
+  }
+
+  /** @var \Drupal\custom_general_features\SchedulePublicationService $schedule_service */
+  $schedule_service = \Drupal::service('custom_general_features.schedule_publication');
+  $back_route = 'view.session_schedule.page_1';
+
+  if (!$schedule_service->isSchedulePublished()) {
+    $back_route = 'view.session_list.page_1';
+
+    if (isset($variables['content']['field_r'])) {
+      $variables['content']['field_r']['#access'] = FALSE;
+    }
+
+    if (isset($variables['content']['field_time_slot'])) {
+      $variables['content']['field_time_slot']['#access'] = FALSE;
+    }
+  }
+
+  if (!empty($variables['elements']['#fieldgroups']['group_card_detail']) &&
+    $variables['elements']['#fieldgroups']['group_card_detail']->format_settings['ui_patterns']['component_id'] === 'drupalcamp:session_detail') {
+    $variables['elements']['#fieldgroups']['group_card_detail']->format_settings['ui_patterns']['props']['back_route'] = [
+      'source_id' => 'textfield',
+      'source' => [
+        'value' => $back_route,
+      ],
+    ];
+  }
+}
+
+/**
+ * Determines if there is a custom color present in the row variables.
+ *
+ * @param array $variables
+ *   An associative array of variables, typically containing 'rows', where
+ *   each row includes a result object representing a node entity.
+ *
+ * @return bool|string
+ *   Returns the custom color string if a valid 'special_session' node with
+ *   a non-empty 'field_color' field is found. Returns FALSE otherwise.
+ */
+function _custom_general_features_has_custom_color(array $variables): bool|string {
+  foreach ($variables['rows'] as $row) {
+    /** @var \Drupal\views\ResultRow $result_row */
+    $result_row = $row['#row'];
+    /** @var \Drupal\node\NodeInterface $node */
+    $node = $result_row->_entity;
+    if ($node->bundle() === 'special_session' && !$node->get('field_color')->isEmpty()) {
+      $color = $node->get('field_color')->getString();
+      return $color ?: FALSE;
+    }
+  }
+  return FALSE;
 }

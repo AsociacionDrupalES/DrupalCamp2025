@@ -1,0 +1,16 @@
+uuid: 3d51fd55-bbf9-457c-b61e-28ee548d1cb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.special_session
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.special_session
+target_entity_type_id: node
+target_bundle: special_session
+default_langcode: site_default
+language_alterable: false

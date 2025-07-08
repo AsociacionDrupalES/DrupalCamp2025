@@ -1,0 +1,85 @@
+uuid: 6455e7a9-ef16-4735-af54-5c6fa95dc5e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subsections
+    - paragraphs.paragraphs_type.schedule
+    - paragraphs.paragraphs_type.schedule_slot
+  module:
+    - entity_reference_revisions
+id: paragraph.schedule.field_subsections
+field_name: field_subsections
+entity_type: paragraph
+bundle: schedule
+label: 'Elementos del programa'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      schedule_slot: schedule_slot
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 16
+        enabled: false
+      accordion_element:
+        weight: 15
+        enabled: false
+      brief_information:
+        weight: 11
+        enabled: false
+      brief_information_content:
+        weight: 12
+        enabled: false
+      card:
+        weight: 9
+        enabled: false
+      cards:
+        weight: 10
+        enabled: false
+      hero:
+        weight: 8
+        enabled: false
+      images:
+        weight: 9
+        enabled: false
+      links:
+        weight: 10
+        enabled: false
+      paragraphs_set:
+        weight: 17
+        enabled: false
+      person_card:
+        weight: 31
+        enabled: false
+      person_cards:
+        weight: 32
+        enabled: false
+      schedule:
+        weight: 20
+        enabled: false
+      schedule_slot:
+        weight: 33
+        enabled: true
+      text:
+        weight: 11
+        enabled: false
+      text_image:
+        weight: 26
+        enabled: false
+      ticket:
+        weight: 7
+        enabled: false
+      tickets:
+        weight: 12
+        enabled: false
+      view:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

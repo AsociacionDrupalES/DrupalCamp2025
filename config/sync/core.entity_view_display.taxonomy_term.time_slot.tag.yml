@@ -1,0 +1,107 @@
+uuid: 87dbb83f-3bd3-4344-917c-620cced77ad6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.tag
+    - field.field.taxonomy_term.time_slot.field_when
+    - taxonomy.vocabulary.time_slot
+  module:
+    - field_group
+    - layout_builder
+    - nomarkup
+    - smart_date
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_pill:
+      children:
+        - field_when
+      label: Pill
+      parent_name: ''
+      region: content
+      weight: 20
+      format_type: component_formatter
+      format_settings:
+        show_empty_fields: '1'
+        ui_patterns:
+          component_id: 'drupalcamp:tag'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            background_color:
+              source_id: select
+              source:
+                value: ''
+            size:
+              source_id: select
+              source:
+                value: ''
+            show_link:
+              source_id: checkbox
+              source:
+                value: 0
+          slots:
+            name:
+              sources:
+                -
+                  source_id: field_group_child
+                  source:
+                    field_group_child: field_when
+                  _weight: '0'
+            url:
+              sources:
+                -
+                  source_id: entity_link
+                  source:
+                    template: 'event_platform:schedule'
+                    absolute: 0
+                  _weight: '0'
+        label_as_html: 0
+_core:
+  default_config_hash: MRey0oQSaPkSP65jd-sYL12Nk4cSye7-dkD7_UFnsok
+id: taxonomy_term.time_slot.tag
+targetEntityType: taxonomy_term
+bundle: time_slot
+mode: tag
+content:
+  field_when:
+    type: smartdate_custom
+    label: hidden
+    settings:
+      separator: ' - '
+      time_diff:
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: '2'
+        refresh: '60'
+        enabled: 0
+        description: ''
+      date_format: l
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      join: ' a '
+      time_format: 'H:i'
+      time_hour_format: ''
+      allday_label: 'All day'
+      date_first: '1'
+      ampm_reduce: '1'
+      site_time_toggle: 0
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true

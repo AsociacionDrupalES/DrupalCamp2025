@@ -1,0 +1,28 @@
+uuid: 088c4bc3-9c42-404f-a573-bc6f60f4fa63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.special_session
+  module:
+    - text
+id: node.special_session.body
+field_name: body
+entity_type: node
+bundle: special_session
+label: 'Texto a mostrar en programa'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Highlighted pill
+status: stable
+slots:
+  name:
+    title: Name
+  url:
+    title: URL
+props:
+  type: object
+  properties:
+    background_color:
+      type: string
+      title: Background color
+      enum:
+        - primary
+        - primary-light
+        - secondary
+    size:
+      type: string
+      title: Size
+      enum:
+        - tiny

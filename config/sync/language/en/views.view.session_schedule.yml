@@ -34,12 +34,5 @@ display:
         field_when_value:
           exception:
             title: All
-      filters:
-        field_audience_target_id:
-          expose:
-            label: Audience
-        field_session_category_target_id:
-          expose:
-            label: Category
       menu:
         title: Schedule

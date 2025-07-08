@@ -1,0 +1,47 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Session schedule slot
+description: "A component to display a session schedule slot with time slots and talks."
+status: stable
+dependencies:
+  - core/drupal
+  - core/jquery
+slots:
+  items:
+    title: Items
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Time Slot Title
+      description: "The title of the time slot group"
+    options:
+      type: object
+      title: Grid Options
+      description: "Grid display options"
+      properties:
+        alignment:
+          type: string
+          title: Alignment
+          description: "Grid alignment (horizontal or vertical)"
+          default: horizontal
+          enum: [horizontal, vertical]
+        columns:
+          type: integer
+          title: Columns
+          description: "Number of columns in the grid"
+          default: 2
+          minimum: 1
+          maximum: 4
+        cell_min_width:
+          type: integer
+          title: Minimum Cell Width
+          description: "Minimum width of grid cells in pixels"
+          default: 300
+          minimum: 100
+        grid_gutter:
+          type: integer
+          title: Grid Gutter
+          description: "Space between grid cells in pixels"
+          default: 20
+          minimum: 0
