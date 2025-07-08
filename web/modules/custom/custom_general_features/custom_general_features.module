@@ -48,7 +48,7 @@ function custom_general_features_node_view(array &$build, NodeInterface $entity,
  * Implements hook_preprocess_HOOK().
  */
 function custom_general_features_preprocess_views_view_grid_responsive__session_schedule(array &$variables): void {
-  /** @var \Drupal\Core\Template\Attribute $attributes */
+  /** @var \Drupal\Core\Template\Attribute|null $attributes */
   $attributes = &$variables['content_attributes'];
   if (!$attributes instanceof Attribute) {
     $attributes = new Attribute();
@@ -58,7 +58,7 @@ function custom_general_features_preprocess_views_view_grid_responsive__session_
   /** @var \Drupal\views\ResultRow $row */
   $row = $first_row['#row'];
   $term = reset($row->_relationship_entities);
-  $attributes->setAttribute('id', 'slot-' . $term->id());
+  $attributes->setAttribute('id', 'slot-' . ($term ? $term->id() : 'xx'));
 
   if (!$color = _custom_general_features_has_custom_color($variables)) {
     return;
@@ -78,6 +78,7 @@ function custom_general_features_preprocess_paragraph__schedule_slot(array &$var
   if (!$attributes instanceof Attribute) {
     $attributes = new Attribute();
   }
+
   /** @var \Drupal\paragraphs\ParagraphInterface $paragraph */
   $paragraph = $variables['elements']['#paragraph'];
   $color = $paragraph->getBehaviorSetting('custom_color', 'color');
@@ -86,6 +87,43 @@ function custom_general_features_preprocess_paragraph__schedule_slot(array &$var
   }
 
   $variables['elements']['#fieldgroups']['group_slot']->format_settings['ui_patterns']['props']['attributes']['source']['value'] = 'class="session-schedule-slot--special session-schedule-slot--with-background session-schedule-slot--' . $color . '"';
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function custom_general_features_preprocess_node(array &$variables): void {
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $variables['elements']['#node'];
+  if ($node->bundle() !== 'session') {
+    return;
+  }
+
+  /** @var \Drupal\custom_general_features\SchedulePublicationService $schedule_service */
+  $schedule_service = \Drupal::service('custom_general_features.schedule_publication');
+  $back_route = 'view.session_schedule.page_1';
+
+  if (!$schedule_service->isSchedulePublished()) {
+    $back_route = 'view.session_list.page_1';
+
+    if (isset($variables['content']['field_r'])) {
+      $variables['content']['field_r']['#access'] = FALSE;
+    }
+
+    if (isset($variables['content']['field_time_slot'])) {
+      $variables['content']['field_time_slot']['#access'] = FALSE;
+    }
+  }
+
+  if (!empty($variables['elements']['#fieldgroups']['group_card_detail']) &&
+    $variables['elements']['#fieldgroups']['group_card_detail']->format_settings['ui_patterns']['component_id'] === 'drupalcamp:session_detail') {
+    $variables['elements']['#fieldgroups']['group_card_detail']->format_settings['ui_patterns']['props']['back_route'] = [
+      'source_id' => 'textfield',
+      'source' => [
+        'value' => $back_route,
+      ],
+    ];
+  }
 }
 
 /**

@@ -11,6 +11,11 @@
   display: inline-block;
 }
 
+.highlighted-pill--active {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+}
+
 .highlighted-pill--has-link {
   text-decoration: none;
 }

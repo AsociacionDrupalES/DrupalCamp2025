@@ -22,7 +22,7 @@
  */
 #}
 <nav role="navigation" class="tabs-wrapper" aria-labelledby="primary-tabs-title" data-drupal-nav-primary-tabs>
-  <ul class="{{ options.classes }}">
+  <ul class="{{ options.classes.addClass('tabs') }}">
     {% for row in rows %}
       <li class="tabs__tab">
         {{ include ('drupalcamp:highlighted-pill', {

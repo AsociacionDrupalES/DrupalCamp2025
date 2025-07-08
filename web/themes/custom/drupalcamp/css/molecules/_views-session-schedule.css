@@ -1,0 +1,31 @@
+.view-session-schedule.view-display-id-attachment_1 {
+  margin-top: 54px;
+}
+
+.view-session-schedule.view-display-id-attachment_1 nav ul {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin-block-start: 24px;
+  margin-block-end: 24px;
+}
+
+.view-session-schedule.view-display-id-attachment_1 nav ul li {
+  flex: 1;
+}
+
+.view-session-schedule.view-display-id-attachment_1 nav ul li a {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .view-session-schedule.view-display-id-attachment_1 nav ul li {
+    flex: none;
+  }
+
+  .view-session-schedule.view-display-id-attachment_1 nav ul li a {
+    width: auto;
+    padding: 6px 60px;
+  }
+}

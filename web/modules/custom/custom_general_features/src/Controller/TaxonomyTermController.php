@@ -61,8 +61,11 @@ class TaxonomyTermController extends ControllerBase {
       ];
     }
 
+    $smart_date_value = $taxonomy_term->get('field_when')->get(0)?->getValue();
+    $start_date = $smart_date_value['value'];
+
     $url = Url::fromRoute("view.$view_id.$view_display", [
-      'arg_0' => '2025-09-19',
+      'arg_0' => date('Y-m-d', $start_date),
     ], $options)->toString();
     return new RedirectResponse($url);
   }

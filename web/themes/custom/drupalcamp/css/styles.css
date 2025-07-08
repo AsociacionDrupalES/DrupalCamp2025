@@ -42,11 +42,12 @@
 @import url('molecules/paragraphs/_text-image.css');
 @import url('molecules/paragraphs/_ticket.css');
 @import url('molecules/_language-switcher--block.css');
+@import url('molecules/_form.css');
 @import url('molecules/_main.css');
 @import url('molecules/_messages.css');
 @import url('molecules/_quick-actions-menu--block.css');
 @import url('molecules/_sponsors--block.css');
-@import url('molecules/_form.css');
+@import url('molecules/_views-session-schedule.css');
 
 /* Organisms */
 @import url('organisms/_admin-toolbar.css');
