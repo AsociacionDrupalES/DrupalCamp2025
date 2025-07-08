@@ -155,7 +155,8 @@
         ],
         "patches": {
             "drupal/event_platform": {
-                "Add support to multiple categories in session content type": "./patches/scheduler-support-multiple-categories.patch"
+                "Add support to multiple categories in session content type": "./patches/scheduler-support-multiple-categories.patch",
+                "Order slot times by weight in scheduler": "./patches/scheduler-order-slots-by-weight.patch"
             },
             "drupal/field_group": {
                 "#3495221: Add $form and $form_state parameters to formatter plugins' settingsForm method Add $form and $form_state parameters to formatter plugins' settingsForm method": "https://www.drupal.org/files/issues/2024-12-20/3495221-4.patch"
