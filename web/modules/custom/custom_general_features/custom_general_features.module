@@ -54,6 +54,8 @@ function custom_general_features_preprocess_views_view_grid_responsive__session_
     $attributes = new Attribute();
   }
 
+  $variables['#attached']['library'][] = 'custom_general_features/session-duplicate-detector';
+
   $first_row = reset($variables['rows']);
   /** @var \Drupal\views\ResultRow $row */
   $row = $first_row['#row'];
