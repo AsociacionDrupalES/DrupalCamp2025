@@ -11,6 +11,7 @@ dependencies:
     - field.field.config_pages.event_details.field_header_cta
     - field.field.config_pages.event_details.field_homepage_media_cta
     - field.field.config_pages.event_details.field_hompage_description_text
+    - field.field.config_pages.event_details.field_schedule_published
     - field.field.config_pages.event_details.field_session_submission_deadlin
   module:
     - datetime
@@ -96,6 +97,13 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_schedule_published:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_session_submission_deadlin:
     type: datetime_default

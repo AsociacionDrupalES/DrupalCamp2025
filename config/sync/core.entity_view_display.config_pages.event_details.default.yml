@@ -11,6 +11,7 @@ dependencies:
     - field.field.config_pages.event_details.field_header_cta
     - field.field.config_pages.event_details.field_homepage_media_cta
     - field.field.config_pages.event_details.field_hompage_description_text
+    - field.field.config_pages.event_details.field_schedule_published
     - field.field.config_pages.event_details.field_session_submission_deadlin
   module:
     - datetime
@@ -89,6 +90,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_schedule_published:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_session_submission_deadlin:
     type: datetime_default
