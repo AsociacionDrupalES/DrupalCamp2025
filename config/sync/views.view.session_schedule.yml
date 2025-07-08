@@ -3,12 +3,11 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.schedule
     - field.storage.taxonomy_term.field_when
     - node.type.session
+    - node.type.special_session
     - system.menu.main
-    - taxonomy.vocabulary.session_audience
-    - taxonomy.vocabulary.session_category
   module:
     - node
     - smart_date
@@ -30,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Tarea programada'
+      title: Programa
       fields:
         field_when:
           id: field_when
@@ -88,7 +87,17 @@ display:
             format: time_only
             force_chronological: false
             add_classes: false
-            time_wrapper: true
+            time_wrapper: false
+            localize: false
+            parts:
+              start: start
+              end: '0'
+              duration: '0'
+            duration:
+              separator: ' | '
+              unit: ''
+              decimals: 2
+              suffix: h
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -149,7 +158,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view_mode: teaser
+          view_mode: schedule
       pager:
         type: none
         options:
@@ -305,15 +314,17 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid_responsive
         options:
           grouping:
             -
               field: field_when
               rendered: true
               rendered_strip: false
-          row_class: ''
-          default_row_class: false
+          columns: 4
+          cell_min_width: 250
+          grid_gutter: 10
+          alignment: horizontal
       row:
         type: fields
         options:
@@ -340,7 +351,20 @@ display:
           plugin_id: standard
           required: true
       use_ajax: false
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 1</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 2</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 3</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Workshops</div>\r\n        </div>\r\n    </div>\r\n</div>"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -473,7 +497,7 @@ display:
             count: 0
             override: 0
             items_per_page: '25'
-            classes: 'tabs tabs--primary'
+            classes: ''
           summary:
             sort_order: asc
             number_of_records: 0
@@ -483,7 +507,7 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
-          format: 'M j'
+          format: 'j M'
           granularity: day
       filters:
         status:
@@ -522,7 +546,9 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        header: false
       display_description: ''
+      header: {  }
       display_extenders: {  }
       displays:
         page_1: page_1
@@ -596,35 +622,27 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
             session: session
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_audience_target_id:
-          id: field_audience_target_id
-          table: node__field_audience
-          field: field_audience_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
+            special_session: special_session
           group: 1
-          exposed: true
+          exposed: false
           expose:
-            operator_id: field_audience_target_id_op
-            label: Audiencia
+            operator_id: ''
+            label: ''
             description: ''
             use_operator: false
-            operator: field_audience_target_id_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: audience
+            identifier: ''
             required: false
             remember: false
             multiple: false
@@ -643,57 +661,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          vid: session_audience
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_session_category_target_id:
-          id: field_session_category_target_id
-          table: node__field_session_category
-          field: field_session_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_session_category_target_id_op
-            label: Categoría
-            description: ''
-            use_operator: false
-            operator: field_session_category_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_session_category_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: session_category
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:

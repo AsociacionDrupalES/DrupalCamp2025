@@ -1,0 +1,35 @@
+uuid: 7c8bcd72-ceab-4e02-a9da-da02488b6802
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.special_session.body
+    - field.field.node.special_session.field_color
+    - field.field.node.special_session.field_time_slot
+    - node.type.special_session
+  module:
+    - text
+    - user
+id: node.special_session.teaser
+targetEntityType: node
+bundle: special_session
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_color: true
+  field_time_slot: true
+  langcode: true

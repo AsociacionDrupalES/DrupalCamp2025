@@ -1,0 +1,22 @@
+uuid: dbd00cf0-e900-454b-ba0d-40e683ec2291
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room
+  module:
+    - text
+id: taxonomy_term.room.default
+targetEntityType: taxonomy_term
+bundle: room
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

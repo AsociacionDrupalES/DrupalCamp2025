@@ -1,0 +1,21 @@
+uuid: fad5df0e-e48e-49d1-a647-c65a921c55f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - config_pages.type.event_details
+    - field.storage.config_pages.field_schedule_published
+id: config_pages.event_details.field_schedule_published
+field_name: field_schedule_published
+entity_type: config_pages
+bundle: event_details
+label: 'Programa publicado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Sí
+  off_label: 'No'
+field_type: boolean

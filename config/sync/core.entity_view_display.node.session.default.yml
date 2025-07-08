@@ -230,7 +230,7 @@ content:
     third_party_settings:
       nomarkup:
         enabled: true
-        separator: '|'
+        separator: ''
         referenced_entity: '0'
     weight: 4
     region: content

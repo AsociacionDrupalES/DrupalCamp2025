@@ -5,9 +5,6 @@ display:
     display_options:
       fields:
         field_when:
-          settings:
-            date_format: 'D M j, Y g:i a'
-            separator: to
           separator: ', '
       pager:
         options:

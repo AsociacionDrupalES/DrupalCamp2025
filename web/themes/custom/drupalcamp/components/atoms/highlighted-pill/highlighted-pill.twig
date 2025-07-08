@@ -1,0 +1,24 @@
+{% if url %}
+  {% set attributes = attributes.addClass(['highlighted-pill--has-link']) %}
+{% endif %}
+{% if background_color %}
+  {% set attributes = attributes.addClass(['highlighted-pill--color-' ~ background_color]) %}
+{% endif %}
+{% if size %}
+  {% set attributes = attributes.addClass(['highlighted-pill--size-' ~ size]) %}
+{% endif %}
+{% if active %}
+  {% set attributes = attributes.addClass(['highlighted-pill--active']) %}
+{% endif %}
+
+{% if url %}
+  <a href="{{ url }}" {{ attributes.addClass('highlighted-pill') }}>
+{% else %}
+  <div {{ attributes.addClass('highlighted-pill') }}>
+{% endif %}
+    {{ name }}
+{% if url %}
+  </a>
+{% else %}
+  </div>
+{% endif %}

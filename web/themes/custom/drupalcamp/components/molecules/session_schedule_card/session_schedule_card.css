@@ -1,0 +1,73 @@
+[data-component-id="drupalcamp:session_schedule_card"] {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: white;
+  width: 100%;
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:session_schedule_card"] {
+    height: 100%;
+  }
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__content a {
+  font-family: var(--font-family-h);
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__content a:hover {
+  text-decoration: underline;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers img {
+  display: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline {
+  margin: 0;
+  gap: 14px;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags {
+  gap: 12px;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags li,
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__pre-tags li:hover {
+  border: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__tags li {
+  font-size: 0.9rem;
+  padding: 0 8px;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline.session-schedule-card__tags li:hover {
+  border-color: var(--color--primary-light);
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] ul.ul--pills--inline li {
+  width: fit-content;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__type .highlighted-pill {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  [data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__type {
+    display: none;
+  }
+}

@@ -1,0 +1,126 @@
+diff --git a/event_platform_scheduler/js/scheduler.js b/event_platform_scheduler/js/scheduler.js
+--- a/event_platform_scheduler/js/scheduler.js
++++ b/event_platform_scheduler/js/scheduler.js	(date 1748350303153)
+@@ -62,17 +62,20 @@
+       }
+
+       function checkForConflicts(element) {
+-        const user = element.dataset.user;
++        const users = element.dataset.user.split(',');
+         const timeslot = element.dataset.timeslot;
+-        const conflicts = document.querySelectorAll('.session[data-user="' + user + '"]');
+-        if (conflicts) {
+-          conflicts.forEach((conflict) => {
+-            if (!conflict.dataset.timeslot || conflict.dataset.timeslot == timeslot) {
+-              return;
+-            }
+-            createConflict(conflict.dataset.timeslot, user);
+-          });
+-        }
++
++        users.forEach(user => {
++          const conflicts = document.querySelectorAll('.session[data-user*="' + user.trim() + '"]');
++          if (conflicts) {
++            conflicts.forEach((conflict) => {
++              if (!conflict.dataset.timeslot || conflict.dataset.timeslot == timeslot) {
++                return;
++              }
++              createConflict(conflict.dataset.timeslot, user.trim());
++            });
++          }
++        });
+       }
+
+       function createConflict(timeslot, user) {
+@@ -81,7 +84,7 @@
+         cells.forEach((cell) => {
+           cell.classList.add('conflict');
+           removeDragTarget(cell);
+-          if (session = cell.querySelector('.session[data-user="' + user + '"]')) {
++          if (session = cell.querySelector('.session[data-user*="' + user + '"]')) {
+             session.classList.add('theconflict');
+           }
+         });
+@@ -220,7 +223,11 @@
+           if (!value) {
+             return;
+           }
+-          if (session.dataset[index] != value) {
++
++          // Get the current values for this field
++          const currentValues = session.dataset[index].split(',');
++          // Check if the selected value exists in the current values
++          if (!currentValues.includes(value)) {
+             is_match = false;
+             return;
+           }
+===================================================================
+diff --git a/event_platform_scheduler/src/Controller/Scheduler.php b/event_platform_scheduler/src/Controller/Scheduler.php
+--- a/event_platform_scheduler/src/Controller/Scheduler.php
++++ b/event_platform_scheduler/src/Controller/Scheduler.php	(date 1748350080112)
+@@ -308,12 +308,17 @@
+     if ($sessions) {
+       foreach ($sessions as $session_id) {
+         $session = $storage->load($session_id);
+-        // @todo show list of presenters if set.
+-        $user_storage = $this->entityTypeManager->getStorage('user');
+-        $user = $user_storage->load($session->get('uid')->getString());
++        // Get speakers from field_speakers instead of uid
++        $speakers = [];
++        if ($session->hasField('field_speakers') && !$session->get('field_speakers')->isEmpty()) {
++          foreach ($session->get('field_speakers')->referencedEntities() as $speaker) {
++            $speakers[] = $speaker->label();
++          }
++        }
++        $speakers_text = !empty($speakers) ? implode(', ', $speakers) : $this->t('No speakers assigned');
+         $label = $this->t('@title by @presenters', [
+           '@title' => $session->label(),
+-          '@presenters' => $user->label(),
++          '@presenters' => $speakers_text,
+         ]);
+         // Only pass room and timeslot if both are populated.
+         $room = $session->get('field_r')->getString();
+@@ -334,7 +339,7 @@
+             'data-room' => $room,
+             'data-timeslot' => $timeslot,
+             'data-type' => $session->bundle(),
+-            'data-user' => $session->get('uid')->getString(),
++            'data-user' => str_replace(' ', '', $session->get('field_speakers')->getString()),
+           ],
+         ];
+         // Generate any appropriate filter values.
+@@ -348,18 +353,28 @@
+               continue;
+             }
+             // Add the data attribute.
+-            $output['sessions'][$session->id()]['#attributes']['data-' . $field] = $value;
++            $output['sessions'][$session->id()]['#attributes']['data-' . $field] = str_replace(' ', '', $value);
+             // If about to add the first value for a field, add an empty value.
+             if (!isset($filter_field_values[$field])) {
+               $filter_field_values[$field] = [
+                 '' => $this->t('- Any -'),
+               ];
+             }
+-            // Add the value and the taxonomy term name.
+-            $filter_field_values[$field][$value] = $taxonomy_storage->load($value)->label();
+-            // Use the session object to get the field label if necessary.
+-            if (!isset($filter_field_labels[$field])) {
+-              $filter_field_labels[$field] = $session->$field?->getFieldDefinition()->getLabel();
++
++            if (count($session->get($field)->getValue()) > 1) {
++              $values = explode(',', str_replace(' ', '', $value));
++            }
++            else {
++              $values = [$value];
++            }
++
++            foreach ($values as $value) {
++              // Add the value and the taxonomy term name.
++              $filter_field_values[$field][$value] = $taxonomy_storage->load(trim($value))->label();
++              // Use the session object to get the field label if necessary.
++              if (!isset($filter_field_labels[$field])) {
++                $filter_field_labels[$field] = $session->$field?->getFieldDefinition()->getLabel();
++              }
+             }
+           }
+         }

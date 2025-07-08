@@ -1,0 +1,36 @@
+uuid: c307a3c0-7b34-4a65-8b85-eeb867caa49b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.special_session.body
+    - field.field.node.special_session.field_color
+    - field.field.node.special_session.field_time_slot
+    - node.type.special_session
+  module:
+    - text
+    - user
+id: node.special_session.default
+targetEntityType: node
+bundle: special_session
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_time_slot: true
+  langcode: true
+  links: true

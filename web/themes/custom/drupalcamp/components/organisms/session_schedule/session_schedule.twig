@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Session Schedule Card component.
+ *
+ * @param {string} title - The title of the time slot group
+ * @param {array} items - Array of session items to display
+ * @param {object} options - Grid display options
+ */
+#}
+
+{%
+  set classes = [
+    'session-schedule',
+    'session-schedule--' ~ options.alignment|default('horizontal'),
+  ]
+%}
+
+{%
+  set grid_styles = [
+    '--session-schedule--column-count:' ~ options.columns|default(2) ~ ';',
+    '--session-schedule--cell-min-width:' ~ options.cell_min_width|default(300) ~ 'px;',
+    '--session-schedule--layout-gap:' ~ options.grid_gutter|default(20) ~ 'px;',
+  ]
+%}
+<div {{ attributes.addClass(classes) }} style="{{ grid_styles|join() }}">
+  {{ header }}
+  {{ items }}
+</div>

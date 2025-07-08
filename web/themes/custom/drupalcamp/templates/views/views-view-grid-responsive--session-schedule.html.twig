@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Default theme implementation for views to display rows in a responsive grid.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapping element.
+ * - title: The title of this group of rows.
+ * - view: The view object.
+ * - rows: The rows contained in this view.
+ * - options: The view plugin style options.
+ *   - alignment: a string set to either 'horizontal' or 'vertical'.
+ *   - columns: A number representing the max number of columns.
+ *   - cell_min_width: A number representing the minimum width of the grid cell.
+ *   - grid_gutter: A number representing the space between the grid cells.
+ * - items: A list of grid items.
+ *   - attributes: HTML attributes for each row or column.
+ *   - content: A list of columns or rows. Each row or column contains:
+ *     - attributes: HTML attributes for each row or column.
+ *     - content: The row or column contents.
+ *
+ * @see template_preprocess_views_view_grid_responsive()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ include('drupalcamp:session_schedule_slot', {
+  title: title,
+  items: items,
+  options: {
+    alignment: options.alignment,
+    columns: options.columns,
+    cell_min_width: options.cell_min_width,
+    grid_gutter: options.grid_gutter
+  },
+  attributes: content_attributes
+}, with_context = true) }}

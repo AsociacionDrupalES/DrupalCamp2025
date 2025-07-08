@@ -1,0 +1,20 @@
+diff --git a/web/modules/contrib/event_platform/event_platform_scheduler/src/Controller/Scheduler.php b/web/modules/contrib/event_platform/event_platform_scheduler/src/Controller/Scheduler.php
+--- a/event_platform_scheduler/src/Controller/Scheduler.php
++++ b/event_platform_scheduler/src/Controller/Scheduler.php	(date 1750936712469)
+@@ -85,10 +85,12 @@
+     ]);
+     $this->rooms = $rooms;
+
+-    $time_slots = $storage->loadByProperties([
+-      'vid' => 'time_slot',
+-    ]);
+-    $this->timeSlots = $time_slots;
++    $query = $storage->getQuery();
++    $query->condition('vid', 'time_slot');
++    $query->accessCheck();
++    $query->sort('weight');
++    $tids = $query->execute();
++    $this->timeSlots = $storage->loadMultiple($tids);
+
+     $output['wrapper'] = [
+       '#type' => 'container',

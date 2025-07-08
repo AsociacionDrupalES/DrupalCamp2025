@@ -1,0 +1,10 @@
+uuid: 2a973e64-9b3b-4e28-b8ce-4f57b59c32e3
+langcode: es
+status: true
+dependencies: {  }
+id: schedule
+label: Programa
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
