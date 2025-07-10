@@ -103,11 +103,34 @@ third_party_settings:
                   _weight: '0'
             type:
               sources:
-                -
-                  source_id: field_group_child
+                1:
+                  source_id: entity_reference
                   source:
-                    field_group_child: field_r
-                  _weight: '0'
+                    derivable_context: 'entity_reference:node:session:field_r:taxonomy_term:room'
+                    'entity_reference:node:session:field_r:taxonomy_term:room':
+                      value:
+                        sources:
+                          -
+                            source_id: entity_field
+                            source:
+                              derivable_context: 'field:taxonomy_term:room:name'
+                              'field:taxonomy_term:room:name':
+                                value:
+                                  sources:
+                                    -
+                                      source_id: 'field_formatter:taxonomy_term:room:name'
+                                      source:
+                                        type: string
+                                        third_party_settings:
+                                          nomarkup:
+                                            separator: '|'
+                                            referenced_entity: ''
+                                            enabled: 0
+                                        settings:
+                                          link_to_entity: 0
+                                      _weight: '0'
+                            _weight: '0'
+                  _weight: '1'
         label_as_html: 0
   layout_builder:
     enabled: false
