@@ -362,7 +362,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 1</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 2</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio 3</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Workshops</div>\r\n        </div>\r\n    </div>\r\n</div>"
+            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio: Balidea</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala 1: Hiberus</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala 2: AED</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Talleres</div>\r\n        </div>\r\n    </div>\r\n</div>"
             format: full_html
           tokenize: false
       footer: {  }
@@ -679,13 +679,13 @@ display:
       path: sessions/schedule
       menu:
         type: normal
-        title: 'Tarea programada'
+        title: Programa
         description: ''
         weight: 1
         enabled: false
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:dade5811-bed8-4038-a100-928ab74ad69d'
+        parent: ''
         context: '0'
     cache_metadata:
       max-age: -1
