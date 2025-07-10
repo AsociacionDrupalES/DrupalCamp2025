@@ -1,6 +1,6 @@
 <div {{ attributes }}>
   <div class="sidebar component-background-image component-background-color component-background-color-gray" style="--bg-img: url({{ '/' ~ active_theme_path() ~ '/images/noise.jpg'}});">
-    <a href="{{ path(back_route) }}" class="sidebar--back-button">{{ 'Back'|t }}</a>
+    <a href="{{ back_route ? path(back_route) : "#" }}" class="sidebar--back-button">{{ 'Back'|t }}</a>
     <div class="speakers">{{ speakers }}</div>
     <ul class="tags ul--pills--inline ul--pills--small">
       {% for tag in tags %}
