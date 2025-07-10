@@ -24,10 +24,12 @@
 }
 
 [data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers {
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 8px;
-  flex: 1;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers .profile {
+  display: inline-block;
 }
 
 [data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers .avatar {
