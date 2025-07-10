@@ -30,7 +30,12 @@
   flex: 1;
 }
 
-[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers img {
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers .avatar {
+  display: none;
+}
+
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers img,
+[data-component-id="drupalcamp:session_schedule_card"] .session-schedule-card__speakers svg {
   display: none;
 }
 
