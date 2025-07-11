@@ -136,10 +136,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: message
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Muchas gracias. Estaremos en contacto.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
