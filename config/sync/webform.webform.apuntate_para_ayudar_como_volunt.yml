@@ -9,13 +9,13 @@ uid: 1
 template: false
 archive: false
 id: apuntate_para_ayudar_como_volunt
-title: 'Apúntate para ayudar como voluntario en la Drupalcamp'
+title: 'Apúntate para ayudar como persona voluntaria en la DrupalCamp'
 description: ''
 categories: {  }
 elements: |-
   intro:
     '#type': processed_text
-    '#text': '<p>Con todos los voluntarios se hará una reunión y se organizarán los turnos y tareas a llevar a cabo durante la Camp.</p><p>Actividades de los voluntarios:</p><ul><li>Los voluntarios están en las salas, controlan el tiempo, avisando cuando falta 15 minutos, 10 minutos, y asegurándose de que las charlas empiecen a su hora.</li><li>Los voluntarios están en mesa de recepción (el primer día entregando la acreditación) y luego informando también.</li><li>Los voluntarios ayudan con imprevistos, ya sea ir a por una regleta, alicatar una pared, o resolver una issue del core que lleva tiempo dando guerra.</li></ul>'
+    '#text': '<p>Con todo el equipo de voluntariado se hará una reunión para organizar los turnos y tareas a llevar a cabo durante la Camp.</p><p>Actividades de los voluntarios y las voluntarias:</p><ul><li>El voluntariado está en las salas, controla el tiempo, avisando cuando faltan 15 minutos, 10 minutos..., asegurándose así de que se cumpla el horario previsto y las charlas empiecen y terminen a su hora.</li><li>El voluntariado está en la mesa de recepción, el primer día entregando la acreditación, y luego informando también ante cualquier duda de las personas asistentes.</li><li>El voluntariado ayuda con imprevistos, ya sea ir a por una regleta, alicatar una pared 😜 o resolver una issue del core que lleva tiempo dando guerra.</li></ul>'
     '#format': basic_html
   nombre:
     '#type': textfield
