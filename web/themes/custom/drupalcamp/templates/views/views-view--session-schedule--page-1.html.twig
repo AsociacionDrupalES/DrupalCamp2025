@@ -59,7 +59,6 @@
 
   {% if rows %}
     {{ include ('drupalcamp:session_schedule', {
-      header: header,
       items: rows,
       attributes: attributes
     }, with_context = true) }}

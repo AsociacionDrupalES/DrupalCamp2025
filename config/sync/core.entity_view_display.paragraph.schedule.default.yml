@@ -46,19 +46,16 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
-            title:
-              source_id: textfield
-              source:
-                value: ''
             options: {  }
           slots:
-            header:
+            title:
               sources:
                 -
                   source_id: field_group_child
                   source:
                     field_group_child: field_title
                   _weight: '0'
+            header: {  }
             items:
               sources:
                 -

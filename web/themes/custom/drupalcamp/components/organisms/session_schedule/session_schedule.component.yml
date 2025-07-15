@@ -6,6 +6,9 @@ dependencies:
   - core/drupal
   - core/jquery
 slots:
+  title:
+    title: Title
+    description: "The title of the schedule"
   header:
     title: Header
   items:
@@ -13,10 +16,6 @@ slots:
 props:
   type: object
   properties:
-    title:
-      type: string
-      title: Time Slot Title
-      description: "The title of the time slot group"
     options:
       type: object
       title: Grid Options

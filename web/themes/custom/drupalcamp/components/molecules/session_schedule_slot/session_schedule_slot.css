@@ -97,10 +97,6 @@
   padding: 18px;
 }
 
-.session-schedule-slot--special.session-schedule-slot--with-background .session-schedule-slot__title {
-  width: auto;
-}
-
 .session-schedule-slot--special.session-schedule-slot--with-background .session-schedule-slot__title h3 {
   writing-mode: lr;
   padding: 10px 16px 6px;
@@ -108,14 +104,22 @@
 
 .session-schedule-slot--special .session-schedule-slot__content {
   grid-template-columns: 1fr;
-  align-items: center;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .session-schedule-slot--special.session-schedule-slot--with-background .session-schedule-slot__title {
+    width: auto;
+  }
 }
 
 @media (min-width: 960px) {
   .session-schedule-slot--special.session-schedule-slot--with-background {
     padding: 18px 0;
   }
-
 }
 
 .session-schedule-slot--primary,
