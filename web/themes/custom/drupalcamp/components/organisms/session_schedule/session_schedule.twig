@@ -23,6 +23,7 @@
     '--session-schedule--layout-gap:' ~ options.grid_gutter|default(20) ~ 'px;',
   ]
 %}
+{% if title %}<div class="title-bar">{{ title }}</div>{% endif %}
 <div {{ attributes.addClass(classes) }} style="{{ grid_styles|join() }}">
   {{ header }}
   {{ items }}

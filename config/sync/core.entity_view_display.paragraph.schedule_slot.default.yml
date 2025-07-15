@@ -30,7 +30,7 @@ third_party_settings:
             attributes:
               source_id: attributes
               source:
-                value: 'id="prueba"'
+                value: 'class="session-schedule-slot--special"'
             title:
               source_id: entity_field
               source:

@@ -39,6 +39,7 @@
 @import url('molecules/paragraphs/_links.css');
 @import url('molecules/paragraphs/_person-cards.css');
 @import url('molecules/paragraphs/_schedule-slot.css');
+@import url('molecules/paragraphs/_session-schedule.css');
 @import url('molecules/paragraphs/_text-image.css');
 @import url('molecules/paragraphs/_ticket.css');
 @import url('molecules/_language-switcher--block.css');

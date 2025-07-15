@@ -5,6 +5,7 @@
   border: 2px solid var(--color--primary-light);
   border-radius: 12px;
   padding: 20px;
+  --font-size-h3: 1.4em;
 }
 
 .session-schedule p {
@@ -18,7 +19,9 @@
 
 .session-schedule-slot.session-schedule--header .highlighted-pill,
 .session-schedule-slot .session-schedule-card__type .highlighted-pill {
-  font-size: var(--session-schedule-header-font-size);
+  font-family: var(--font-family-h);
+  font-size: var(--session-schedule-hour-column-font-size);
+  font-weight: normal;
   padding: 6px 20px;
 }
 
@@ -26,5 +29,11 @@
   .session-schedule-slot.session-schedule--header {
     display: flex;
     border-top: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .session-schedule-slot.session-schedule--header .highlighted-pill {
+    --session-schedule-hour-column-font-size: 1.3rem;
   }
 }

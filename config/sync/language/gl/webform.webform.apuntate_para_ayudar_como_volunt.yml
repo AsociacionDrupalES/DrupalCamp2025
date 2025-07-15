@@ -1,0 +1,10 @@
+title: 'Apúntate para axudar como persoa voluntaria na DrupalCamp'
+elements: |
+  intro:
+    '#text': '<p>Con todo o equipo de voluntariado farase unha reunión para organizar as quendas e tarefas a levar a cabo durante a Camp.</p><p>Actividades dos voluntarios e as voluntarias:</p><ul><li>O voluntariado está nas salas, controla o tempo, avisando cando faltan 15 minutos, 10 minutos..., asegurándose así de que se cumpra o horario previsto e as charlas empecen e terminen á súa hora.</li><li>O voluntariado está na mesa de recepción, o primeiro día entregando a acreditación, e logo informando tamén ante calquera dúbida das persoas asistentes.</li><li>O voluntariado axuda con imprevistos, xa sexa ir por unha tira de enchufes, alicatar unha parede 😜 ou resolver unha <em>issue </em>do <em>core </em>que leva tempo dando guerra.</li></ul>'
+  nombre:
+    '#title': Nome
+  movil_o_usuario_de_telegram:
+    '#title': 'Móvil ou usuario de Telegram'
+settings:
+  confirmation_message: '<p>Moitas grazas. Estaremos en contacto.</p>'
