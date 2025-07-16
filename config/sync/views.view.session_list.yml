@@ -15,6 +15,8 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.session_audience
     - taxonomy.vocabulary.session_category
+    - user.role.administrator
+    - user.role.session_moderator
     - workflows.workflow.session_acceptance
   module:
     - content_moderation
@@ -764,7 +766,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Descripción corta'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1133,6 +1135,139 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        init:
+          id: init
+          table: users_field_data
+          field: init
+          relationship: field_speakers
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: init
+          plugin_id: field
+          label: 'Correo electrónico inicial'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        moderation_state:
+          id: moderation_state
+          table: node_field_data
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_field
+          label: 'Estado de moderación'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: content_moderation_state
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      access:
+        type: role
+        options:
+          role:
+            session_moderator: session_moderator
+            administrator: administrator
       style:
         type: data_export
         options:
@@ -1148,7 +1283,19 @@ display:
             utf8_bom: '0'
             use_serializer_encode_only: false
       defaults:
+        access: false
+        relationships: false
         fields: false
+      relationships:
+        field_speakers:
+          id: field_speakers
+          table: node__field_speakers
+          field: field_speakers
+          relationship: none
+          group_type: group
+          admin_label: 'field_speakers: Usuario'
+          plugin_id: standard
+          required: true
       display_extenders: {  }
       path: sessions/csv
       filename: sessions.csv
@@ -1165,7 +1312,7 @@ display:
         - request_format
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_audience'
