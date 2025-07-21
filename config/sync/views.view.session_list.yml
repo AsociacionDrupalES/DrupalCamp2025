@@ -1336,7 +1336,7 @@ display:
         title: Sesiones
         description: ''
         weight: -49
-        enabled: true
+        enabled: false
         expanded: false
         menu_name: main
         parent: 'menu_link_content:0593f77a-bb3b-475e-9f4e-4f9edd3a4bc1'
