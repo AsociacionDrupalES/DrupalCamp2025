@@ -1,7 +1,20 @@
 <ul class="header-menu">
   {% for item in items %}
-    <li class="header-menu__item">
-      <a href="{{ item.url }}" class="header-menu__link{% if item.in_active_trail %} is-active{% endif %}">{{ item.title }}</a>
+    <li class="header-menu__item{% if item.below %} header-menu__item--has-children{% endif %}">
+      <a href="{{ item.url }}"
+         class="header-menu__link{% if item.in_active_trail %} is-active{% endif %}"
+         {% if item.below %}aria-expanded="false"{% endif %}>
+        {{ item.title }}
+      </a>
+      {% if item.below %}
+        <ul class="header-menu__submenu" aria-hidden="true">
+          {% for subitem in item.below %}
+            <li class="header-menu__submenu-item">
+              <a href="{{ subitem.url }}" class="header-menu__submenu-link{% if subitem.in_active_trail %} is-active{% endif %}">{{ subitem.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
