@@ -7,6 +7,7 @@
     display: flex;
     gap: 22px;
     margin-left: 47px;
+    padding-inline-start: 0;
   }
 
   #block-drupalcamp-quick-actions .menu .link--button {
