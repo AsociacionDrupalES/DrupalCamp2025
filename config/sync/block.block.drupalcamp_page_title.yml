@@ -2,8 +2,6 @@ uuid: 6a3639a5-4178-4f96-a6d9-9cb891a700ed
 langcode: es
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - drupalcamp
 _core:
@@ -19,8 +17,4 @@ settings:
   label: 'Título de la página'
   label_display: '0'
   provider: core
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: "<front>\r\n/splash-awards"
+visibility: {  }

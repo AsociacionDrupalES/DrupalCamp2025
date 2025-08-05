@@ -5,11 +5,38 @@
  * Contains custom hooks for the custom_general_features module.
  */
 
+use Drupal\block\Entity\Block;
 use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Access\AccessResultForbidden;
+use Drupal\Core\Access\AccessResultNeutral;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Template\Attribute;
 use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_block_access().
+ */
+function custom_general_features_block_access(Block $block, string $operation, AccountInterface $account): AccessResultForbidden|AccessResultNeutral {
+  if ($operation !== 'view') {
+    return AccessResult::neutral();
+  }
+  if ($block->id() !== 'drupalcamp_page_title') {
+    return AccessResult::neutral();
+  }
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (!$node instanceof NodeInterface) {
+    return AccessResult::neutral();
+  }
+  // If body is not empty, it will show between the header and the first paragraph, so show the normal title.
+  if ($node->hasField('body') && !$node->get('body')->getString() && $node->hasField('field_sections') && !$node->get('field_sections')->isEmpty()) {
+    $paragraphs = $node->get('field_sections')->referencedEntities();
+    if (!empty($paragraphs) && $paragraphs[0]->bundle() === 'hero') {
+      return AccessResult::forbidden()->addCacheableDependency($node);
+    }
+  }
+  return AccessResult::neutral();
+}
 
 /**
  * Implements hook_entity_create_access().
