@@ -28,6 +28,7 @@ function custom_general_features_block_access(Block $block, string $operation, A
   if (!$node instanceof NodeInterface) {
     return AccessResult::neutral();
   }
+  // If body is not empty, it will show between the header and the first paragraph, so show the normal title.
   if ($node->hasField('body') && !$node->get('body')->getString() && $node->hasField('field_sections') && !$node->get('field_sections')->isEmpty()) {
     $paragraphs = $node->get('field_sections')->referencedEntities();
     if (!empty($paragraphs) && $paragraphs[0]->bundle() === 'hero') {
