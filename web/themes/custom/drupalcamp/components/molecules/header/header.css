@@ -2,7 +2,7 @@
   position: fixed;
   top: calc(20px + var(--admin-toolbar-top-bar-height, 0px));
   left: calc(var(--page-side-margin) + var(--gutter-x));
-  z-index: 10;
+  z-index: 100;
   padding: 10px var(--gutter-x);
   border-radius: 20px;
   background: white;
