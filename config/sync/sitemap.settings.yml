@@ -23,6 +23,7 @@ plugins:
     settings:
       title: 'Navegación principal'
       show_disabled: false
+      menu_depth: 9
     id: 'menu:main'
     provider: sitemap
   'menu:quick-actions':
@@ -32,6 +33,7 @@ plugins:
     settings:
       title: 'Acciones rápidas'
       show_disabled: false
+      menu_depth: 9
     id: 'menu:quick-actions'
     provider: sitemap
   'menu:footer':
@@ -41,6 +43,7 @@ plugins:
     settings:
       title: 'Pie de página'
       show_disabled: false
+      menu_depth: 9
     id: 'menu:footer'
     provider: sitemap
 include_css: false

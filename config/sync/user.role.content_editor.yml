@@ -32,6 +32,7 @@ dependencies:
     - path
     - system
     - taxonomy
+    - webform
 _core:
   default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
@@ -46,6 +47,7 @@ permissions:
   - 'access navigation'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
+  - 'access webform overview'
   - 'administer media'
   - 'administer menu'
   - 'administer nodes'
@@ -185,6 +187,7 @@ permissions:
   - 'view all taxonomy revisions'
   - 'view any image media revisions'
   - 'view any vector_image media revisions'
+  - 'view any webform submission'
   - 'view article revisions'
   - 'view featured_speaker revisions'
   - 'view field_is_non_session'
@@ -197,6 +200,7 @@ permissions:
   - 'view own field_time_slot'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view own webform submission'
   - 'view page revisions'
   - 'view session revisions'
   - 'view sponsor revisions'
