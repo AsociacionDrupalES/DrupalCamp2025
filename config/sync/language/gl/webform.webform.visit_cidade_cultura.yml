@@ -1,0 +1,17 @@
+title: 'Visita arquitectónica da Cidade da Cultura'
+elements: |
+  intro:
+    '#text': '<p>En paralelo aos tracks das charlas, os 2 días ás 16:00, existe a posibilidade de realizar unha visita para achegarse á arquitectura contemporánea e sorprenderse coas liñas e volumes proxectados polo neoyorkino Peter Eisenman. <strong>Non é necesario dispoñer de entrada da DrupalCamp para realizar a visita.</strong> Apúntache cumprimentando este formulario.</p>'
+  first_name:
+    '#title': Nome
+  last_name:
+    '#title': Apelidos
+  phone:
+    '#description': '<p>Usaremos o teu número unicamente se non logramos atoparche na visita, para poder avisarche e coordinar contigo.</p>'
+  day:
+    '#title': 'Día e hora'
+    '#options':
+      19sep: '19 de setembro ás 16:00'
+      20sep: '20 de setembro ás 16:00'
+settings:
+  confirmation_message: '<p>Rexistrouse correctamente a túa inscrición.</p>'

@@ -7,7 +7,7 @@ dependencies:
     - image.style.large
     - media.type.vector_image
   module:
-    - image
+    - svg_image
 id: media.vector_image.default
 targetEntityType: media
 bundle: vector_image
@@ -15,12 +15,16 @@ mode: default
 content:
   field_media_image:
     type: image
-    label: visually_hidden
+    label: hidden
     settings:
       image_link: ''
       image_style: large
       image_loading:
         attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 0
     region: content
