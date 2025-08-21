@@ -1,0 +1,19 @@
+title: 'Architectural tour of the Cidade da Cultura'
+elements: |
+  intro:
+    '#text': '<p>In parallel with the talks, on both days at 4:00 p.m., there will be an opportunity to take a tour to learn about contemporary architecture and marvel at the lines and volumes designed by New York architect Peter Eisenman. <strong>You do not need a ticket to DrupalCamp to take the tour.</strong> Sign up by filling out this form.</p>'
+  first_name:
+    '#title': 'First name'
+  last_name:
+    '#title': 'Last name'
+  email:
+    '#title': Email
+    '#confirm__title': 'Confirm email address'
+  phone:
+    '#title': Phone
+    '#description': '<p>We will only use your number if we are unable to find you during the visit, so that we can notify you and coordinate with you.</p>'
+  day:
+    '#title': 'Day and time'
+    '#options':
+      19sep: '19 September at 4 p.m.'
+      20sep: '20 September at 4 p.m.'
