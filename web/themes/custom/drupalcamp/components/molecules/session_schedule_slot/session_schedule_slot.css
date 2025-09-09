@@ -12,31 +12,26 @@
 }
 
 .session-schedule-slot__title {
+  --session-schedule-hour-column-width: auto;
+  --session-schedule-hour-column-padding: 15px;
   width: var(--session-schedule-hour-column-width);
-  padding: var(--session-schedule-hour-column-padding);
+  padding-right: var(--session-schedule-hour-column-padding);
   box-sizing: border-box;
-}
-
-.session-schedule-slot__title {
-  width: 60px;
-  writing-mode: sideways-lr;
-  text-align: right;
-  padding: 0;
+  min-width: 61px;
 }
 
 .session-schedule-slot__title h3 {
   border-radius: 20px;
-  padding: 16px 6px 16px 10px;
+  padding: 16px 6px 16px 6px;
   background-color: var(--color--secondary);
   font-family: var(--font-family-h);
   font-size: var(--session-schedule-hour-column-font-size);
   line-height: var(--session-schedule-hour-column-line-height);
-}
-
-.session-schedule-slot__title h3 {
   position: sticky;
-  display: inline-block;
+  display: flex;
   top: 120px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .session-schedule-slot__content {
@@ -63,6 +58,10 @@
   .session-schedule-slot__content:has(.session-schedule-slot__item:only-child) {
     grid-template-columns: 1fr;
   }
+
+  .session-schedule-slot__title h3 {
+    top: 145px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -72,16 +71,19 @@
 
   .session-schedule-slot__title {
     display: flex;
-    align-items: normal;
+    align-items: center;
     justify-content: center;
-    padding: 0 15px;
-    width: var(--session-schedule-hour-column-width);
+    padding: var(--session-schedule-hour-column-padding);
+    --session-schedule-hour-column-width: 120px;
   }
 
   .session-schedule-slot__title h3 {
     padding: 10px 10px 6px;
     text-align: center;
+    display: inline-block;
     writing-mode: lr;
+    transform: none;
+    width: 100%;
   }
 }
 
@@ -99,6 +101,7 @@
 
 .session-schedule-slot--special.session-schedule-slot--with-background .session-schedule-slot__title h3 {
   writing-mode: lr;
+  transform: none;
   padding: 10px 16px 6px;
 }
 
@@ -110,6 +113,14 @@
   justify-content: center;
 }
 
+.session-schedule-slot--special .session-schedule-slot__content a {
+  text-decoration: none;
+}
+
+.session-schedule-slot--special .session-schedule-slot__content a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 960px) {
   .session-schedule-slot--special.session-schedule-slot--with-background .session-schedule-slot__title {
     width: auto;
@@ -118,7 +129,7 @@
 
 @media (min-width: 960px) {
   .session-schedule-slot--special.session-schedule-slot--with-background {
-    padding: 18px 0;
+    padding: 0;
   }
 }
 

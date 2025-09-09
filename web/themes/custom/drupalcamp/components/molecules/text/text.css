@@ -18,3 +18,10 @@
 [data-component-id="drupalcamp:text"] .title-bar > *:first-child {
   flex-grow: 1;
 }
+
+[data-component-id="drupalcamp:text"] .text {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+}

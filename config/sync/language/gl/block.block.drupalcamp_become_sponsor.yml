@@ -1,0 +1,6 @@
+settings:
+  label: 'Como chego á Camp?'
+  title: 'Como chego á Camp?'
+  body:
+    value: '<p>Doado: súbete ao <strong>bus lanzadeira</strong> e en nada estás na <strong>Cidade da Cultura</strong>. De balde, cómodo e sen complicacións. ¡Vémonos alí!</p><p><a class="link--button link--button--secondary" href="/node/125" data-entity-type="node" data-entity-uuid="c72fa50b-61d3-4f62-9a36-9e0ac5dfd025" data-entity-substitution="canonical">Quero saber máis</a></p>'
+    format: full_html

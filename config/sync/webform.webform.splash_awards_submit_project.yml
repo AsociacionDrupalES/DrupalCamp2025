@@ -1,6 +1,6 @@
 uuid: 572175aa-5d0e-411b-bd50-f05f7e6ebe8f
 langcode: es
-status: open
+status: scheduled
 dependencies:
   module:
     - antibot
@@ -9,7 +9,7 @@ third_party_settings:
     antibot: true
 weight: 0
 open: null
-close: null
+close: '2025-09-12T23:59:59'
 uid: 1
 template: false
 archive: false
