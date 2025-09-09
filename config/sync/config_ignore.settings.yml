@@ -6,9 +6,7 @@ ignored_config_entities:
     import: {  }
     export: {  }
   update:
-    import:
-      - 'block.block.drupalcamp_become_sponsor:settings.body'
-      - 'block.block.drupalcamp_become_sponsor:settings.title'
+    import: {  }
     export: {  }
   delete:
     import: {  }
