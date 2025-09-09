@@ -3,28 +3,32 @@
 [data-component-id="drupalcamp:cards"] .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 [data-component-id="drupalcamp:cards"] .cards-wrapper > * {
   box-sizing: border-box;
   padding: 0;
+  width: 100%;
+  flex: 1;
 }
 
 @media (min-width: 768px) {
+  [data-component-id="drupalcamp:cards"] .cards-wrapper {
+    flex-direction: row;
+  }
+
   [data-component-id="drupalcamp:cards"] .cards-wrapper > * {
+    flex: none;
     width: 50%;
   }
-}
 
-@media (min-width: 768px) {
   [data-component-id="drupalcamp:cards"] .cards-wrapper > *:before,
   [data-component-id="drupalcamp:cards"] .cards-wrapper > *:after {
     transform: unset;
     width: calc(50vw - (var(--page-side-margin) / 2) - 16px);
   }
-}
 
-@media (min-width: 768px) {
   [data-component-id="drupalcamp:cards"] .cards-wrapper > *:nth-child(odd) {
     border-right: 16px solid transparent;
   }
