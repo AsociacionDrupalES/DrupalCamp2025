@@ -3,7 +3,13 @@
 }
 
 [data-component-id="drupalcamp:card"].card--default {
-  padding: 50px;
+  padding: 40px 25px;
+}
+
+@media (min-width: 768px) {
+  [data-component-id="drupalcamp:card"].card--default {
+    padding: 50px;
+  }
 }
 
 [data-component-id="drupalcamp:card"].card--default .text-formatted .link--button:not(.link--button--transparent) {
