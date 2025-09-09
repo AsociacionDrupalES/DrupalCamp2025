@@ -1,6 +1,6 @@
 settings:
   label: 'How do I get to the Camp?'
   body:
-    value: '<p>Easy: just hop on the <strong data-start="360" data-end="375">shuttle bus</strong> and you’ll be at the <strong data-start="397" data-end="418">Cidade da Cultura</strong> in no time. Free, comfy, and hassle-free. See you there!</p><p><a class="link--button link--button--secondary" href="/node/125" data-entity-type="node" data-entity-uuid="c72fa50b-61d3-4f62-9a36-9e0ac5dfd025" data-entity-substitution="canonical">More info</a></p>'
+    value: '<p>Easy: just hop on the <strong>shuttle bus</strong> and you’ll be at the <strong>Cidade da Cultura</strong> in no time. Free, comfy, and hassle-free. See you there!</p><p><a class="link--button link--button--secondary" href="/node/125" data-entity-type="node" data-entity-uuid="c72fa50b-61d3-4f62-9a36-9e0ac5dfd025" data-entity-substitution="canonical">More info</a></p>'
     format: full_html
   title: 'How do I get to the Camp?'
