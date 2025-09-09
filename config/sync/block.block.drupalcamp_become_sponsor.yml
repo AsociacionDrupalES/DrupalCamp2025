@@ -20,7 +20,7 @@ settings:
   provider: custom_general_features
   title: '¿Cómo llego a la Camp?'
   body:
-    value: '<p>Fácil: te subes al bus lanzadera y en un momento estás en la Cidade da Cultura. Gratis, cómodo y sin complicaciones. ¡Nos vemos arriba!</p><p><a class="link--button link--button--secondary" href="/node/125" data-entity-type="node" data-entity-uuid="c72fa50b-61d3-4f62-9a36-9e0ac5dfd025" data-entity-substitution="canonical">Quiero saber más</a></p>'
+    value: '<p>Fácil: te subes al <strong>bus lanzadera</strong> y en un momento estás en la <strong>Cidade da Cultura</strong>. Gratis, cómodo y sin complicaciones. ¡Nos vemos arriba!</p><p><a class="link--button link--button--secondary" href="/node/125" data-entity-type="node" data-entity-uuid="c72fa50b-61d3-4f62-9a36-9e0ac5dfd025" data-entity-substitution="canonical">Quiero saber más</a></p>'
     format: full_html
 visibility:
   request_path:
