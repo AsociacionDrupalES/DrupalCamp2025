@@ -1,0 +1,13 @@
+uuid: eb33d80a-cd9c-4e42-837e-a40988ad0bd0
+langcode: es
+status: true
+dependencies:
+  module:
+    - complete_webform_exporter
+_core:
+  default_config_hash: C5Ff6i-qeqQY8XaJDEEoXQjrYEU-8YjhMyrSGpmBQ7M
+id: webform_submission_export_action
+label: 'Export submissions'
+type: webform_submission
+plugin: webform_submission_export_action
+configuration: {  }
