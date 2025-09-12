@@ -15,6 +15,7 @@
         "drupal/antibot": "^2.0",
         "drupal/backup_migrate": "^5.1",
         "drupal/colorbox": "^2.1",
+        "drupal/complete_webform_exporter": "^1.0",
         "drupal/config_ignore": "^3.3",
         "drupal/config_readonly": "^1.0",
         "drupal/core-composer-scaffold": "^11.0",

@@ -106,6 +106,7 @@ settings:
     - webform_submission_make_lock_action
     - webform_submission_make_unlock_action
     - webform_submission_delete_action
+    - webform_submission_export_action
   dialog: false
   dialog_options:
     narrow:
