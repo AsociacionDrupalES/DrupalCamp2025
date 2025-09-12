@@ -274,8 +274,10 @@ access:
     permissions: {  }
   view_any:
     roles: {  }
-    users: {  }
-    permissions: {  }
+    users:
+      - 78
+    permissions:
+      - 'view any webform submission'
   update_any:
     roles: {  }
     users: {  }
