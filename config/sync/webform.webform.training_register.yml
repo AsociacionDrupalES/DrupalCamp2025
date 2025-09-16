@@ -60,7 +60,7 @@ elements: |-
     '#title': 'Formaciones (mañana)'
     '#options':
       1: 'Introducción a Drupal CMS: Construye sitios sin saber programar'
-      2: 'Introduction to D11 Module development'
+      2: '[CANCELADO] Introduction to D11 Module development'
   trainings_afternoon:
     '#type': radios
     '#title': 'Formaciones (tarde)'
@@ -301,7 +301,7 @@ handlers:
       limit: null
       limits:
         1: 20
-        2: 20
+        2: 0
       limit_reached_message: '@name is not available'
       limit_source_entity: true
       limit_user: false
