@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: csumMMy6bd8EL-eesCjFv8L1am3akGXlVf8i2ZtogvA
+supported_entity_types:
+  - node
+  - taxonomy_term
+default_converter: league
+converters:
+  league:
+    header_style: atx
+    suppress_errors: true
+    strip_tags: true
+    strip_placeholder_links: false
+    bold_style: '**'
+    italic_style: '*'
+    remove_nodes: ''
+    hard_break: false
+    list_item_style: '-'
+    preserve_comments: false
+    use_autolinks: true
+    table_pipe_escape: \|
+    table_caption_side: top
