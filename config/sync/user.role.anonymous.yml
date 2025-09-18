@@ -9,6 +9,7 @@ dependencies:
     - contact
     - field_permissions
     - filter
+    - mcp
     - media
     - sitemap
     - system
@@ -24,6 +25,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access sitemap'
   - 'access user profiles'
+  - 'use mcp server'
   - 'use text format webform'
   - 'view field_r'
   - 'view field_time_slot'
