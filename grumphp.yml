@@ -1,0 +1,4 @@
+parameters:
+  ascii:
+    failed: .grumphp/ko.txt
+    succeeded: .grumphp/ok.txt
