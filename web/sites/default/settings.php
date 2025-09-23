@@ -843,6 +843,7 @@ $settings['config_exclude_modules'] = [
   'devel',
   'devel_generate',
   'stage_file_proxy',
+  'backup_migrate',
 ];
 
 // Automatically generated include for settings managed by ddev.
