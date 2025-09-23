@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9049897e36eb27ce89f682bdb3966587",
+    "content-hash": "38e4e49f1bebd15d490aa17f03e89451",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2658,67 +2658,6 @@
             }
         },
         {
-            "name": "drupal/event_platform_mcp",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/event_platform_mcp.git",
-                "reference": "1.0.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/event_platform_mcp-1.0.0-alpha1.zip",
-                "reference": "1.0.0-alpha1",
-                "shasum": "221d7cdf03ad4ba8d56d2fdea8c2104cb8e1859a"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11",
-                "drupal/event_platform": "^1.0",
-                "drupal/event_platform_sessions": "*",
-                "drupal/mcp": "^1.0"
-            },
-            "require-dev": {
-                "drupal/core-dev": "^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0-alpha1",
-                    "datestamp": "1758123027",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "loureirodev",
-                    "homepage": "https://www.drupal.org/user/1305546"
-                }
-            ],
-            "description": "MCP integration for Drupal event platforms with comprehensive session and schedule management",
-            "homepage": "https://www.drupal.org/project/event_platform_mcp",
-            "keywords": [
-                "Content",
-                "Drupal",
-                "Events",
-                "Events",
-                "MCP",
-                "Schedule",
-                "Sessions",
-                "Taxonomy"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/event_platform_mcp",
-                "issues": "https://www.drupal.org/project/issues/event_platform_mcp"
-            }
-        },
-        {
             "name": "drupal/event_platform_scheduler",
             "version": "1.0.4",
             "require": {
@@ -3435,140 +3374,6 @@
             }
         },
         {
-            "name": "drupal/jsonrpc",
-            "version": "2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/jsonrpc.git",
-                "reference": "2.1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonrpc-2.1.2.zip",
-                "reference": "2.1.2",
-                "shasum": "a1b282cff6e6d8f58b881246baeb9bee31ac29e9"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11",
-                "e0ipso/shaper": "^1.2.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.2",
-                    "datestamp": "1726276215",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mateu Aguiló Bosch",
-                    "homepage": "https://www.drupal.org/user/3616626",
-                    "email": "mateu.aguilo.bosch@gmail.com"
-                },
-                {
-                    "name": "Gabriel Sullice",
-                    "homepage": "https://www.drupal.org/user/550110",
-                    "email": "gabriel@sullice.com"
-                },
-                {
-                    "name": "gabesullice",
-                    "homepage": "https://www.drupal.org/user/2287430"
-                },
-                {
-                    "name": "ptmkenny",
-                    "homepage": "https://www.drupal.org/user/97885"
-                }
-            ],
-            "description": "Infrastructure for JSON-RPC 2.0 compliant web services.",
-            "homepage": "https://www.drupal.org/project/jsonrpc",
-            "support": {
-                "source": "https://git.drupalcode.org/project/jsonrpc"
-            }
-        },
-        {
-            "name": "drupal/key",
-            "version": "1.20.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/key.git",
-                "reference": "8.x-1.20"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "f45415552de129e9976af72224393cd1d1f2ea65"
-            },
-            "require": {
-                "drupal/core": ">=8.9 <12"
-            },
-            "require-dev": {
-                "drush/drush": ">=9"
-            },
-            "suggest": {
-                "drush/drush": ">=11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1744582168",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": ">=9"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "cellar door",
-                    "homepage": "https://www.drupal.org/user/658076"
-                },
-                {
-                    "name": "crashtest_",
-                    "homepage": "https://www.drupal.org/user/261457"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                },
-                {
-                    "name": "rlhawk",
-                    "homepage": "https://www.drupal.org/user/352283"
-                }
-            ],
-            "description": "Provides the ability to manage site-wide keys",
-            "homepage": "http://drupal.org/project/key",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/key",
-                "issues": "http://drupal.org/project/key"
-            }
-        },
-        {
             "name": "drupal/link_attributes",
             "version": "2.1.1",
             "source": {
@@ -3714,83 +3519,6 @@
             }
         },
         {
-            "name": "drupal/markdownify",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/markdownify.git",
-                "reference": "1.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/markdownify-1.1.1.zip",
-                "reference": "1.1.1",
-                "shasum": "c9631bfcfc1953485b506299128ada1c39648b34"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11",
-                "league/html-to-markdown": "^5.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5 || ^10.0"
-            },
-            "suggest": {
-                "league/commonmark": "For extended Markdown formatting capabilities."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.1.1",
-                    "datestamp": "1750366565",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\markdownify\\": "src/"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Morelos",
-                    "homepage": "https://www.drupal.org/user/3235287",
-                    "email": "adrian.tech.enthusiast@gmail.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Christoph Weber",
-                    "homepage": "https://www.drupal.org/user/135619",
-                    "email": "webersd@gmail.com",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "christophweber",
-                    "homepage": "https://www.drupal.org/user/281751"
-                },
-                {
-                    "name": "i&#039;mbatman",
-                    "homepage": "https://www.drupal.org/user/2966261"
-                },
-                {
-                    "name": "pronovix",
-                    "homepage": "https://www.drupal.org/user/3834019"
-                }
-            ],
-            "description": "Markdownify module for Drupal - Provides Markdown versions of content.",
-            "homepage": "https://www.drupal.org/project/markdownify",
-            "support": {
-                "source": "https://www.drupal.org/project/markdownify",
-                "issues": "https://www.drupal.org/project/issues/markdownify"
-            }
-        },
-        {
             "name": "drupal/maxlength",
             "version": "3.1.2",
             "source": {
@@ -3864,69 +3592,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/maxlength",
                 "issues": "https://www.drupal.org/project/issues/maxlength"
-            }
-        },
-        {
-            "name": "drupal/mcp",
-            "version": "1.2.1-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/mcp.git",
-                "reference": "1.2.1-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mcp-1.2.1-alpha2.zip",
-                "reference": "1.2.1-alpha2",
-                "shasum": "6290d803f7f8cf693690dd62fe2c8b260b5a4292"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11",
-                "drupal/jsonrpc": "^2.1",
-                "drupal/key": "^1.19",
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "drupal/ai": "1.1.x-dev@dev",
-                "drupal/ai_agents": "1.1.x-dev@dev"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.2.1-alpha2",
-                    "datestamp": "1755868554",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "gagosha",
-                    "homepage": "https://www.drupal.org/user/3506581"
-                },
-                {
-                    "name": "jibla",
-                    "homepage": "https://www.drupal.org/user/1013184"
-                },
-                {
-                    "name": "lekso surameli",
-                    "homepage": "https://www.drupal.org/user/3709459"
-                },
-                {
-                    "name": "marcus_johansson",
-                    "homepage": "https://www.drupal.org/user/385947"
-                }
-            ],
-            "description": "The MCP Drupal module implements the Model Context Protocol (MCP)",
-            "homepage": "https://www.drupal.org/project/mcp",
-            "support": {
-                "source": "https://git.drupalcode.org/project/mcp"
             }
         },
         {
@@ -5765,52 +5430,6 @@
             "time": "2025-07-24T10:42:08+00:00"
         },
         {
-            "name": "e0ipso/shaper",
-            "version": "1.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/e0ipso/shaper.git",
-                "reference": "1d9e726c98d3168d30c1180cd836d13267744fb7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/e0ipso/shaper/zipball/1d9e726c98d3168d30c1180cd836d13267744fb7",
-                "reference": "1d9e726c98d3168d30c1180cd836d13267744fb7",
-                "shasum": ""
-            },
-            "require": {
-                "justinrainbow/json-schema": "^5.2 || ^6.3"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.4",
-                "phpunit/phpcov": "^8.2",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Shaper\\": "src",
-                    "Shaper\\Tests\\": "tests/src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Mateu Aguiló Bosch",
-                    "email": "mateu.aguilo.bosch@gmail.com"
-                }
-            ],
-            "description": "Lightweight library to handle in and out transformations in PHP.",
-            "support": {
-                "issues": "https://github.com/e0ipso/shaper/issues",
-                "source": "https://github.com/e0ipso/shaper/tree/1.2.7"
-            },
-            "time": "2025-04-04T08:14:01+00:00"
-        },
-        {
             "name": "egulias/email-validator",
             "version": "4.0.4",
             "source": {
@@ -6699,95 +6318,6 @@
                 }
             ],
             "time": "2025-06-25T14:53:51+00:00"
-        },
-        {
-            "name": "league/html-to-markdown",
-            "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/html-to-markdown.git",
-                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0b4066eede55c48f38bcee4fb8f0aa85654390fd",
-                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-xml": "*",
-                "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "mikehaertl/php-shellcommand": "^1.1.0",
-                "phpstan/phpstan": "^1.8.8",
-                "phpunit/phpunit": "^8.5 || ^9.2",
-                "scrutinizer/ocular": "^1.6",
-                "unleashedtech/php-coding-standard": "^2.7 || ^3.0",
-                "vimeo/psalm": "^4.22 || ^5.0"
-            },
-            "bin": [
-                "bin/html-to-markdown"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\HTMLToMarkdown\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Nick Cernis",
-                    "email": "nick@cern.is",
-                    "homepage": "http://modernnerd.net",
-                    "role": "Original Author"
-                }
-            ],
-            "description": "An HTML-to-markdown conversion helper for PHP",
-            "homepage": "https://github.com/thephpleague/html-to-markdown",
-            "keywords": [
-                "html",
-                "markdown"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
-                "source": "https://github.com/thephpleague/html-to-markdown/tree/5.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/html-to-markdown",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-07-12T21:21:09+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -18209,8 +17739,6 @@
     "aliases": [],
     "minimum-stability": "beta",
     "stability-flags": {
-        "drupal/event_platform_mcp": 15,
-        "drupal/mcp": 15,
         "drupal/ui_patterns_field_group-ui_patterns_field_group": 15,
         "drupal/viewsreference": 10,
         "drupal/webform": 10
