@@ -22,14 +22,11 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/event_platform": "^1.0",
-        "drupal/event_platform_mcp": "^1.0.0@alpha",
         "drupal/extlink": "^2.0",
         "drupal/gin": "^5.0",
         "drupal/gin_login": "^2.1",
         "drupal/link_attributes": "^2.1",
         "drupal/linkit": "^7.0",
-        "drupal/markdownify": "^1.1",
-        "drupal/mcp": "^1.2.1@alpha",
         "drupal/media_entity_download": "^2.4",
         "drupal/media_library_form_element": "^2.1",
         "drupal/metatag": "^2.1",
@@ -164,10 +161,6 @@
             },
             "drupal/field_group": {
                 "#3495221: Add $form and $form_state parameters to formatter plugins' settingsForm method Add $form and $form_state parameters to formatter plugins' settingsForm method": "https://www.drupal.org/files/issues/2024-12-20/3495221-4.patch"
-            },
-            "drupal/mcp": {
-                "#3545337: Add enum property to contentType in MCP Content plugin schema": "https://git.drupalcode.org/project/mcp/-/merge_requests/31.diff",
-                "#3547207: Content plugin: Render node resources as Markdown": "https://git.drupalcode.org/project/mcp/-/merge_requests/33.diff"
             },
             "drupal/paragraphs": {
                 "https://www.drupal.org/project/paragraphs/issues/3473771": "https://git.drupalcode.org/project/paragraphs/-/merge_requests/150/diffs.diff"
