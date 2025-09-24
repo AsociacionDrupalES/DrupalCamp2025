@@ -3,4 +3,14 @@ main > .layout-content {
   max-width: var(--max-width);
   padding: 0 var(--gutter-x);
   min-height: 200px;
+
+  .region-content {
+    position: relative;
+
+    .sticky {
+      position: absolute;
+      top: -25px;
+      right: 0;
+    }
+  }
 }
