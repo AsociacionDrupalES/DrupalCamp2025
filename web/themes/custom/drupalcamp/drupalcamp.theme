@@ -7,10 +7,12 @@
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
+use Drupal\Core\Link;
 use Drupal\file\FileInterface;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\media\Entity\Media;
 use Drupal\node\NodeInterface;
+use Drupal\user\Entity\User;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -41,6 +43,24 @@ function drupalcamp_preprocess_page(array &$variables): void {
   $node = \Drupal::routeMatch()->getParameter('node');
   if (!$node instanceof NodeInterface || $node->bundle() === 'featured_speaker') {
     return;
+  }
+
+  $user = User::load(\Drupal::currentUser()->id());
+  if (
+    $node->bundle() === 'session' &&
+    $node->access('update', $user) &&
+    ($node->getOwner()->id() === $user->id())
+  ) {
+    $url = $node->toUrl('edit-form', [
+      'attributes' => [
+        'class' => ['link--button', 'link--button--primary', 'sticky']
+      ]
+    ]);
+    $link = Link::fromTextAndUrl('Edit', $url);
+    $variables['page']['content']['drupalcamp_edit_link'] = [
+      '#markup' => $link->toString(),
+      '#weight' => -100,
+    ];
   }
 
   if ($node->hasField('field_media_image') && !$node->get('field_media_image')->isEmpty()) {
